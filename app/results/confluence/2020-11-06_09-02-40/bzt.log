@@ -1,0 +1,818 @@
+[2020-11-06 09:02:40,248 INFO root] Taurus CLI Tool v1.15.0
+[2020-11-06 09:02:40,248 DEBUG root] Command-line options: {'log': '/tmp/bzt_hvwudco1.log', 'option': ['modules.console.disable=true'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2020-11-06 09:02:40,249 DEBUG root] Python: CPython 3.8.0
+[2020-11-06 09:02:40,249 DEBUG root] OS: uname_result(system='Linux', node='3177760e12c9', release='5.3.0-1035-aws', version='#37-Ubuntu SMP Sun Sep 6 01:17:09 UTC 2020', machine='x86_64', processor='x86_64')
+[2020-11-06 09:02:40,249 INFO root] Starting with configs: ['confluence.yml']
+[2020-11-06 09:02:40,249 DEBUG root] Using personal config: /root/.bzt-rc
+[2020-11-06 09:02:40,249 INFO Engine] Configuring...
+[2020-11-06 09:02:40,249 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2020-11-06 09:02:40,258 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2020-11-06 09:02:40,258 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2020-11-06 09:02:40,258 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2020-11-06 09:02:40,273 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2020-11-06 09:02:40,273 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2020-11-06 09:02:40,274 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2020-11-06 09:02:40,274 DEBUG Engine] User configs list: ['/root/.bzt-rc', 'confluence.yml']
+[2020-11-06 09:02:40,274 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2020-11-06 09:02:40,274 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2020-11-06 09:02:40,276 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2020-11-06 09:02:40,286 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2020-11-06 09:02:40,286 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2020-11-06 09:02:40,289 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2020-11-06 09:02:40,303 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.0&installID=Docker
+[2020-11-06 09:02:40,303 DEBUG ConfigOverrider] Applying modules.console.disable=true
+[2020-11-06 09:02:40,303 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.0&installID=Docker
+[2020-11-06 09:02:40,303 DEBUG ConfigOverrider] Applying: [disable]=true
+[2020-11-06 09:02:40,304 DEBUG ConfigOverrider] Parsed override value: 'true' -> True (<class 'bool'>)
+[2020-11-06 09:02:40,304 INFO Engine] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40
+[2020-11-06 09:02:40,305 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective
+[2020-11-06 09:02:40,306 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2020-11-06 09:02:40,306 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.yml
+[2020-11-06 09:02:40,320 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.json
+[2020-11-06 09:02:40,321 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/merged.yml
+[2020-11-06 09:02:40,321 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/merged.yml
+[2020-11-06 09:02:40,326 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/merged.json
+[2020-11-06 09:02:40,327 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/merged.json
+[2020-11-06 09:02:40,327 DEBUG Engine] Add existing artifact (move=False): confluence.yml
+[2020-11-06 09:02:40,327 DEBUG Engine] Copying confluence.yml to /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/confluence.yml
+[2020-11-06 09:02:40,327 DEBUG Engine] Set PYTHONPATH to '/root/.bzt/python-packages/3.8.0' + '/dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/python-packages/3.8.0' + 
+[2020-11-06 09:02:40,327 DEBUG Engine] Content of user packages dir: %s
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: application_hostname=confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: application_protocol=http
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: application_port=80
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: secure=True
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: admin_login=admin
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: admin_password=admin
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: load_executor=locust
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: concurrency=200
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: test_duration=5m
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: ramp-up=5m
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: total_actions_per_hour=54500
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: WEBDRIVER_VISIBLE=False
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: JMETER_VERSION=5.2.1
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: LANGUAGE=en_US.utf8
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: allow_analytics=True
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: view_page=54
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: view_dashboard=6
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: view_blog=8
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: search_cql=7
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: create_blog=3
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: create_and_edit_page=6
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: comment_page=5
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: view_attachment=3
+[2020-11-06 09:02:40,328 DEBUG Engine] OS env: upload_attachment=5
+[2020-11-06 09:02:40,329 DEBUG Engine] OS env: like_page=3
+[2020-11-06 09:02:40,329 DEBUG Engine] OS env: standalone_extension=0
+[2020-11-06 09:02:40,329 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40
+[2020-11-06 09:02:40,329 DEBUG root] Closing log handler: /tmp/bzt_hvwudco1.log
+[2020-11-06 09:02:40,329 DEBUG root] Switched writing logs to /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/bzt.log
+[2020-11-06 09:02:40,329 DEBUG root] Linting config
+[2020-11-06 09:02:40,331 INFO Engine] Preparing...
+[2020-11-06 09:02:40,331 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator', 'rtimes-len': 0, 'percentiles': []}
+[2020-11-06 09:02:40,331 DEBUG root] Importing module: bzt.modules.aggregator
+[2020-11-06 09:02:40,425 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2020-11-06 09:02:40,425 DEBUG Engine.consolidator] Buffer scaling setup: percentile None from [] selected
+[2020-11-06 09:02:40,425 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2020-11-06 09:02:40,425 DEBUG root] Importing module: bzt.modules.monitoring
+[2020-11-06 09:02:40,426 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2020-11-06 09:02:40,427 DEBUG Engine] Module config: shellexec {'class': 'bzt.modules.shellexec.ShellExecutor'}
+[2020-11-06 09:02:40,427 DEBUG root] Importing module: bzt.modules.shellexec
+[2020-11-06 09:02:40,432 DEBUG easyprocess] version=0.3
+[2020-11-06 09:02:40,433 DEBUG pyvirtualdisplay] version=1.3.2
+[2020-11-06 09:02:40,439 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py'>
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/pre_run/environment_checker.py'}
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/data_preparation/confluence_prepare_data.py'}
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/post_run/jmeter_post_check.py'}
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl'}
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/analytics/analytics.py confluence'}
+[2020-11-06 09:02:40,439 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/post_run/cleanup_results_dir.py'}
+[2020-11-06 09:02:40,439 INFO Engine.shellexec.Task] Starting shell command: python util/pre_run/environment_checker.py
+[2020-11-06 09:02:40,440 DEBUG root] Executing shell: python util/pre_run/environment_checker.py at /dc-app-performance-toolkit/app
+[2020-11-06 09:02:40,528 DEBUG Engine.shellexec.Task] Output for python util/pre_run/environment_checker.py:
+Python version: (3, 8, 0)
+Data Center App Performance Toolkit version: 3.2.0
+
+[2020-11-06 09:02:40,528 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/pre_run/environment_checker.py
+[2020-11-06 09:02:40,528 INFO Engine.shellexec.Task] Starting shell command: python util/data_preparation/confluence_prepare_data.py
+[2020-11-06 09:02:40,528 DEBUG root] Executing shell: python util/data_preparation/confluence_prepare_data.py at /dc-app-performance-toolkit/app
+[2020-11-06 09:02:40,913 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.0&installID=Docker HTTP/1.1" 200 39
+[2020-11-06 09:02:40,914 DEBUG Engine] Taurus updates info: {'latest': '1.15.1', 'needsUpgrade': True}
+[2020-11-06 09:02:40,914 WARNING Engine] There is newer version of Taurus 1.15.1 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2020-11-06 09:03:29,817 DEBUG Engine.shellexec.Task] Output for python util/data_preparation/confluence_prepare_data.py:
+Started preparing data
+Server url:  http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80
+Users count: 200
+Pages count: 5000
+Blogs count: 5000
+------------------------
+Custom pages count: 0
+Finished preparing data
+
+[2020-11-06 09:03:29,817 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/data_preparation/confluence_prepare_data.py
+[2020-11-06 09:03:29,817 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2020-11-06 09:03:29,818 DEBUG root] Importing module: bzt.modules.provisioning
+[2020-11-06 09:03:29,818 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/provisioning.py'>
+[2020-11-06 09:03:29,818 DEBUG Engine] Module config: locust {'class': 'bzt.modules.locustio.LocustIOExecutor'}
+[2020-11-06 09:03:29,818 DEBUG root] Importing module: bzt.modules.locustio
+[2020-11-06 09:03:29,826 DEBUG root] Loading class: 'LocustIOExecutor' from <module 'bzt.modules.locustio' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/locustio.py'>
+[2020-11-06 09:03:29,826 DEBUG Engine] Module config: selenium {'class': 'bzt.modules.selenium.SeleniumExecutor', 'chromedriver': {'version': '86.0.4240.22'}}
+[2020-11-06 09:03:29,826 DEBUG root] Importing module: bzt.modules.selenium
+[2020-11-06 09:03:29,826 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/selenium.py'>
+[2020-11-06 09:03:29,826 DEBUG Engine.local] Preparing executor: locust/140293016183424
+[2020-11-06 09:03:29,827 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/locust.out
+[2020-11-06 09:03:29,827 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/locust.err
+[2020-11-06 09:03:29,827 DEBUG Engine.locust.LocustIO] Trying LocustIO: locust
+[2020-11-06 09:03:29,827 DEBUG root] Executing shell: ['/usr/bin/python', '-m', 'locust', '--version'] at .
+[2020-11-06 09:03:30,175 DEBUG Engine.locust.LocustIO] LocustIO output: __main__.py 1.2.3
+
+[2020-11-06 09:03:30,175 DEBUG Engine] Add existing artifact (move=False): /dc-app-performance-toolkit/app/locustio/confluence/locustfile.py
+[2020-11-06 09:03:30,175 DEBUG Engine] Copying /dc-app-performance-toolkit/app/locustio/confluence/locustfile.py to /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/locustfile.py
+[2020-11-06 09:03:30,176 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/kpi.jtl
+[2020-11-06 09:03:30,176 DEBUG Engine.local] Preparing executor: selenium/140293014487344
+[2020-11-06 09:03:30,176 INFO Engine.selenium] Installing ChromeDriver...
+[2020-11-06 09:03:30,177 INFO Engine.selenium.ChromeDriver] Will install ChromeDriver into /root/.bzt/selenium-taurus/tools/chromedriver/86.0.4240.22
+[2020-11-06 09:03:30,177 INFO Engine.selenium.ChromeDriver] Downloading: https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip
+[2020-11-06 09:03:30,177 DEBUG root] No progressbar for non-tty output: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+[2020-11-06 09:03:30,178 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+[2020-11-06 09:03:30,213 DEBUG urllib3.connectionpool] https://chromedriver.storage.googleapis.com:443 "GET /86.0.4240.22/chromedriver_linux64.zip HTTP/1.1" 200 5456932
+[2020-11-06 09:03:30,296 INFO Engine.selenium.ChromeDriver] Unzipping /tmp/tmp2iriuywn.zip to /root/.bzt/selenium-taurus/tools/chromedriver/86.0.4240.22
+[2020-11-06 09:03:30,296 DEBUG root] Extracting /tmp/tmp2iriuywn.zip to /root/.bzt/selenium-taurus/tools/chromedriver/86.0.4240.22
+[2020-11-06 09:03:30,296 DEBUG root] Writing /root/.bzt/selenium-taurus/tools/chromedriver/86.0.4240.22/chromedriver
+[2020-11-06 09:03:30,371 DEBUG Engine.selenium] Using script type: pytest
+[2020-11-06 09:03:30,371 DEBUG Engine] Module config: pytest {'class': 'bzt.modules.pytest.PyTestExecutor'}
+[2020-11-06 09:03:30,371 DEBUG root] Importing module: bzt.modules.pytest
+[2020-11-06 09:03:30,371 DEBUG root] Loading class: 'PyTestExecutor' from <module 'bzt.modules.pytest' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/pytest.py'>
+[2020-11-06 09:03:30,372 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/pytest.out
+[2020-11-06 09:03:30,372 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/pytest.err
+[2020-11-06 09:03:30,372 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/PyTestExecutor.ldjson
+[2020-11-06 09:03:30,372 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2020-11-06 09:03:30,372 DEBUG root] Importing module: bzt.modules.reporting
+[2020-11-06 09:03:30,373 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/reporting.py'>
+[2020-11-06 09:03:30,373 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter', 'disable': True}
+[2020-11-06 09:03:30,373 DEBUG root] Importing module: bzt.modules.console
+[2020-11-06 09:03:30,373 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/console.py'>
+[2020-11-06 09:03:30,373 DEBUG Engine] Module config: junit-xml {'class': 'bzt.modules.reporting.JUnitXMLReporter'}
+[2020-11-06 09:03:30,373 DEBUG root] Importing module: bzt.modules.reporting
+[2020-11-06 09:03:30,373 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/reporting.py'>
+[2020-11-06 09:03:30,374 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.yml
+[2020-11-06 09:03:30,388 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.json
+[2020-11-06 09:03:30,389 INFO Engine] Starting...
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f988364e1c0>
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7f988364ee50>
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f988364ea90>
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f9879b63820>
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f9879b63af0>
+[2020-11-06 09:03:30,389 INFO Engine.console] Waiting for results...
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x7f9879af7a30>
+[2020-11-06 09:03:30,389 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f9865f67c10>
+[2020-11-06 09:03:30,389 DEBUG Engine.local] Delay setup for locust/locust: 0(start-at) + 0(delay) = 0
+[2020-11-06 09:03:30,389 DEBUG Engine.local] Delay setup for selenium/140293014487344: 0(start-at) + 0(delay) = 0
+[2020-11-06 09:03:30,390 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.yml
+[2020-11-06 09:03:30,403 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.json
+[2020-11-06 09:03:30,404 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-11-06 09:03:30,404 DEBUG root] Leveled up log file verbosity
+[2020-11-06 09:03:30,404 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/locust.log
+[2020-11-06 09:03:30,404 DEBUG root] Executing shell: ['/usr/bin/python', '/usr/local/lib/python3.8/dist-packages/bzt/resources/locustio-taurus-wrapper.py', '-f', '/dc-app-performance-toolkit/app/locustio/confluence/locustfile.py', '--logfile=/dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/locust.log', '--headless', '--only-summary', '--users=200', '--hatch-rate=0.666667', '--run-time=600', '--stop-timeout=10'] at /dc-app-performance-toolkit/app
+[2020-11-06 09:03:30,407 DEBUG Engine.local] Starting execution: locust/locust, rest of available slots: 9223372036854775806
+[2020-11-06 09:03:30,408 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-11-06 09:03:30,408 DEBUG root] Leveled up log file verbosity
+[2020-11-06 09:03:30,408 DEBUG root] Executing shell: ['/usr/bin/python', '/usr/local/lib/python3.8/dist-packages/bzt/resources/pytest_runner.py', '--report-file', '/dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/PyTestExecutor.ldjson', '-d', '300.0', '/dc-app-performance-toolkit/app/selenium_ui/confluence_ui.py'] at /dc-app-performance-toolkit/app
+[2020-11-06 09:03:30,411 DEBUG Engine.local] Starting execution: selenium/140293014487344, rest of available slots: 9223372036854775805
+[2020-11-06 09:03:30,411 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2020-11-06 09:03:39,422 INFO Engine.console] Current: 1 vu	2 succ	0 fail	1.519 avg rt	/	Cumulative: 1.419 avg rt, 0% failures
+[2020-11-06 09:03:42,425 INFO Engine.console] Current: 1 vu	1 succ	0 fail	3.149 avg rt	/	Cumulative: 2.442 avg rt, 0% failures
+[2020-11-06 09:03:44,426 INFO Engine.console] Current: 1 vu	1 succ	0 fail	6.917 avg rt	/	Cumulative: 3.703 avg rt, 0% failures
+[2020-11-06 09:03:46,428 INFO Engine.console] Current: 1 vu	1 succ	0 fail	6.713 avg rt	/	Cumulative: 4.079 avg rt, 0% failures
+[2020-11-06 09:03:49,436 INFO Engine.console] Current: 1 vu	1 succ	0 fail	6.982 avg rt	/	Cumulative: 4.045 avg rt, 0% failures
+[2020-11-06 09:03:51,440 INFO Engine.console] Current: 1 vu	1 succ	0 fail	7.225 avg rt	/	Cumulative: 4.036 avg rt, 0% failures
+[2020-11-06 09:03:52,430 INFO Engine.console] Current: 1 vu	4 succ	0 fail	0.996 avg rt	/	Cumulative: 3.428 avg rt, 0% failures
+[2020-11-06 09:03:53,435 INFO Engine.console] Current: 1 vu	1 succ	0 fail	7.692 avg rt	/	Cumulative: 3.631 avg rt, 0% failures
+[2020-11-06 09:03:55,437 INFO Engine.console] Current: 1 vu	1 succ	0 fail	7.675 avg rt	/	Cumulative: 3.815 avg rt, 0% failures
+[2020-11-06 09:03:56,447 INFO Engine.console] Current: 1 vu	1 succ	0 fail	0.851 avg rt	/	Cumulative: 3.575 avg rt, 0% failures
+[2020-11-06 09:03:59,458 INFO Engine.console] Current: 1 vu	1 succ	0 fail	9.034 avg rt	/	Cumulative: 3.702 avg rt, 0% failures
+[2020-11-06 09:04:00,446 INFO Engine.console] Current: 1 vu	2 succ	0 fail	4.840 avg rt	/	Cumulative: 3.774 avg rt, 0% failures
+[2020-11-06 09:04:02,449 INFO Engine.console] Current: 1 vu	3 succ	0 fail	1.438 avg rt	/	Cumulative: 3.573 avg rt, 0% failures
+[2020-11-06 09:04:03,466 INFO Engine.console] Current: 1 vu	1 succ	0 fail	10.646 avg rt	/	Cumulative: 3.605 avg rt, 0% failures
+[2020-11-06 09:04:06,456 INFO Engine.console] Current: 1 vu	2 succ	0 fail	5.346 avg rt	/	Cumulative: 3.694 avg rt, 0% failures
+[2020-11-06 09:04:07,445 INFO Engine.console] Current: 1 vu	3 succ	0 fail	0.833 avg rt	/	Cumulative: 3.507 avg rt, 0% failures
+[2020-11-06 09:04:08,451 INFO Engine.console] Current: 1 vu	2 succ	0 fail	5.522 avg rt	/	Cumulative: 3.591 avg rt, 0% failures
+[2020-11-06 09:04:09,451 INFO Engine.console] Current: 1 vu	1 succ	0 fail	1.915 avg rt	/	Cumulative: 3.557 avg rt, 0% failures
+[2020-11-06 09:04:10,459 INFO Engine.console] Current: 1 vu	1 succ	0 fail	1.190 avg rt	/	Cumulative: 3.510 avg rt, 0% failures
+[2020-11-06 09:04:11,475 INFO Engine.console] Current: 1 vu	4 succ	0 fail	8.645 avg rt	/	Cumulative: 3.890 avg rt, 0% failures
+[2020-11-06 09:04:12,451 INFO Engine.console] Current: 1 vu	4 succ	0 fail	1.476 avg rt	/	Cumulative: 3.724 avg rt, 0% failures
+[2020-11-06 09:04:13,461 INFO Engine.console] Current: 1 vu	2 succ	0 fail	0.122 avg rt	/	Cumulative: 3.604 avg rt, 0% failures
+[2020-11-06 09:04:15,471 INFO Engine.console] Current: 1 vu	2 succ	0 fail	6.755 avg rt	/	Cumulative: 3.702 avg rt, 0% failures
+[2020-11-06 09:04:17,478 INFO Engine.console] Current: 1 vu	4 succ	0 fail	3.718 avg rt	/	Cumulative: 3.615 avg rt, 0% failures
+[2020-11-06 09:04:19,466 INFO Engine.console] Current: 1 vu	4 succ	0 fail	3.711 avg rt	/	Cumulative: 3.591 avg rt, 0% failures
+[2020-11-06 09:04:21,465 INFO Engine.console] Current: 1 vu	1 succ	0 fail	1.461 avg rt	/	Cumulative: 3.563 avg rt, 0% failures
+[2020-11-06 09:04:22,478 INFO Engine.console] Current: 1 vu	4 succ	0 fail	4.743 avg rt	/	Cumulative: 3.621 avg rt, 0% failures
+[2020-11-06 09:04:24,470 INFO Engine.console] Current: 1 vu	1 succ	0 fail	1.122 avg rt	/	Cumulative: 3.591 avg rt, 0% failures
+[2020-11-06 09:04:25,485 INFO Engine.console] Current: 1 vu	3 succ	0 fail	1.515 avg rt	/	Cumulative: 3.635 avg rt, 0% failures
+[2020-11-06 09:04:26,465 INFO Engine.console] Current: 1 vu	6 succ	0 fail	3.146 avg rt	/	Cumulative: 3.604 avg rt, 0% failures
+[2020-11-06 09:04:27,486 INFO Engine.console] Current: 1 vu	2 succ	0 fail	1.257 avg rt	/	Cumulative: 3.556 avg rt, 0% failures
+[2020-11-06 09:04:28,470 INFO Engine.console] Current: 1 vu	1 succ	0 fail	0.160 avg rt	/	Cumulative: 3.522 avg rt, 0% failures
+[2020-11-06 09:04:30,488 INFO Engine.console] Current: 1 vu	3 succ	0 fail	0.834 avg rt	/	Cumulative: 3.492 avg rt, 0% failures
+[2020-11-06 09:04:31,470 INFO Engine.console] Current: 1 vu	1 succ	0 fail	0.077 avg rt	/	Cumulative: 3.460 avg rt, 0% failures
+[2020-11-06 09:04:32,481 INFO Engine.console] Current: 1 vu	4 succ	0 fail	4.970 avg rt	/	Cumulative: 3.515 avg rt, 0% failures
+[2020-11-06 09:04:33,474 INFO Engine.console] Current: 1 vu	1 succ	0 fail	1.520 avg rt	/	Cumulative: 3.497 avg rt, 0% failures
+[2020-11-06 09:04:34,477 INFO Engine.console] Current: 1 vu	3 succ	0 fail	6.976 avg rt	/	Cumulative: 3.588 avg rt, 0% failures
+[2020-11-06 09:04:35,482 INFO Engine.console] Current: 1 vu	3 succ	0 fail	0.152 avg rt	/	Cumulative: 3.500 avg rt, 0% failures
+[2020-11-06 09:04:37,485 INFO Engine.console] Current: 1 vu	1 succ	0 fail	19.574 avg rt	/	Cumulative: 3.635 avg rt, 0% failures
+[2020-11-06 09:04:38,489 INFO Engine.console] Current: 1 vu	3 succ	0 fail	13.215 avg rt	/	Cumulative: 3.787 avg rt, 0% failures
+[2020-11-06 09:04:39,482 INFO Engine.console] Current: 1 vu	3 succ	0 fail	1.252 avg rt	/	Cumulative: 3.728 avg rt, 0% failures
+[2020-11-06 09:04:40,491 INFO Engine.console] Current: 1 vu	1 succ	0 fail	20.782 avg rt	/	Cumulative: 3.859 avg rt, 0% failures
+[2020-11-06 09:04:42,505 INFO Engine.console] Current: 1 vu	5 succ	0 fail	4.831 avg rt	/	Cumulative: 3.843 avg rt, 0% failures
+[2020-11-06 09:04:44,523 INFO Engine.console] Current: 1 vu	6 succ	0 fail	4.677 avg rt	/	Cumulative: 3.941 avg rt, 0% failures
+[2020-11-06 09:04:46,501 INFO Engine.console] Current: 1 vu	4 succ	0 fail	6.604 avg rt	/	Cumulative: 3.986 avg rt, 0% failures
+[2020-11-06 09:04:48,496 INFO Engine.console] Current: 1 vu	3 succ	0 fail	1.324 avg rt	/	Cumulative: 3.935 avg rt, 0% failures
+[2020-11-06 09:04:49,508 INFO Engine.console] Current: 1 vu	3 succ	0 fail	8.053 avg rt	/	Cumulative: 4.074 avg rt, 0% failures
+[2020-11-06 09:04:52,508 INFO Engine.console] Current: 1 vu	3 succ	0 fail	0.344 avg rt	/	Cumulative: 3.915 avg rt, 0% failures
+[2020-11-06 09:04:53,499 INFO Engine.console] Current: 1 vu	3 succ	0 fail	1.279 avg rt	/	Cumulative: 4.066 avg rt, 0% failures
+[2020-11-06 09:04:55,516 INFO Engine.console] Current: 1 vu	6 succ	0 fail	1.916 avg rt	/	Cumulative: 3.996 avg rt, 0% failures
+[2020-11-06 09:04:57,511 INFO Engine.console] Current: 1 vu	3 succ	0 fail	9.197 avg rt	/	Cumulative: 4.018 avg rt, 0% failures
+[2020-11-06 09:04:59,508 INFO Engine.console] Current: 1 vu	5 succ	0 fail	5.670 avg rt	/	Cumulative: 4.060 avg rt, 0% failures
+[2020-11-06 09:05:01,531 INFO Engine.console] Current: 1 vu	6 succ	0 fail	5.434 avg rt	/	Cumulative: 4.200 avg rt, 0% failures
+[2020-11-06 09:05:03,512 INFO Engine.console] Current: 1 vu	2 succ	0 fail	4.186 avg rt	/	Cumulative: 4.153 avg rt, 0% failures
+[2020-11-06 09:05:05,515 INFO Engine.console] Current: 1 vu	2 succ	0 fail	13.788 avg rt	/	Cumulative: 4.242 avg rt, 0% failures
+[2020-11-06 09:05:07,526 INFO Engine.console] Current: 1 vu	6 succ	0 fail	1.484 avg rt	/	Cumulative: 4.122 avg rt, 0% failures
+[2020-11-06 09:05:10,542 INFO Engine.console] Current: 1 vu	3 succ	0 fail	11.602 avg rt	/	Cumulative: 4.186 avg rt, 0% failures
+[2020-11-06 09:05:11,513 INFO Engine.console] Current: 1 vu	3 succ	0 fail	2.959 avg rt	/	Cumulative: 4.171 avg rt, 0% failures
+[2020-11-06 09:05:12,528 INFO Engine.console] Current: 1 vu	8 succ	0 fail	8.644 avg rt	/	Cumulative: 4.316 avg rt, 0% failures
+[2020-11-06 09:05:13,535 INFO Engine.console] Current: 1 vu	3 succ	0 fail	2.693 avg rt	/	Cumulative: 4.297 avg rt, 0% failures
+[2020-11-06 09:05:14,520 INFO Engine.console] Current: 1 vu	3 succ	0 fail	2.778 avg rt	/	Cumulative: 4.279 avg rt, 0% failures
+[2020-11-06 09:05:16,533 INFO Engine.console] Current: 1 vu	5 succ	0 fail	1.646 avg rt	/	Cumulative: 4.307 avg rt, 0% failures
+[2020-11-06 09:05:17,517 INFO Engine.console] Current: 1 vu	2 succ	0 fail	4.981 avg rt	/	Cumulative: 4.312 avg rt, 0% failures
+[2020-11-06 09:05:18,544 INFO Engine.console] Current: 1 vu	5 succ	0 fail	3.197 avg rt	/	Cumulative: 4.292 avg rt, 0% failures
+[2020-11-06 09:05:19,523 INFO Engine.console] Current: 1 vu	1 succ	0 fail	0.262 avg rt	/	Cumulative: 4.277 avg rt, 0% failures
+[2020-11-06 09:05:20,533 INFO Engine.console] Current: 1 vu	4 succ	0 fail	3.285 avg rt	/	Cumulative: 4.262 avg rt, 0% failures
+[2020-11-06 09:05:21,521 INFO Engine.console] Current: 1 vu	4 succ	0 fail	11.005 avg rt	/	Cumulative: 4.359 avg rt, 0% failures
+[2020-11-06 09:05:22,529 INFO Engine.console] Current: 1 vu	6 succ	0 fail	8.103 avg rt	/	Cumulative: 4.438 avg rt, 0% failures
+[2020-11-06 09:05:23,538 INFO Engine.console] Current: 1 vu	1 succ	0 fail	2.753 avg rt	/	Cumulative: 4.432 avg rt, 0% failures
+[2020-11-06 09:05:24,528 INFO Engine.console] Current: 1 vu	1 succ	0 fail	6.049 avg rt	/	Cumulative: 4.438 avg rt, 0% failures
+[2020-11-06 09:05:25,541 INFO Engine.console] Current: 1 vu	4 succ	0 fail	1.368 avg rt	/	Cumulative: 4.396 avg rt, 0% failures
+[2020-11-06 09:05:26,530 INFO Engine.console] Current: 1 vu	6 succ	0 fail	8.273 avg rt	/	Cumulative: 4.474 avg rt, 0% failures
+[2020-11-06 09:05:27,539 INFO Engine.console] Current: 1 vu	4 succ	0 fail	3.380 avg rt	/	Cumulative: 4.460 avg rt, 0% failures
+[2020-11-06 09:05:28,531 INFO Engine.console] Current: 1 vu	4 succ	0 fail	2.793 avg rt	/	Cumulative: 4.438 avg rt, 0% failures
+[2020-11-06 09:05:29,542 INFO Engine.console] Current: 1 vu	4 succ	0 fail	2.276 avg rt	/	Cumulative: 4.410 avg rt, 0% failures
+[2020-11-06 09:05:30,531 INFO Engine.console] Current: 1 vu	4 succ	0 fail	11.790 avg rt	/	Cumulative: 4.504 avg rt, 0% failures
+[2020-11-06 09:05:31,562 INFO Engine.console] Current: 1 vu	6 succ	0 fail	1.566 avg rt	/	Cumulative: 4.449 avg rt, 0% failures
+[2020-11-06 09:05:32,544 INFO Engine.console] Current: 1 vu	3 succ	0 fail	4.253 avg rt	/	Cumulative: 4.447 avg rt, 0% failures
+[2020-11-06 09:05:33,549 INFO Engine.console] Current: 1 vu	4 succ	0 fail	13.068 avg rt	/	Cumulative: 4.553 avg rt, 0% failures
+[2020-11-06 09:05:34,539 INFO Engine.console] Current: 1 vu	3 succ	0 fail	15.863 avg rt	/	Cumulative: 4.657 avg rt, 0% failures
+[2020-11-06 09:05:35,544 INFO Engine.console] Current: 1 vu	6 succ	0 fail	8.147 avg rt	/	Cumulative: 4.719 avg rt, 0% failures
+[2020-11-06 09:05:36,553 INFO Engine.console] Current: 1 vu	4 succ	0 fail	3.918 avg rt	/	Cumulative: 4.710 avg rt, 0% failures
+[2020-11-06 09:05:37,544 INFO Engine.console] Current: 1 vu	4 succ	0 fail	1.645 avg rt	/	Cumulative: 4.674 avg rt, 0% failures
+[2020-11-06 09:05:38,553 INFO Engine.console] Current: 1 vu	6 succ	0 fail	10.308 avg rt	/	Cumulative: 4.771 avg rt, 0% failures
+[2020-11-06 09:05:39,544 INFO Engine.console] Current: 1 vu	5 succ	0 fail	11.657 avg rt	/	Cumulative: 4.869 avg rt, 0% failures
+[2020-11-06 09:05:40,551 INFO Engine.console] Current: 1 vu	6 succ	0 fail	9.236 avg rt	/	Cumulative: 4.942 avg rt, 0% failures
+[2020-11-06 09:05:41,544 INFO Engine.console] Current: 1 vu	5 succ	0 fail	2.316 avg rt	/	Cumulative: 4.906 avg rt, 0% failures
+[2020-11-06 09:05:42,555 INFO Engine.console] Current: 1 vu	4 succ	0 fail	1.049 avg rt	/	Cumulative: 4.864 avg rt, 0% failures
+[2020-11-06 09:05:43,544 INFO Engine.console] Current: 1 vu	2 succ	0 fail	0.855 avg rt	/	Cumulative: 4.842 avg rt, 0% failures
+[2020-11-06 09:05:44,555 INFO Engine.console] Current: 1 vu	6 succ	0 fail	9.061 avg rt	/	Cumulative: 4.909 avg rt, 0% failures
+[2020-11-06 09:05:45,557 INFO Engine.console] Current: 1 vu	1 succ	0 fail	0.626 avg rt	/	Cumulative: 4.898 avg rt, 0% failures
+[2020-11-06 09:05:46,560 INFO Engine.console] Current: 1 vu	3 succ	0 fail	18.343 avg rt	/	Cumulative: 5.004 avg rt, 0% failures
+[2020-11-06 09:05:47,561 INFO Engine.console] Current: 1 vu	3 succ	0 fail	3.237 avg rt	/	Cumulative: 4.990 avg rt, 0% failures
+[2020-11-06 09:05:48,549 INFO Engine.console] Current: 1 vu	5 succ	0 fail	11.740 avg rt	/	Cumulative: 5.077 avg rt, 0% failures
+[2020-11-06 09:05:49,561 INFO Engine.console] Current: 1 vu	2 succ	0 fail	4.412 avg rt	/	Cumulative: 5.074 avg rt, 0% failures
+[2020-11-06 09:05:51,567 INFO Engine.console] Current: 1 vu	3 succ	0 fail	5.496 avg rt	/	Cumulative: 5.076 avg rt, 0% failures
+[2020-11-06 09:05:54,570 INFO Engine.console] Current: 1 vu	2 succ	0 fail	25.312 avg rt	/	Cumulative: 5.280 avg rt, 0% failures
+[2020-11-06 09:05:56,570 INFO Engine.console] Current: 1 vu	1 succ	0 fail	7.425 avg rt	/	Cumulative: 5.258 avg rt, 0% failures
+[2020-11-06 09:05:59,577 INFO Engine.console] Current: 1 vu	4 succ	0 fail	28.983 avg rt	/	Cumulative: 5.487 avg rt, 0% failures
+[2020-11-06 09:06:00,568 INFO Engine.console] Current: 1 vu	1 succ	0 fail	14.263 avg rt	/	Cumulative: 5.508 avg rt, 0% failures
+[2020-11-06 09:06:02,584 INFO Engine.console] Current: 1 vu	5 succ	0 fail	21.830 avg rt	/	Cumulative: 5.694 avg rt, 0% failures
+[2020-11-06 09:06:03,565 INFO Engine.console] Current: 1 vu	1 succ	0 fail	55.351 avg rt	/	Cumulative: 5.813 avg rt, 0% failures
+[2020-11-06 09:06:05,587 INFO Engine.console] Current: 1 vu	1 succ	0 fail	8.175 avg rt	/	Cumulative: 5.827 avg rt, 0% failures
+[2020-11-06 09:06:06,566 INFO Engine.console] Current: 1 vu	3 succ	0 fail	13.600 avg rt	/	Cumulative: 5.881 avg rt, 0% failures
+[2020-11-06 09:06:08,580 INFO Engine.console] Current: 1 vu	2 succ	0 fail	37.849 avg rt	/	Cumulative: 6.031 avg rt, 0% failures
+[2020-11-06 09:06:09,600 INFO Engine.console] Current: 1 vu	2 succ	0 fail	36.077 avg rt	/	Cumulative: 6.178 avg rt, 0% failures
+[2020-11-06 09:06:10,574 INFO Engine.console] Current: 1 vu	1 succ	0 fail	2.673 avg rt	/	Cumulative: 6.170 avg rt, 0% failures
+[2020-11-06 09:06:11,582 INFO Engine.console] Current: 1 vu	1 succ	0 fail	57.791 avg rt	/	Cumulative: 6.289 avg rt, 0% failures
+[2020-11-06 09:06:12,573 INFO Engine.console] Current: 1 vu	3 succ	0 fail	29.117 avg rt	/	Cumulative: 6.446 avg rt, 0% failures
+[2020-11-06 09:06:13,600 INFO Engine.console] Current: 1 vu	2 succ	1 fail	35.619 avg rt	/	Cumulative: 6.645 avg rt, 0% failures
+[2020-11-06 09:06:14,580 INFO Engine.console] Current: 1 vu	3 succ	0 fail	35.563 avg rt	/	Cumulative: 6.841 avg rt, 0% failures
+[2020-11-06 09:06:15,589 INFO Engine.console] Current: 1 vu	9 succ	0 fail	20.426 avg rt	/	Cumulative: 7.111 avg rt, 0% failures
+[2020-11-06 09:06:16,601 INFO Engine.console] Current: 1 vu	6 succ	0 fail	19.088 avg rt	/	Cumulative: 7.268 avg rt, 0% failures
+[2020-11-06 09:06:17,581 INFO Engine.console] Current: 1 vu	5 succ	0 fail	8.152 avg rt	/	Cumulative: 7.278 avg rt, 0% failures
+[2020-11-06 09:06:18,589 INFO Engine.console] Current: 1 vu	7 succ	0 fail	18.185 avg rt	/	Cumulative: 7.440 avg rt, 0% failures
+[2020-11-06 09:06:19,581 INFO Engine.console] Current: 1 vu	2 succ	0 fail	25.855 avg rt	/	Cumulative: 7.518 avg rt, 0% failures
+[2020-11-06 09:06:20,593 INFO Engine.console] Current: 1 vu	3 succ	0 fail	21.842 avg rt	/	Cumulative: 7.609 avg rt, 0% failures
+[2020-11-06 09:06:21,585 INFO Engine.console] Current: 1 vu	4 succ	0 fail	2.447 avg rt	/	Cumulative: 7.565 avg rt, 0% failures
+[2020-11-06 09:06:22,598 INFO Engine.console] Current: 1 vu	5 succ	0 fail	28.774 avg rt	/	Cumulative: 7.785 avg rt, 0% failures
+[2020-11-06 09:06:23,603 INFO Engine.console] Current: 1 vu	3 succ	0 fail	38.000 avg rt	/	Cumulative: 7.971 avg rt, 0% failures
+[2020-11-06 09:06:24,588 INFO Engine.console] Current: 1 vu	6 succ	0 fail	7.061 avg rt	/	Cumulative: 7.960 avg rt, 0% failures
+[2020-11-06 09:06:25,602 INFO Engine.console] Current: 1 vu	9 succ	0 fail	26.173 avg rt	/	Cumulative: 8.286 avg rt, 0% failures
+[2020-11-06 09:06:27,615 INFO Engine.console] Current: 1 vu	7 succ	0 fail	15.752 avg rt	/	Cumulative: 8.432 avg rt, 0% failures
+[2020-11-06 09:06:28,603 INFO Engine.console] Current: 1 vu	10 succ	0 fail	24.128 avg rt	/	Cumulative: 8.733 avg rt, 0% failures
+[2020-11-06 09:06:29,599 INFO Engine.console] Current: 1 vu	4 succ	0 fail	6.190 avg rt	/	Cumulative: 8.714 avg rt, 0% failures
+[2020-11-06 09:06:31,612 INFO Engine.console] Current: 1 vu	3 succ	0 fail	2.637 avg rt	/	Cumulative: 8.810 avg rt, 0% failures
+[2020-11-06 09:06:32,593 INFO Engine.console] Current: 1 vu	1 succ	0 fail	27.060 avg rt	/	Cumulative: 8.845 avg rt, 0% failures
+[2020-11-06 09:06:33,642 INFO Engine.console] Current: 1 vu	4 succ	0 fail	38.627 avg rt	/	Cumulative: 9.067 avg rt, 0% failures
+[2020-11-06 09:06:34,598 INFO Engine.console] Current: 1 vu	1 succ	0 fail	2.942 avg rt	/	Cumulative: 9.056 avg rt, 0% failures
+[2020-11-06 09:06:35,613 INFO Engine.console] Current: 1 vu	4 succ	0 fail	17.971 avg rt	/	Cumulative: 9.122 avg rt, 0% failures
+[2020-11-06 09:06:36,598 INFO Engine.console] Current: 1 vu	4 succ	0 fail	30.065 avg rt	/	Cumulative: 9.276 avg rt, 0% failures
+[2020-11-06 09:06:37,607 INFO Engine.console] Current: 1 vu	2 succ	0 fail	21.176 avg rt	/	Cumulative: 9.320 avg rt, 0% failures
+[2020-11-06 09:06:38,614 INFO Engine.console] Current: 1 vu	2 succ	0 fail	27.465 avg rt	/	Cumulative: 9.386 avg rt, 0% failures
+[2020-11-06 09:06:40,632 INFO Engine.console] Current: 1 vu	4 succ	0 fail	22.450 avg rt	/	Cumulative: 9.668 avg rt, 0% failures
+[2020-11-06 09:06:42,616 INFO Engine.console] Current: 1 vu	6 succ	0 fail	10.608 avg rt	/	Cumulative: 9.788 avg rt, 0% failures
+[2020-11-06 09:06:44,620 INFO Engine.console] Current: 1 vu	2 succ	0 fail	16.677 avg rt	/	Cumulative: 9.812 avg rt, 0% failures
+[2020-11-06 09:06:45,608 INFO Engine.console] Current: 1 vu	2 succ	0 fail	3.740 avg rt	/	Cumulative: 9.791 avg rt, 0% failures
+[2020-11-06 09:06:46,626 INFO Engine.console] Current: 1 vu	2 succ	0 fail	24.843 avg rt	/	Cumulative: 9.844 avg rt, 0% failures
+[2020-11-06 09:06:47,632 INFO Engine.console] Current: 1 vu	3 succ	0 fail	16.406 avg rt	/	Cumulative: 9.878 avg rt, 0% failures
+[2020-11-06 09:06:48,617 INFO Engine.console] Current: 1 vu	4 succ	0 fail	13.597 avg rt	/	Cumulative: 9.904 avg rt, 0% failures
+[2020-11-06 09:06:49,627 INFO Engine.console] Current: 1 vu	5 succ	0 fail	37.548 avg rt	/	Cumulative: 10.140 avg rt, 0% failures
+[2020-11-06 09:06:50,609 INFO Engine.console] Current: 1 vu	3 succ	0 fail	20.062 avg rt	/	Cumulative: 10.191 avg rt, 0% failures
+[2020-11-06 09:06:51,628 INFO Engine.console] Current: 1 vu	3 succ	0 fail	28.078 avg rt	/	Cumulative: 10.282 avg rt, 0% failures
+[2020-11-06 09:06:53,646 INFO Engine.console] Current: 1 vu	4 succ	0 fail	20.008 avg rt	/	Cumulative: 10.445 avg rt, 0% failures
+[2020-11-06 09:06:54,615 INFO Engine.console] Current: 1 vu	2 succ	0 fail	18.384 avg rt	/	Cumulative: 10.472 avg rt, 0% failures
+[2020-11-06 09:06:55,629 INFO Engine.console] Current: 1 vu	7 succ	0 fail	29.439 avg rt	/	Cumulative: 10.692 avg rt, 0% failures
+[2020-11-06 09:06:56,630 INFO Engine.console] Current: 1 vu	1 succ	0 fail	3.237 avg rt	/	Cumulative: 10.679 avg rt, 0% failures
+[2020-11-06 09:06:58,641 INFO Engine.console] Current: 1 vu	4 succ	0 fail	29.265 avg rt	/	Cumulative: 10.764 avg rt, 0% failures
+[2020-11-06 09:07:00,635 INFO Engine.console] Current: 1 vu	3 succ	0 fail	12.186 avg rt	/	Cumulative: 10.879 avg rt, 0% failures
+[2020-11-06 09:07:03,640 INFO Engine.console] Current: 1 vu	1 succ	0 fail	29.666 avg rt	/	Cumulative: 10.896 avg rt, 0% failures
+[2020-11-06 09:07:04,625 INFO Engine.console] Current: 1 vu	3 succ	0 fail	74.782 avg rt	/	Cumulative: 11.204 avg rt, 0% failures
+[2020-11-06 09:07:05,639 INFO Engine.console] Current: 1 vu	4 succ	0 fail	38.194 avg rt	/	Cumulative: 11.377 avg rt, 0% failures
+[2020-11-06 09:07:06,643 INFO Engine.console] Current: 1 vu	1 succ	0 fail	38.183 avg rt	/	Cumulative: 11.419 avg rt, 0% failures
+[2020-11-06 09:07:07,632 INFO Engine.console] Current: 1 vu	3 succ	0 fail	26.878 avg rt	/	Cumulative: 11.493 avg rt, 0% failures
+[2020-11-06 09:07:08,644 INFO Engine.console] Current: 1 vu	6 succ	0 fail	43.422 avg rt	/	Cumulative: 11.794 avg rt, 0% failures
+[2020-11-06 09:07:09,630 INFO Engine.console] Current: 1 vu	6 succ	0 fail	21.037 avg rt	/	Cumulative: 11.881 avg rt, 0% failures
+[2020-11-06 09:07:10,643 INFO Engine.console] Current: 1 vu	6 succ	0 fail	29.901 avg rt	/	Cumulative: 12.047 avg rt, 0% failures
+[2020-11-06 09:07:11,631 INFO Engine.console] Current: 1 vu	3 succ	0 fail	51.741 avg rt	/	Cumulative: 12.230 avg rt, 0% failures
+[2020-11-06 09:07:12,641 INFO Engine.console] Current: 1 vu	6 succ	0 fail	3.777 avg rt	/	Cumulative: 12.153 avg rt, 0% failures
+[2020-11-06 09:07:13,645 INFO Engine.console] Current: 1 vu	4 succ	0 fail	21.938 avg rt	/	Cumulative: 12.212 avg rt, 0% failures
+[2020-11-06 09:07:14,648 INFO Engine.console] Current: 1 vu	3 succ	0 fail	60.129 avg rt	/	Cumulative: 12.429 avg rt, 0% failures
+[2020-11-06 09:07:15,635 INFO Engine.console] Current: 1 vu	4 succ	0 fail	41.183 avg rt	/	Cumulative: 12.601 avg rt, 0% failures
+[2020-11-06 09:07:16,662 INFO Engine.console] Current: 1 vu	8 succ	0 fail	28.332 avg rt	/	Cumulative: 12.787 avg rt, 0% failures
+[2020-11-06 09:07:17,646 INFO Engine.console] Current: 1 vu	1 succ	0 fail	2.464 avg rt	/	Cumulative: 12.772 avg rt, 0% failures
+[2020-11-06 09:07:18,654 INFO Engine.console] Current: 1 vu	5 succ	0 fail	17.658 avg rt	/	Cumulative: 12.808 avg rt, 0% failures
+[2020-11-06 09:07:19,656 INFO Engine.console] Current: 1 vu	8 succ	0 fail	39.563 avg rt	/	Cumulative: 13.118 avg rt, 0% failures
+[2020-11-06 09:07:20,644 INFO Engine.console] Current: 1 vu	7 succ	0 fail	24.195 avg rt	/	Cumulative: 13.229 avg rt, 0% failures
+[2020-11-06 09:07:21,651 INFO Engine.console] Current: 1 vu	4 succ	0 fail	22.560 avg rt	/	Cumulative: 13.282 avg rt, 0% failures
+[2020-11-06 09:07:22,642 INFO Engine.console] Current: 1 vu	3 succ	0 fail	28.377 avg rt	/	Cumulative: 13.347 avg rt, 0% failures
+[2020-11-06 09:07:23,663 INFO Engine.console] Current: 1 vu	4 succ	0 fail	4.250 avg rt	/	Cumulative: 13.295 avg rt, 0% failures
+[2020-11-06 09:07:24,645 INFO Engine.console] Current: 1 vu	1 succ	0 fail	4.586 avg rt	/	Cumulative: 13.283 avg rt, 0% failures
+[2020-11-06 09:07:26,699 INFO Engine.console] Current: 1 vu	1 succ	0 fail	14.743 avg rt	/	Cumulative: 13.466 avg rt, 0% failures
+[2020-11-06 09:07:28,674 INFO Engine.console] Current: 1 vu	7 succ	0 fail	44.820 avg rt	/	Cumulative: 13.863 avg rt, 0% failures
+[2020-11-06 09:07:29,650 INFO Engine.console] Current: 1 vu	1 succ	0 fail	4.550 avg rt	/	Cumulative: 13.850 avg rt, 0% failures
+[2020-11-06 09:07:30,664 INFO Engine.console] Current: 1 vu	1 succ	0 fail	8.568 avg rt	/	Cumulative: 13.843 avg rt, 0% failures
+[2020-11-06 09:07:31,654 INFO Engine.console] Current: 1 vu	1 succ	0 fail	42.115 avg rt	/	Cumulative: 13.882 avg rt, 0% failures
+[2020-11-06 09:07:33,672 INFO Engine.console] Current: 1 vu	3 succ	0 fail	18.025 avg rt	/	Cumulative: 13.875 avg rt, 0% failures
+[2020-11-06 09:07:36,687 INFO Engine.console] Current: 1 vu	2 succ	0 fail	40.499 avg rt	/	Cumulative: 14.041 avg rt, 0% failures
+[2020-11-06 09:07:38,679 INFO Engine.console] Current: 1 vu	6 succ	0 fail	41.517 avg rt	/	Cumulative: 14.467 avg rt, 0% failures
+[2020-11-06 09:07:40,676 INFO Engine.console] Current: 1 vu	5 succ	0 fail	35.455 avg rt	/	Cumulative: 14.606 avg rt, 0% failures
+[2020-11-06 09:07:41,684 INFO Engine.console] Current: 1 vu	2 succ	0 fail	44.407 avg rt	/	Cumulative: 14.684 avg rt, 0% failures
+[2020-11-06 09:07:42,674 INFO Engine.console] Current: 1 vu	3 succ	0 fail	19.155 avg rt	/	Cumulative: 14.702 avg rt, 0% failures
+[2020-11-06 09:07:44,688 INFO Engine.console] Current: 1 vu	8 succ	0 fail	43.685 avg rt	/	Cumulative: 15.061 avg rt, 0% failures
+[2020-11-06 09:07:45,667 INFO Engine.console] Current: 1 vu	3 succ	0 fail	28.610 avg rt	/	Cumulative: 15.113 avg rt, 0% failures
+[2020-11-06 09:07:47,683 INFO Engine.console] Current: 1 vu	2 succ	0 fail	44.920 avg rt	/	Cumulative: 15.190 avg rt, 0% failures
+[2020-11-06 09:07:48,671 INFO Engine.console] Current: 1 vu	2 succ	0 fail	62.529 avg rt	/	Cumulative: 15.311 avg rt, 0% failures
+[2020-11-06 09:07:49,684 INFO Engine.console] Current: 1 vu	4 succ	0 fail	20.961 avg rt	/	Cumulative: 15.580 avg rt, 0% failures
+[2020-11-06 09:07:52,690 INFO Engine.console] Current: 1 vu	1 succ	0 fail	61.636 avg rt	/	Cumulative: 15.724 avg rt, 0% failures
+[2020-11-06 09:07:54,686 INFO Engine.console] Current: 1 vu	2 succ	0 fail	53.480 avg rt	/	Cumulative: 15.891 avg rt, 0% failures
+[2020-11-06 09:07:56,691 INFO Engine.console] Current: 1 vu	3 succ	0 fail	62.771 avg rt	/	Cumulative: 16.066 avg rt, 0% failures
+[2020-11-06 09:07:59,689 INFO Engine.console] Current: 1 vu	1 succ	0 fail	53.737 avg rt	/	Cumulative: 16.113 avg rt, 0% failures
+[2020-11-06 09:08:01,721 INFO Engine.console] Current: 1 vu	3 succ	0 fail	68.011 avg rt	/	Cumulative: 16.399 avg rt, 0% failures
+[2020-11-06 09:08:02,689 INFO Engine.console] Current: 1 vu	1 succ	0 fail	21.451 avg rt	/	Cumulative: 16.554 avg rt, 0% failures
+[2020-11-06 09:08:04,699 INFO Engine.console] Current: 1 vu	2 succ	0 fail	12.662 avg rt	/	Cumulative: 16.545 avg rt, 0% failures
+[2020-11-06 09:08:06,696 INFO Engine.console] Current: 1 vu	4 succ	0 fail	38.027 avg rt	/	Cumulative: 16.650 avg rt, 0% failures
+[2020-11-06 09:08:10,727 INFO Engine.console] Current: 1 vu	3 succ	0 fail	59.946 avg rt	/	Cumulative: 16.882 avg rt, 0% failures
+[2020-11-06 09:08:11,699 INFO Engine.console] Current: 1 vu	7 succ	0 fail	40.247 avg rt	/	Cumulative: 17.245 avg rt, 0% failures
+[2020-11-06 09:08:13,705 INFO Engine.console] Current: 1 vu	1 succ	0 fail	89.760 avg rt	/	Cumulative: 17.332 avg rt, 0% failures
+[2020-11-06 09:08:14,708 INFO Engine.console] Current: 1 vu	2 succ	0 fail	39.548 avg rt	/	Cumulative: 17.385 avg rt, 0% failures
+[2020-11-06 09:08:15,697 INFO Engine.console] Current: 1 vu	2 succ	0 fail	76.300 avg rt	/	Cumulative: 17.526 avg rt, 0% failures
+[2020-11-06 09:08:17,713 INFO Engine.console] Current: 1 vu	2 succ	0 fail	46.618 avg rt	/	Cumulative: 17.788 avg rt, 0% failures
+[2020-11-06 09:08:19,723 INFO Engine.console] Current: 1 vu	1 succ	0 fail	89.549 avg rt	/	Cumulative: 17.911 avg rt, 0% failures
+[2020-11-06 09:08:20,702 INFO Engine.console] Current: 1 vu	1 succ	0 fail	72.164 avg rt	/	Cumulative: 17.975 avg rt, 0% failures
+[2020-11-06 09:08:21,708 INFO Engine.console] Current: 1 vu	5 succ	0 fail	32.465 avg rt	/	Cumulative: 18.060 avg rt, 0% failures
+[2020-11-06 09:08:22,713 INFO Engine.console] Current: 1 vu	1 succ	0 fail	64.100 avg rt	/	Cumulative: 18.114 avg rt, 0% failures
+[2020-11-06 09:08:23,717 INFO Engine.console] Current: 1 vu	1 succ	0 fail	66.342 avg rt	/	Cumulative: 18.171 avg rt, 0% failures
+[2020-11-06 09:08:25,722 INFO Engine.console] Current: 1 vu	2 succ	0 fail	72.508 avg rt	/	Cumulative: 18.479 avg rt, 0% failures
+[2020-11-06 09:08:26,707 INFO Engine.console] Current: 1 vu	4 succ	0 fail	57.798 avg rt	/	Cumulative: 18.661 avg rt, 0% failures
+[2020-11-06 09:08:27,718 INFO Engine.console] Current: 1 vu	3 succ	0 fail	52.001 avg rt	/	Cumulative: 18.776 avg rt, 0% failures
+[2020-11-06 09:08:28,708 INFO Engine.console] Current: 1 vu	3 succ	0 fail	46.768 avg rt	/	Cumulative: 18.873 avg rt, 0% failures
+[2020-11-06 09:08:29,717 INFO Engine.console] Current: 1 vu	2 succ	0 fail	5.356 avg rt	/	Cumulative: 18.842 avg rt, 0% failures
+[2020-11-06 09:08:30,722 INFO Engine.console] Current: 1 vu	2 succ	0 fail	87.328 avg rt	/	Cumulative: 18.999 avg rt, 0% failures
+[2020-11-06 09:08:31,713 INFO Engine.console] Current: 1 vu	1 succ	0 fail	69.259 avg rt	/	Cumulative: 19.056 avg rt, 0% failures
+[2020-11-06 09:08:32,728 INFO Engine.console] Current: 1 vu	7 succ	0 fail	39.011 avg rt	/	Cumulative: 19.215 avg rt, 0% failures
+[2020-11-06 09:08:33,713 INFO Engine.console] Current: 1 vu	2 succ	0 fail	43.632 avg rt	/	Cumulative: 19.270 avg rt, 0% failures
+[2020-11-06 09:08:34,728 INFO Engine.console] Current: 1 vu	4 succ	0 fail	40.218 avg rt	/	Cumulative: 19.365 avg rt, 0% failures
+[2020-11-06 09:08:35,715 INFO Engine.console] Current: 1 vu	1 succ	0 fail	96.546 avg rt	/	Cumulative: 19.452 avg rt, 0% failures
+[2020-11-06 09:08:36,728 INFO Engine.console] Current: 1 vu	3 succ	0 fail	36.177 avg rt	/	Cumulative: 19.508 avg rt, 0% failures
+[2020-11-06 09:08:37,729 INFO Engine.console] Current: 1 vu	1 succ	0 fail	76.699 avg rt	/	Cumulative: 19.572 avg rt, 0% failures
+[2020-11-06 09:08:38,720 INFO Engine.console] Current: 1 vu	3 succ	0 fail	42.657 avg rt	/	Cumulative: 19.649 avg rt, 0% failures
+[2020-11-06 09:08:39,729 INFO Engine.console] Current: 1 vu	5 succ	0 fail	51.669 avg rt	/	Cumulative: 19.827 avg rt, 0% failures
+[2020-11-06 09:08:41,740 INFO Engine.console] Current: 1 vu	3 succ	0 fail	58.760 avg rt	/	Cumulative: 20.103 avg rt, 0% failures
+[2020-11-06 09:08:42,721 INFO Engine.console] Current: 1 vu	1 succ	0 fail	70.470 avg rt	/	Cumulative: 20.159 avg rt, 0% failures
+[2020-11-06 09:08:43,736 INFO Engine.console] Current: 1 vu	6 succ	0 fail	59.637 avg rt	/	Cumulative: 20.418 avg rt, 0% failures
+[2020-11-06 09:08:44,737 INFO Engine.console] Current: 1 vu	1 succ	0 fail	70.908 avg rt	/	Cumulative: 20.473 avg rt, 0% failures
+[2020-11-06 09:08:45,726 INFO Engine.console] Current: 1 vu	8 succ	0 fail	51.825 avg rt	/	Cumulative: 20.745 avg rt, 0% failures
+[2020-11-06 09:08:46,736 INFO Engine.console] Current: 1 vu	4 succ	0 fail	55.194 avg rt	/	Cumulative: 20.894 avg rt, 0% failures
+[2020-11-06 09:08:47,741 INFO Engine.console] Current: 1 vu	5 succ	0 fail	84.724 avg rt	/	Cumulative: 21.237 avg rt, 0% failures
+[2020-11-06 09:08:48,730 INFO Engine.console] Current: 1 vu	3 succ	0 fail	61.921 avg rt	/	Cumulative: 21.368 avg rt, 0% failures
+[2020-11-06 09:08:49,763 INFO Engine.console] Current: 1 vu	2 succ	0 fail	39.985 avg rt	/	Cumulative: 21.407 avg rt, 0% failures
+[2020-11-06 09:08:50,733 INFO Engine.console] Current: 1 vu	4 succ	0 fail	60.669 avg rt	/	Cumulative: 21.574 avg rt, 0% failures
+[2020-11-06 09:08:51,741 INFO Engine.console] Current: 1 vu	7 succ	0 fail	22.243 avg rt	/	Cumulative: 21.579 avg rt, 0% failures
+[2020-11-06 09:08:52,741 INFO Engine.console] Current: 1 vu	4 succ	0 fail	37.594 avg rt	/	Cumulative: 21.647 avg rt, 0% failures
+[2020-11-06 09:08:53,746 INFO Engine.console] Current: 1 vu	3 succ	0 fail	37.491 avg rt	/	Cumulative: 21.697 avg rt, 0% failures
+[2020-11-06 09:08:54,736 INFO Engine.console] Current: 1 vu	3 succ	0 fail	76.258 avg rt	/	Cumulative: 21.868 avg rt, 0% failures
+[2020-11-06 09:08:55,748 INFO Engine.console] Current: 1 vu	5 succ	0 fail	26.827 avg rt	/	Cumulative: 21.893 avg rt, 0% failures
+[2020-11-06 09:08:56,748 INFO Engine.console] Current: 1 vu	2 succ	0 fail	59.757 avg rt	/	Cumulative: 21.972 avg rt, 0% failures
+[2020-11-06 09:08:57,749 INFO Engine.console] Current: 1 vu	6 succ	0 fail	48.949 avg rt	/	Cumulative: 22.139 avg rt, 0% failures
+[2020-11-06 09:08:58,738 INFO Engine.console] Current: 1 vu	6 succ	0 fail	71.765 avg rt	/	Cumulative: 22.444 avg rt, 0% failures
+[2020-11-06 09:08:59,751 INFO Engine.console] Current: 1 vu	5 succ	0 fail	32.225 avg rt	/	Cumulative: 22.494 avg rt, 0% failures
+[2020-11-06 09:09:00,755 INFO Engine.console] Current: 1 vu	4 succ	0 fail	81.963 avg rt	/	Cumulative: 22.735 avg rt, 0% failures
+[2020-11-06 09:09:01,757 INFO Engine.console] Current: 1 vu	6 succ	0 fail	58.659 avg rt	/	Cumulative: 22.953 avg rt, 0% failures
+[2020-11-06 09:09:02,742 INFO Engine.console] Current: 1 vu	5 succ	0 fail	40.023 avg rt	/	Cumulative: 23.038 avg rt, 0% failures
+[2020-11-06 09:09:03,753 INFO Engine.console] Current: 1 vu	5 succ	0 fail	31.818 avg rt	/	Cumulative: 23.082 avg rt, 0% failures
+[2020-11-06 09:09:04,756 INFO Engine.console] Current: 1 vu	1 succ	0 fail	104.598 avg rt	/	Cumulative: 23.164 avg rt, 0% failures
+[2020-11-06 09:09:05,747 INFO Engine.console] Current: 1 vu	7 succ	0 fail	39.638 avg rt	/	Cumulative: 23.278 avg rt, 0% failures
+[2020-11-06 09:09:06,761 INFO Engine.console] Current: 1 vu	7 succ	0 fail	27.291 avg rt	/	Cumulative: 23.306 avg rt, 0% failures
+[2020-11-06 09:09:07,749 INFO Engine.console] Current: 1 vu	2 succ	0 fail	42.221 avg rt	/	Cumulative: 23.343 avg rt, 0% failures
+[2020-11-06 09:09:08,761 INFO Engine.console] Current: 1 vu	10 succ	0 fail	50.625 avg rt	/	Cumulative: 23.608 avg rt, 0% failures
+[2020-11-06 09:09:09,761 INFO Engine.console] Current: 1 vu	3 succ	0 fail	56.531 avg rt	/	Cumulative: 23.704 avg rt, 0% failures
+[2020-11-06 09:09:10,763 INFO Engine.console] Current: 1 vu	5 succ	0 fail	54.605 avg rt	/	Cumulative: 23.853 avg rt, 0% failures
+[2020-11-06 09:09:11,766 INFO Engine.console] Current: 1 vu	4 succ	0 fail	21.663 avg rt	/	Cumulative: 23.845 avg rt, 0% failures
+[2020-11-06 09:09:12,766 INFO Engine.console] Current: 1 vu	4 succ	0 fail	29.812 avg rt	/	Cumulative: 23.868 avg rt, 0% failures
+[2020-11-06 09:09:13,756 INFO Engine.console] Current: 1 vu	7 succ	0 fail	32.486 avg rt	/	Cumulative: 23.925 avg rt, 0% failures
+[2020-11-06 09:09:14,765 INFO Engine.console] Current: 1 vu	6 succ	0 fail	51.779 avg rt	/	Cumulative: 24.083 avg rt, 0% failures
+[2020-11-06 09:09:16,779 INFO Engine.console] Current: 1 vu	3 succ	0 fail	60.004 avg rt	/	Cumulative: 24.283 avg rt, 0% failures
+[2020-11-06 09:09:18,772 INFO Engine.console] Current: 1 vu	5 succ	0 fail	47.722 avg rt	/	Cumulative: 24.451 avg rt, 0% failures
+[2020-11-06 09:09:21,800 INFO Engine.console] Current: 1 vu	5 succ	0 fail	45.770 avg rt	/	Cumulative: 24.662 avg rt, 0% failures
+[2020-11-06 09:09:22,762 INFO Engine.console] Current: 1 vu	6 succ	0 fail	46.485 avg rt	/	Cumulative: 24.783 avg rt, 0% failures
+[2020-11-06 09:09:23,773 INFO Engine.console] Current: 1 vu	2 succ	0 fail	106.453 avg rt	/	Cumulative: 24.933 avg rt, 0% failures
+[2020-11-06 09:09:24,775 INFO Engine.console] Current: 1 vu	1 succ	0 fail	71.275 avg rt	/	Cumulative: 24.975 avg rt, 0% failures
+[2020-11-06 09:09:25,779 INFO Engine.console] Current: 1 vu	1 succ	0 fail	6.884 avg rt	/	Cumulative: 24.959 avg rt, 0% failures
+[2020-11-06 09:09:26,784 INFO Engine.console] Current: 1 vu	3 succ	0 fail	56.717 avg rt	/	Cumulative: 25.046 avg rt, 0% failures
+[2020-11-06 09:09:27,770 INFO Engine.console] Current: 1 vu	4 succ	0 fail	60.263 avg rt	/	Cumulative: 25.174 avg rt, 0% failures
+[2020-11-06 09:09:28,787 INFO Engine.console] Current: 1 vu	7 succ	0 fail	22.149 avg rt	/	Cumulative: 25.155 avg rt, 0% failures
+[2020-11-06 09:09:29,773 INFO Engine.console] Current: 1 vu	4 succ	0 fail	50.558 avg rt	/	Cumulative: 25.246 avg rt, 0% failures
+[2020-11-06 09:09:30,787 INFO Engine.console] Current: 1 vu	4 succ	0 fail	36.483 avg rt	/	Cumulative: 25.287 avg rt, 0% failures
+[2020-11-06 09:09:31,802 INFO Engine.console] Current: 1 vu	3 succ	0 fail	31.159 avg rt	/	Cumulative: 25.303 avg rt, 0% failures
+[2020-11-06 09:09:32,778 INFO Engine.console] Current: 1 vu	3 succ	0 fail	18.298 avg rt	/	Cumulative: 25.284 avg rt, 0% failures
+[2020-11-06 09:09:33,785 INFO Engine.console] Current: 1 vu	6 succ	0 fail	56.188 avg rt	/	Cumulative: 25.449 avg rt, 0% failures
+[2020-11-06 09:09:34,786 INFO Engine.console] Current: 1 vu	3 succ	0 fail	69.163 avg rt	/	Cumulative: 25.565 avg rt, 0% failures
+[2020-11-06 09:09:36,797 INFO Engine.console] Current: 1 vu	2 succ	0 fail	63.278 avg rt	/	Cumulative: 25.686 avg rt, 0% failures
+[2020-11-06 09:09:38,794 INFO Engine.console] Current: 1 vu	3 succ	0 fail	67.540 avg rt	/	Cumulative: 25.759 avg rt, 0% failures
+[2020-11-06 09:09:41,800 INFO Engine.console] Current: 1 vu	4 succ	0 fail	26.322 avg rt	/	Cumulative: 25.927 avg rt, 0% failures
+[2020-11-06 09:09:42,782 INFO Engine.console] Current: 1 vu	1 succ	0 fail	104.582 avg rt	/	Cumulative: 25.996 avg rt, 0% failures
+[2020-11-06 09:09:43,794 INFO Engine.console] Current: 1 vu	5 succ	0 fail	80.827 avg rt	/	Cumulative: 26.233 avg rt, 0% failures
+[2020-11-06 09:09:44,798 INFO Engine.console] Current: 1 vu	1 succ	0 fail	72.587 avg rt	/	Cumulative: 26.273 avg rt, 0% failures
+[2020-11-06 09:09:45,788 INFO Engine.console] Current: 1 vu	2 succ	0 fail	50.039 avg rt	/	Cumulative: 26.314 avg rt, 0% failures
+[2020-11-06 09:09:46,800 INFO Engine.console] Current: 1 vu	5 succ	0 fail	64.140 avg rt	/	Cumulative: 26.477 avg rt, 0% failures
+[2020-11-06 09:09:47,804 INFO Engine.console] Current: 1 vu	8 succ	0 fail	59.563 avg rt	/	Cumulative: 26.703 avg rt, 0% failures
+[2020-11-06 09:09:48,791 INFO Engine.console] Current: 1 vu	5 succ	0 fail	48.758 avg rt	/	Cumulative: 26.797 avg rt, 0% failures
+[2020-11-06 09:09:49,803 INFO Engine.console] Current: 1 vu	5 succ	0 fail	42.949 avg rt	/	Cumulative: 26.865 avg rt, 0% failures
+[2020-11-06 09:09:50,807 INFO Engine.console] Current: 1 vu	12 succ	0 fail	57.857 avg rt	/	Cumulative: 27.177 avg rt, 0% failures
+[2020-11-06 09:09:51,808 INFO Engine.console] Current: 1 vu	9 succ	0 fail	47.610 avg rt	/	Cumulative: 27.330 avg rt, 0% failures
+[2020-11-06 09:09:52,813 INFO Engine.console] Current: 1 vu	8 succ	0 fail	45.876 avg rt	/	Cumulative: 27.452 avg rt, 0% failures
+[2020-11-06 09:09:53,802 INFO Engine.console] Current: 1 vu	15 succ	0 fail	38.207 avg rt	/	Cumulative: 27.584 avg rt, 0% failures
+[2020-11-06 09:09:54,805 INFO Engine.console] Current: 1 vu	10 succ	0 fail	43.521 avg rt	/	Cumulative: 27.713 avg rt, 0% failures
+[2020-11-06 09:09:55,812 INFO Engine.console] Current: 1 vu	10 succ	0 fail	25.062 avg rt	/	Cumulative: 27.692 avg rt, 0% failures
+[2020-11-06 09:09:56,797 INFO Engine.console] Current: 1 vu	4 succ	0 fail	19.741 avg rt	/	Cumulative: 27.666 avg rt, 0% failures
+[2020-11-06 09:09:57,815 INFO Engine.console] Current: 1 vu	4 succ	0 fail	23.532 avg rt	/	Cumulative: 27.653 avg rt, 0% failures
+[2020-11-06 09:09:58,817 INFO Engine.console] Current: 1 vu	5 succ	0 fail	47.981 avg rt	/	Cumulative: 27.734 avg rt, 0% failures
+[2020-11-06 09:09:59,808 INFO Engine.console] Current: 1 vu	8 succ	0 fail	46.541 avg rt	/	Cumulative: 27.853 avg rt, 0% failures
+[2020-11-06 09:10:00,820 INFO Engine.console] Current: 1 vu	10 succ	0 fail	25.118 avg rt	/	Cumulative: 27.831 avg rt, 0% failures
+[2020-11-06 09:10:01,801 INFO Engine.console] Current: 1 vu	13 succ	0 fail	47.667 avg rt	/	Cumulative: 28.031 avg rt, 0% failures
+[2020-11-06 09:10:02,815 INFO Engine.console] Current: 1 vu	12 succ	0 fail	28.908 avg rt	/	Cumulative: 28.039 avg rt, 0% failures
+[2020-11-06 09:10:03,820 INFO Engine.console] Current: 1 vu	4 succ	0 fail	63.295 avg rt	/	Cumulative: 28.148 avg rt, 0% failures
+[2020-11-06 09:10:04,810 INFO Engine.console] Current: 1 vu	5 succ	0 fail	23.453 avg rt	/	Cumulative: 28.130 avg rt, 0% failures
+[2020-11-06 09:10:05,822 INFO Engine.console] Current: 1 vu	10 succ	0 fail	35.680 avg rt	/	Cumulative: 28.187 avg rt, 0% failures
+[2020-11-06 09:10:06,811 INFO Engine.console] Current: 1 vu	9 succ	0 fail	26.550 avg rt	/	Cumulative: 28.176 avg rt, 0% failures
+[2020-11-06 09:10:07,817 INFO Engine.console] Current: 1 vu	9 succ	0 fail	29.907 avg rt	/	Cumulative: 28.187 avg rt, 0% failures
+[2020-11-06 09:10:08,822 INFO Engine.console] Current: 1 vu	13 succ	0 fail	40.240 avg rt	/	Cumulative: 28.303 avg rt, 0% failures
+[2020-11-06 09:10:09,823 INFO Engine.console] Current: 1 vu	8 succ	0 fail	40.741 avg rt	/	Cumulative: 28.377 avg rt, 0% failures
+[2020-11-06 09:10:10,826 INFO Engine.console] Current: 1 vu	11 succ	0 fail	38.754 avg rt	/	Cumulative: 28.460 avg rt, 0% failures
+[2020-11-06 09:10:11,815 INFO Engine.console] Current: 1 vu	14 succ	0 fail	38.830 avg rt	/	Cumulative: 28.565 avg rt, 0% failures
+[2020-11-06 09:10:12,825 INFO Engine.console] Current: 1 vu	17 succ	0 fail	27.828 avg rt	/	Cumulative: 28.556 avg rt, 0% failures
+[2020-11-06 09:10:13,833 INFO Engine.console] Current: 1 vu	7 succ	0 fail	9.976 avg rt	/	Cumulative: 28.463 avg rt, 0% failures
+[2020-11-06 09:10:14,823 INFO Engine.console] Current: 1 vu	19 succ	0 fail	36.401 avg rt	/	Cumulative: 28.569 avg rt, 0% failures
+[2020-11-06 09:10:15,833 INFO Engine.console] Current: 1 vu	15 succ	1 fail	22.998 avg rt	/	Cumulative: 28.507 avg rt, 0% failures
+[2020-11-06 09:10:16,823 INFO Engine.console] Current: 1 vu	18 succ	0 fail	11.499 avg rt	/	Cumulative: 28.298 avg rt, 0% failures
+[2020-11-06 09:10:17,833 INFO Engine.console] Current: 1 vu	7 succ	0 fail	4.948 avg rt	/	Cumulative: 28.186 avg rt, 0% failures
+[2020-11-06 09:10:18,820 INFO Engine.console] Current: 1 vu	15 succ	0 fail	33.518 avg rt	/	Cumulative: 28.240 avg rt, 0% failures
+[2020-11-06 09:10:19,832 INFO Engine.console] Current: 1 vu	8 succ	0 fail	38.304 avg rt	/	Cumulative: 28.294 avg rt, 0% failures
+[2020-11-06 09:10:20,841 INFO Engine.console] Current: 1 vu	7 succ	0 fail	14.366 avg rt	/	Cumulative: 28.229 avg rt, 0% failures
+[2020-11-06 09:10:21,848 INFO Engine.console] Current: 1 vu	5 succ	0 fail	32.971 avg rt	/	Cumulative: 28.245 avg rt, 0% failures
+[2020-11-06 09:10:22,824 INFO Engine.console] Current: 1 vu	9 succ	0 fail	18.285 avg rt	/	Cumulative: 28.186 avg rt, 0% failures
+[2020-11-06 09:10:23,834 INFO Engine.console] Current: 1 vu	8 succ	0 fail	16.475 avg rt	/	Cumulative: 28.124 avg rt, 0% failures
+[2020-11-06 09:10:24,839 INFO Engine.console] Current: 1 vu	3 succ	0 fail	38.328 avg rt	/	Cumulative: 28.144 avg rt, 0% failures
+[2020-11-06 09:10:25,854 INFO Engine.console] Current: 1 vu	4 succ	1 fail	39.525 avg rt	/	Cumulative: 28.182 avg rt, 0% failures
+[2020-11-06 09:10:26,835 INFO Engine.console] Current: 1 vu	8 succ	0 fail	17.974 avg rt	/	Cumulative: 28.128 avg rt, 0% failures
+[2020-11-06 09:10:27,843 INFO Engine.console] Current: 1 vu	10 succ	0 fail	22.546 avg rt	/	Cumulative: 28.092 avg rt, 0% failures
+[2020-11-06 09:10:28,846 INFO Engine.console] Current: 1 vu	15 succ	1 fail	12.493 avg rt	/	Cumulative: 27.932 avg rt, 0% failures
+[2020-11-06 09:10:29,847 INFO Engine.console] Current: 1 vu	12 succ	0 fail	12.890 avg rt	/	Cumulative: 27.818 avg rt, 0% failures
+[2020-11-06 09:10:30,833 INFO Engine.console] Current: 1 vu	7 succ	0 fail	13.676 avg rt	/	Cumulative: 27.755 avg rt, 0% failures
+[2020-11-06 09:10:31,848 INFO Engine.console] Current: 1 vu	10 succ	0 fail	17.187 avg rt	/	Cumulative: 27.689 avg rt, 0% failures
+[2020-11-06 09:10:32,833 INFO Engine.console] Current: 1 vu	3 succ	0 fail	3.557 avg rt	/	Cumulative: 27.643 avg rt, 0% failures
+[2020-11-06 09:10:33,846 INFO Engine.console] Current: 1 vu	9 succ	1 fail	21.415 avg rt	/	Cumulative: 27.604 avg rt, 0% failures
+[2020-11-06 09:10:34,847 INFO Engine.console] Current: 1 vu	4 succ	0 fail	8.543 avg rt	/	Cumulative: 27.557 avg rt, 0% failures
+[2020-11-06 09:10:35,848 INFO Engine.console] Current: 1 vu	7 succ	0 fail	22.466 avg rt	/	Cumulative: 27.535 avg rt, 0% failures
+[2020-11-06 09:10:36,853 INFO Engine.console] Current: 1 vu	4 succ	0 fail	21.896 avg rt	/	Cumulative: 27.521 avg rt, 0% failures
+[2020-11-06 09:10:37,854 INFO Engine.console] Current: 1 vu	9 succ	0 fail	16.547 avg rt	/	Cumulative: 27.460 avg rt, 0% failures
+[2020-11-06 09:10:38,842 INFO Engine.console] Current: 1 vu	10 succ	0 fail	15.907 avg rt	/	Cumulative: 27.390 avg rt, 0% failures
+[2020-11-06 09:10:39,856 INFO Engine.console] Current: 1 vu	17 succ	0 fail	23.509 avg rt	/	Cumulative: 27.350 avg rt, 0% failures
+[2020-11-06 09:10:40,861 INFO Engine.console] Current: 1 vu	9 succ	0 fail	11.524 avg rt	/	Cumulative: 27.264 avg rt, 0% failures
+[2020-11-06 09:10:41,865 INFO Engine.console] Current: 1 vu	6 succ	0 fail	12.810 avg rt	/	Cumulative: 27.212 avg rt, 0% failures
+[2020-11-06 09:10:42,849 INFO Engine.console] Current: 1 vu	9 succ	1 fail	16.842 avg rt	/	Cumulative: 27.151 avg rt, 0% failures
+[2020-11-06 09:10:43,859 INFO Engine.console] Current: 1 vu	7 succ	0 fail	20.314 avg rt	/	Cumulative: 27.122 avg rt, 0% failures
+[2020-11-06 09:10:44,864 INFO Engine.console] Current: 1 vu	10 succ	0 fail	19.489 avg rt	/	Cumulative: 27.077 avg rt, 0% failures
+[2020-11-06 09:10:45,853 INFO Engine.console] Current: 1 vu	6 succ	0 fail	17.884 avg rt	/	Cumulative: 27.045 avg rt, 0% failures
+[2020-11-06 09:10:46,861 INFO Engine.console] Current: 1 vu	13 succ	0 fail	13.705 avg rt	/	Cumulative: 26.944 avg rt, 0% failures
+[2020-11-06 09:10:47,851 INFO Engine.console] Current: 1 vu	7 succ	0 fail	24.207 avg rt	/	Cumulative: 26.933 avg rt, 0% failures
+[2020-11-06 09:10:48,860 INFO Engine.console] Current: 1 vu	8 succ	0 fail	14.340 avg rt	/	Cumulative: 26.875 avg rt, 0% failures
+[2020-11-06 09:10:49,866 INFO Engine.console] Current: 1 vu	7 succ	0 fail	21.333 avg rt	/	Cumulative: 26.852 avg rt, 0% failures
+[2020-11-06 09:10:50,868 INFO Engine.console] Current: 1 vu	7 succ	0 fail	17.205 avg rt	/	Cumulative: 26.814 avg rt, 0% failures
+[2020-11-06 09:10:51,870 INFO Engine.console] Current: 1 vu	10 succ	0 fail	15.382 avg rt	/	Cumulative: 26.748 avg rt, 0% failures
+[2020-11-06 09:10:52,871 INFO Engine.console] Current: 1 vu	14 succ	0 fail	14.353 avg rt	/	Cumulative: 26.650 avg rt, 0% failures
+[2020-11-06 09:10:53,859 INFO Engine.console] Current: 1 vu	13 succ	0 fail	20.772 avg rt	/	Cumulative: 26.607 avg rt, 0% failures
+[2020-11-06 09:10:54,869 INFO Engine.console] Current: 1 vu	14 succ	0 fail	15.253 avg rt	/	Cumulative: 26.519 avg rt, 0% failures
+[2020-11-06 09:10:55,877 INFO Engine.console] Current: 1 vu	9 succ	1 fail	12.497 avg rt	/	Cumulative: 26.441 avg rt, 0% failures
+[2020-11-06 09:10:56,863 INFO Engine.console] Current: 1 vu	14 succ	0 fail	12.168 avg rt	/	Cumulative: 26.332 avg rt, 0% failures
+[2020-11-06 09:10:57,874 INFO Engine.console] Current: 1 vu	19 succ	0 fail	18.409 avg rt	/	Cumulative: 26.250 avg rt, 0% failures
+[2020-11-06 09:10:58,862 INFO Engine.console] Current: 1 vu	6 succ	0 fail	9.341 avg rt	/	Cumulative: 26.195 avg rt, 0% failures
+[2020-11-06 09:10:59,877 INFO Engine.console] Current: 1 vu	11 succ	0 fail	20.454 avg rt	/	Cumulative: 26.161 avg rt, 0% failures
+[2020-11-06 09:11:00,864 INFO Engine.console] Current: 1 vu	11 succ	0 fail	17.394 avg rt	/	Cumulative: 26.109 avg rt, 0% failures
+[2020-11-06 09:11:01,881 INFO Engine.console] Current: 1 vu	6 succ	0 fail	16.063 avg rt	/	Cumulative: 26.077 avg rt, 0% failures
+[2020-11-06 09:11:02,866 INFO Engine.console] Current: 1 vu	5 succ	0 fail	8.441 avg rt	/	Cumulative: 26.030 avg rt, 0% failures
+[2020-11-06 09:11:03,876 INFO Engine.console] Current: 1 vu	11 succ	0 fail	18.004 avg rt	/	Cumulative: 25.983 avg rt, 0% failures
+[2020-11-06 09:11:04,885 INFO Engine.console] Current: 1 vu	7 succ	0 fail	30.720 avg rt	/	Cumulative: 26.001 avg rt, 0% failures
+[2020-11-06 09:11:05,874 INFO Engine.console] Current: 1 vu	5 succ	0 fail	8.274 avg rt	/	Cumulative: 25.954 avg rt, 0% failures
+[2020-11-06 09:11:06,882 INFO Engine.console] Current: 1 vu	17 succ	0 fail	16.005 avg rt	/	Cumulative: 25.866 avg rt, 0% failures
+[2020-11-06 09:11:07,868 INFO Engine.console] Current: 1 vu	10 succ	0 fail	19.407 avg rt	/	Cumulative: 25.832 avg rt, 0% failures
+[2020-11-06 09:11:08,889 INFO Engine.console] Current: 1 vu	11 succ	0 fail	20.456 avg rt	/	Cumulative: 25.802 avg rt, 0% failures
+[2020-11-06 09:11:09,875 INFO Engine.console] Current: 1 vu	2 succ	0 fail	25.968 avg rt	/	Cumulative: 25.802 avg rt, 0% failures
+[2020-11-06 09:11:10,885 INFO Engine.console] Current: 1 vu	18 succ	0 fail	18.496 avg rt	/	Cumulative: 25.735 avg rt, 0% failures
+[2020-11-06 09:11:11,874 INFO Engine.console] Current: 1 vu	8 succ	0 fail	14.152 avg rt	/	Cumulative: 25.688 avg rt, 0% failures
+[2020-11-06 09:11:12,889 INFO Engine.console] Current: 1 vu	12 succ	0 fail	7.974 avg rt	/	Cumulative: 25.580 avg rt, 0% failures
+[2020-11-06 09:11:13,894 INFO Engine.console] Current: 1 vu	6 succ	0 fail	19.559 avg rt	/	Cumulative: 25.562 avg rt, 0% failures
+[2020-11-06 09:11:14,882 INFO Engine.console] Current: 1 vu	10 succ	0 fail	16.574 avg rt	/	Cumulative: 25.517 avg rt, 0% failures
+[2020-11-06 09:11:15,894 INFO Engine.console] Current: 1 vu	6 succ	0 fail	16.027 avg rt	/	Cumulative: 25.489 avg rt, 0% failures
+[2020-11-06 09:11:16,884 INFO Engine.console] Current: 1 vu	13 succ	0 fail	14.138 avg rt	/	Cumulative: 25.415 avg rt, 0% failures
+[2020-11-06 09:11:17,890 INFO Engine.console] Current: 1 vu	9 succ	0 fail	9.696 avg rt	/	Cumulative: 25.345 avg rt, 0% failures
+[2020-11-06 09:11:18,896 INFO Engine.console] Current: 1 vu	19 succ	0 fail	18.684 avg rt	/	Cumulative: 25.283 avg rt, 0% failures
+[2020-11-06 09:11:19,884 INFO Engine.console] Current: 1 vu	11 succ	0 fail	12.722 avg rt	/	Cumulative: 25.216 avg rt, 0% failures
+[2020-11-06 09:11:20,893 INFO Engine.console] Current: 1 vu	11 succ	0 fail	10.869 avg rt	/	Cumulative: 25.140 avg rt, 0% failures
+[2020-11-06 09:11:21,896 INFO Engine.console] Current: 1 vu	7 succ	0 fail	11.814 avg rt	/	Cumulative: 25.095 avg rt, 0% failures
+[2020-11-06 09:11:22,883 INFO Engine.console] Current: 1 vu	6 succ	0 fail	10.786 avg rt	/	Cumulative: 25.053 avg rt, 0% failures
+[2020-11-06 09:11:23,897 INFO Engine.console] Current: 1 vu	7 succ	0 fail	5.455 avg rt	/	Cumulative: 24.987 avg rt, 0% failures
+[2020-11-06 09:11:24,904 INFO Engine.console] Current: 1 vu	6 succ	0 fail	31.704 avg rt	/	Cumulative: 25.007 avg rt, 0% failures
+[2020-11-06 09:11:25,894 INFO Engine.console] Current: 1 vu	6 succ	0 fail	15.498 avg rt	/	Cumulative: 24.980 avg rt, 0% failures
+[2020-11-06 09:11:26,902 INFO Engine.console] Current: 1 vu	9 succ	0 fail	23.297 avg rt	/	Cumulative: 24.972 avg rt, 0% failures
+[2020-11-06 09:11:27,904 INFO Engine.console] Current: 1 vu	8 succ	0 fail	20.338 avg rt	/	Cumulative: 24.955 avg rt, 0% failures
+[2020-11-06 09:11:28,904 INFO Engine.console] Current: 1 vu	10 succ	0 fail	14.101 avg rt	/	Cumulative: 24.904 avg rt, 0% failures
+[2020-11-06 09:11:29,911 INFO Engine.console] Current: 1 vu	12 succ	0 fail	23.393 avg rt	/	Cumulative: 24.895 avg rt, 0% failures
+[2020-11-06 09:11:30,913 INFO Engine.console] Current: 1 vu	16 succ	0 fail	15.208 avg rt	/	Cumulative: 24.823 avg rt, 0% failures
+[2020-11-06 09:11:31,901 INFO Engine.console] Current: 1 vu	20 succ	0 fail	17.465 avg rt	/	Cumulative: 24.755 avg rt, 0% failures
+[2020-11-06 09:11:32,907 INFO Engine.console] Current: 1 vu	22 succ	0 fail	7.040 avg rt	/	Cumulative: 24.578 avg rt, 0% failures
+[2020-11-06 09:11:33,912 INFO Engine.console] Current: 1 vu	14 succ	0 fail	9.579 avg rt	/	Cumulative: 24.483 avg rt, 0% failures
+[2020-11-06 09:11:34,916 INFO Engine.console] Current: 1 vu	10 succ	0 fail	12.733 avg rt	/	Cumulative: 24.430 avg rt, 0% failures
+[2020-11-06 09:11:35,904 INFO Engine.console] Current: 1 vu	14 succ	0 fail	16.581 avg rt	/	Cumulative: 24.380 avg rt, 0% failures
+[2020-11-06 09:11:36,914 INFO Engine.console] Current: 1 vu	14 succ	0 fail	7.683 avg rt	/	Cumulative: 24.276 avg rt, 0% failures
+[2020-11-06 09:11:37,900 INFO Engine.console] Current: 1 vu	8 succ	0 fail	12.769 avg rt	/	Cumulative: 24.235 avg rt, 0% failures
+[2020-11-06 09:11:38,915 INFO Engine.console] Current: 1 vu	11 succ	0 fail	16.317 avg rt	/	Cumulative: 24.197 avg rt, 0% failures
+[2020-11-06 09:11:39,916 INFO Engine.console] Current: 1 vu	4 succ	0 fail	29.134 avg rt	/	Cumulative: 24.206 avg rt, 0% failures
+[2020-11-06 09:11:40,919 INFO Engine.console] Current: 1 vu	14 succ	0 fail	13.737 avg rt	/	Cumulative: 24.141 avg rt, 0% failures
+[2020-11-06 09:11:41,920 INFO Engine.console] Current: 1 vu	14 succ	0 fail	11.646 avg rt	/	Cumulative: 24.065 avg rt, 0% failures
+[2020-11-06 09:11:42,920 INFO Engine.console] Current: 1 vu	10 succ	0 fail	18.784 avg rt	/	Cumulative: 24.042 avg rt, 0% failures
+[2020-11-06 09:11:43,923 INFO Engine.console] Current: 1 vu	19 succ	0 fail	12.886 avg rt	/	Cumulative: 23.951 avg rt, 0% failures
+[2020-11-06 09:11:44,911 INFO Engine.console] Current: 1 vu	11 succ	0 fail	14.268 avg rt	/	Cumulative: 23.905 avg rt, 0% failures
+[2020-11-06 09:11:45,926 INFO Engine.console] Current: 1 vu	15 succ	0 fail	13.208 avg rt	/	Cumulative: 23.837 avg rt, 0% failures
+[2020-11-06 09:11:46,912 INFO Engine.console] Current: 1 vu	8 succ	0 fail	10.762 avg rt	/	Cumulative: 23.793 avg rt, 0% failures
+[2020-11-06 09:11:47,921 INFO Engine.console] Current: 1 vu	4 succ	1 fail	11.865 avg rt	/	Cumulative: 23.768 avg rt, 0% failures
+[2020-11-06 09:11:48,911 INFO Engine.console] Current: 1 vu	6 succ	0 fail	10.742 avg rt	/	Cumulative: 23.735 avg rt, 0% failures
+[2020-11-06 09:11:49,924 INFO Engine.console] Current: 1 vu	5 succ	0 fail	12.149 avg rt	/	Cumulative: 23.710 avg rt, 0% failures
+[2020-11-06 09:11:50,913 INFO Engine.console] Current: 1 vu	5 succ	0 fail	19.802 avg rt	/	Cumulative: 23.702 avg rt, 0% failures
+[2020-11-06 09:11:51,926 INFO Engine.console] Current: 1 vu	4 succ	0 fail	10.703 avg rt	/	Cumulative: 23.680 avg rt, 0% failures
+[2020-11-06 09:11:52,915 INFO Engine.console] Current: 1 vu	2 succ	0 fail	34.528 avg rt	/	Cumulative: 23.689 avg rt, 0% failures
+[2020-11-06 09:11:53,929 INFO Engine.console] Current: 1 vu	5 succ	0 fail	8.504 avg rt	/	Cumulative: 23.658 avg rt, 0% failures
+[2020-11-06 09:11:54,930 INFO Engine.console] Current: 1 vu	2 succ	0 fail	4.382 avg rt	/	Cumulative: 23.641 avg rt, 0% failures
+[2020-11-06 09:11:55,935 INFO Engine.console] Current: 1 vu	6 succ	0 fail	26.790 avg rt	/	Cumulative: 23.649 avg rt, 0% failures
+[2020-11-06 09:11:56,935 INFO Engine.console] Current: 1 vu	8 succ	0 fail	19.639 avg rt	/	Cumulative: 23.636 avg rt, 0% failures
+[2020-11-06 09:11:57,935 INFO Engine.console] Current: 1 vu	7 succ	0 fail	17.467 avg rt	/	Cumulative: 23.618 avg rt, 0% failures
+[2020-11-06 09:11:58,939 INFO Engine.console] Current: 1 vu	7 succ	0 fail	11.625 avg rt	/	Cumulative: 23.583 avg rt, 0% failures
+[2020-11-06 09:11:59,929 INFO Engine.console] Current: 1 vu	7 succ	0 fail	21.583 avg rt	/	Cumulative: 23.578 avg rt, 0% failures
+[2020-11-06 09:12:00,941 INFO Engine.console] Current: 1 vu	6 succ	0 fail	14.611 avg rt	/	Cumulative: 23.556 avg rt, 0% failures
+[2020-11-06 09:12:01,931 INFO Engine.console] Current: 1 vu	9 succ	0 fail	15.968 avg rt	/	Cumulative: 23.528 avg rt, 0% failures
+[2020-11-06 09:12:02,931 INFO Engine.console] Current: 1 vu	9 succ	0 fail	9.959 avg rt	/	Cumulative: 23.478 avg rt, 0% failures
+[2020-11-06 09:12:03,938 INFO Engine.console] Current: 1 vu	6 succ	0 fail	10.247 avg rt	/	Cumulative: 23.446 avg rt, 0% failures
+[2020-11-06 09:12:04,951 INFO Engine.console] Current: 1 vu	2 succ	0 fail	30.384 avg rt	/	Cumulative: 23.451 avg rt, 0% failures
+[2020-11-06 09:12:05,940 INFO Engine.console] Current: 1 vu	4 succ	0 fail	29.803 avg rt	/	Cumulative: 23.461 avg rt, 0% failures
+[2020-11-06 09:12:06,941 INFO Engine.console] Current: 1 vu	6 succ	0 fail	13.709 avg rt	/	Cumulative: 23.438 avg rt, 0% failures
+[2020-11-06 09:12:07,962 INFO Engine.console] Current: 1 vu	8 succ	0 fail	20.490 avg rt	/	Cumulative: 23.428 avg rt, 0% failures
+[2020-11-06 09:12:08,936 INFO Engine.console] Current: 1 vu	4 succ	0 fail	21.506 avg rt	/	Cumulative: 23.425 avg rt, 0% failures
+[2020-11-06 09:12:09,950 INFO Engine.console] Current: 1 vu	9 succ	0 fail	12.015 avg rt	/	Cumulative: 23.384 avg rt, 0% failures
+[2020-11-06 09:12:10,953 INFO Engine.console] Current: 1 vu	22 succ	0 fail	25.238 avg rt	/	Cumulative: 23.400 avg rt, 0% failures
+[2020-11-06 09:12:11,940 INFO Engine.console] Current: 1 vu	13 succ	0 fail	22.673 avg rt	/	Cumulative: 23.396 avg rt, 0% failures
+[2020-11-06 09:12:12,946 INFO Engine.console] Current: 1 vu	30 succ	0 fail	13.561 avg rt	/	Cumulative: 23.281 avg rt, 0% failures
+[2020-11-06 09:12:13,948 INFO Engine.console] Current: 1 vu	25 succ	0 fail	12.743 avg rt	/	Cumulative: 23.179 avg rt, 0% failures
+[2020-11-06 09:12:14,954 INFO Engine.console] Current: 1 vu	21 succ	0 fail	17.000 avg rt	/	Cumulative: 23.129 avg rt, 0% failures
+[2020-11-06 09:12:15,956 INFO Engine.console] Current: 1 vu	23 succ	0 fail	11.803 avg rt	/	Cumulative: 23.030 avg rt, 0% failures
+[2020-11-06 09:12:16,957 INFO Engine.console] Current: 1 vu	23 succ	0 fail	17.282 avg rt	/	Cumulative: 22.980 avg rt, 0% failures
+[2020-11-06 09:12:17,945 INFO Engine.console] Current: 1 vu	25 succ	0 fail	12.972 avg rt	/	Cumulative: 22.886 avg rt, 0% failures
+[2020-11-06 09:12:18,958 INFO Engine.console] Current: 1 vu	19 succ	0 fail	10.364 avg rt	/	Cumulative: 22.798 avg rt, 0% failures
+[2020-11-06 09:12:19,964 INFO Engine.console] Current: 1 vu	12 succ	0 fail	11.570 avg rt	/	Cumulative: 22.748 avg rt, 0% failures
+[2020-11-06 09:12:20,948 INFO Engine.console] Current: 1 vu	19 succ	0 fail	16.496 avg rt	/	Cumulative: 22.704 avg rt, 0% failures
+[2020-11-06 09:12:21,953 INFO Engine.console] Current: 1 vu	15 succ	0 fail	13.330 avg rt	/	Cumulative: 22.653 avg rt, 0% failures
+[2020-11-06 09:12:22,961 INFO Engine.console] Current: 1 vu	9 succ	0 fail	10.156 avg rt	/	Cumulative: 22.612 avg rt, 0% failures
+[2020-11-06 09:12:23,964 INFO Engine.console] Current: 1 vu	10 succ	0 fail	10.173 avg rt	/	Cumulative: 22.567 avg rt, 0% failures
+[2020-11-06 09:12:24,951 INFO Engine.console] Current: 1 vu	19 succ	0 fail	14.439 avg rt	/	Cumulative: 22.511 avg rt, 0% failures
+[2020-11-06 09:12:25,961 INFO Engine.console] Current: 1 vu	9 succ	0 fail	6.734 avg rt	/	Cumulative: 22.460 avg rt, 0% failures
+[2020-11-06 09:12:26,966 INFO Engine.console] Current: 1 vu	10 succ	0 fail	8.871 avg rt	/	Cumulative: 22.412 avg rt, 0% failures
+[2020-11-06 09:12:27,949 INFO Engine.console] Current: 1 vu	8 succ	0 fail	4.793 avg rt	/	Cumulative: 22.362 avg rt, 0% failures
+[2020-11-06 09:12:28,968 INFO Engine.console] Current: 1 vu	9 succ	0 fail	9.036 avg rt	/	Cumulative: 22.319 avg rt, 0% failures
+[2020-11-06 09:12:29,969 INFO Engine.console] Current: 1 vu	2 succ	0 fail	45.647 avg rt	/	Cumulative: 22.335 avg rt, 0% failures
+[2020-11-06 09:12:30,958 INFO Engine.console] Current: 1 vu	9 succ	0 fail	6.023 avg rt	/	Cumulative: 22.283 avg rt, 0% failures
+[2020-11-06 09:12:31,963 INFO Engine.console] Current: 1 vu	5 succ	0 fail	2.992 avg rt	/	Cumulative: 22.249 avg rt, 0% failures
+[2020-11-06 09:12:32,970 INFO Engine.console] Current: 1 vu	5 succ	0 fail	11.159 avg rt	/	Cumulative: 22.230 avg rt, 0% failures
+[2020-11-06 09:12:33,971 INFO Engine.console] Current: 1 vu	4 succ	0 fail	22.620 avg rt	/	Cumulative: 22.230 avg rt, 0% failures
+[2020-11-06 09:12:34,974 INFO Engine.console] Current: 1 vu	5 succ	0 fail	20.004 avg rt	/	Cumulative: 22.226 avg rt, 0% failures
+[2020-11-06 09:12:35,965 INFO Engine.console] Current: 1 vu	6 succ	0 fail	2.675 avg rt	/	Cumulative: 22.185 avg rt, 0% failures
+[2020-11-06 09:12:36,976 INFO Engine.console] Current: 1 vu	5 succ	0 fail	7.368 avg rt	/	Cumulative: 22.159 avg rt, 0% failures
+[2020-11-06 09:12:37,964 INFO Engine.console] Current: 1 vu	4 succ	0 fail	13.294 avg rt	/	Cumulative: 22.147 avg rt, 0% failures
+[2020-11-06 09:12:38,986 INFO Engine.console] Current: 1 vu	8 succ	0 fail	11.251 avg rt	/	Cumulative: 22.116 avg rt, 0% failures
+[2020-11-06 09:12:39,965 INFO Engine.console] Current: 1 vu	4 succ	0 fail	15.736 avg rt	/	Cumulative: 22.107 avg rt, 0% failures
+[2020-11-06 09:12:40,987 INFO Engine.console] Current: 1 vu	13 succ	0 fail	10.748 avg rt	/	Cumulative: 22.056 avg rt, 0% failures
+[2020-11-06 09:12:41,973 INFO Engine.console] Current: 1 vu	5 succ	0 fail	14.599 avg rt	/	Cumulative: 22.043 avg rt, 0% failures
+[2020-11-06 09:12:42,984 INFO Engine.console] Current: 1 vu	10 succ	0 fail	8.121 avg rt	/	Cumulative: 21.995 avg rt, 0% failures
+[2020-11-06 09:12:43,973 INFO Engine.console] Current: 1 vu	4 succ	0 fail	9.248 avg rt	/	Cumulative: 21.978 avg rt, 0% failures
+[2020-11-06 09:12:44,982 INFO Engine.console] Current: 1 vu	8 succ	0 fail	16.233 avg rt	/	Cumulative: 21.962 avg rt, 0% failures
+[2020-11-06 09:12:45,989 INFO Engine.console] Current: 1 vu	13 succ	0 fail	18.687 avg rt	/	Cumulative: 21.947 avg rt, 0% failures
+[2020-11-06 09:12:46,978 INFO Engine.console] Current: 1 vu	14 succ	0 fail	10.361 avg rt	/	Cumulative: 21.892 avg rt, 0% failures
+[2020-11-06 09:12:47,980 INFO Engine.console] Current: 1 vu	25 succ	0 fail	15.518 avg rt	/	Cumulative: 21.838 avg rt, 0% failures
+[2020-11-06 09:12:48,982 INFO Engine.console] Current: 1 vu	29 succ	0 fail	11.854 avg rt	/	Cumulative: 21.741 avg rt, 0% failures
+[2020-11-06 09:12:49,987 INFO Engine.console] Current: 1 vu	25 succ	0 fail	13.975 avg rt	/	Cumulative: 21.677 avg rt, 0% failures
+[2020-11-06 09:12:50,995 INFO Engine.console] Current: 1 vu	20 succ	0 fail	9.554 avg rt	/	Cumulative: 21.597 avg rt, 0% failures
+[2020-11-06 09:12:51,978 INFO Engine.console] Current: 1 vu	16 succ	0 fail	14.092 avg rt	/	Cumulative: 21.558 avg rt, 0% failures
+[2020-11-06 09:12:53,014 INFO Engine.console] Current: 1 vu	19 succ	0 fail	11.167 avg rt	/	Cumulative: 21.493 avg rt, 0% failures
+[2020-11-06 09:12:53,986 INFO Engine.console] Current: 1 vu	13 succ	0 fail	13.702 avg rt	/	Cumulative: 21.461 avg rt, 0% failures
+[2020-11-06 09:12:55,000 INFO Engine.console] Current: 1 vu	13 succ	0 fail	10.212 avg rt	/	Cumulative: 21.413 avg rt, 0% failures
+[2020-11-06 09:12:55,985 INFO Engine.console] Current: 1 vu	17 succ	0 fail	19.834 avg rt	/	Cumulative: 21.405 avg rt, 0% failures
+[2020-11-06 09:12:56,994 INFO Engine.console] Current: 1 vu	17 succ	0 fail	9.338 avg rt	/	Cumulative: 21.339 avg rt, 0% failures
+[2020-11-06 09:12:57,984 INFO Engine.console] Current: 1 vu	17 succ	0 fail	11.055 avg rt	/	Cumulative: 21.284 avg rt, 0% failures
+[2020-11-06 09:12:58,995 INFO Engine.console] Current: 1 vu	18 succ	0 fail	9.279 avg rt	/	Cumulative: 21.215 avg rt, 0% failures
+[2020-11-06 09:12:59,997 INFO Engine.console] Current: 1 vu	9 succ	0 fail	18.995 avg rt	/	Cumulative: 21.209 avg rt, 0% failures
+[2020-11-06 09:13:00,999 INFO Engine.console] Current: 1 vu	9 succ	0 fail	6.150 avg rt	/	Cumulative: 21.167 avg rt, 0% failures
+[2020-11-06 09:13:02,001 INFO Engine.console] Current: 1 vu	13 succ	0 fail	10.700 avg rt	/	Cumulative: 21.124 avg rt, 0% failures
+[2020-11-06 09:13:03,002 INFO Engine.console] Current: 1 vu	11 succ	0 fail	6.940 avg rt	/	Cumulative: 21.075 avg rt, 0% failures
+[2020-11-06 09:13:04,004 INFO Engine.console] Current: 1 vu	10 succ	0 fail	11.534 avg rt	/	Cumulative: 21.046 avg rt, 0% failures
+[2020-11-06 09:13:05,005 INFO Engine.console] Current: 1 vu	6 succ	0 fail	7.201 avg rt	/	Cumulative: 21.020 avg rt, 0% failures
+[2020-11-06 09:13:05,995 INFO Engine.console] Current: 1 vu	12 succ	0 fail	9.245 avg rt	/	Cumulative: 20.976 avg rt, 0% failures
+[2020-11-06 09:13:07,007 INFO Engine.console] Current: 1 vu	10 succ	0 fail	6.062 avg rt	/	Cumulative: 20.930 avg rt, 0% failures
+[2020-11-06 09:13:07,995 INFO Engine.console] Current: 1 vu	7 succ	0 fail	7.698 avg rt	/	Cumulative: 20.902 avg rt, 0% failures
+[2020-11-06 09:13:09,008 INFO Engine.console] Current: 1 vu	7 succ	0 fail	8.318 avg rt	/	Cumulative: 20.875 avg rt, 0% failures
+[2020-11-06 09:13:10,014 INFO Engine.console] Current: 1 vu	7 succ	0 fail	13.277 avg rt	/	Cumulative: 20.858 avg rt, 0% failures
+[2020-11-06 09:13:10,995 INFO Engine.console] Current: 1 vu	10 succ	1 fail	11.422 avg rt	/	Cumulative: 20.827 avg rt, 0% failures
+[2020-11-06 09:13:12,010 INFO Engine.console] Current: 1 vu	13 succ	2 fail	4.155 avg rt	/	Cumulative: 20.751 avg rt, 0% failures
+[2020-11-06 09:13:13,010 INFO Engine.console] Current: 1 vu	2 succ	0 fail	12.843 avg rt	/	Cumulative: 20.746 avg rt, 0% failures
+[2020-11-06 09:13:13,999 INFO Engine.console] Current: 1 vu	5 succ	0 fail	10.348 avg rt	/	Cumulative: 20.730 avg rt, 0% failures
+[2020-11-06 09:13:15,009 INFO Engine.console] Current: 1 vu	6 succ	0 fail	12.223 avg rt	/	Cumulative: 20.715 avg rt, 0% failures
+[2020-11-06 09:13:16,012 INFO Engine.console] Current: 1 vu	11 succ	0 fail	24.243 avg rt	/	Cumulative: 20.727 avg rt, 0% failures
+[2020-11-06 09:13:17,000 INFO Engine.console] Current: 1 vu	5 succ	0 fail	13.259 avg rt	/	Cumulative: 20.715 avg rt, 0% failures
+[2020-11-06 09:13:18,010 INFO Engine.console] Current: 1 vu	16 succ	0 fail	10.590 avg rt	/	Cumulative: 20.667 avg rt, 0% failures
+[2020-11-06 09:13:19,017 INFO Engine.console] Current: 1 vu	8 succ	0 fail	8.888 avg rt	/	Cumulative: 20.639 avg rt, 0% failures
+[2020-11-06 09:13:20,003 INFO Engine.console] Current: 1 vu	11 succ	0 fail	9.915 avg rt	/	Cumulative: 20.603 avg rt, 0% failures
+[2020-11-06 09:13:21,013 INFO Engine.console] Current: 1 vu	8 succ	0 fail	15.678 avg rt	/	Cumulative: 20.592 avg rt, 0% failures
+[2020-11-06 09:13:22,046 INFO Engine.console] Current: 1 vu	10 succ	0 fail	9.994 avg rt	/	Cumulative: 20.533 avg rt, 0% failures
+[2020-11-06 09:13:24,037 INFO Engine.console] Current: 1 vu	10 succ	0 fail	9.932 avg rt	/	Cumulative: 20.463 avg rt, 0% failures
+[2020-11-06 09:13:26,025 INFO Engine.console] Current: 1 vu	12 succ	0 fail	20.428 avg rt	/	Cumulative: 20.463 avg rt, 0% failures
+[2020-11-06 09:13:27,015 INFO Engine.console] Current: 1 vu	17 succ	0 fail	10.122 avg rt	/	Cumulative: 20.412 avg rt, 0% failures
+[2020-11-06 09:13:28,044 INFO Engine.console] Current: 1 vu	12 succ	0 fail	17.206 avg rt	/	Cumulative: 20.402 avg rt, 0% failures
+[2020-11-06 09:13:30,028 INFO Engine.console] Current: 1 vu	17 succ	0 fail	15.559 avg rt	/	Cumulative: 20.378 avg rt, 0% failures
+[2020-11-06 09:13:31,017 INFO Engine.console] Current: 1 vu	8 succ	0 fail	11.565 avg rt	/	Cumulative: 20.358 avg rt, 0% failures
+[2020-11-06 09:13:32,029 INFO Engine.console] Current: 1 vu	16 succ	0 fail	15.868 avg rt	/	Cumulative: 20.337 avg rt, 0% failures
+[2020-11-06 09:13:33,031 INFO Engine.console] Current: 1 vu	11 succ	0 fail	10.433 avg rt	/	Cumulative: 20.306 avg rt, 0% failures
+[2020-11-06 09:13:34,033 INFO Engine.console] Current: 1 vu	11 succ	0 fail	13.037 avg rt	/	Cumulative: 20.283 avg rt, 0% failures
+[2020-11-06 09:13:35,039 INFO Engine.console] Current: 1 vu	8 succ	0 fail	10.998 avg rt	/	Cumulative: 20.262 avg rt, 0% failures
+[2020-11-06 09:13:36,052 INFO Engine.console] Current: 1 vu	23 succ	0 fail	15.375 avg rt	/	Cumulative: 20.208 avg rt, 0% failures
+[2020-11-06 09:13:38,035 INFO Engine.console] Current: 1 vu	25 succ	0 fail	10.710 avg rt	/	Cumulative: 20.142 avg rt, 0% failures
+[2020-11-06 09:13:39,036 INFO Engine.console] Current: 1 vu	14 succ	0 fail	13.144 avg rt	/	Cumulative: 20.115 avg rt, 0% failures
+[2020-11-06 09:13:40,026 INFO Engine.console] Current: 1 vu	23 succ	0 fail	12.745 avg rt	/	Cumulative: 20.068 avg rt, 0% failures
+[2020-11-06 09:13:41,016 WARNING Engine.locust] Locust exited with non-zero code: 2
+[2020-11-06 09:13:41,035 INFO Engine.console] Current: 1 vu	46 succ	0 fail	10.093 avg rt	/	Cumulative: 19.944 avg rt, 0% failures
+[2020-11-06 09:13:41,051 WARNING Engine] Please wait for graceful shutdown...
+[2020-11-06 09:13:41,051 DEBUG root] Leveled up log file verbosity
+[2020-11-06 09:13:41,051 INFO Engine] Shutting down...
+[2020-11-06 09:13:41,051 DEBUG Engine] Current stop reason: None
+[2020-11-06 09:13:41,051 DEBUG Engine.local] Shutdown locust/locust
+[2020-11-06 09:13:41,051 DEBUG Engine.local] Shutdown selenium/140293014487344
+[2020-11-06 09:13:41,051 DEBUG Engine.selenium] Selenium tests ran for 610.6435885429382 seconds
+[2020-11-06 09:13:41,051 INFO Engine.shellexec.Task] Starting shell command: python util/post_run/jmeter_post_check.py
+[2020-11-06 09:13:41,052 DEBUG root] Executing shell: python util/post_run/jmeter_post_check.py at /dc-app-performance-toolkit/app
+[2020-11-06 09:13:41,084 DEBUG Engine.shellexec.Task] Output for python util/post_run/jmeter_post_check.py:
+jmeter_post_check: PASS
+
+[2020-11-06 09:13:41,084 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/post_run/jmeter_post_check.py
+[2020-11-06 09:13:41,084 INFO Engine.shellexec.Task] Starting shell command: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl
+[2020-11-06 09:13:41,084 DEBUG root] Executing shell: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl at /dc-app-performance-toolkit/app
+[2020-11-06 09:13:41,475 DEBUG Engine.shellexec.Task] Output for python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl:
+Started validating jtl file: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/kpi.jtl
+File: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/kpi.jtl validated in 0.02270817756652832 seconds
+Created file /tmp/tmp0kghvqco/kpi.csv. Converted from jtl to csv in 0.05578804016113281 
+Started validating jtl file: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/selenium.jtl
+File: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/selenium.jtl validated in 0.0006585121154785156 seconds
+Created file /tmp/tmp0kghvqco/selenium.csv. Converted from jtl to csv in 0.022551774978637695 
+File /tmp/tmp0kghvqco/kpi.csv successfully read
+File /tmp/tmp0kghvqco/selenium.csv successfully read
+Created file /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/results.csv
+Done in 0.10250306129455566 seconds
+
+[2020-11-06 09:13:41,475 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl
+[2020-11-06 09:13:41,476 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.yml
+[2020-11-06 09:13:41,491 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.json
+[2020-11-06 09:13:41,491 INFO Engine] Post-processing...
+[2020-11-06 09:13:41,491 DEBUG Engine.local] Post-process locust/locust
+[2020-11-06 09:13:41,491 DEBUG Engine.local] Post-process selenium/140293014487344
+[2020-11-06 09:13:41,492 DEBUG Engine.locust.JTLReader] Buffer len: 2; Known errors count: 12
+[2020-11-06 09:13:41,492 DEBUG Engine.locust.JTLReader] Aggregating: 1604654019, 2 in buffer
+[2020-11-06 09:13:41,497 DEBUG Engine.locust.JTLReader] Aggregating: 1604654020, 1 in buffer
+[2020-11-06 09:13:41,500 DEBUG LoadSamplesReader] Buffer len: 1; Known errors count: 12
+[2020-11-06 09:13:41,500 DEBUG LoadSamplesReader] Aggregating: 1604653821, 1 in buffer
+[2020-11-06 09:13:41,503 DEBUG Engine.consolidator] Putting datapoint 1604653821 into 1604654017
+[2020-11-06 09:13:41,503 DEBUG Engine.locust.JTLReader] Buffer len: 0; Known errors count: 12
+[2020-11-06 09:13:41,503 DEBUG LoadSamplesReader] Buffer len: 0; Known errors count: 12
+[2020-11-06 09:13:41,503 DEBUG Engine.consolidator] Consolidator buffer[4]: dict_keys([1604654017, 1604654018, 1604654019, 1604654020])
+[2020-11-06 09:13:41,503 DEBUG Engine.consolidator] Merging into 1604654017
+[2020-11-06 09:13:41,503 DEBUG Engine.consolidator] Merging 1604654017
+[2020-11-06 09:13:41,505 DEBUG Engine.consolidator] Merging 1604654017
+[2020-11-06 09:13:41,510 DEBUG Engine.consolidator] Processed datapoint: 1604654017/ConsolidatingAggregator@140293016185488
+[2020-11-06 09:13:41,510 DEBUG Engine.consolidator] Merging into 1604654018
+[2020-11-06 09:13:41,510 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-11-06 09:13:41,510 DEBUG Engine.consolidator] Adding sticky concurrency for 140292853741552
+[2020-11-06 09:13:41,513 DEBUG Engine.consolidator] Processed datapoint: 1604654018/ConsolidatingAggregator@140293016185488
+[2020-11-06 09:13:41,513 DEBUG Engine.consolidator] Merging into 1604654019
+[2020-11-06 09:13:41,513 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-11-06 09:13:41,513 DEBUG Engine.consolidator] Adding sticky concurrency for 140292853741552
+[2020-11-06 09:13:41,516 DEBUG Engine.consolidator] Processed datapoint: 1604654019/ConsolidatingAggregator@140293016185488
+[2020-11-06 09:13:41,516 DEBUG Engine.consolidator] Merging into 1604654020
+[2020-11-06 09:13:41,516 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2020-11-06 09:13:41,516 DEBUG Engine.consolidator] Adding sticky concurrency for 140292853741552
+[2020-11-06 09:13:41,518 DEBUG Engine.consolidator] Processed datapoint: 1604654020/ConsolidatingAggregator@140293016185488
+[2020-11-06 09:13:41,518 INFO Engine.final-stats] Test duration: 0:10:11
+[2020-11-06 09:13:41,518 INFO Engine.final-stats] Samples count: 3706, 0.32% failures
+[2020-11-06 09:13:41,518 INFO Engine.final-stats] Average times: total 19.885, latency 0.000, connect 0.000
+[2020-11-06 09:13:41,586 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+[2020-11-06 09:13:41,588 INFO Engine.final-stats] Request label stats:
++---------------------------------+--------+---------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label                           | status |    succ | avg_rt | error                                                                                                                                                                                                                                                         |
++---------------------------------+--------+---------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| locust_comment_page             |   OK   | 100.00% |  2.506 |                                                                                                                                                                                                                                                               |
+| locust_create_blog              |   OK   | 100.00% | 30.268 |                                                                                                                                                                                                                                                               |
+| locust_create_blog_editor       |   OK   | 100.00% | 20.127 |                                                                                                                                                                                                                                                               |
+| locust_create_page              |  FAIL  |  99.03% | 31.015 | 'content_id'                                                                                                                                                                                                                                                  |
+| locust_create_page_editor       |  FAIL  |  99.05% | 20.099 | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/createpage.action?spaceKey=PDSCS&fromPageId=384984&src=quick-create                                                                                      |
+| locust_edit_page                |  FAIL  |  98.89% | 29.263 | 'edit_parent_page_id'                                                                                                                                                                                                                                         |
+| locust_like_page                |   OK   | 100.00% |  3.537 |                                                                                                                                                                                                                                                               |
+| locust_login_and_view_dashboard |   OK   | 100.00% | 69.239 |                                                                                                                                                                                                                                                               |
+| locust_open_editor              |  FAIL  |  98.95% | 13.733 | 'create_page_id'                                                                                                                                                                                                                                              |
+| locust_search_cql               |  FAIL  |  98.62% | 11.292 | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/api/search?cql=siteSearch~'emp'&start=0&limit=20                                                                                                          |
+|                                 |        |         |        | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/api/search?cql=siteSearch~'unm'&start=0&limit=20                                                                                                          |
+| locust_search_recently_viewed   |   OK   | 100.00% |  2.058 |                                                                                                                                                                                                                                                               |
+| locust_upload_attachments       |  FAIL  |  98.15% | 11.542 | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1193604                                                                                                                           |
+|                                 |        |         |        | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1209784                                                                                                                           |
+| locust_view_attachments         |   OK   | 100.00% |  3.339 |                                                                                                                                                                                                                                                               |
+| locust_view_blog                |   OK   | 100.00% | 32.963 |                                                                                                                                                                                                                                                               |
+| locust_view_dashboard           |   OK   | 100.00% | 66.753 |                                                                                                                                                                                                                                                               |
+| locust_view_page                |  FAIL  |  99.91% | 28.500 | Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1182892                                                                                                                           |
+| locust_view_page_tree           |   OK   | 100.00% |  2.161 |                                                                                                                                                                                                                                                               |
+| selenium_a_login                |   OK   | 100.00% |  4.629 |                                                                                                                                                                                                                                                               |
+| selenium_create_comment         |   OK   | 100.00% | 18.161 |                                                                                                                                                                                                                                                               |
+| selenium_create_page            |   OK   | 100.00% | 11.357 |                                                                                                                                                                                                                                                               |
+| selenium_edit_page              |  FAIL  |  80.00% | 10.610 | Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions:     |
+|                                 |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f7f291fecd0> Locator: ('class name', 'status-indicator-message')                                                                                       |
+|                                 |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f7f291feca0> Locator: ('class name', 'status-indicator-message')                                                                                       |
+|                                 |        |         |        | ", None, None)))                                                                                                                                                                                                                                              |
+| selenium_view_blog              |   OK   | 100.00% |  5.668 |                                                                                                                                                                                                                                                               |
+| selenium_view_dashboard         |  FAIL  |  60.00% | 20.044 | Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f7f291ebf70>.  |
+|                                 |        |         |        | Locator: ('class name', 'update-items')", None, None))                                                                                                                                                                                                        |
+|                                 |        |         |        | Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f7f292d59d0>.  |
+|                                 |        |         |        | Locator: ('class name', 'update-items')", None, None))                                                                                                                                                                                                        |
+| selenium_view_page              |   OK   | 100.00% |  2.663 |                                                                                                                                                                                                                                                               |
+| selenium_z_log_out              |   OK   | 100.00% |  1.807 |                                                                                                                                                                                                                                                               |
++---------------------------------+--------+---------+--------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+[2020-11-06 09:13:41,588 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2020-11-06 09:13:41,588 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/xunit.xml
+[2020-11-06 09:13:41,589 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/xunit.xml
+[2020-11-06 09:13:41,589 INFO Engine.shellexec.Task] Starting shell command: python util/analytics/analytics.py confluence
+[2020-11-06 09:13:41,589 DEBUG root] Executing shell: python util/analytics/analytics.py confluence at /dc-app-performance-toolkit/app
+[2020-11-06 09:13:47,244 DEBUG Engine.shellexec.Task] Output for python util/analytics/analytics.py confluence:
+None
+
+[2020-11-06 09:13:47,244 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/analytics/analytics.py confluence
+[2020-11-06 09:13:47,244 INFO Engine.shellexec.Task] Starting shell command: python util/post_run/cleanup_results_dir.py
+[2020-11-06 09:13:47,244 DEBUG root] Executing shell: python util/post_run/cleanup_results_dir.py at /dc-app-performance-toolkit/app
+[2020-11-06 09:13:47,275 DEBUG Engine.shellexec.Task] Output for python util/post_run/cleanup_results_dir.py:
+The merged.json was removed successfully
+The merged.yml was removed successfully
+The PyTestExecutor.ldjson was removed successfully
+The locust.out was removed successfully
+
+[2020-11-06 09:13:47,275 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/post_run/cleanup_results_dir.py
+[2020-11-06 09:13:47,276 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.yml
+[2020-11-06 09:13:47,290 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/effective.json
+[2020-11-06 09:13:47,291 INFO root] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40
+[2020-11-06 09:13:47,291 INFO root] Done performing with code: 0
+[2020-11-06 09:13:47,291 DEBUG root] Closing log handler: /dc-app-performance-toolkit/app/results/confluence/2020-11-06_09-02-40/bzt.log
