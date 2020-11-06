@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8775678538515" name="locust_comment_page">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1203201/comment?actions=true&amp;html=%3Cp%3Erywdfugscaretei%3C%2Fp%3E&amp;watch=True&amp;uuid=0375e712-84d2-458f-9af5-e9eee2d36108" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1203201/comment?actions=true&amp;html=%3Cp%3Erywdfugscaretei%3C%2Fp%3E&amp;watch=True&amp;uuid=0375e712-84d2-458f-9af5-e9eee2d36108
+(status code is 504)
+(total errors of this type: 2)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/977995/comment?actions=true&amp;html=%3Cp%3Erropbsqaezejuol%3C%2Fp%3E&amp;watch=True&amp;uuid=ef165499-cca5-4f22-b2d0-ca69951a27a1" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/977995/comment?actions=true&amp;html=%3Cp%3Erropbsqaezejuol%3C%2Fp%3E&amp;watch=True&amp;uuid=ef165499-cca5-4f22-b2d0-ca69951a27a1
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1190318/comment?actions=true&amp;html=%3Cp%3Evzcluxgwvdapoyf%3C%2Fp%3E&amp;watch=True&amp;uuid=1f43f054-3942-4016-9439-75bdb3e9ede1" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1190318/comment?actions=true&amp;html=%3Cp%3Evzcluxgwvdapoyf%3C%2Fp%3E&amp;watch=True&amp;uuid=1f43f054-3942-4016-9439-75bdb3e9ede1
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1094133/comment?actions=true&amp;html=%3Cp%3Ebfemlxaomjbyqgm%3C%2Fp%3E&amp;watch=True&amp;uuid=f9492454-fb81-41f6-87a7-42671981e8cc" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1094133/comment?actions=true&amp;html=%3Cp%3Ebfemlxaomjbyqgm%3C%2Fp%3E&amp;watch=True&amp;uuid=f9492454-fb81-41f6-87a7-42671981e8cc
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1112515/comment?actions=true&amp;html=%3Cp%3Ejeudrwusmng+sbg%3C%2Fp%3E&amp;watch=True&amp;uuid=5eb7cbc1-910b-4241-8421-3ff6fccea584" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1112515/comment?actions=true&amp;html=%3Cp%3Ejeudrwusmng+sbg%3C%2Fp%3E&amp;watch=True&amp;uuid=5eb7cbc1-910b-4241-8421-3ff6fccea584
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1319916/comment?actions=true&amp;html=%3Cp%3Evmdchktnhh+lpjw%3C%2Fp%3E&amp;watch=True&amp;uuid=78700b31-f524-4819-99a7-09c789332dba" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1319916/comment?actions=true&amp;html=%3Cp%3Evmdchktnhh+lpjw%3C%2Fp%3E&amp;watch=True&amp;uuid=78700b31-f524-4819-99a7-09c789332dba
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/391578/comment?actions=true&amp;html=%3Cp%3Ewzlqqcgkdbtuaxb%3C%2Fp%3E&amp;watch=True&amp;uuid=83885f9e-1769-4b4c-bf9b-0ce158399600" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/391578/comment?actions=true&amp;html=%3Cp%3Ewzlqqcgkdbtuaxb%3C%2Fp%3E&amp;watch=True&amp;uuid=83885f9e-1769-4b4c-bf9b-0ce158399600
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1084565/comment?actions=true&amp;html=%3Cp%3Eftqgjktmcupjwqs%3C%2Fp%3E&amp;watch=True&amp;uuid=2292ccf8-267f-4ad7-983b-6b3571022ef4" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1084565/comment?actions=true&amp;html=%3Cp%3Eftqgjktmcupjwqs%3C%2Fp%3E&amp;watch=True&amp;uuid=2292ccf8-267f-4ad7-983b-6b3571022ef4
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1187336/comment?actions=true&amp;html=%3Cp%3Evcaizveqgrmdscv%3C%2Fp%3E&amp;watch=True&amp;uuid=b6e2e0e2-23af-423a-9db5-87f480cb103f" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/1187336/comment?actions=true&amp;html=%3Cp%3Evcaizveqgrmdscv%3C%2Fp%3E&amp;watch=True&amp;uuid=b6e2e0e2-23af-423a-9db5-87f480cb103f
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/976675/comment?actions=true&amp;html=%3Cp%3Exlqkieugrqrgowh%3C%2Fp%3E&amp;watch=True&amp;uuid=ffb23eab-ca64-476c-9032-62a0e023ae78" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/976675/comment?actions=true&amp;html=%3Cp%3Exlqkieugrqrgowh%3C%2Fp%3E&amp;watch=True&amp;uuid=ffb23eab-ca64-476c-9032-62a0e023ae78
+(status code is 504)
+(total errors of this type: 2)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/982844/comment?actions=true&amp;html=%3Cp%3Ekxhshngemzzmsfb%3C%2Fp%3E&amp;watch=True&amp;uuid=ace1e284-f7e0-4f1f-b7b6-1c6ef7d5a5b2" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/tinymce/1/content/982844/comment?actions=true&amp;html=%3Cp%3Ekxhshngemzzmsfb%3C%2Fp%3E&amp;watch=True&amp;uuid=ace1e284-f7e0-4f1f-b7b6-1c6ef7d5a5b2
+(status code is 504)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_create_blog">
+      <error message="'draft_name'" type="Error">'draft_name'
+(status code is 500)
+(total errors of this type: 3)</error>
+      <error message="'parsed_space_key'" type="Error">'parsed_space_key'
+(status code is 500)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_create_blog_editor">
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/createblogpost.action?spaceKey=PCDD" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/createblogpost.action?spaceKey=PCDD
+(status code is 502)
+(total errors of this type: 4)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_create_page">
+      <error message="'content_id'" type="Error">'content_id'
+(status code is 500)
+(total errors of this type: 5)</error>
+      <error message="Could not create PAGE draft." type="Error">Could not create PAGE draft.
+(status code is 500)
+(total errors of this type: 2)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_create_page_editor">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/createpage.action?spaceKey=SSDCF&amp;fromPageId=977921&amp;src=quick-create" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/createpage.action?spaceKey=SSDCF&amp;fromPageId=977921&amp;src=quick-create
+(status code is 504)
+(total errors of this type: 8)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_edit_page">
+      <error message="User could not edit page." type="Error">User could not edit page.
+(status code is 500)
+(total errors of this type: 2)</error>
+      <error message="'edit_parent_page_id'" type="Error">'edit_parent_page_id'
+(status code is 500)
+(total errors of this type: 5)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_like_page">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/likes/1.0/content/1110641/likes" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/likes/1.0/content/1110641/likes
+(status code is 504)
+(total errors of this type: 6)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/likes/1.0/content/392589/likes" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/likes/1.0/content/392589/likes
+(status code is 504)
+(total errors of this type: 4)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_login_and_view_dashboard"/>
+    <testcase classname="bzt-8775678538515" name="locust_open_editor">
+      <error message="'create_page_id'" type="Error">'create_page_id'
+(status code is 500)
+(total errors of this type: 5)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855
+(status code is 504)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_search_cql">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/api/search?cql=siteSearch~'gpy'&amp;start=0&amp;limit=20" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/api/search?cql=siteSearch~'gpy'&amp;start=0&amp;limit=20
+(status code is 504)
+(total errors of this type: 11)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_search_recently_viewed">
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/recentlyviewed/1.0/recent?limit=8" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/recentlyviewed/1.0/recent?limit=8
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/recentlyviewed/1.0/recent?limit=8" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/rest/recentlyviewed/1.0/recent?limit=8
+(status code is 504)
+(total errors of this type: 12)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_upload_attachments">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1083418" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1083418
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1100735" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1100735
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1206668" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1206668
+(status code is 504)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_view_attachments">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpageattachments.action?pageId=1319451" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpageattachments.action?pageId=1319451
+(status code is 504)
+(total errors of this type: 12)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_view_blog">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855
+(status code is 504)
+(total errors of this type: 5)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=964970" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=964970
+(status code is 504)
+(total errors of this type: 5)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1317040" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1317040
+(status code is 504)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1312301" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1312301
+(status code is 504)
+(total errors of this type: 2)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_view_dashboard">
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/index.action" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/index.action
+(status code is 504)
+(total errors of this type: 11)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_view_page">
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105654" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105654
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=380650" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=380650
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105560" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105560
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105190" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1105190
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1209784" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1209784
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=388855
+(status code is 504)
+(total errors of this type: 6)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1100735" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1100735
+(status code is 504)
+(total errors of this type: 36)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1317040" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1317040
+(status code is 504)
+(total errors of this type: 16)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=964970" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=964970
+(status code is 504)
+(total errors of this type: 18)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1312301" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1312301
+(status code is 504)
+(total errors of this type: 9)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1206668" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1206668
+(status code is 504)
+(total errors of this type: 9)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1083418" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=1083418
+(status code is 504)
+(total errors of this type: 22)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="locust_view_page_tree">
+      <error message="Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;placement=sidebar&amp;hasRoot=false&amp;spaceKey=CIT&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=1180863&amp;1100788&amp;treePageId=1181384&amp;_=1604655958" type="Error">Bad Gateway for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;placement=sidebar&amp;hasRoot=false&amp;spaceKey=CIT&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=1180863&amp;1100788&amp;treePageId=1181384&amp;_=1604655958
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;placement=sidebar&amp;hasRoot=false&amp;spaceKey=TIRSI&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=970325&amp;968928&amp;treePageId=972441&amp;_=1604656315" type="Error">Gateway Time-out for url: http://confl-loadb-185evch80nvew-612815241.us-west-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;placement=sidebar&amp;hasRoot=false&amp;spaceKey=TIRSI&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=970325&amp;968928&amp;treePageId=972441&amp;_=1604656315
+(status code is 504)
+(total errors of this type: 96)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="selenium_a_login"/>
+    <testcase classname="bzt-8775678538515" name="selenium_create_comment">
+      <error message="Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f4b9c9e37f0&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f4b9c9e37f0&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="selenium_create_page"/>
+    <testcase classname="bzt-8775678538515" name="selenium_edit_page">
+      <error message="Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 30 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f4b9c9e0d60&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f4b9c9e0d30&gt; Locator: ('class name', 'status-indicator-message')\n&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 30 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f4b9c9e0d60&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f4b9c9e0d30&gt; Locator: ('class name', 'status-indicator-message')\n", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="selenium_view_blog"/>
+    <testcase classname="bzt-8775678538515" name="selenium_view_dashboard">
+      <error message="Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f4b9ca7eb50&gt;. \nLocator: ('class name', 'update-items')&quot;, None, None))" type="Error">Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException("Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f4b9ca7eb50&gt;. \nLocator: ('class name', 'update-items')", None, None))
+(status code is 400)
+(total errors of this type: 1)</error>
+      <error message="Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f4b9c9afac0&gt;. \nLocator: ('class name', 'update-items')&quot;, None, None))" type="Error">Exception: ('Failed measure: selenium_view_dashboard - TimeoutException', TimeoutException("Error in wait_until: Timed out after 30 sec waiting for &lt;selenium.webdriver.support.expected_conditions.visibility_of_element_located object at 0x7f4b9c9afac0&gt;. \nLocator: ('class name', 'update-items')", None, None))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8775678538515" name="selenium_view_page"/>
+    <testcase classname="bzt-8775678538515" name="selenium_z_log_out"/>
+  </testsuite>
+</testsuites>
