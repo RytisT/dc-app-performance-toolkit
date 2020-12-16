@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select
 import random
 import string
 
-TIMEOUT = 30
+TIMEOUT = 20
 
 
 class BasePage:

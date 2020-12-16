@@ -14,10 +14,11 @@ def app_specific_action(webdriver, datasets):
     @print_timing("selenium_app_custom_action")
     def measure():
 
-        @print_timing("selenium_app_custom_action:view_repo_page")
+        @print_timing("selenium_app_custom_action:view_snippets_page")
         def sub_measure():
-            page.go_to_url(f"{BITBUCKET_SETTINGS.server_url}/projects/{project_key}/repos/{repo_slug}/browse")
-            page.wait_until_visible((By.CSS_SELECTOR, '.aui-navgroup-vertical>.aui-navgroup-inner')) # Wait for repo navigation panel is visible
-            page.wait_until_visible((By.ID, 'ID_OF_YOUR_APP_SPECIFIC_UI_ELEMENT'))  # Wait for you app-specific UI element by ID selector
+            page.go_to_url(f"{BITBUCKET_SETTINGS.server_url}/snippets/browse")
+            page.wait_until_visible((By.CLASS_NAME, 'list-snippets')) # Wait for repo navigation panel is visible
+            page.go_to_url(f"{BITBUCKET_SETTINGS.server_url}/snippets/02ced55ffa824d42b9404afb00aa5a38")
+            page.wait_until_visible((By.CLASS_NAME, 'snippet-file-header')) # Wait for repo navigation panel is visible
         sub_measure()
     measure()
