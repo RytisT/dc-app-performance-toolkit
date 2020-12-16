@@ -1,0 +1,1500 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py first driver inits
+1608158900156,456,selenium_login:open_login_page,Success,True
+1608158900695,445,selenium_login:login_get_started,Success,True
+1608158900695,994,selenium_login,Success,True
+.test_0_selenium_a_login,Total:1 Passed:1 Failed:0
+1608158901059,362,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:2 Passed:2 Failed:0
+1608158907912,6842,selenium_create_pull_request:create_pull_request,Success,True
+1608158909210,1297,selenium_create_pull_request:merge_pull_request,Success,True
+1608158910261,9191,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:3 Passed:3 Failed:0
+1608158910873,610,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:4 Passed:4 Failed:0
+1608158911143,267,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:5 Passed:5 Failed:0
+1608158911460,315,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:6 Passed:6 Failed:0
+1608158911820,358,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:7 Passed:7 Failed:0
+1608158912634,812,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:8 Passed:8 Failed:0
+1608158913109,474,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:9 Passed:9 Failed:0
+1608158913995,883,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:10 Passed:10 Failed:0
+1608158915468,1109,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:11 Passed:11 Failed:0
+1608158916632,475,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:12 Passed:12 Failed:0
+1608158917437,803,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:13 Passed:13 Failed:0
+1608158918522,1083,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:14 Passed:14 Failed:0
+1608158918694,171,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:15 Passed:15 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.18s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608158918891,143,selenium_login:open_login_page,Success,True
+1608158919298,315,selenium_login:login_get_started,Success,True
+1608158919298,550,selenium_login,Success,True
+.test_0_selenium_a_login,Total:16 Passed:16 Failed:0
+1608158919671,372,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:17 Passed:17 Failed:0
+1608158926219,6536,selenium_create_pull_request:create_pull_request,Success,True
+1608158927503,1284,selenium_create_pull_request:merge_pull_request,Success,True
+1608158928529,8847,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:18 Passed:18 Failed:0
+1608158928984,453,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:19 Passed:19 Failed:0
+1608158929247,261,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:20 Passed:20 Failed:0
+1608158929572,323,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:21 Passed:21 Failed:0
+1608158929907,333,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:22 Passed:22 Failed:0
+1608158930977,1068,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:23 Passed:23 Failed:0
+1608158931412,433,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:24 Passed:24 Failed:0
+1608158932295,881,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:25 Passed:25 Failed:0
+1608158933772,1077,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:26 Passed:26 Failed:0
+1608158935235,898,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:27 Passed:27 Failed:0
+1608158936057,821,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:28 Passed:28 Failed:0
+1608158937154,1095,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:29 Passed:29 Failed:0
+1608158937308,151,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:30 Passed:30 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 18.57s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608158937580,208,selenium_login:open_login_page,Success,True
+1608158937971,299,selenium_login:login_get_started,Success,True
+1608158937971,599,selenium_login,Success,True
+.test_0_selenium_a_login,Total:31 Passed:31 Failed:0
+1608158938914,941,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:32 Passed:32 Failed:0
+1608158945211,6288,selenium_create_pull_request:create_pull_request,Success,True
+1608158946507,1295,selenium_create_pull_request:merge_pull_request,Success,True
+1608158947609,8685,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:33 Passed:33 Failed:0
+1608158948075,464,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:34 Passed:34 Failed:0
+1608158948323,246,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:35 Passed:35 Failed:0
+1608158948663,338,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:36 Passed:36 Failed:0
+1608158948985,320,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:37 Passed:37 Failed:0
+1608158949768,781,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:38 Passed:38 Failed:0
+1608158950238,468,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:39 Passed:39 Failed:0
+1608158951155,914,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:40 Passed:40 Failed:0
+1608158952740,1180,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:41 Passed:41 Failed:0
+1608158953864,450,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:42 Passed:42 Failed:0
+1608158954725,859,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:43 Passed:43 Failed:0
+1608158955813,1087,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:44 Passed:44 Failed:0
+1608158955966,151,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:45 Passed:45 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 18.61s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608158956164,144,selenium_login:open_login_page,Success,True
+1608158956542,287,selenium_login:login_get_started,Success,True
+1608158956542,522,selenium_login,Success,True
+.test_0_selenium_a_login,Total:46 Passed:46 Failed:0
+1608158957524,980,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:47 Passed:47 Failed:0
+1608158963861,6328,selenium_create_pull_request:create_pull_request,Success,True
+1608158965138,1277,selenium_create_pull_request:merge_pull_request,Success,True
+1608158966176,8644,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:48 Passed:48 Failed:0
+1608158966598,419,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:49 Passed:49 Failed:0
+1608158966848,249,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:50 Passed:50 Failed:0
+1608158967175,325,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:51 Passed:51 Failed:0
+1608158967507,330,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:52 Passed:52 Failed:0
+1608158968377,868,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:53 Passed:53 Failed:0
+1608158968888,510,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:54 Passed:54 Failed:0
+1608158969790,900,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:55 Passed:55 Failed:0
+1608158971289,1123,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:56 Passed:56 Failed:0
+1608158972628,807,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:57 Passed:57 Failed:0
+1608158973446,817,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:58 Passed:58 Failed:0
+1608158974526,1078,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:59 Passed:59 Failed:0
+1608158974676,148,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:60 Passed:60 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 18.67s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608158974872,144,selenium_login:open_login_page,Success,True
+1608158975272,309,selenium_login:login_get_started,Success,True
+1608158975272,545,selenium_login,Success,True
+.test_0_selenium_a_login,Total:61 Passed:61 Failed:0
+1608158976301,1027,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:62 Passed:62 Failed:0
+1608158983058,6746,selenium_create_pull_request:create_pull_request,Success,True
+1608158984366,1307,selenium_create_pull_request:merge_pull_request,Success,True
+1608158985398,9086,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:63 Passed:63 Failed:0
+1608158985826,426,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:64 Passed:64 Failed:0
+1608158986081,254,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:65 Passed:65 Failed:0
+1608158986426,343,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:66 Passed:66 Failed:0
+1608158986752,325,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:67 Passed:67 Failed:0
+1608158987664,910,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:68 Passed:68 Failed:0
+1608158988131,465,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:69 Passed:69 Failed:0
+1608158989015,883,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:70 Passed:70 Failed:0
+1608158990463,1063,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:71 Passed:71 Failed:0
+1608158991823,777,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:72 Passed:72 Failed:0
+1608158992685,861,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:73 Passed:73 Failed:0
+1608158993770,1083,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:74 Passed:74 Failed:0
+1608158993924,152,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:75 Passed:75 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 19.21s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608158994125,146,selenium_login:open_login_page,Success,True
+1608158994547,327,selenium_login:login_get_started,Success,True
+1608158994548,568,selenium_login,Success,True
+.test_0_selenium_a_login,Total:76 Passed:76 Failed:0
+1608158994844,294,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:77 Passed:77 Failed:0
+1608159001248,6390,selenium_create_pull_request:create_pull_request,Success,True
+1608159002534,1285,selenium_create_pull_request:merge_pull_request,Success,True
+1608159003577,8719,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:78 Passed:78 Failed:0
+1608159004004,425,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:79 Passed:79 Failed:0
+1608159004267,262,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:80 Passed:80 Failed:0
+1608159004622,353,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:81 Passed:81 Failed:0
+1608159004945,322,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:82 Passed:82 Failed:0
+1608159005804,857,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:83 Passed:83 Failed:0
+1608159006255,449,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:84 Passed:84 Failed:0
+1608159007159,902,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:85 Passed:85 Failed:0
+1608159008692,1180,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:86 Passed:86 Failed:0
+1608159009977,858,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:87 Passed:87 Failed:0
+1608159010802,823,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:88 Passed:88 Failed:0
+1608159011946,1143,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:89 Passed:89 Failed:0
+1608159012126,178,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:90 Passed:90 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 18.16s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159012360,178,selenium_login:open_login_page,Success,True
+1608159012832,361,selenium_login:login_get_started,Success,True
+1608159012832,651,selenium_login,Success,True
+.test_0_selenium_a_login,Total:91 Passed:91 Failed:0
+1608159013894,1060,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:92 Passed:92 Failed:0
+1608159020460,6555,selenium_create_pull_request:create_pull_request,Success,True
+1608159022260,1800,selenium_create_pull_request:merge_pull_request,Success,True
+1608159023302,9398,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:93 Passed:93 Failed:0
+1608159023732,429,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:94 Passed:94 Failed:0
+1608159023979,245,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:95 Passed:95 Failed:0
+1608159024311,331,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:96 Passed:96 Failed:0
+1608159024650,337,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:97 Passed:97 Failed:0
+1608159025555,903,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:98 Passed:98 Failed:0
+1608159026042,485,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:99 Passed:99 Failed:0
+1608159026976,932,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:100 Passed:100 Failed:0
+1608159028545,1122,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:101 Passed:101 Failed:0
+1608159029835,757,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:102 Passed:102 Failed:0
+1608159030661,824,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:103 Passed:103 Failed:0
+1608159031801,1138,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:104 Passed:104 Failed:0
+1608159031956,153,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:105 Passed:105 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 19.78s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159032158,151,selenium_login:open_login_page,Success,True
+1608159032533,284,selenium_login:login_get_started,Success,True
+1608159032533,527,selenium_login,Success,True
+.test_0_selenium_a_login,Total:106 Passed:106 Failed:0
+1608159032962,427,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:107 Passed:107 Failed:0
+1608159039889,6914,selenium_create_pull_request:create_pull_request,Success,True
+1608159042243,2353,selenium_create_pull_request:merge_pull_request,Success,True
+1608159043433,10458,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:108 Passed:108 Failed:0
+1608159043915,480,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:109 Passed:109 Failed:0
+1608159044232,315,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:110 Passed:110 Failed:0
+1608159044652,418,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:111 Passed:111 Failed:0
+1608159045044,390,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:112 Passed:112 Failed:0
+1608159046046,999,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:113 Passed:113 Failed:0
+1608159046542,494,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:114 Passed:114 Failed:0
+1608159047500,957,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:115 Passed:115 Failed:0
+1608159049164,1185,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:116 Passed:116 Failed:0
+1608159050532,823,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:117 Passed:117 Failed:0
+1608159051353,819,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:118 Passed:118 Failed:0
+1608159052555,1201,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:119 Passed:119 Failed:0
+1608159052708,151,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:120 Passed:120 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.71s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159052907,148,selenium_login:open_login_page,Success,True
+1608159053298,301,selenium_login:login_get_started,Success,True
+1608159053298,540,selenium_login,Success,True
+.test_0_selenium_a_login,Total:121 Passed:121 Failed:0
+1608159053605,305,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:122 Passed:122 Failed:0
+1608159060059,6444,selenium_create_pull_request:create_pull_request,Success,True
+1608159061857,1798,selenium_create_pull_request:merge_pull_request,Success,True
+1608159062874,9259,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:123 Passed:123 Failed:0
+1608159063291,416,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:124 Passed:124 Failed:0
+1608159063556,263,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:125 Passed:125 Failed:0
+1608159063922,363,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:126 Passed:126 Failed:0
+1608159064318,395,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:127 Passed:127 Failed:0
+1608159065272,953,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:128 Passed:128 Failed:0
+1608159065774,500,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:129 Passed:129 Failed:0
+1608159066738,963,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:130 Passed:130 Failed:0
+1608159068257,1124,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:131 Passed:131 Failed:0
+1608159069597,949,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:132 Passed:132 Failed:0
+1608159070425,827,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:133 Passed:133 Failed:0
+1608159071586,1159,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:134 Passed:134 Failed:0
+1608159071747,159,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:135 Passed:135 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 19.00s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159071980,177,selenium_login:open_login_page,Success,True
+1608159072489,401,selenium_login:login_get_started,Success,True
+1608159072489,686,selenium_login,Success,True
+.test_0_selenium_a_login,Total:136 Passed:136 Failed:0
+1608159073893,1401,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:137 Passed:137 Failed:0
+1608159080876,6964,selenium_create_pull_request:create_pull_request,Success,True
+1608159083207,2331,selenium_create_pull_request:merge_pull_request,Success,True
+1608159084233,10322,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:138 Passed:138 Failed:0
+1608159084657,422,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:139 Passed:139 Failed:0
+1608159084923,264,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:140 Passed:140 Failed:0
+1608159085320,395,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:141 Passed:141 Failed:0
+1608159085644,323,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:142 Passed:142 Failed:0
+1608159086193,547,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:143 Passed:143 Failed:0
+1608159087004,809,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:144 Passed:144 Failed:0
+1608159088007,1001,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:145 Passed:145 Failed:0
+1608159089838,1429,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:146 Passed:146 Failed:0
+1608159091272,840,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:147 Passed:147 Failed:0
+1608159092155,881,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:148 Passed:148 Failed:0
+1608159093272,1116,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:149 Passed:149 Failed:0
+1608159093423,148,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:150 Passed:150 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.63s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159093645,164,selenium_login:open_login_page,Success,True
+1608159094066,327,selenium_login:login_get_started,Success,True
+1608159094066,585,selenium_login,Success,True
+.test_0_selenium_a_login,Total:151 Passed:151 Failed:0
+1608159094391,323,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:152 Passed:152 Failed:0
+1608159102137,7737,selenium_create_pull_request:create_pull_request,Success,True
+1608159104482,2344,selenium_create_pull_request:merge_pull_request,Success,True
+1608159105610,11210,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:153 Passed:153 Failed:0
+1608159106071,459,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:154 Passed:154 Failed:0
+1608159106382,309,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:155 Passed:155 Failed:0
+1608159106758,374,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:156 Passed:156 Failed:0
+1608159107107,348,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:157 Passed:157 Failed:0
+1608159107624,514,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:158 Passed:158 Failed:0
+1608159108373,748,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:159 Passed:159 Failed:0
+1608159109354,979,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:160 Passed:160 Failed:0
+1608159110990,1202,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:161 Passed:161 Failed:0
+1608159112393,803,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:162 Passed:162 Failed:0
+1608159113221,825,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:163 Passed:163 Failed:0
+1608159114443,1221,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:164 Passed:164 Failed:0
+1608159114599,155,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:165 Passed:165 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.13s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159114801,150,selenium_login:open_login_page,Success,True
+1608159115195,302,selenium_login:login_get_started,Success,True
+1608159115195,543,selenium_login,Success,True
+.test_0_selenium_a_login,Total:166 Passed:166 Failed:0
+1608159116846,1650,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:167 Passed:167 Failed:0
+1608159123949,7094,selenium_create_pull_request:create_pull_request,Success,True
+1608159125749,1799,selenium_create_pull_request:merge_pull_request,Success,True
+1608159126803,9948,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:168 Passed:168 Failed:0
+1608159127260,455,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:169 Passed:169 Failed:0
+1608159127525,264,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:170 Passed:170 Failed:0
+1608159127966,439,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:171 Passed:171 Failed:0
+1608159128344,376,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:172 Passed:172 Failed:0
+1608159128861,516,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:173 Passed:173 Failed:0
+1608159130007,1143,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:174 Passed:174 Failed:0
+1608159131459,1450,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:175 Passed:175 Failed:0
+1608159133244,1238,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:176 Passed:176 Failed:0
+1608159135053,1275,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:177 Passed:177 Failed:0
+1608159136049,995,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:178 Passed:178 Failed:0
+1608159137205,1154,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:179 Passed:179 Failed:0
+1608159137356,149,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:180 Passed:180 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 22.71s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159137559,152,selenium_login:open_login_page,Success,True
+1608159137980,325,selenium_login:login_get_started,Success,True
+1608159137981,573,selenium_login,Success,True
+.test_0_selenium_a_login,Total:181 Passed:181 Failed:0
+1608159139655,1673,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:182 Passed:182 Failed:0
+1608159146517,6852,selenium_create_pull_request:create_pull_request,Success,True
+1608159148842,2324,selenium_create_pull_request:merge_pull_request,Success,True
+1608159149930,10265,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:183 Passed:183 Failed:0
+1608159150480,548,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:184 Passed:184 Failed:0
+1608159150745,263,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:185 Passed:185 Failed:0
+1608159151150,403,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:186 Passed:186 Failed:0
+1608159151485,333,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:187 Passed:187 Failed:0
+1608159152506,1020,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:188 Passed:188 Failed:0
+1608159153021,513,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:189 Passed:189 Failed:0
+1608159153934,911,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:190 Passed:190 Failed:0
+1608159155546,1226,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:191 Passed:191 Failed:0
+1608159157051,1043,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:192 Passed:192 Failed:0
+1608159157895,842,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:193 Passed:193 Failed:0
+1608159159012,1116,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:194 Passed:194 Failed:0
+1608159159178,164,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:195 Passed:195 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.78s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159159380,150,selenium_login:open_login_page,Success,True
+1608159159753,282,selenium_login:login_get_started,Success,True
+1608159159753,523,selenium_login,Success,True
+.test_0_selenium_a_login,Total:196 Passed:196 Failed:0
+1608159160110,355,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:197 Passed:197 Failed:0
+1608159166759,6632,selenium_create_pull_request:create_pull_request,Success,True
+1608159169074,2314,selenium_create_pull_request:merge_pull_request,Success,True
+1608159170149,10022,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:198 Passed:198 Failed:0
+1608159170605,455,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:199 Passed:199 Failed:0
+1608159170892,284,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:200 Passed:200 Failed:0
+1608159171685,792,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:201 Passed:201 Failed:0
+1608159172040,353,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:202 Passed:202 Failed:0
+1608159173174,1132,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:203 Passed:203 Failed:0
+1608159173639,463,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:204 Passed:204 Failed:0
+1608159174651,1010,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:205 Passed:205 Failed:0
+1608159176297,1263,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:206 Passed:206 Failed:0
+1608159177919,1160,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:207 Passed:207 Failed:0
+1608159178757,836,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:208 Passed:208 Failed:0
+1608159180001,1243,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:209 Passed:209 Failed:0
+1608159180189,186,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:210 Passed:210 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.97s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159180388,149,selenium_login:open_login_page,Success,True
+1608159180790,312,selenium_login:login_get_started,Success,True
+1608159180790,550,selenium_login,Success,True
+.test_0_selenium_a_login,Total:211 Passed:211 Failed:0
+1608159182144,1352,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:212 Passed:212 Failed:0
+1608159189202,7041,selenium_create_pull_request:create_pull_request,Success,True
+1608159191001,1798,selenium_create_pull_request:merge_pull_request,Success,True
+1608159192061,9901,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:213 Passed:213 Failed:0
+1608159192516,453,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:214 Passed:214 Failed:0
+1608159192817,299,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:215 Passed:215 Failed:0
+1608159193216,397,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:216 Passed:216 Failed:0
+1608159193587,369,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:217 Passed:217 Failed:0
+1608159194090,502,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:218 Passed:218 Failed:0
+1608159194616,524,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:219 Passed:219 Failed:0
+1608159195659,1041,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:220 Passed:220 Failed:0
+1608159197380,1246,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:221 Passed:221 Failed:0
+1608159198855,1058,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:222 Passed:222 Failed:0
+1608159199689,832,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:223 Passed:223 Failed:0
+1608159200831,1140,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:224 Passed:224 Failed:0
+1608159200988,155,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:225 Passed:225 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.76s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159201192,150,selenium_login:open_login_page,Success,True
+1608159201603,319,selenium_login:login_get_started,Success,True
+1608159201603,561,selenium_login,Success,True
+.test_0_selenium_a_login,Total:226 Passed:226 Failed:0
+1608159203156,1551,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:227 Passed:227 Failed:0
+1608159210055,6884,selenium_create_pull_request:create_pull_request,Success,True
+1608159211858,1802,selenium_create_pull_request:merge_pull_request,Success,True
+1608159212917,9747,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:228 Passed:228 Failed:0
+1608159213368,449,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:229 Passed:229 Failed:0
+1608159213626,257,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:230 Passed:230 Failed:0
+1608159214017,389,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:231 Passed:231 Failed:0
+1608159214377,358,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:232 Passed:232 Failed:0
+1608159215315,936,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:233 Passed:233 Failed:0
+1608159215782,465,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:234 Passed:234 Failed:0
+1608159216740,956,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:235 Passed:235 Failed:0
+1608159218263,1117,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:236 Passed:236 Failed:0
+1608159219571,883,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:237 Passed:237 Failed:0
+1608159220409,836,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:238 Passed:238 Failed:0
+1608159221620,1209,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:239 Passed:239 Failed:0
+1608159221806,184,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:240 Passed:240 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.77s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159222055,172,selenium_login:open_login_page,Success,True
+1608159222526,355,selenium_login:login_get_started,Success,True
+1608159222526,643,selenium_login,Success,True
+.test_0_selenium_a_login,Total:241 Passed:241 Failed:0
+1608159223998,1470,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:242 Passed:242 Failed:0
+1608159231046,7037,selenium_create_pull_request:create_pull_request,Success,True
+1608159232852,1805,selenium_create_pull_request:merge_pull_request,Success,True
+1608159233867,9858,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:243 Passed:243 Failed:0
+1608159234298,429,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:244 Passed:244 Failed:0
+1608159234558,258,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:245 Passed:245 Failed:0
+1608159234961,401,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:246 Passed:246 Failed:0
+1608159235317,354,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:247 Passed:247 Failed:0
+1608159235827,508,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:248 Passed:248 Failed:0
+1608159236443,613,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:249 Passed:249 Failed:0
+1608159237383,939,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:250 Passed:250 Failed:0
+1608159238887,1112,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:251 Passed:251 Failed:0
+1608159240173,828,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:252 Passed:252 Failed:0
+1608159241011,836,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:253 Passed:253 Failed:0
+1608159242143,1130,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:254 Passed:254 Failed:0
+1608159242298,154,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:255 Passed:255 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.43s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159242495,146,selenium_login:open_login_page,Success,True
+1608159242901,315,selenium_login:login_get_started,Success,True
+1608159242901,552,selenium_login,Success,True
+.test_0_selenium_a_login,Total:256 Passed:256 Failed:0
+1608159244616,1713,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:257 Passed:257 Failed:0
+1608159251385,6749,selenium_create_pull_request:create_pull_request,Success,True
+1608159253213,1828,selenium_create_pull_request:merge_pull_request,Success,True
+1608159254345,9710,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:258 Passed:258 Failed:0
+1608159254836,488,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:259 Passed:259 Failed:0
+1608159255106,269,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:260 Passed:260 Failed:0
+1608159255522,415,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:261 Passed:261 Failed:0
+1608159255891,366,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:262 Passed:262 Failed:0
+1608159257098,1205,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:263 Passed:263 Failed:0
+1608159257646,546,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:264 Passed:264 Failed:0
+1608159258585,938,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:265 Passed:265 Failed:0
+1608159260207,1168,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:266 Passed:266 Failed:0
+1608159261707,893,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:267 Passed:267 Failed:0
+1608159262539,831,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:268 Passed:268 Failed:0
+1608159263760,1219,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:269 Passed:269 Failed:0
+1608159263915,153,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:270 Passed:270 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.58s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159264112,146,selenium_login:open_login_page,Success,True
+1608159264508,307,selenium_login:login_get_started,Success,True
+1608159264508,542,selenium_login,Success,True
+.test_0_selenium_a_login,Total:271 Passed:271 Failed:0
+1608159265625,1115,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:272 Passed:272 Failed:0
+1608159272617,6982,selenium_create_pull_request:create_pull_request,Success,True
+1608159274932,2314,selenium_create_pull_request:merge_pull_request,Success,True
+1608159275984,10349,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:273 Passed:273 Failed:0
+1608159276421,435,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:274 Passed:274 Failed:0
+1608159276698,275,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:275 Passed:275 Failed:0
+1608159277095,396,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:276 Passed:276 Failed:0
+1608159277461,364,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:277 Passed:277 Failed:0
+1608159278502,1040,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:278 Passed:278 Failed:0
+1608159279013,508,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:279 Passed:279 Failed:0
+1608159280535,1520,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:280 Passed:280 Failed:0
+1608159282991,2017,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:281 Passed:281 Failed:0
+1608159284732,1197,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:282 Passed:282 Failed:0
+1608159285649,914,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:283 Passed:283 Failed:0
+1608159286817,1166,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:284 Passed:284 Failed:0
+1608159286966,147,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:285 Passed:285 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 23.01s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159287162,144,selenium_login:open_login_page,Success,True
+1608159287584,330,selenium_login:login_get_started,Success,True
+1608159287584,567,selenium_login,Success,True
+.test_0_selenium_a_login,Total:286 Passed:286 Failed:0
+1608159287913,327,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:287 Passed:287 Failed:0
+1608159294891,6969,selenium_create_pull_request:create_pull_request,Success,True
+1608159297200,2309,selenium_create_pull_request:merge_pull_request,Success,True
+1608159298316,10394,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:288 Passed:288 Failed:0
+1608159298777,459,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:289 Passed:289 Failed:0
+1608159299033,255,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:290 Passed:290 Failed:0
+1608159299447,412,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:291 Passed:291 Failed:0
+1608159299810,361,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:292 Passed:292 Failed:0
+1608159300274,462,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:293 Passed:293 Failed:0
+1608159301000,725,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:294 Passed:294 Failed:0
+1608159301912,910,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:295 Passed:295 Failed:0
+1608159303580,1202,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:296 Passed:296 Failed:0
+1608159304939,936,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:297 Passed:297 Failed:0
+1608159305824,884,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:298 Passed:298 Failed:0
+1608159307008,1182,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:299 Passed:299 Failed:0
+1608159307164,155,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:300 Passed:300 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.16s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159307361,146,selenium_login:open_login_page,Success,True
+1608159307834,378,selenium_login:login_get_started,Success,True
+1608159307834,618,selenium_login,Success,True
+.test_0_selenium_a_login,Total:301 Passed:301 Failed:0
+1608159309426,1591,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:302 Passed:302 Failed:0
+1608159316399,6960,selenium_create_pull_request:create_pull_request,Success,True
+1608159318710,2311,selenium_create_pull_request:merge_pull_request,Success,True
+1608159319764,10325,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:303 Passed:303 Failed:0
+1608159320203,437,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:304 Passed:304 Failed:0
+1608159320455,251,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:305 Passed:305 Failed:0
+1608159320862,405,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:306 Passed:306 Failed:0
+1608159321237,373,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:307 Passed:307 Failed:0
+1608159321762,523,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:308 Passed:308 Failed:0
+1608159322677,913,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:309 Passed:309 Failed:0
+1608159323637,958,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:310 Passed:310 Failed:0
+1608159325401,1266,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:311 Passed:311 Failed:0
+1608159327053,1159,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:312 Passed:312 Failed:0
+1608159327906,851,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:313 Passed:313 Failed:0
+1608159329135,1227,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:314 Passed:314 Failed:0
+1608159329313,177,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:315 Passed:315 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 22.11s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159329514,149,selenium_login:open_login_page,Success,True
+1608159329936,330,selenium_login:login_get_started,Success,True
+1608159329936,570,selenium_login,Success,True
+.test_0_selenium_a_login,Total:316 Passed:316 Failed:0
+1608159331591,1654,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:317 Passed:317 Failed:0
+1608159338503,6903,selenium_create_pull_request:create_pull_request,Success,True
+1608159340307,1803,selenium_create_pull_request:merge_pull_request,Success,True
+1608159341349,9749,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:318 Passed:318 Failed:0
+1608159341834,484,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:319 Passed:319 Failed:0
+1608159342096,261,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:320 Passed:320 Failed:0
+1608159342525,427,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:321 Passed:321 Failed:0
+1608159342929,402,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:322 Passed:322 Failed:0
+1608159344023,1092,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:323 Passed:323 Failed:0
+1608159344589,564,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:324 Passed:324 Failed:0
+1608159345693,1102,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:325 Passed:325 Failed:0
+1608159347407,1175,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:326 Passed:326 Failed:0
+1608159348999,947,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:327 Passed:327 Failed:0
+1608159349853,852,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:328 Passed:328 Failed:0
+1608159351025,1170,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:329 Passed:329 Failed:0
+1608159351192,164,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:330 Passed:330 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.84s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159351396,151,selenium_login:open_login_page,Success,True
+1608159351791,302,selenium_login:login_get_started,Success,True
+1608159351791,547,selenium_login,Success,True
+.test_0_selenium_a_login,Total:331 Passed:331 Failed:0
+1608159353245,1452,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:332 Passed:332 Failed:0
+1608159360177,6913,selenium_create_pull_request:create_pull_request,Success,True
+1608159362491,2314,selenium_create_pull_request:merge_pull_request,Success,True
+1608159363529,10265,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:333 Passed:333 Failed:0
+1608159364075,544,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:334 Passed:334 Failed:0
+1608159364319,242,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:335 Passed:335 Failed:0
+1608159364764,443,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:336 Passed:336 Failed:0
+1608159365138,373,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:337 Passed:337 Failed:0
+1608159365664,524,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:338 Passed:338 Failed:0
+1608159366575,910,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:339 Passed:339 Failed:0
+1608159367526,949,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:340 Passed:340 Failed:0
+1608159369218,1217,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:341 Passed:341 Failed:0
+1608159370985,1259,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:342 Passed:342 Failed:0
+1608159371904,917,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:343 Passed:343 Failed:0
+1608159373108,1202,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:344 Passed:344 Failed:0
+1608159373282,173,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:345 Passed:345 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 22.05s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159373522,160,selenium_login:open_login_page,Success,True
+1608159374055,418,selenium_login:login_get_started,Success,True
+1608159374055,693,selenium_login,Success,True
+.test_0_selenium_a_login,Total:346 Passed:346 Failed:0
+1608159375562,1506,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:347 Passed:347 Failed:0
+1608159382231,6656,selenium_create_pull_request:create_pull_request,Success,True
+1608159384033,1801,selenium_create_pull_request:merge_pull_request,Success,True
+1608159385114,9539,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:348 Passed:348 Failed:0
+1608159385536,420,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:349 Passed:349 Failed:0
+1608159385799,262,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:350 Passed:350 Failed:0
+1608159386195,393,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:351 Passed:351 Failed:0
+1608159386624,428,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:352 Passed:352 Failed:0
+1608159387088,462,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:353 Passed:353 Failed:0
+1608159388102,1011,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:354 Passed:354 Failed:0
+1608159389031,928,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:355 Passed:355 Failed:0
+1608159390648,1207,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:356 Passed:356 Failed:0
+1608159392186,1095,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:357 Passed:357 Failed:0
+1608159393021,833,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:358 Passed:358 Failed:0
+1608159394265,1242,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:359 Passed:359 Failed:0
+1608159394421,155,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:360 Passed:360 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 21.07s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159394640,166,selenium_login:open_login_page,Success,True
+1608159395073,334,selenium_login:login_get_started,Success,True
+1608159395073,600,selenium_login,Success,True
+.test_0_selenium_a_login,Total:361 Passed:361 Failed:0
+1608159395713,637,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:362 Passed:362 Failed:0
+1608159402800,7078,selenium_create_pull_request:create_pull_request,Success,True
+1608159404152,1351,selenium_create_pull_request:merge_pull_request,Success,True
+1608159405298,9575,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:363 Passed:363 Failed:0
+1608159405784,485,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:364 Passed:364 Failed:0
+1608159406085,298,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:365 Passed:365 Failed:0
+1608159406529,442,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:366 Passed:366 Failed:0
+1608159406922,392,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:367 Passed:367 Failed:0
+1608159407487,563,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:368 Passed:368 Failed:0
+1608159408325,836,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:369 Passed:369 Failed:0
+1608159409302,976,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:370 Passed:370 Failed:0
+1608159410924,1181,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:371 Passed:371 Failed:0
+1608159412446,984,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:372 Passed:372 Failed:0
+1608159413299,851,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:373 Passed:373 Failed:0
+1608159414423,1122,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:374 Passed:374 Failed:0
+1608159414581,157,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:375 Passed:375 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.12s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159414784,151,selenium_login:open_login_page,Success,True
+1608159415226,339,selenium_login:login_get_started,Success,True
+1608159415226,593,selenium_login,Success,True
+.test_0_selenium_a_login,Total:376 Passed:376 Failed:0
+1608159416123,896,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:377 Passed:377 Failed:0
+1608159423307,7169,selenium_create_pull_request:create_pull_request,Success,True
+1608159426123,2815,selenium_create_pull_request:merge_pull_request,Success,True
+1608159427185,11047,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:378 Passed:378 Failed:0
+1608159427643,455,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:379 Passed:379 Failed:0
+1608159427915,271,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:380 Passed:380 Failed:0
+1608159428376,459,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:381 Passed:381 Failed:0
+1608159428798,421,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:382 Passed:382 Failed:0
+1608159430275,1475,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:383 Passed:383 Failed:0
+1608159430826,550,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:384 Passed:384 Failed:0
+1608159431884,1056,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:385 Passed:385 Failed:0
+1608159433835,1491,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:386 Passed:386 Failed:0
+1608159435563,1221,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:387 Passed:387 Failed:0
+1608159436399,834,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:388 Passed:388 Failed:0
+1608159437560,1159,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:389 Passed:389 Failed:0
+1608159437726,164,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:390 Passed:390 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 23.10s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159437926,147,selenium_login:open_login_page,Success,True
+1608159438319,299,selenium_login:login_get_started,Success,True
+1608159438319,540,selenium_login,Success,True
+.test_0_selenium_a_login,Total:391 Passed:391 Failed:0
+1608159438942,621,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:392 Passed:392 Failed:0
+1608159445568,6616,selenium_create_pull_request:create_pull_request,Success,True
+1608159447360,1791,selenium_create_pull_request:merge_pull_request,Success,True
+1608159448384,9432,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:393 Passed:393 Failed:0
+1608159448830,444,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:394 Passed:394 Failed:0
+1608159449098,266,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:395 Passed:395 Failed:0
+1608159449639,539,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:396 Passed:396 Failed:0
+1608159449989,348,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:397 Passed:397 Failed:0
+1608159450638,647,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:398 Passed:398 Failed:0
+1608159451469,830,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:399 Passed:399 Failed:0
+1608159452379,907,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:400 Passed:400 Failed:0
+1608159454060,1243,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:401 Passed:401 Failed:0
+1608159455613,1080,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:402 Passed:402 Failed:0
+1608159456432,817,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:403 Passed:403 Failed:0
+1608159457617,1184,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:404 Passed:404 Failed:0
+1608159457773,154,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:405 Passed:405 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.01s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159457972,147,selenium_login:open_login_page,Success,True
+1608159458408,340,selenium_login:login_get_started,Success,True
+1608159458408,583,selenium_login,Success,True
+.test_0_selenium_a_login,Total:406 Passed:406 Failed:0
+1608159458978,568,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:407 Passed:407 Failed:0
+1608159466158,7165,selenium_create_pull_request:create_pull_request,Success,True
+1608159467955,1796,selenium_create_pull_request:merge_pull_request,Success,True
+1608159468988,9995,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:408 Passed:408 Failed:0
+1608159469505,515,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:409 Passed:409 Failed:0
+1608159469750,243,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:410 Passed:410 Failed:0
+1608159470125,374,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:411 Passed:411 Failed:0
+1608159470448,322,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:412 Passed:412 Failed:0
+1608159471613,1163,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:413 Passed:413 Failed:0
+1608159472082,467,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:414 Passed:414 Failed:0
+1608159473006,922,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:415 Passed:415 Failed:0
+1608159474547,1153,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:416 Passed:416 Failed:0
+1608159476048,1063,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:417 Passed:417 Failed:0
+1608159476866,815,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:418 Passed:418 Failed:0
+1608159477972,1104,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:419 Passed:419 Failed:0
+1608159478125,151,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:420 Passed:420 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 20.31s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159478322,146,selenium_login:open_login_page,Success,True
+1608159478723,309,selenium_login:login_get_started,Success,True
+1608159478724,548,selenium_login,Success,True
+.test_0_selenium_a_login,Total:421 Passed:421 Failed:0
+1608159479747,1021,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:422 Passed:422 Failed:0
+1608159486138,6374,selenium_create_pull_request:create_pull_request,Success,True
+1608159487431,1292,selenium_create_pull_request:merge_pull_request,Success,True
+1608159488467,8704,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:423 Passed:423 Failed:0
+1608159488884,415,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:424 Passed:424 Failed:0
+1608159489138,252,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:425 Passed:425 Failed:0
+1608159489469,329,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:426 Passed:426 Failed:0
+1608159489798,328,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:427 Passed:427 Failed:0
+1608159490248,448,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:428 Passed:428 Failed:0
+1608159490695,445,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:429 Passed:429 Failed:0
+1608159491634,937,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:430 Passed:430 Failed:0
+1608159493180,1149,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:431 Passed:431 Failed:0
+1608159494758,1113,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:432 Passed:432 Failed:0
+1608159495597,837,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:433 Passed:433 Failed:0
+1608159496701,1103,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:434 Passed:434 Failed:0
+1608159496854,151,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:435 Passed:435 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 18.69s ========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.1.1, py-1.9.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.5
+collected 15 items
+
+selenium_ui/bitbucket_ui.py get driver from global
+1608159497080,145,selenium_login:open_login_page,Success,True
+1608159497461,288,selenium_login:login_get_started,Success,True
+1608159497461,526,selenium_login,Success,True
+.test_0_selenium_a_login,Total:436 Passed:436 Failed:0
+1608159498185,722,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:437 Passed:437 Failed:0
+1608159504414,6221,selenium_create_pull_request:create_pull_request,Success,True
+1608159506194,1779,selenium_create_pull_request:merge_pull_request,Success,True
+1608159507202,9009,selenium_create_pull_request,Success,True
+.test_1_selenium_create_pull_request,Total:438 Passed:438 Failed:0
+1608159507629,425,selenium_view_projects,Success,True
+.test_1_selenium_view_projects,Total:439 Passed:439 Failed:0
+1608159507874,242,selenium_view_project_repositories,Success,True
+.test_1_selenium_view_project_repositories,Total:440 Passed:440 Failed:0
+1608159508204,328,selenium_view_repository,Success,True
+.test_1_selenium_view_repo,Total:441 Passed:441 Failed:0
+1608159508523,317,selenium_view_list_pull_requests,Success,True
+.test_1_selenium_view_list_pull_requests,Total:442 Passed:442 Failed:0
+1608159509688,1164,selenium_view_pull_request_overview,Success,True
+.test_1_selenium_view_pull_request_overview,Total:443 Passed:443 Failed:0
+1608159510134,444,selenium_view_pull_request_diff,Success,True
+.test_1_selenium_view_pull_request_diff,Total:444 Passed:444 Failed:0
+1608159511027,891,selenium_view_pull_request_commits,Success,True
+.test_1_selenium_view_pull_request_commits,Total:445 Passed:445 Failed:0
+1608159512595,1173,selenium_comment_pull_request_file,Success,True
+.test_1_selenium_comment_pull_request_diff,Total:446 Passed:446 Failed:0
+1608159514165,923,selenium_comment_pull_request_overview,Success,True
+.test_1_selenium_comment_pull_request_overview,Total:447 Passed:447 Failed:0
+1608159514991,824,selenium_view_branches,Success,True
+.test_1_selenium_view_branches,Total:448 Passed:448 Failed:0
+1608159516074,1081,selenium_view_commits,Success,True
+.test_1_selenium_view_commits,Total:449 Passed:449 Failed:0
+1608159516225,149,selenium_log_out,Success,True
+.test_2_selenium_logout,Total:450 Passed:450 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 15 passed, 1 warning in 19.33s ========================
