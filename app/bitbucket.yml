@@ -13,7 +13,7 @@ settings:
     admin_password: admin
     load_executor: jmeter           # only jmeter executor is supported
     concurrency: 20                 # number of concurrent virtual users for jmeter scenario
-    test_duration: 10m
+    test_duration: 50m
     ramp-up: 10m                    # time to spin all concurrent users
     total_actions_per_hour: 32700
     WEBDRIVER_VISIBLE: False
