@@ -1,0 +1,1074 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.2.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.2.3.14. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"/>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Global Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="application.hostname" elementType="Argument">
+            <stringProp name="Argument.name">application.hostname</stringProp>
+            <stringProp name="Argument.value">${__lowercase(${__P(application_hostname, test_bitbucket_instance.atlassian.com)})}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="application.port" elementType="Argument">
+            <stringProp name="Argument.name">application.port</stringProp>
+            <stringProp name="Argument.value">${__P(application_port, 80)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="application.protocol" elementType="Argument">
+            <stringProp name="Argument.name">application.protocol</stringProp>
+            <stringProp name="Argument.value">${__P(application_protocol, http)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="application.postfix" elementType="Argument">
+            <stringProp name="Argument.name">application.postfix</stringProp>
+            <stringProp name="Argument.value">${__P(application_postfix, )}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="application.ssh_port" elementType="Argument">
+            <stringProp name="Argument.name">application.ssh_port</stringProp>
+            <stringProp name="Argument.value">${__P(application.ssh_port,7999)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="application.ssh_hostname" elementType="Argument">
+            <stringProp name="Argument.name">application.ssh_hostname</stringProp>
+            <stringProp name="Argument.value">${__P(application_hostname, test_bitbucket_instance.atlassian.com)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="tmp.dir" elementType="Argument">
+            <stringProp name="Argument.name">tmp.dir</stringProp>
+            <stringProp name="Argument.value">${__P(tmp_dir, /tmp)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ssh.key.url" elementType="Argument">
+            <stringProp name="Argument.name">ssh.key.url</stringProp>
+            <stringProp name="Argument.value">${__P(ssh_key_url, https://centaurus-datasets.s3.us-east-2.amazonaws.com/bitbucket/ssh/id_rsa)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="admin_login" elementType="Argument">
+            <stringProp name="Argument.name">admin_login</stringProp>
+            <stringProp name="Argument.value">${__P(admin_login,admin)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="admin_password" elementType="Argument">
+            <stringProp name="Argument.name">admin_password</stringProp>
+            <stringProp name="Argument.value">${__P(admin_password,admin)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="GIT_PROTOCOL_SSH_PERCENTAGE" elementType="Argument">
+            <stringProp name="Argument.name">GIT_PROTOCOL_SSH_PERCENTAGE</stringProp>
+            <stringProp name="Argument.value">60</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MAX_NUM_LINES_TO_CHANGE" elementType="Argument">
+            <stringProp name="Argument.name">MAX_NUM_LINES_TO_CHANGE</stringProp>
+            <stringProp name="Argument.value">${__P(max_num_line_to_change,20)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="MAX_NUM_FILES_TO_CHANGE" elementType="Argument">
+            <stringProp name="Argument.name">MAX_NUM_FILES_TO_CHANGE</stringProp>
+            <stringProp name="Argument.value">${__P(max_num_files_to_change,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="USE_JIRA_KEYS" elementType="Argument">
+            <stringProp name="Argument.name">USE_JIRA_KEYS</stringProp>
+            <stringProp name="Argument.value">${__P(use_jira_keys,true)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="total.actions.per.hr" elementType="Argument">
+            <stringProp name="Argument.name">total.actions.per.hr</stringProp>
+            <stringProp name="Argument.value">${__P(total_actions_per_hr,32700)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${application.hostname}</stringProp>
+        <stringProp name="HTTPSampler.port">${application.port}</stringProp>
+        <stringProp name="HTTPSampler.protocol">${application.protocol}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"/>
+        <stringProp name="HTTPSampler.path">${application.postfix}</stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"/>
+        <stringProp name="HTTPSampler.response_timeout"/>
+      </ConfigTestElement>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      <stringProp name="CookieManager.implementation">org.apache.jmeter.protocol.http.control.HC4CookieHandler</stringProp></CookieManager>
+      <hashTree/>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="" elementType="Header">
+            <stringProp name="Header.name">Origin</stringProp>
+            <stringProp name="Header.value">${application.protocol}://${application.hostname}:${application.port}</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="setUp Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"/>
+        <stringProp name="ThreadGroup.delay"/>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Create GIT_TMP_WORKSPACE" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="script">import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
+import java.util.UUID;
+
+ try {
+ 	String prefix = "dcapt_git_workspace_";
+ 	String tmpDir = vars.get("tmp.dir");
+ 	String gitTmpWorkspace = Files.createDirectories(Paths.get(tmpDir, new String[]{prefix + UUID.randomUUID()}), new FileAttribute[0])
+ 	                              .toAbsolutePath()
+ 	                              .toString();
+     log.info("Git temporary workspace: [" + gitTmpWorkspace +"] successfully created.");
+ 	props.put("GIT_TMP_WORKSPACE", gitTmpWorkspace);
+} catch (Exception e) {
+	log.error("Error while creating temporary git workspace", e);
+	ctx.getEngine().askThreadsToStop();
+}</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Copy ssh keys to GIT_TMP_WORKSPACE" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="script">import java.io.File;
+import org.apache.commons.io.FileUtils;
+
+ try {
+ 	String gitTmpWorkspace = props.get("GIT_TMP_WORKSPACE");
+ 	String bitbucketSshKeyUrl = vars.get("ssh.key.url");
+     File privateKey = new File(gitTmpWorkspace + "/bitbucket_ssh/id_rsa");
+     FileUtils.copyURLToFile(new URL(bitbucketSshKeyUrl), privateKey);
+ 	FileUtils.copyURLToFile(new URL(bitbucketSshKeyUrl + ".pub"), new File(gitTmpWorkspace + "/bitbucket_ssh/id_rsa.pub"));
+ 	String privateSshKeyLocation = (gitTmpWorkspace + "/bitbucket_ssh/id_rsa").replace("\\", "/");
+ 	props.put("PRIVATE_SSH_KEY_LOCATION", privateSshKeyLocation);
+     log.info("SSH keys are stored in " + privateSshKeyLocation);
+     props.put("GIT_SSH_COMMAND", "ssh -i " + privateSshKeyLocation + " -o \"StrictHostKeyChecking=no\"");     
+} catch (Exception e) {
+	log.error("Error while copying ssh keys", e);
+	ctx.getEngine().askThreadsToStop();
+}</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="User git config global" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import org.apache.commons.lang3.StringUtils;
+
+try {
+	Runtime rt = Runtime.getRuntime();
+	String name = new BufferedReader(new InputStreamReader(rt.exec("git config --global user.name").getInputStream())).readLine();
+	String email = new BufferedReader(new InputStreamReader(rt.exec("git config --global user.email").getInputStream())).readLine();
+
+
+	if (StringUtils.isBlank(name)) {
+		rt.exec("git config --global user.name \"" + vars.get("admin_login") + "\"").waitFor();
+	}
+	if (StringUtils.isBlank(email)) {
+		rt.exec("git config --global user.email \"" + vars.get("admin_login") + "@test.com\"").waitFor();
+	}
+} catch (Exception e) {
+	log.error("Error while changing user.name or/and user.email", e);
+	ctx.getEngine().askThreadsToStop();
+}</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="DATASETS_DIR" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.nio.file.Paths;
+import org.apache.jmeter.services.FileServer;
+
+String baseDir = FileServer.getFileServer()
+					.getBaseDir();
+String datasetsDir =  Paths.get(baseDir)
+					.getParent()
+					.resolve("datasets")
+					.toAbsolutePath()
+					.toString()
+					.replace("\\", "/");
+					
+props.put("DATASETS_DIR", datasetsDir);</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+          <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="GIT_LOG_DIR" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import org.apache.commons.lang3.StringUtils;
+
+try {
+String envArtifactsDir = System.getenv("TAURUS_ARTIFACTS_DIR");
+String gitLogDir = (StringUtils.isBlank(envArtifactsDir) ? props.get("GIT_TMP_WORKSPACE") : envArtifactsDir).replace("\\", "/");
+props.put("GIT_LOG_DIR", gitLogDir);
+log.info("GIT_LOG_DIR: " + gitLogDir);
+} catch (Exception e) {
+	log.error("Error while defining GIT_LOG_DIR", e);
+	ctx.getEngine().askThreadsToStop();
+}</stringProp>
+          </JSR223PreProcessor>
+          <hashTree/>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If OS is not Windows" enabled="true">
+          <stringProp name="IfController.condition">${__BeanShell(import org.apache.commons.lang3.SystemUtils; !SystemUtils.IS_OS_WINDOWS;)}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="Chmod 400 ssh key" enabled="true">
+            <boolProp name="SystemSampler.checkReturnCode">false</boolProp>
+            <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+            <stringProp name="SystemSampler.command">chmod</stringProp>
+            <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">400</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">${__P(PRIVATE_SSH_KEY_LOCATION)}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="SystemSampler.directory"/>
+          </SystemSampler>
+          <hashTree>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Hide Samplers result if success" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">// We want to hide the sampler if it passes successfully to not output in results and show if it fails for troubleshooting purpose
+
+if(!prev.isSuccessful()){
+	log.error("Error occured in Thread name::" + prev.getThreadName() + "::Sampler name::" + prev.getSampleLabel() + "::" + prev.getResponseMessage() + "::" + prev.getResponseDataAsString())
+	ctx.getEngine().askThreadsToStop();
+}	
+else{
+	prev.setIgnore()
+}
+	</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add ssh key on Bitbucket" enabled="true"/>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login Admin" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="j_username" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${admin_login}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">j_username</stringProp>
+                </elementProp>
+                <elementProp name="j_password" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">${admin_password}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                  <stringProp name="Argument.name">j_password</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"/>
+            <stringProp name="HTTPSampler.port"/>
+            <stringProp name="HTTPSampler.protocol"/>
+            <stringProp name="HTTPSampler.contentEncoding"/>
+            <stringProp name="HTTPSampler.path">${application.postfix}/login</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"/>
+            <stringProp name="HTTPSampler.connect_timeout"/>
+            <stringProp name="HTTPSampler.response_timeout"/>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"/>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">1</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Get all ssh keys from Bitbucket" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"/>
+            <stringProp name="HTTPSampler.port"/>
+            <stringProp name="HTTPSampler.protocol"/>
+            <stringProp name="HTTPSampler.contentEncoding"/>
+            <stringProp name="HTTPSampler.path">${application.postfix}/rest/ssh/1.0/keys</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"/>
+            <stringProp name="HTTPSampler.connect_timeout"/>
+            <stringProp name="HTTPSampler.response_timeout"/>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="SERVER_SSH_KEYS" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">import groovy.json.JsonSlurper
+
+def slurper = new groovy.json.JsonSlurper()
+Map parsedJson = slurper.parseText(prev.getResponseDataAsString())
+def existedSshKeys = parsedJson.values
+def result = []
+
+for(def key : existedSshKeys) {
+	result.add(key.text)
+	}
+vars.put("SERVER_SSH_KEYS", result.join("::"));
+
+</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Read user pub ssh key file" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.io.File; 
+vars.put("USER_SSH_KEY", new File('${__P(PRIVATE_SSH_KEY_LOCATION)}.pub').getText('UTF-8').trim());
+</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If ssh key not present on server" enabled="true">
+            <stringProp name="IfController.condition">${__groovy(
+        def userSshKey = vars.get("USER_SSH_KEY");
+        def key_list = vars.get("SERVER_SSH_KEYS");
+        // "Add ssh key" Sampler will be failed for further troubleshooting
+        if(userSshKey == null || key_list == null) return true
+		for(def s: key_list.split("::")){
+			if(userSshKey == s){
+				return false
+			}
+		}
+		return true
+)}</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+            <boolProp name="IfController.useExpression">true</boolProp>
+          </IfController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add ssh key" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#13;
+	"text": "${USER_SSH_KEY}"&#13;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"/>
+              <stringProp name="HTTPSampler.port"/>
+              <stringProp name="HTTPSampler.protocol"/>
+              <stringProp name="HTTPSampler.contentEncoding"/>
+              <stringProp name="HTTPSampler.path">${application.postfix}/rest/ssh/latest/keys?user=${admin_login}</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"/>
+              <stringProp name="HTTPSampler.connect_timeout"/>
+              <stringProp name="HTTPSampler.response_timeout"/>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+                <collectionProp name="HeaderManager.headers">
+                  <elementProp name="" elementType="Header">
+                    <stringProp name="Header.name">Content-Type</stringProp>
+                    <stringProp name="Header.value">application/json</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </HeaderManager>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="49587">201</stringProp>
+                  <stringProp name="51517">409</stringProp>
+                  <stringProp name="0"/>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"/>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">33</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Logout Admin" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain"/>
+            <stringProp name="HTTPSampler.port"/>
+            <stringProp name="HTTPSampler.protocol"/>
+            <stringProp name="HTTPSampler.contentEncoding"/>
+            <stringProp name="HTTPSampler.path">${application.postfix}/j_atl_security_logout</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"/>
+            <stringProp name="HTTPSampler.connect_timeout"/>
+            <stringProp name="HTTPSampler.response_timeout"/>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="Hide Samplers result if success" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">// We want to hide the sampler if it passes successfully to not output in results and show if it fails for troubleshooting purpose
+
+if(!prev.isSuccessful()){
+	log.error("Error occured in Thread name::" + prev.getThreadName() + "::Sampler name::" + prev.getSampleLabel() + "::" + prev.getResponseMessage() + "::" + prev.getResponseDataAsString())
+	ctx.getEngine().askThreadsToStop();
+}	
+else{
+	prev.setIgnore()
+}
+</stringProp>
+          </JSR223PostProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="bitbucket" enabled="true"><elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/><stringProp name="ThreadGroup.on_sample_error">continue</stringProp><stringProp name="TargetLevel">20</stringProp><stringProp name="RampUp">600</stringProp><stringProp name="Steps">0</stringProp><stringProp name="Hold">3000</stringProp><stringProp name="LogFilename"></stringProp><stringProp name="Iterations"></stringProp><stringProp name="Unit">S</stringProp></com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup><hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="users" enabled="true">
+          <stringProp name="filename">${__P(DATASETS_DIR)}/bitbucket/users.csv</stringProp>
+          <stringProp name="fileEncoding"/>
+          <stringProp name="variableNames">USER_ID,USERNAME,USER_PASSWORD</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="repos" enabled="true">
+          <stringProp name="filename">${__P(DATASETS_DIR)}/bitbucket/repos.csv</stringProp>
+          <stringProp name="fileEncoding"/>
+          <stringProp name="variableNames">REPO_SLUG,PROJECT_KEY</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="full_repository_clone_and_push" enabled="true"/>
+        <hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Set up random variables" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">// sampler to set up random variables, in the contained pre-processors
+SampleResult.setIgnore();</stringProp>
+          </JSR223Sampler>
+          <hashTree>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="REPO_URL, REPO_SLUG, GIT_PROTOCOL" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">def repoSlug = "${REPO_SLUG}"
+def projectKey = "${PROJECT_KEY}"
+
+def username = vars.get("USERNAME")
+def password = vars.get("USER_PASSWORD")
+
+def gitProtocolSshPercentage = Integer.valueOf("${GIT_PROTOCOL_SSH_PERCENTAGE}").intValue()
+def randomNum = java.util.concurrent.ThreadLocalRandom.current().nextInt(0, 100)
+if (randomNum &lt;= gitProtocolSshPercentage) {
+	vars.put("GIT_PROTOCOL", "ssh")
+	vars.put("REPO_URL", "ssh://git@${application.ssh_hostname}:${application.ssh_port}/" + projectKey + "/" + repoSlug + ".git") 
+} else {
+	vars.put("GIT_PROTOCOL", "http")
+	vars.put("REPO_URL", "${application.protocol}://" + username + ":" + password + "@${application.hostname}:${application.port}${application.postfix}/scm/" + projectKey + "/" + repoSlug + ".git")
+}
+</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+            <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="REPO_FOLDER (Generate repo folder)" enabled="true">
+              <stringProp name="scriptLanguage">java</stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">import java.util.UUID;
+
+String gitTmpWorkspace = props.get("GIT_TMP_WORKSPACE");
+vars.put("REPO_FOLDER", gitTmpWorkspace + "/clone-push-" + vars.get("REPO_SLUG") + "-" + UUID.randomUUID());</stringProp>
+            </JSR223PreProcessor>
+            <hashTree/>
+          </hashTree>
+          <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="jmeter_clone_repo_via_${GIT_PROTOCOL}" enabled="true">
+            <boolProp name="SystemSampler.checkReturnCode">true</boolProp>
+            <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+            <stringProp name="SystemSampler.command">git</stringProp>
+            <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">clone</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">--no-checkout</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">${REPO_URL}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="" elementType="Argument">
+                  <stringProp name="Argument.name"/>
+                  <stringProp name="Argument.value">${REPO_FOLDER}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="DISABLED_GIT_CURL_VERBOSE" elementType="Argument">
+                  <stringProp name="Argument.name">DISABLED_GIT_CURL_VERBOSE</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="DISABLED_GIT_TRACE_PACKET" elementType="Argument">
+                  <stringProp name="Argument.name">DISABLED_GIT_TRACE_PACKET</stringProp>
+                  <stringProp name="Argument.value">true</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="GIT_SSH_COMMAND" elementType="Argument">
+                  <stringProp name="Argument.name">GIT_SSH_COMMAND</stringProp>
+                  <stringProp name="Argument.value">${__P(GIT_SSH_COMMAND)}</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+                <elementProp name="GIT_SSL_NO_VERIFY" elementType="Argument">
+                  <stringProp name="Argument.name">GIT_SSL_NO_VERIFY</stringProp>
+                  <stringProp name="Argument.value">1</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="SystemSampler.directory">${__P(GIT_TMP_WORKSPACE)}</stringProp>
+            <stringProp name="SystemSampler.stderr">${__P(GIT_LOG_DIR)}/giterrors.log</stringProp>
+          </SystemSampler>
+          <hashTree>
+            <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="OS Process Result" enabled="true">
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="filename"/>
+              <stringProp name="parameters"/>
+              <stringProp name="script">import org.apache.commons.lang3.StringUtils;
+
+def responseCode = prev.getResponseCode();
+
+if (responseCode != "0") {
+	String responseData = prev.getResponseDataAsString();
+	String outputMessage = StringUtils.abbreviate(responseData.replaceAll("\n", " "), 100);
+	prev.setResponseMessage("git clone failed: " + outputMessage);
+
+	prev.setSuccessful(false);
+
+	String envData = prev.getSamplerData();
+	log.error(responseData + envData);
+}</stringProp>
+              <stringProp name="scriptLanguage">groovy</stringProp>
+            </JSR223PostProcessor>
+            <hashTree/>
+          </hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="jmeter_create_repo_shallow_copy" enabled="true">
+            <stringProp name="scriptLanguage">java</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">import java.nio.file.Files;
+import java.nio.file.attribute.FileAttribute;
+import org.apache.commons.io.FileUtils;
+import java.nio.file.Paths;
+import java.util.UUID;
+
+ try {
+ 	String gitTmpWorkspace = props.get("GIT_TMP_WORKSPACE");
+ 	String shallowCopiesDir = Files.createDirectories(Paths.get(gitTmpWorkspace, new String[]{"shallow_copies"}), new FileAttribute[0])
+ 	                              .toAbsolutePath()
+ 	                              .toString();
+     log.info("Shallow copies folder: [" + shallowCopiesDir +"] successfully created.");
+     
+	File srcDir = new File(vars.get("REPO_FOLDER") + "/.git");
+	String repoShallowCopyDir = shallowCopiesDir + "/" + vars.get("REPO_SLUG") + "-" + UUID.randomUUID();
+	File trgDir = new File (repoShallowCopyDir + "/.git");
+	FileUtils.copyDirectory(srcDir, trgDir);
+	vars.put("REPO_SHALLOW_COPY_DIR", repoShallowCopyDir);
+	
+} catch (Exception e) {
+	log.error("Error while creating temporary workspace for pull", e);
+	ctx.getEngine().askThreadsToStop();
+}</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+            <boolProp name="LoopController.continue_forever">true</boolProp>
+            <intProp name="LoopController.loops">-1</intProp>
+          </LoopController>
+          <hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing - start" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="Calculate loop start time" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"/>
+                <stringProp name="parameters"/>
+                <stringProp name="script">vars.put("loop_start_time",String.valueOf(System.currentTimeMillis()));
+</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+            </hashTree>
+            <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Set up random variables" enabled="true">
+              <stringProp name="scriptLanguage">groovy</stringProp>
+              <stringProp name="parameters"/>
+              <stringProp name="filename"/>
+              <stringProp name="cacheKey">true</stringProp>
+              <stringProp name="script">// sampler to set up random variables, in the contained pre-processors
+SampleResult.setIgnore();</stringProp>
+            </JSR223Sampler>
+            <hashTree>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="NUM_FILES_TO_CHANGE" enabled="true">
+                <stringProp name="scriptLanguage">groovy</stringProp>
+                <stringProp name="parameters"/>
+                <stringProp name="filename"/>
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="script">def numFiles = ${__Random(1,${MAX_NUM_FILES_TO_CHANGE})}
+
+vars.put("NUM_FILES_TO_CHANGE", "${numFiles}")</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="MAX_NUM_LINES_TO_CHANGE" enabled="true">
+                <stringProp name="scriptLanguage">groovy</stringProp>
+                <stringProp name="parameters"/>
+                <stringProp name="filename"/>
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="script">vars.put("MAX_NUM_LINES_TO_CHANGE", "${MAX_NUM_LINES_TO_CHANGE}")</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+              <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="COMMIT_MESSAGE" enabled="true">
+                <stringProp name="scriptLanguage">groovy</stringProp>
+                <stringProp name="parameters"/>
+                <stringProp name="filename"/>
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="script">def commitPrefix = "";
+if (${USE_JIRA_KEYS}) {
+	int jiraId = java.util.concurrent.ThreadLocalRandom.current().nextInt(1, 10000)
+	commitPrefix = "BBSPPP-" + jiraId + " ";
+}
+def commitMessage = commitPrefix + "jMeter commit"
+
+vars.put("COMMIT_MESSAGE", "${commitMessage}")</stringProp>
+              </JSR223PreProcessor>
+              <hashTree/>
+            </hashTree>
+            <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Change file" enabled="true">
+              <boolProp name="LoopController.continue_forever">true</boolProp>
+              <stringProp name="LoopController.loops">1</stringProp>
+            </LoopController>
+            <hashTree>
+              <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="jmeter_change_file" enabled="true">
+                <stringProp name="scriptLanguage">groovy</stringProp>
+                <stringProp name="parameters"/>
+                <stringProp name="filename"/>
+                <stringProp name="cacheKey">false</stringProp>
+                <stringProp name="script">SampleResult.setIgnore();
+
+File localWorkingCopy = new File(vars.get("REPO_FOLDER"))
+
+int maxFileSuffix = 10
+int fileSuffix = java.util.concurrent.ThreadLocalRandom.current().nextInt(1, maxFileSuffix + 1)
+String fileName = String.format("default_branch_file-%02d.txt", fileSuffix);
+
+def now = new Date()
+
+def max = Integer.valueOf(vars.get("MAX_NUM_LINES_TO_CHANGE"))
+int number_of_lines = java.util.concurrent.ThreadLocalRandom.current().nextInt(1, max + 1);
+
+def file = new File(localWorkingCopy.toString(), fileName);
+if(!file.exists()){
+	file.createNewFile();
+}
+
+file.withWriterAppend('utf-8') { writer -&gt;
+	for (i = 0; i &lt; number_of_lines; i++) {
+		writer.writeLine 'Hey, this is a new line: (' + (i+1) + '/' + number_of_lines + ') ' + Math.random().toString() + ' ' + now
+	}
+}</stringProp>
+              </JSR223Sampler>
+              <hashTree/>
+            </hashTree>
+            <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="jmeter_git_add" enabled="true">
+              <boolProp name="SystemSampler.checkReturnCode">true</boolProp>
+              <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+              <stringProp name="SystemSampler.command">git</stringProp>
+              <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">add</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">.</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="SystemSampler.directory">${REPO_FOLDER}</stringProp>
+              <stringProp name="SystemSampler.stderr">${__P(GIT_LOG_DIR)}/giterrors.log</stringProp>
+            </SystemSampler>
+            <hashTree/>
+            <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="jmeter_git_commit" enabled="true">
+              <boolProp name="SystemSampler.checkReturnCode">true</boolProp>
+              <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+              <stringProp name="SystemSampler.command">git</stringProp>
+              <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">commit</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">-m</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">${COMMIT_MESSAGE}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments"/>
+              </elementProp>
+              <stringProp name="SystemSampler.directory">${REPO_FOLDER}</stringProp>
+              <stringProp name="SystemSampler.stderr">${__P(GIT_LOG_DIR)}/giterrors.log</stringProp>
+            </SystemSampler>
+            <hashTree/>
+            <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="jmeter_git_push_via_${GIT_PROTOCOL}" enabled="true">
+              <boolProp name="SystemSampler.checkReturnCode">true</boolProp>
+              <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+              <stringProp name="SystemSampler.command">git</stringProp>
+              <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">push</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">origin</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">master</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="GIT_SSH_VARIANT" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSH_VARIANT</stringProp>
+                    <stringProp name="Argument.value">ssh</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="GIT_SSH_COMMAND" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSH_COMMAND</stringProp>
+                    <stringProp name="Argument.value">${__P(GIT_SSH_COMMAND)}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="GIT_SSL_NO_VERIFY" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSL_NO_VERIFY</stringProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="SystemSampler.directory">${REPO_FOLDER}</stringProp>
+              <stringProp name="SystemSampler.stderr">${__P(GIT_LOG_DIR)}/giterrors.log</stringProp>
+            </SystemSampler>
+            <hashTree>
+              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="OS Process Result" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"/>
+                <stringProp name="parameters"/>
+                <stringProp name="script">import org.apache.commons.lang3.StringUtils;
+
+def responseCode = prev.getResponseCode();
+
+if (responseCode != "0") {
+	String responseData = prev.getResponseDataAsString();
+	String outputMessage = StringUtils.abbreviate(responseData.replaceAll("\n", " "), 100);
+	prev.setResponseMessage("git push failed: " + outputMessage);
+
+	prev.setSuccessful(false);
+
+	String envData = prev.getSamplerData();
+	log.error(responseData + envData);
+}</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223PostProcessor>
+              <hashTree/>
+            </hashTree>
+            <SystemSampler guiclass="SystemSamplerGui" testclass="SystemSampler" testname="jmeter_git_fetch_via_${GIT_PROTOCOL}" enabled="true">
+              <boolProp name="SystemSampler.checkReturnCode">true</boolProp>
+              <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
+              <stringProp name="SystemSampler.command">git</stringProp>
+              <elementProp name="SystemSampler.arguments" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="Argument">
+                    <stringProp name="Argument.name"/>
+                    <stringProp name="Argument.value">fetch</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <elementProp name="SystemSampler.environment" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="GIT_SSH_VARIANT" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSH_VARIANT</stringProp>
+                    <stringProp name="Argument.value">ssh</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="GIT_SSH_COMMAND" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSH_COMMAND</stringProp>
+                    <stringProp name="Argument.value">${__P(GIT_SSH_COMMAND)}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                  <elementProp name="GIT_SSL_NO_VERIFY" elementType="Argument">
+                    <stringProp name="Argument.name">GIT_SSL_NO_VERIFY</stringProp>
+                    <stringProp name="Argument.value">1</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="SystemSampler.directory">${REPO_SHALLOW_COPY_DIR}</stringProp>
+              <stringProp name="SystemSampler.stderr">${__P(GIT_LOG_DIR)}/giterrors.log</stringProp>
+            </SystemSampler>
+            <hashTree/>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="pacing - end" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <JSR223Timer guiclass="TestBeanGUI" testclass="JSR223Timer" testname="pacing timer" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"/>
+                <stringProp name="parameters"/>
+                <stringProp name="script">// concurrency
+def concurrency = ctx.getThreadGroup().getNumThreads()
+
+// Delays between each action in milli-seconds
+def delay_between_transactions = ((1000 * 3600) / (vars.get("total.actions.per.hr").toDouble() / concurrency.toDouble())) * 2 // Two actions per cycle
+
+//Sets the pacing length based on the last requests response time. x is the time in ms
+def start_time = Long.valueOf(vars.get("loop_start_time"))
+def sleep_time = (delay_between_transactions - (System.currentTimeMillis() - start_time)) as int
+
+log.info("concurrency: ${concurrency}, delay_between_transactions: ${delay_between_transactions}, thread_sleep: ${sleep_time}")
+
+if ( sleep_time &gt; 0 ) {
+    return sleep_time
+} else {
+    return 0
+}
+</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223Timer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="Delete repo from disk if exists" enabled="true">
+            <stringProp name="scriptLanguage">groovy</stringProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="cacheKey">true</stringProp>
+            <stringProp name="script">SampleResult.setIgnore();
+
+def localWorkingCopy = new File(vars.get("REPO_FOLDER"))
+
+if (localWorkingCopy.exists()) {
+	localWorkingCopy.deleteDir()
+}</stringProp>
+          </JSR223Sampler>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="tearDown Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"/>
+        <stringProp name="ThreadGroup.delay"/>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </PostThreadGroup>
+      <hashTree>
+        <TestAction guiclass="TestActionGui" testclass="TestAction" testname="Flow Control Action" enabled="true">
+          <intProp name="ActionProcessor.action">1</intProp>
+          <intProp name="ActionProcessor.target">0</intProp>
+          <stringProp name="ActionProcessor.duration">0</stringProp>
+        </TestAction>
+        <hashTree>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="Delete GIT_TMP_WORKSPACE" enabled="true">
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="parameters"/>
+            <stringProp name="filename"/>
+            <stringProp name="script">import org.apache.commons.io.FileUtils;
+
+String gitTmpWorkspace = props.get("GIT_TMP_WORKSPACE");
+FileUtils.deleteDirectory(new File(gitTmpWorkspace));
+log.info("Git temporary workspace: [" + gitTmpWorkspace +"] successfully deleted.");</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="false">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"/>
+      </ResultCollector>
+      <hashTree/>
+    <ResultCollector testname="KPI Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_22-12-27/kpi.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>false</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><connectTime>true</connectTime><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>false</dataType><encoding>false</encoding><assertions>false</assertions><subresults>false</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>false</responseHeaders><requestHeaders>false</requestHeaders><responseDataOnError>false</responseDataOnError><saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage><bytes>true</bytes><hostname>true</hostname><threadCounts>true</threadCounts><url>false</url></value></objProp></ResultCollector><hashTree/><ResultCollector testname="Errors Writer" testclass="ResultCollector" guiclass="SimpleDataWriter"><stringProp name="filename">/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_22-12-27/error.jtl</stringProp><objProp><name>saveConfig</name><value class="SampleSaveConfiguration"><xml>true</xml><fieldNames>true</fieldNames><time>true</time><timestamp>true</timestamp><latency>true</latency><success>true</success><label>true</label><code>true</code><message>true</message><threadName>true</threadName><dataType>true</dataType><encoding>true</encoding><assertions>true</assertions><subresults>true</subresults><responseData>false</responseData><samplerData>false</samplerData><responseHeaders>true</responseHeaders><requestHeaders>true</requestHeaders><responseDataOnError>true</responseDataOnError><saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage><bytes>true</bytes><threadCounts>true</threadCounts><url>true</url></value></objProp><boolProp name="ResultCollector.error_logging">true</boolProp></ResultCollector><hashTree/></hashTree>
+  </hashTree>
+</jmeterTestPlan>
