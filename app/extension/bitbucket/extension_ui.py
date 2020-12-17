@@ -7,9 +7,6 @@ from selenium_ui.base_page import BasePage
 
 def app_specific_action(webdriver, datasets):
     page = BasePage(webdriver)
-    repo = datasets['repos']
-    repo_slug = repo[0]
-    project_key = repo[1]
 
     @print_timing("selenium_app_custom_action")
     def measure():
