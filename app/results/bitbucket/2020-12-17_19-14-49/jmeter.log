@@ -1,0 +1,182 @@
+2020-12-17 19:17:44,750 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2020-12-17 19:17:44,760 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/user.properties
+2020-12-17 19:17:44,761 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/system.properties
+2020-12-17 19:17:44,761 INFO o.a.j.JMeter: Loading additional properties from: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_19-14-49/jmeter-bzt.properties
+2020-12-17 19:17:44,761 INFO o.a.j.JMeter: Setting System properties from file: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_19-14-49/system.properties
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: Version 5.2.1
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: java.version=1.8.0_265
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: os.name=Linux
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: os.arch=amd64
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: os.version=5.4.0-1029-aws
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: java.awt.headless=true
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: Max memory     =7635730432
+2020-12-17 19:17:44,762 INFO o.a.j.JMeter: Available Processors =8
+2020-12-17 19:17:44,765 INFO o.a.j.JMeter: Default Locale=English (United States)
+2020-12-17 19:17:44,765 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2020-12-17 19:17:44,765 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.2.1
+2020-12-17 19:17:44,765 INFO o.a.j.JMeter: user.dir  =/dc-app-performance-toolkit/app
+2020-12-17 19:17:44,766 INFO o.a.j.JMeter: PWD       =/dc-app-performance-toolkit/app
+2020-12-17 19:17:44,766 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: f820c2c5ec9c FullName: f820c2c5ec9c
+2020-12-17 19:17:44,766 INFO o.a.j.JMeter: user.classpath=/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_19-14-49:/dc-app-performance-toolkit/app/jmeter
+2020-12-17 19:17:44,766 INFO o.a.j.JMeter: Adding to classpath and loader: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_19-14-49
+2020-12-17 19:17:44,766 INFO o.a.j.JMeter: Adding to classpath and loader: /dc-app-performance-toolkit/app/jmeter
+2020-12-17 19:17:44,770 INFO o.a.j.s.FileServer: Default base='/dc-app-performance-toolkit/app'
+2020-12-17 19:17:44,781 INFO o.a.j.s.FileServer: Set new base='/dc-app-performance-toolkit/app/jmeter'
+2020-12-17 19:17:44,872 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-12-17 19:17:44,878 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-12-17 19:17:44,882 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-12-17 19:17:44,887 INFO o.a.j.s.SaveService: Loading file: /dc-app-performance-toolkit/app/jmeter/modified_bitbucket.jmx
+2020-12-17 19:17:44,916 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-12-17 19:17:44,920 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-12-17 19:17:45,167 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-12-17 19:17:45,224 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-12-17 19:17:45,225 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-12-17 19:17:45,225 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-12-17 19:17:45,229 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-12-17 19:17:45,229 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-12-17 19:17:45,467 INFO o.a.j.JMeter: Running test (1608232665467)
+2020-12-17 19:17:45,468 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2020-12-17 19:17:45,468 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : setUp Thread Group 
+2020-12-17 19:17:45,468 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group setUp Thread Group.
+2020-12-17 19:17:45,468 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-12-17 19:17:45,468 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-12-17 19:17:45,479 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-12-17 19:17:45,479 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2020-12-17 19:17:45,481 INFO o.a.j.t.JMeterThread: Thread started: setUp Thread Group 1-1
+2020-12-17 19:17:45,501 INFO o.a.j.u.BeanShellTestElement: Git temporary workspace: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453] successfully created.
+2020-12-17 19:17:46,075 INFO o.a.j.u.BeanShellTestElement: SSH keys are stored in /tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/bitbucket_ssh/id_rsa
+2020-12-17 19:17:46,409 INFO o.a.j.m.J.GIT_LOG_DIR: GIT_LOG_DIR: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_19-14-49
+2020-12-17 19:17:46,415 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-12-17 19:17:46,416 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2020-12-17 19:17:46,416 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-12-17 19:17:46,416 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-12-17 19:17:46,471 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = f820c2c5ec9c
+2020-12-17 19:17:46,475 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-12-17 19:17:48,671 INFO o.a.j.t.JMeterThread: Thread is done: setUp Thread Group 1-1
+2020-12-17 19:17:48,671 INFO o.a.j.t.JMeterThread: Thread finished: setUp Thread Group 1-1
+2020-12-17 19:17:48,671 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2020-12-17 19:17:48,757 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : bitbucket
+2020-12-17 19:17:48,757 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group bitbucket.
+2020-12-17 19:17:48,757 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-12-17 19:17:48,760 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-12-17 19:17:48,760 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2020-12-17 19:18:03,766 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-1
+2020-12-17 19:18:03,767 INFO o.a.j.s.FileServer: Stored: /dc-app-performance-toolkit/app/datasets/bitbucket/repos.csv
+2020-12-17 19:18:03,768 INFO o.a.j.s.FileServer: Stored: /dc-app-performance-toolkit/app/datasets/bitbucket/users.csv
+2020-12-17 19:18:10,554 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/shallow_copies] successfully created.
+2020-12-17 19:18:11,551 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3450
+2020-12-17 19:18:15,994 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3412
+2020-12-17 19:18:20,284 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3525
+2020-12-17 19:18:24,627 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3586
+2020-12-17 19:18:29,046 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3571
+2020-12-17 19:18:33,557 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3464
+2020-12-17 19:18:33,774 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-2
+2020-12-17 19:18:37,921 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3504
+2020-12-17 19:18:40,474 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/shallow_copies] successfully created.
+2020-12-17 19:18:41,241 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3659
+2020-12-17 19:18:42,335 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3493
+2020-12-17 19:18:45,693 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3611
+2020-12-17 19:18:46,679 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3552
+2020-12-17 19:18:50,038 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3670
+2020-12-17 19:18:51,044 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3591
+2020-12-17 19:18:54,417 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3695
+2020-12-17 19:18:55,486 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3553
+2020-12-17 19:18:58,877 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3639
+2020-12-17 19:18:59,854 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3589
+2020-12-17 19:19:03,232 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3688
+2020-12-17 19:19:03,780 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-3
+2020-12-17 19:19:04,296 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3551
+2020-12-17 19:19:07,716 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3608
+2020-12-17 19:19:08,740 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3511
+2020-12-17 19:19:10,099 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/shallow_copies] successfully created.
+2020-12-17 19:19:11,110 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3416
+2020-12-17 19:19:12,086 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3642
+2020-12-17 19:19:13,000 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3654
+2020-12-17 19:19:15,348 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3582
+2020-12-17 19:19:16,428 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3704
+2020-12-17 19:19:17,531 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3527
+2020-12-17 19:19:19,911 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3423
+2020-12-17 19:19:20,900 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3636
+2020-12-17 19:19:21,759 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3703
+2020-12-17 19:19:24,187 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3551
+2020-12-17 19:19:25,226 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3714
+2020-12-17 19:19:26,353 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3512
+2020-12-17 19:19:28,690 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3451
+2020-12-17 19:19:29,688 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3656
+2020-12-17 19:19:30,658 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3611
+2020-12-17 19:19:32,903 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3642
+2020-12-17 19:19:33,785 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-4
+2020-12-17 19:19:34,046 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3701
+2020-12-17 19:19:35,160 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3512
+2020-12-17 19:19:37,335 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3613
+2020-12-17 19:19:38,439 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3712
+2020-12-17 19:19:39,506 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3570
+2020-12-17 19:19:41,158 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/shallow_copies] successfully created.
+2020-12-17 19:19:41,874 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3478
+2020-12-17 19:19:42,108 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3475
+2020-12-17 19:19:42,918 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3636
+2020-12-17 19:19:43,914 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3565
+2020-12-17 19:19:46,177 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3578
+2020-12-17 19:19:46,473 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3513
+2020-12-17 19:19:46,939 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4019
+2020-12-17 19:19:48,436 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3447
+2020-12-17 19:19:50,631 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3527
+2020-12-17 19:19:50,846 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3545
+2020-12-17 19:19:51,373 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3989
+2020-12-17 19:19:52,798 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3489
+2020-12-17 19:19:55,136 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3425
+2020-12-17 19:19:55,327 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3467
+2020-12-17 19:19:55,729 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4036
+2020-12-17 19:19:57,056 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3635
+2020-12-17 19:19:59,572 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3393
+2020-12-17 19:19:59,811 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3386
+2020-12-17 19:20:00,182 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3987
+2020-12-17 19:20:01,570 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3525
+2020-12-17 19:20:03,791 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-5
+2020-12-17 19:20:03,873 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3496
+2020-12-17 19:20:04,407 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3194
+2020-12-17 19:20:04,798 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3774
+2020-12-17 19:20:06,033 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3465
+2020-12-17 19:20:08,169 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3604
+2020-12-17 19:20:08,666 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3339
+2020-12-17 19:20:08,978 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3998
+2020-12-17 19:20:10,372 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3530
+2020-12-17 19:20:10,739 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453/shallow_copies] successfully created.
+2020-12-17 19:20:10,867 ERROR o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Error while creating temporary workspace for pull
+java.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method) ~[?:1.8.0_265]
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66) ~[?:1.8.0_265]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89) ~[?:1.8.0_265]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:772) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:758) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.transferFromFileChannel(FileChannelImpl.java:633) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.transferFrom(FileChannelImpl.java:702) ~[?:1.8.0_265]
+	at org.apache.commons.io.FileUtils.doCopyFile(FileUtils.java:1131) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.doCopyDirectory(FileUtils.java:1424) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.doCopyDirectory(FileUtils.java:1422) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.doCopyDirectory(FileUtils.java:1422) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1366) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1246) ~[commons-io-2.6.jar:2.6]
+	at org.apache.commons.io.FileUtils.copyDirectory(FileUtils.java:1215) ~[commons-io-2.6.jar:2.6]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_265]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_265]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_265]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_265]
+	at bsh.Reflect.invokeMethod(Reflect.java:131) [bsh-2.0b6.jar:2.0b6 2016-02-05 05:16:19]
+	at bsh.Reflect.invokeStaticMethod(Reflect.java:95) [bsh-2.0b6.jar:2.0b6 2016-02-05 05:16:19]
+	at bsh.Name.invokeMethod(Name.java:868) [bsh-2.0b6.jar:22020-12-17 19:20:10,981 INFO o.a.j.u.BeanShellTestElement: Git temporary workspace: [/tmp/dcapt_git_workspace_f020af1b-dc92-4f4c-81f4-9ed5e7ae1453] successfully deleted.
+2020-12-17 19:20:10,981 INFO o.a.j.t.JMeterThread: Thread is done: tearDown Thread Group 1-1
+2020-12-17 19:20:10,981 INFO o.a.j.t.JMeterThread: Thread finished: tearDown Thread Group 1-1
+2020-12-17 19:20:10,981 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-12-17 19:20:10,982 INFO o.a.j.s.FileServer: Close: /dc-app-performance-toolkit/app/datasets/bitbucket/repos.csv
+2020-12-17 19:20:10,982 INFO o.a.j.s.FileServer: Close: /dc-app-performance-toolkit/app/datasets/bitbucket/users.csv
+2020-12-17 19:20:10,982 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test
