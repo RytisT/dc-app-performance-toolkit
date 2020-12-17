@@ -5,7 +5,7 @@ runs:
   - runName: "Node 1"
     fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_09-47-34"
   - runName: "Node 2"
-    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_11-13-18"
+    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_22-12-27"
   - runName: "Node 4"
     fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_20-41-31"
 
