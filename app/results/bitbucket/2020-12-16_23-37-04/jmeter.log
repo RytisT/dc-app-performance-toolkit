@@ -1,0 +1,567 @@
+2020-12-16 23:40:07,946 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2020-12-16 23:40:07,957 INFO o.a.j.JMeter: Loading user properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/user.properties
+2020-12-16 23:40:07,957 INFO o.a.j.JMeter: Loading system properties from: /root/.bzt/jmeter-taurus/5.2.1/bin/system.properties
+2020-12-16 23:40:07,957 INFO o.a.j.JMeter: Loading additional properties from: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04/jmeter-bzt.properties
+2020-12-16 23:40:07,957 INFO o.a.j.JMeter: Setting System properties from file: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04/system.properties
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: Version 5.2.1
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: java.version=1.8.0_265
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: os.name=Linux
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: os.arch=amd64
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: os.version=5.4.0-1029-aws
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: file.encoding=UTF-8
+2020-12-16 23:40:07,958 INFO o.a.j.JMeter: java.awt.headless=true
+2020-12-16 23:40:07,959 INFO o.a.j.JMeter: Max memory     =7635730432
+2020-12-16 23:40:07,959 INFO o.a.j.JMeter: Available Processors =8
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: Default Locale=English (United States)
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: JMeterHome=/root/.bzt/jmeter-taurus/5.2.1
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: user.dir  =/dc-app-performance-toolkit/app
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: PWD       =/dc-app-performance-toolkit/app
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: e17931fdf358 FullName: e17931fdf358
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: user.classpath=/dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04:/dc-app-performance-toolkit/app/jmeter
+2020-12-16 23:40:07,962 INFO o.a.j.JMeter: Adding to classpath and loader: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04
+2020-12-16 23:40:07,963 INFO o.a.j.JMeter: Adding to classpath and loader: /dc-app-performance-toolkit/app/jmeter
+2020-12-16 23:40:07,967 INFO o.a.j.s.FileServer: Default base='/dc-app-performance-toolkit/app'
+2020-12-16 23:40:07,970 INFO o.a.j.s.FileServer: Set new base='/dc-app-performance-toolkit/app/jmeter'
+2020-12-16 23:40:08,075 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2020-12-16 23:40:08,080 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2020-12-16 23:40:08,084 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2020-12-16 23:40:08,090 INFO o.a.j.s.SaveService: Loading file: /dc-app-performance-toolkit/app/jmeter/modified_bitbucket.jmx
+2020-12-16 23:40:08,118 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2020-12-16 23:40:08,123 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2020-12-16 23:40:08,380 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2020-12-16 23:40:08,444 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2020-12-16 23:40:08,445 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-12-16 23:40:08,445 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2020-12-16 23:40:08,449 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2020-12-16 23:40:08,449 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2020-12-16 23:40:08,703 INFO o.a.j.JMeter: Running test (1608162008703)
+2020-12-16 23:40:08,705 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2020-12-16 23:40:08,706 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : setUp Thread Group 
+2020-12-16 23:40:08,706 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group setUp Thread Group.
+2020-12-16 23:40:08,706 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-12-16 23:40:08,708 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2020-12-16 23:40:08,722 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2020-12-16 23:40:08,722 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2020-12-16 23:40:08,723 INFO o.a.j.t.JMeterThread: Thread started: setUp Thread Group 1-1
+2020-12-16 23:40:08,745 INFO o.a.j.u.BeanShellTestElement: Git temporary workspace: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59] successfully created.
+2020-12-16 23:40:09,265 INFO o.a.j.u.BeanShellTestElement: SSH keys are stored in /tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/bitbucket_ssh/id_rsa
+2020-12-16 23:40:09,577 INFO o.a.j.m.J.GIT_LOG_DIR: GIT_LOG_DIR: /dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04
+2020-12-16 23:40:09,584 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2020-12-16 23:40:09,585 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2020-12-16 23:40:09,585 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2020-12-16 23:40:09,585 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2020-12-16 23:40:09,642 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = e17931fdf358
+2020-12-16 23:40:09,648 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2020-12-16 23:40:10,975 INFO o.a.j.t.JMeterThread: Thread is done: setUp Thread Group 1-1
+2020-12-16 23:40:10,975 INFO o.a.j.t.JMeterThread: Thread finished: setUp Thread Group 1-1
+2020-12-16 23:40:10,976 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2020-12-16 23:40:11,064 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : bitbucket
+2020-12-16 23:40:11,065 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group bitbucket.
+2020-12-16 23:40:11,065 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2020-12-16 23:40:11,067 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2020-12-16 23:40:11,067 INFO c.b.j.t.c.ConcurrencyThreadStarter: Start supplying threads
+2020-12-16 23:40:26,073 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-1
+2020-12-16 23:40:26,074 INFO o.a.j.s.FileServer: Stored: /dc-app-performance-toolkit/app/datasets/bitbucket/repos.csv
+2020-12-16 23:40:26,075 INFO o.a.j.s.FileServer: Stored: /dc-app-performance-toolkit/app/datasets/bitbucket/users.csv
+2020-12-16 23:40:32,883 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:40:33,379 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3939
+2020-12-16 23:40:37,651 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4071
+2020-12-16 23:40:42,074 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4051
+2020-12-16 23:40:46,459 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4070
+2020-12-16 23:40:50,878 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4055
+2020-12-16 23:40:55,842 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3495
+2020-12-16 23:40:56,078 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-2
+2020-12-16 23:41:00,055 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3686
+2020-12-16 23:41:03,092 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:41:03,510 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4004
+2020-12-16 23:41:04,600 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3545
+2020-12-16 23:41:07,905 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4012
+2020-12-16 23:41:08,989 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3561
+2020-12-16 23:41:12,377 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3943
+2020-12-16 23:41:13,617 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3336
+2020-12-16 23:41:16,698 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4026
+2020-12-16 23:41:17,839 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3518
+2020-12-16 23:41:21,125 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4003
+2020-12-16 23:41:22,203 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3558
+2020-12-16 23:41:25,515 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4017
+2020-12-16 23:41:26,083 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-3
+2020-12-16 23:41:26,746 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3419
+2020-12-16 23:41:29,963 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3973
+2020-12-16 23:41:31,085 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3484
+2020-12-16 23:41:32,857 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:41:33,851 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3429
+2020-12-16 23:41:34,492 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3848
+2020-12-16 23:41:35,589 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3385
+2020-12-16 23:41:38,032 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3652
+2020-12-16 23:41:38,757 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3986
+2020-12-16 23:41:39,900 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3477
+2020-12-16 23:41:42,451 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3637
+2020-12-16 23:41:43,129 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4018
+2020-12-16 23:41:44,331 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3449
+2020-12-16 23:41:46,827 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3666
+2020-12-16 23:41:47,530 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4020
+2020-12-16 23:41:48,183 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4001
+2020-12-16 23:41:51,209 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3687
+2020-12-16 23:41:52,021 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3933
+2020-12-16 23:41:52,808 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3780
+2020-12-16 23:41:55,813 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3486
+2020-12-16 23:41:56,088 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-4
+2020-12-16 23:41:56,423 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3935
+2020-12-16 23:41:57,301 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3691
+2020-12-16 23:42:00,494 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3208
+2020-12-16 23:42:00,832 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3930
+2020-12-16 23:42:01,420 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3976
+2020-12-16 23:42:04,489 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3616
+2020-12-16 23:42:05,175 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:42:05,238 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3928
+2020-12-16 23:42:05,965 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3835
+2020-12-16 23:42:06,273 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3323
+2020-12-16 23:42:08,864 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3645
+2020-12-16 23:42:09,575 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3994
+2020-12-16 23:42:10,289 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3915
+2020-12-16 23:42:10,772 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3228
+2020-12-16 23:42:13,648 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3265
+2020-12-16 23:42:14,095 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3878
+2020-12-16 23:42:15,029 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3579
+2020-12-16 23:42:15,406 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2997
+2020-12-16 23:42:17,813 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3504
+2020-12-16 23:42:18,597 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3780
+2020-12-16 23:42:19,372 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3640
+2020-12-16 23:42:19,785 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3021
+2020-12-16 23:42:22,097 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3624
+2020-12-16 23:42:22,767 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4013
+2020-12-16 23:42:23,471 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3945
+2020-12-16 23:42:23,873 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3336
+2020-12-16 23:42:26,094 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-5
+2020-12-16 23:42:26,525 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3599
+2020-12-16 23:42:27,178 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4006
+2020-12-16 23:42:28,126 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3694
+2020-12-16 23:42:28,626 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2986
+2020-12-16 23:42:30,861 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3667
+2020-12-16 23:42:31,586 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 4002
+2020-12-16 23:42:32,477 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3747
+2020-12-16 23:42:33,014 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3002
+2020-12-16 23:42:34,114 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:42:35,113 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3423
+2020-12-16 23:42:35,652 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3279
+2020-12-16 23:42:36,161 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3830
+2020-12-16 23:42:36,885 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3743
+2020-12-16 23:42:37,174 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3245
+2020-12-16 23:42:39,664 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3276
+2020-12-16 23:42:39,675 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3659
+2020-12-16 23:42:40,673 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3721
+2020-12-16 23:42:41,251 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3781
+2020-12-16 23:42:41,676 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3147
+2020-12-16 23:42:44,036 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3701
+2020-12-16 23:42:44,061 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3282
+2020-12-16 23:42:44,886 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3911
+2020-12-16 23:42:45,806 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3629
+2020-12-16 23:42:46,205 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3022
+2020-12-16 23:42:48,341 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3799
+2020-12-16 23:42:48,384 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3364
+2020-12-16 23:42:49,221 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3980
+2020-12-16 23:42:50,127 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3712
+2020-12-16 23:42:50,536 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3094
+2020-12-16 23:42:52,756 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3787
+2020-12-16 23:42:53,033 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3118
+2020-12-16 23:42:54,396 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3208
+2020-12-16 23:42:54,847 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3395
+2020-12-16 23:42:55,115 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2919
+2020-12-16 23:42:56,100 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-6
+2020-12-16 23:42:57,204 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3743
+2020-12-16 23:42:57,267 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3287
+2020-12-16 23:42:58,413 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3594
+2020-12-16 23:42:59,385 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3261
+2020-12-16 23:42:59,920 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2518
+2020-12-16 23:43:01,782 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3569
+2020-12-16 23:43:01,881 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3077
+2020-12-16 23:43:02,510 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3900
+2020-12-16 23:43:03,417 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3633
+2020-12-16 23:43:03,730 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3111
+2020-12-16 23:43:05,354 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:43:05,995 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3368
+2020-12-16 23:43:06,057 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3697
+2020-12-16 23:43:06,529 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3248
+2020-12-16 23:43:07,022 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3791
+2020-12-16 23:43:07,941 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3512
+2020-12-16 23:43:08,233 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3012
+2020-12-16 23:43:09,900 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3866
+2020-12-16 23:43:10,435 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3723
+2020-12-16 23:43:11,031 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3150
+2020-12-16 23:43:11,617 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3600
+2020-12-16 23:43:11,925 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3724
+2020-12-16 23:43:12,069 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3787
+2020-12-16 23:43:14,497 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3672
+2020-12-16 23:43:15,035 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3528
+2020-12-16 23:43:15,590 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2995
+2020-12-16 23:43:15,879 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3741
+2020-12-16 23:43:16,376 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3677
+2020-12-16 23:43:16,662 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3597
+2020-12-16 23:43:18,721 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3852
+2020-12-16 23:43:19,216 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3750
+2020-12-16 23:43:19,972 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3016
+2020-12-16 23:43:20,685 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3339
+2020-12-16 23:43:21,013 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3444
+2020-12-16 23:43:21,192 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3470
+2020-12-16 23:43:23,323 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3654
+2020-12-16 23:43:23,725 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3644
+2020-12-16 23:43:24,316 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3075
+2020-12-16 23:43:24,889 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3538
+2020-12-16 23:43:25,281 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3579
+2020-12-16 23:43:25,382 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3683
+2020-12-16 23:43:26,106 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-7
+2020-12-16 23:43:27,708 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3673
+2020-12-16 23:43:28,380 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3393
+2020-12-16 23:43:29,441 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2353
+2020-12-16 23:43:29,703 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3127
+2020-12-16 23:43:29,975 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3289
+2020-12-16 23:43:30,151 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3317
+2020-12-16 23:43:31,979 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3805
+2020-12-16 23:43:32,298 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3878
+2020-12-16 23:43:32,942 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3255
+2020-12-16 23:43:33,444 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3790
+2020-12-16 23:43:33,917 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3751
+2020-12-16 23:43:34,197 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3674
+2020-12-16 23:43:34,927 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:43:35,624 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3726
+2020-12-16 23:43:36,608 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3580
+2020-12-16 23:43:37,081 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3499
+2020-12-16 23:43:37,532 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3068
+2020-12-16 23:43:38,032 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3606
+2020-12-16 23:43:38,387 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3685
+2020-12-16 23:43:38,649 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3625
+2020-12-16 23:43:39,906 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3847
+2020-12-16 23:43:40,793 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3798
+2020-12-16 23:43:41,392 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3592
+2020-12-16 23:43:41,530 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3474
+2020-12-16 23:43:42,497 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3546
+2020-12-16 23:43:43,117 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3359
+2020-12-16 23:43:43,265 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3413
+2020-12-16 23:43:44,349 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3807
+2020-12-16 23:43:45,212 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3782
+2020-12-16 23:43:45,836 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3552
+2020-12-16 23:43:46,485 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2923
+2020-12-16 23:43:46,798 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3648
+2020-12-16 23:43:47,315 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3565
+2020-12-16 23:43:47,491 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3590
+2020-12-16 23:43:48,728 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3833
+2020-12-16 23:43:49,652 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3745
+2020-12-16 23:43:50,067 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3724
+2020-12-16 23:43:50,703 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3108
+2020-12-16 23:43:50,927 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3922
+2020-12-16 23:43:51,292 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3992
+2020-12-16 23:43:51,577 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3907
+2020-12-16 23:43:53,085 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3879
+2020-12-16 23:43:53,972 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3829
+2020-12-16 23:43:54,451 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3744
+2020-12-16 23:43:55,174 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3040
+2020-12-16 23:43:55,861 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3391
+2020-12-16 23:43:56,113 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-8
+2020-12-16 23:43:56,307 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3381
+2020-12-16 23:43:56,593 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3295
+2020-12-16 23:43:57,688 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3681
+2020-12-16 23:43:58,695 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3509
+2020-12-16 23:43:59,253 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3345
+2020-12-16 23:44:00,006 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2612
+2020-12-16 23:44:00,445 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3211
+2020-12-16 23:44:00,666 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3425
+2020-12-16 23:44:00,786 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3506
+2020-12-16 23:44:02,183 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3589
+2020-12-16 23:44:03,135 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3473
+2020-12-16 23:44:03,451 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3552
+2020-12-16 23:44:04,106 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2916
+2020-12-16 23:44:04,395 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3664
+2020-12-16 23:44:04,845 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3650
+2020-12-16 23:44:04,972 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3724
+2020-12-16 23:44:05,712 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:44:06,372 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3803
+2020-12-16 23:44:06,898 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3239
+2020-12-16 23:44:07,462 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3550
+2020-12-16 23:44:07,785 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3621
+2020-12-16 23:44:08,257 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3168
+2020-12-16 23:44:08,827 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3635
+2020-12-16 23:44:09,236 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3662
+2020-12-16 23:44:09,382 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3718
+2020-12-16 23:44:10,639 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3939
+2020-12-16 23:44:11,132 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3408
+2020-12-16 23:44:11,564 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3851
+2020-12-16 23:44:11,886 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3924
+2020-12-16 23:44:12,633 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3196
+2020-12-16 23:44:13,070 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3795
+2020-12-16 23:44:13,332 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3970
+2020-12-16 23:44:13,666 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3838
+2020-12-16 23:44:15,119 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3862
+2020-12-16 23:44:15,607 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3336
+2020-12-16 23:44:16,196 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3622
+2020-12-16 23:44:16,573 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3641
+2020-12-16 23:44:17,278 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2954
+2020-12-16 23:44:17,923 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3346
+2020-12-16 23:44:18,284 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3422
+2020-12-16 23:44:18,461 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3446
+2020-12-16 23:44:19,705 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3679
+2020-12-16 23:44:20,239 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3108
+2020-12-16 23:44:20,580 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3642
+2020-12-16 23:44:20,942 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3676
+2020-12-16 23:44:21,431 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3204
+2020-12-16 23:44:21,941 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3731
+2020-12-16 23:44:22,489 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3621
+2020-12-16 23:44:22,681 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3629
+2020-12-16 23:44:24,317 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3470
+2020-12-16 23:44:24,890 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2862
+2020-12-16 23:44:24,958 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3667
+2020-12-16 23:44:25,278 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3743
+2020-12-16 23:44:25,963 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3076
+2020-12-16 23:44:26,115 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-9
+2020-12-16 23:44:26,368 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3707
+2020-12-16 23:44:27,019 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3495
+2020-12-16 23:44:27,178 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3535
+2020-12-16 23:44:28,821 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3370
+2020-12-16 23:44:29,513 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3516
+2020-12-16 23:44:29,927 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2228
+2020-12-16 23:44:30,058 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3366
+2020-12-16 23:44:30,564 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2878
+2020-12-16 23:44:30,779 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3700
+2020-12-16 23:44:31,013 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3904
+2020-12-16 23:44:31,253 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3863
+2020-12-16 23:44:32,747 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3847
+2020-12-16 23:44:33,230 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3329
+2020-12-16 23:44:33,585 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3848
+2020-12-16 23:44:33,925 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3902
+2020-12-16 23:44:34,524 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3321
+2020-12-16 23:44:34,634 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:44:35,019 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3863
+2020-12-16 23:44:35,405 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3916
+2020-12-16 23:44:35,688 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3832
+2020-12-16 23:44:35,901 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3156
+2020-12-16 23:44:37,220 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3778
+2020-12-16 23:44:37,793 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3169
+2020-12-16 23:44:38,076 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3761
+2020-12-16 23:44:38,899 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3332
+2020-12-16 23:44:39,344 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2905
+2020-12-16 23:44:40,105 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3181
+2020-12-16 23:44:40,238 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3486
+2020-12-16 23:44:40,478 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3446
+2020-12-16 23:44:40,607 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2853
+2020-12-16 23:44:41,802 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3600
+2020-12-16 23:44:42,406 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2960
+2020-12-16 23:44:42,536 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3704
+2020-12-16 23:44:43,002 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3632
+2020-12-16 23:44:43,569 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3083
+2020-12-16 23:44:44,087 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3603
+2020-12-16 23:44:44,580 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3548
+2020-12-16 23:44:44,755 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3572
+2020-12-16 23:44:44,927 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2937
+2020-12-16 23:44:46,214 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3591
+2020-12-16 23:44:46,726 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3044
+2020-12-16 23:44:46,856 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3788
+2020-12-16 23:44:47,283 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3755
+2020-12-16 23:44:47,805 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3251
+2020-12-16 23:44:48,521 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3572
+2020-12-16 23:44:48,942 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3590
+2020-12-16 23:44:49,058 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3672
+2020-12-16 23:44:49,355 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2913
+2020-12-16 23:44:50,383 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3825
+2020-12-16 23:44:50,843 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3330
+2020-12-16 23:44:51,202 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3847
+2020-12-16 23:44:51,537 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3904
+2020-12-16 23:44:52,249 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3211
+2020-12-16 23:44:52,774 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3723
+2020-12-16 23:44:53,211 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3724
+2020-12-16 23:44:53,313 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3820
+2020-12-16 23:44:53,585 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3086
+2020-12-16 23:44:54,725 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3888
+2020-12-16 23:44:55,201 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3375
+2020-12-16 23:44:55,604 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3848
+2020-12-16 23:44:56,042 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3803
+2020-12-16 23:44:56,121 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-10
+2020-12-16 23:44:56,781 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3083
+2020-12-16 23:44:57,074 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3826
+2020-12-16 23:44:57,498 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3840
+2020-12-16 23:44:57,741 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3796
+2020-12-16 23:44:57,927 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3147
+2020-12-16 23:44:59,769 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3247
+2020-12-16 23:45:00,414 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3442
+2020-12-16 23:45:00,492 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2488
+2020-12-16 23:45:00,888 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3360
+2020-12-16 23:45:01,367 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2901
+2020-12-16 23:45:01,839 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3464
+2020-12-16 23:45:02,089 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3652
+2020-12-16 23:45:02,493 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3447
+2020-12-16 23:45:02,556 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2921
+2020-12-16 23:45:03,818 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3601
+2020-12-16 23:45:04,294 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3090
+2020-12-16 23:45:04,688 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3571
+2020-12-16 23:45:05,093 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3558
+2020-12-16 23:45:05,752 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2920
+2020-12-16 23:45:05,791 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:45:06,269 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3437
+2020-12-16 23:45:06,811 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3334
+2020-12-16 23:45:07,079 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2801
+2020-12-16 23:45:07,116 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3228
+2020-12-16 23:45:07,421 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2794
+2020-12-16 23:45:08,448 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3375
+2020-12-16 23:45:09,010 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2777
+2020-12-16 23:45:09,135 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3527
+2020-12-16 23:45:09,654 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3400
+2020-12-16 23:45:10,188 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2888
+2020-12-16 23:45:10,681 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3429
+2020-12-16 23:45:10,864 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3684
+2020-12-16 23:45:11,037 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3711
+2020-12-16 23:45:11,206 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3077
+2020-12-16 23:45:11,681 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2938
+2020-12-16 23:45:12,311 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3880
+2020-12-16 23:45:12,367 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3859
+2020-12-16 23:45:13,224 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3841
+2020-12-16 23:45:13,563 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3895
+2020-12-16 23:45:14,081 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3399
+2020-12-16 23:45:14,684 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3830
+2020-12-16 23:45:15,056 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3896
+2020-12-16 23:45:15,260 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3891
+2020-12-16 23:45:15,511 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3176
+2020-12-16 23:45:15,849 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3173
+2020-12-16 23:45:16,619 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3975
+2020-12-16 23:45:16,638 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3991
+2020-12-16 23:45:17,620 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3848
+2020-12-16 23:45:17,900 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3962
+2020-12-16 23:45:18,582 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3301
+2020-12-16 23:45:19,014 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3903
+2020-12-16 23:45:19,545 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3811
+2020-12-16 23:45:19,721 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3834
+2020-12-16 23:45:19,977 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3114
+2020-12-16 23:45:20,293 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3132
+2020-12-16 23:45:21,153 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3844
+2020-12-16 23:45:21,189 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3843
+2020-12-16 23:45:22,143 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3729
+2020-12-16 23:45:22,764 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3501
+2020-12-16 23:45:23,337 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2949
+2020-12-16 23:45:23,624 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3696
+2020-12-16 23:45:23,949 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3810
+2020-12-16 23:45:24,129 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3829
+2020-12-16 23:45:24,299 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3195
+2020-12-16 23:45:24,676 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3152
+2020-12-16 23:45:25,561 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3839
+2020-12-16 23:45:25,600 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3835
+2020-12-16 23:45:26,126 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-11
+2020-12-16 23:45:26,570 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3705
+2020-12-16 23:45:26,918 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3751
+2020-12-16 23:45:27,098 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3591
+2020-12-16 23:45:28,139 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3585
+2020-12-16 23:45:28,760 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3403
+2020-12-16 23:45:28,911 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3451
+2020-12-16 23:45:29,329 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2568
+2020-12-16 23:45:29,866 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2365
+2020-12-16 23:45:30,573 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3266
+2020-12-16 23:45:30,590 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3214
+2020-12-16 23:45:30,990 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3689
+2020-12-16 23:45:31,497 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3575
+2020-12-16 23:45:32,173 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2919
+2020-12-16 23:45:32,282 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3845
+2020-12-16 23:45:32,762 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3805
+2020-12-16 23:45:32,948 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3818
+2020-12-16 23:45:33,183 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3117
+2020-12-16 23:45:33,426 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3208
+2020-12-16 23:45:34,217 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3990
+2020-12-16 23:45:34,260 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3983
+2020-12-16 23:45:35,274 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3808
+2020-12-16 23:45:35,636 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3840
+2020-12-16 23:45:35,759 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:45:36,207 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3289
+2020-12-16 23:45:36,595 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3935
+2020-12-16 23:45:36,765 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3418
+2020-12-16 23:45:37,095 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3876
+2020-12-16 23:45:37,310 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3859
+2020-12-16 23:45:37,508 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3196
+2020-12-16 23:45:37,810 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3227
+2020-12-16 23:45:38,636 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3974
+2020-12-16 23:45:38,683 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3963
+2020-12-16 23:45:39,589 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3896
+2020-12-16 23:45:40,019 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3860
+2020-12-16 23:45:40,794 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3105
+2020-12-16 23:45:41,260 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3674
+2020-12-16 23:45:41,358 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3228
+2020-12-16 23:45:41,687 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3687
+2020-12-16 23:45:41,882 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3690
+2020-12-16 23:45:42,041 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3066
+2020-12-16 23:45:42,297 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3143
+2020-12-16 23:45:43,225 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3788
+2020-12-16 23:45:43,290 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3760
+2020-12-16 23:45:44,352 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3536
+2020-12-16 23:45:44,931 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3351
+2020-12-16 23:45:45,469 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2833
+2020-12-16 23:45:46,179 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3598
+2020-12-16 23:45:46,304 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2685
+2020-12-16 23:45:46,307 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3668
+2020-12-16 23:45:46,640 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2870
+2020-12-16 23:45:46,726 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2611
+2020-12-16 23:45:47,036 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2807
+2020-12-16 23:45:47,651 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3766
+2020-12-16 23:45:47,734 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3719
+2020-12-16 23:45:48,496 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3796
+2020-12-16 23:45:48,870 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3815
+2020-12-16 23:45:49,633 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3072
+2020-12-16 23:45:50,357 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3035
+2020-12-16 23:45:50,508 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3672
+2020-12-16 23:45:50,726 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3015
+2020-12-16 23:45:50,848 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3530
+2020-12-16 23:45:51,165 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2748
+2020-12-16 23:45:51,475 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2772
+2020-12-16 23:45:52,271 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3549
+2020-12-16 23:45:52,293 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3563
+2020-12-16 23:45:52,836 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3859
+2020-12-16 23:45:53,110 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3979
+2020-12-16 23:45:53,723 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3385
+2020-12-16 23:45:54,494 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3301
+2020-12-16 23:45:54,890 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3694
+2020-12-16 23:45:55,017 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3765
+2020-12-16 23:45:55,108 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3036
+2020-12-16 23:45:55,253 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3064
+2020-12-16 23:45:55,495 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3155
+2020-12-16 23:45:56,130 INFO o.a.j.t.JMeterThread: Thread started: bitbucket 1-12
+2020-12-16 23:45:56,310 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3914
+2020-12-16 23:45:56,347 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3912
+2020-12-16 23:45:57,214 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3885
+2020-12-16 23:45:57,602 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3890
+2020-12-16 23:45:58,532 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2980
+2020-12-16 23:45:59,488 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3499
+2020-12-16 23:45:59,586 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3599
+2020-12-16 23:45:59,596 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2602
+2020-12-16 23:46:00,022 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2698
+2020-12-16 23:46:00,097 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2450
+2020-12-16 23:46:00,263 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2791
+2020-12-16 23:46:00,747 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3916
+2020-12-16 23:46:00,757 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3870
+2020-12-16 23:46:01,696 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3807
+2020-12-16 23:46:02,069 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3827
+2020-12-16 23:46:02,924 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2992
+2020-12-16 23:46:03,376 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3225
+2020-12-16 23:46:03,538 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3853
+2020-12-16 23:46:03,837 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3751
+2020-12-16 23:46:04,070 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3053
+2020-12-16 23:46:04,074 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 2876
+2020-12-16 23:46:04,396 INFO o.a.j.t.J.pacing timer: concurrency: 20, delay_between_transactions: 4403.6697247706425, thread_sleep: 3062
+2020-12-16 23:46:04,811 INFO o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Shallow copies folder: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59/shallow_copies] successfully created.
+2020-12-16 23:46:04,915 ERROR o.a.j.p.j.s.J.jmeter_create_repo_shallow_copy: Error while creating temporary workspace for pull
+java.io.IOException: No space left on device
+	at sun.nio.ch.FileDispatcherImpl.pwrite0(Native Method) ~[?:1.8.0_265]
+	at sun.nio.ch.FileDispatcherImpl.pwrite(FileDispatcherImpl.java:66) ~[?:1.8.0_265]
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:89) ~[?:1.8.0_265]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:51) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.writeInternal(FileChannelImpl.java:772) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:758) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannelImpl.transferFromFileChannel(FileChannelImpl.java:633) ~[?:1.8.0_265]
+	at sun.nio.ch.FileChannel2020-12-16 23:46:05,226 INFO o.a.j.u.BeanShellTestElement: Git temporary workspace: [/tmp/dcapt_git_workspace_4f9b19c2-029b-4a01-b979-1af9025a6a59] successfully deleted.
+2020-12-16 23:46:05,226 INFO o.a.j.t.JMeterThread: Thread is done: tearDown Thread Group 1-1
+2020-12-16 23:46:05,227 INFO o.a.j.t.JMeterThread: Thread finished: tearDown Thread Group 1-1
+2020-12-16 23:46:05,227 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2020-12-16 23:46:05,227 INFO o.a.j.s.FileServer: Close: /dc-app-performance-toolkit/app/datasets/bitbucket/repos.csv
+2020-12-16 23:46:05,227 INFO o.a.j.s.FileServer: Close: /dc-app-performance-toolkit/app/datasets/bitbucket/users.csv
+2020-12-16 23:46:05,227 WARN o.a.j.r.ResultCollector: Problem detected during use of /dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04/error.jtl
+2020-12-16 23:46:05,228 INFO o.a.j.e.StandardJMeterEngine: Forced JVM shutdown requested at end of test
