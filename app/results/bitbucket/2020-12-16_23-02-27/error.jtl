@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="3033" lt="0" ts="1608160385295" s="false" lb="jmeter_clone_repo_via_ssh" rc="128" rm="git clone failed: " tn="bitbucket 1-16" dt="text" de="" by="0" ng="16" na="16">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8
+Environment: {GIT_SSL_NO_VERIFY=1, DISABLED_GIT_CURL_VERBOSE=1, DISABLED_GIT_TRACE_PACKET=true, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git clone --no-checkout ssh://git@bitbucket-loadbala-cs8s8ccqbfud-30797893.us-west-1.elb.amazonaws.com:7999/PRJ-10007/prj-10007-repo-2.git /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/clone-push-prj-10007-repo-2-16599ad4-aa49-4f85-8f53-ce4655ec7081</samplerData>
+</sample>
+<sample t="201" lt="0" ts="1608160388149" s="false" lb="jmeter_git_fetch_via_http" rc="500" rm="System Sampler interrupted whilst executing system call: java.lang.InterruptedException" tn="bitbucket 1-13" dt="text" de="" by="0" ng="11" na="11">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/shallow_copies/prj-10006-repo-1-91752dbb-9457-4cd8-b85b-db4f8d775bae
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="480" lt="0" ts="1608160387871" s="false" lb="jmeter_git_fetch_via_ssh" rc="500" rm="System Sampler interrupted whilst executing system call: java.lang.InterruptedException" tn="bitbucket 1-8" dt="text" de="" by="0" ng="7" na="7">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/shallow_copies/prj-10003-repo-2-2d5c2a7e-a6f8-491b-9fec-1b2a2a505582
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="95" lt="0" ts="1608160388256" s="false" lb="jmeter_git_push_via_http" rc="500" rm="git push failed: " tn="bitbucket 1-6" dt="text" de="" by="0" ng="6" na="6">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/clone-push-prj-10002-repo-2-726e4f9d-848b-4087-9cb0-b3982ec1e120
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git push origin master</samplerData>
+</sample>
+<sample t="607" lt="0" ts="1608160387743" s="false" lb="jmeter_git_push_via_http" rc="500" rm="git push failed: " tn="bitbucket 1-15" dt="text" de="" by="0" ng="11" na="11">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/clone-push-prj-10007-repo-1-70393056-8d16-4037-9c69-4a3d0a787626
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git push origin master</samplerData>
+</sample>
+<sample t="354" lt="0" ts="1608160387996" s="false" lb="jmeter_git_push_via_http" rc="500" rm="git push failed: " tn="bitbucket 1-14" dt="text" de="" by="0" ng="11" na="11">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/clone-push-prj-10006-repo-2-3d31858c-9321-4111-ac0a-284bac346db2
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_1cf146d5-9200-47a0-9903-2a81e70c5ec8/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git push origin master</samplerData>
+</sample>
+
+</testResults>
