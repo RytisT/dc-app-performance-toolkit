@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="600" lt="0" ts="1608206486899" s="false" lb="jmeter_git_push_via_ssh" rc="1" rm="git push failed: " tn="bitbucket 1-7" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_4d4e90b4-1260-456f-b32d-bbaf289f730a/clone-push-prj-10003-repo-1-01408f4c-5e70-443c-babd-193f896e2140
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_4d4e90b4-1260-456f-b32d-bbaf289f730a/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git push origin master</samplerData>
+</sample>
+<sample t="2033" lt="0" ts="1608206830870" s="false" lb="jmeter_git_push_via_ssh" rc="1" rm="git push failed: " tn="bitbucket 1-12" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_4d4e90b4-1260-456f-b32d-bbaf289f730a/clone-push-prj-10005-repo-2-a6cc9d7d-28c5-4920-831a-e7e71aaf958b
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_4d4e90b4-1260-456f-b32d-bbaf289f730a/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git push origin master</samplerData>
+</sample>
+
+</testResults>
