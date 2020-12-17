@@ -5,7 +5,7 @@ runs:
   - runName: "without app"
     fullPath: "/home/vivek/dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_19-56-19"
   - runName: "with app"
-    fullPath: "/home/vivek/dc-app-performance-toolkit/app/results/bitbucket/2020-12-16_23-37-04"
+    fullPath: "/home/vivek/dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_07-56-41"
 
 # Chart generation config
 index_col: "Action"
