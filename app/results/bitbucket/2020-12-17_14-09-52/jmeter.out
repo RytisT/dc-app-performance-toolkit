@@ -1,0 +1,65 @@
+Created the tree successfully using /dc-app-performance-toolkit/app/jmeter/modified_bitbucket.jmx
+Starting standalone test @ Thu Dec 17 14:12:48 UTC 2020 (1608214368248)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+2020-12-17 14:27:48,874 bitbucket 1-7 ERROR Unable to write to stream /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_14-09-52/jmeter.log for appender jmeter-log org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /dc-app-performance-toolkit/app/results/bitbucket/2020-12-17_14-09-52/jmeter.log
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.writeToDestination(OutputStreamManager.java:263)
+	at org.apache.logging.log4j.core.appender.FileManager.writeToDestination(FileManager.java:272)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flushBuffer(OutputStreamManager.java:293)
+	at org.apache.logging.log4j.core.appender.OutputStreamManager.flush(OutputStreamManager.java:302)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:199)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:190)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:181)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:543)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:502)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:485)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:460)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:82)
+	at org.apache.logging.log4j.core.Logger.log(Logger.java:162)
+	at org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2190)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2144)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2127)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2008)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1867)
+	at org.apache.logging.slf4j.Log4jLogger.info(Log4jLogger.java:179)
+	at sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrap.invoke(PojoMetaMethodSite.java:213)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:56)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
+	at Script18.run(Script18.groovy:11)
+	at org.codehaus.groovy.jsr223.GroovyScriptEngineImpl.eval(GroovyScriptEngineImpl.java:321)
+	at org.codehaus.groovy.jsr223.GroovyCompiledScript.eval(GroovyCompiledScript.java:72)
+	at javax.script.CompiledScript.eval(CompiledScript.java:92)
+	at org.apache.jmeter.util.JSR223TestElement.processFileOrScript(JSR223TestElement.java:223)
+	at org.apache.jmeter.timers.JSR223Timer.delay(JSR223Timer.java:42)
+	at org.apache.jmeter.threads.JMeterThread.delay(JMeterThread.java:958)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:547)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:490)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:257)
+	
+
+
+
+
+Command: Shutdown received from /127.0.0.1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tidying up ...    @ Thu Dec 17 14:27:51 UTC 2020 (1608215271048)
+... end of run
