@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="8" lt="0" ts="1608211078029" s="false" lb="jmeter_git_commit" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-7" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10003-repo-1-73cace25-4f8b-4809-bd35-aacb35feef10
+Environment: {}
+Executing: git commit -m BBSPPP-6217 jMeter commit</samplerData>
+</sample>
+<sample t="239" lt="0" ts="1608211077827" s="false" lb="jmeter_git_fetch_via_ssh" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-8" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/shallow_copies/prj-10003-repo-2-ce716ff3-8795-478a-8c6d-5c54f5001548
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="189" lt="0" ts="1608211077959" s="false" lb="jmeter_git_fetch_via_ssh" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-19" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/shallow_copies/prj-10009-repo-1-5fde479b-528d-4008-bdf8-252be61ce329
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="2" lt="0" ts="1608211078147" s="false" lb="jmeter_git_add" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-12" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10005-repo-2-2c6e845d-435e-492d-9903-2859e50e09d4
+Environment: {}
+Executing: git add .</samplerData>
+</sample>
+<sample t="2" lt="0" ts="1608211078150" s="false" lb="jmeter_git_commit" rc="1" rm="Unexpected return code.  Expected [0]. Actual [1]." tn="bitbucket 1-12" dt="text" de="" by="165" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Changes not staged for commit:
+	modified:   default_branch_file-08.txt
+
+no changes added to commit
+</responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10005-repo-2-2c6e845d-435e-492d-9903-2859e50e09d4
+Environment: {}
+Executing: git commit -m BBSPPP-850 jMeter commit</samplerData>
+</sample>
+<sample t="155" lt="0" ts="1608211078379" s="false" lb="jmeter_git_fetch_via_http" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-2" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/shallow_copies/prj-10000-repo-2-8fd0ac67-35ee-4107-8805-08b7415b47ae
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="227" lt="0" ts="1608211078638" s="false" lb="jmeter_git_fetch_via_ssh" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-18" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/shallow_copies/prj-10008-repo-2-fc3a06d1-f509-4fea-b02c-cfdf3ce10b15
+Environment: {GIT_SSH_VARIANT=ssh, GIT_SSL_NO_VERIFY=1, GIT_SSH_COMMAND=ssh -i /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/bitbucket_ssh/id_rsa -o &quot;StrictHostKeyChecking=no&quot;}
+Executing: git fetch</samplerData>
+</sample>
+<sample t="3" lt="0" ts="1608211078922" s="false" lb="jmeter_git_add" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-3" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10001-repo-1-d69bfc69-eef3-4090-8a46-579cdcd455d7
+Environment: {}
+Executing: git add .</samplerData>
+</sample>
+<sample t="3" lt="0" ts="1608211078925" s="false" lb="jmeter_git_commit" rc="1" rm="Unexpected return code.  Expected [0]. Actual [1]." tn="bitbucket 1-3" dt="text" de="" by="165" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">On branch master
+Your branch is up to date with &apos;origin/master&apos;.
+
+Changes not staged for commit:
+	modified:   default_branch_file-07.txt
+
+no changes added to commit
+</responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10001-repo-1-d69bfc69-eef3-4090-8a46-579cdcd455d7
+Environment: {}
+Executing: git commit -m BBSPPP-7922 jMeter commit</samplerData>
+</sample>
+<sample t="3" lt="0" ts="1608211079017" s="false" lb="jmeter_git_add" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-11" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10005-repo-1-67470642-b0ad-4b8b-b8c9-143ee2193d8e
+Environment: {}
+Executing: git add .</samplerData>
+</sample>
+<sample t="3" lt="0" ts="1608211079317" s="false" lb="jmeter_git_add" rc="128" rm="Unexpected return code.  Expected [0]. Actual [128]." tn="bitbucket 1-1" dt="text" de="" by="0" ng="20" na="20">
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String"></responseData>
+  <samplerData class="java.lang.String">Working Directory: /tmp/dcapt_git_workspace_b4e03bcd-1b5d-4bdd-b4b9-73e5b0cd9266/clone-push-prj-10000-repo-1-0cf47cc0-406c-439e-8b86-39cf28c87bb2
+Environment: {}
+Executing: git add .</samplerData>
+</sample>
+
+</testResults>
