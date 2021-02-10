@@ -7,3 +7,4 @@ outputs/
 *.iml
 *.pyc
 local_*.yml
+**jmeter.properties
