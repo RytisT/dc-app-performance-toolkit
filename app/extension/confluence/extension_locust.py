@@ -15,8 +15,9 @@ def app_specific_action(locust):
     page = random.choice(confluence_dataset["pages"])
     page_id = page[0]
     space_key = page[1]
+    atl_token = locust.session_data_storage['atl_token']
 
-    body = {"reverse": "false", "spaceCategoryNames": "", "includeArchivedSpaces": "false", "currentPageId": page_id, "currentSpaceKey": space_key, "currentSpaceTitle": ""}  # include parsed variables to POST request body
+    body = {"atl_token": atl_token, "reverse": "false", "spaceCategoryNames": "", "includeArchivedSpaces": "false", "currentPageId": page_id, "currentSpaceKey": space_key, "currentSpaceTitle": ""}  # include parsed variables to POST request body
     headers = {'content-type': 'application/json'}
     r = locust.post(f'/rest/spacetree/1.0/spaces', body, headers, catch_response=True)  # call app-specific POST endpoint
     content = r.content.decode('utf-8')
