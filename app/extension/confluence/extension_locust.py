@@ -20,6 +20,6 @@ def app_specific_action(locust):
     headers = {'content-type': 'application/json'}
     r = locust.post(f'/rest/spacetree/1.0/spaces', body, headers, catch_response=True)  # call app-specific POST endpoint
     content = r.content.decode('utf-8')
-    if 'assertion string after successful POST request' not in content:
+    if 'spaceCategories' not in content:
         logger.error(f"'assertion string after successful POST request' was not found in {content}")
-    assert 'assertion string after successful POST request' in content  # assertion after POST request
+    assert 'spaceCategories' in content  # assertion after POST request
