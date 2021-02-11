@@ -1,0 +1,1489 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py first driver inits
+1613035736197,321,selenium_login:open_login_page,Success,True
+1613035737095,817,selenium_login:login_and_view_dashboard,Success,True
+1613035737095,1219,selenium_login,Success,True
+.test_0_selenium_a_login,Total:1 Passed:1 Failed:0
+1613035738169,1036,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:2 Passed:2 Failed:0
+1613035738950,779,selenium_create_page:open_create_page_editor,Success,True
+1613035740220,602,selenium_create_page:save_created_page,Success,True
+1613035740220,2050,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:3 Passed:3 Failed:0
+1613035741399,1177,selenium_edit_page:open_create_page_editor,Success,True
+1613035742578,1157,selenium_edit_page:save_edited_page,Success,True
+1613035742579,2356,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:4 Passed:4 Failed:0
+1613035744147,696,selenium_create_comment:write_comment,Success,True
+1613035744771,624,selenium_create_comment:save_comment,Success,True
+1613035744771,2191,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:5 Passed:5 Failed:0
+1613035745346,573,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:6 Passed:6 Failed:0
+1613035747010,1662,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:7 Passed:7 Failed:0
+1613035749822,2811,selenium_app_custom_action:view_page,Success,True
+1613035749822,2811,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:8 Passed:8 Failed:0
+1613035750021,197,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:9 Passed:9 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 15.28s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035750213,125,selenium_login:open_login_page,Success,True
+1613035751074,779,selenium_login:login_and_view_dashboard,Success,True
+1613035751074,986,selenium_login,Success,True
+.test_0_selenium_a_login,Total:10 Passed:10 Failed:0
+1613035752066,961,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:11 Passed:11 Failed:0
+1613035752836,768,selenium_create_page:open_create_page_editor,Success,True
+1613035754086,614,selenium_create_page:save_created_page,Success,True
+1613035754086,2018,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:12 Passed:12 Failed:0
+1613035755614,1527,selenium_edit_page:open_create_page_editor,Success,True
+1613035756892,1257,selenium_edit_page:save_edited_page,Success,True
+1613035756892,2805,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:13 Passed:13 Failed:0
+1613035758470,676,selenium_create_comment:write_comment,Success,True
+1613035759086,615,selenium_create_comment:save_comment,Success,True
+1613035759086,2193,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:14 Passed:14 Failed:0
+1613035759743,655,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:15 Passed:15 Failed:0
+1613035761405,1660,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:16 Passed:16 Failed:0
+1613035764183,2777,selenium_app_custom_action:view_page,Success,True
+1613035764183,2777,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:17 Passed:17 Failed:0
+1613035764378,192,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:18 Passed:18 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.30s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035764553,123,selenium_login:open_login_page,Success,True
+1613035765472,836,selenium_login:login_and_view_dashboard,Success,True
+1613035765472,1042,selenium_login,Success,True
+.test_0_selenium_a_login,Total:19 Passed:19 Failed:0
+1613035765924,393,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:20 Passed:20 Failed:0
+1613035766620,694,selenium_create_page:open_create_page_editor,Success,True
+1613035767898,643,selenium_create_page:save_created_page,Success,True
+1613035767898,1971,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:21 Passed:21 Failed:0
+1613035768926,1027,selenium_edit_page:open_create_page_editor,Success,True
+1613035769682,735,selenium_edit_page:save_edited_page,Success,True
+1613035769682,1782,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:22 Passed:22 Failed:0
+1613035770724,673,selenium_create_comment:write_comment,Success,True
+1613035771334,609,selenium_create_comment:save_comment,Success,True
+1613035771334,1650,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:23 Passed:23 Failed:0
+1613035771857,521,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:24 Passed:24 Failed:0
+1613035773587,1728,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:25 Passed:25 Failed:0
+1613035776463,2874,selenium_app_custom_action:view_page,Success,True
+1613035776463,2874,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:26 Passed:26 Failed:0
+1613035776660,195,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:27 Passed:27 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.24s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035776831,120,selenium_login:open_login_page,Success,True
+1613035777654,742,selenium_login:login_and_view_dashboard,Success,True
+1613035777654,943,selenium_login,Success,True
+.test_0_selenium_a_login,Total:28 Passed:28 Failed:0
+1613035778152,435,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:29 Passed:29 Failed:0
+1613035778808,654,selenium_create_page:open_create_page_editor,Success,True
+1613035780074,627,selenium_create_page:save_created_page,Success,True
+1613035780074,1919,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:30 Passed:30 Failed:0
+1613035781618,1543,selenium_edit_page:open_create_page_editor,Success,True
+1613035782384,745,selenium_edit_page:save_edited_page,Success,True
+1613035782384,2309,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:31 Passed:31 Failed:0
+1613035783447,678,selenium_create_comment:write_comment,Success,True
+1613035784069,621,selenium_create_comment:save_comment,Success,True
+1613035784069,1683,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:32 Passed:32 Failed:0
+1613035784678,607,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:33 Passed:33 Failed:0
+1613035786361,1680,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:34 Passed:34 Failed:0
+1613035789373,3010,selenium_app_custom_action:view_page,Success,True
+1613035789373,3010,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:35 Passed:35 Failed:0
+1613035789569,195,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:36 Passed:36 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.87s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035789747,126,selenium_login:open_login_page,Success,True
+1613035790643,815,selenium_login:login_and_view_dashboard,Success,True
+1613035790643,1022,selenium_login,Success,True
+.test_0_selenium_a_login,Total:37 Passed:37 Failed:0
+1613035791330,627,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:38 Passed:38 Failed:0
+1613035792028,696,selenium_create_page:open_create_page_editor,Success,True
+1613035793332,674,selenium_create_page:save_created_page,Success,True
+1613035793332,2001,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:39 Passed:39 Failed:0
+1613035794533,1198,selenium_edit_page:open_create_page_editor,Success,True
+1613035795296,741,selenium_edit_page:save_edited_page,Success,True
+1613035795296,1962,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:40 Passed:40 Failed:0
+1613035796357,690,selenium_create_comment:write_comment,Success,True
+1613035796973,616,selenium_create_comment:save_comment,Success,True
+1613035796973,1675,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:41 Passed:41 Failed:0
+1613035797554,579,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:42 Passed:42 Failed:0
+1613035799240,1683,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:43 Passed:43 Failed:0
+1613035802298,3056,selenium_app_custom_action:view_page,Success,True
+1613035802298,3056,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:44 Passed:44 Failed:0
+1613035802695,395,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:45 Passed:45 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.08s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035802932,183,selenium_login:open_login_page,Success,True
+1613035803887,871,selenium_login:login_and_view_dashboard,Success,True
+1613035803887,1138,selenium_login,Success,True
+.test_0_selenium_a_login,Total:46 Passed:46 Failed:0
+1613035804330,385,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:47 Passed:47 Failed:0
+1613035805034,702,selenium_create_page:open_create_page_editor,Success,True
+1613035806315,644,selenium_create_page:save_created_page,Success,True
+1613035806315,1983,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:48 Passed:48 Failed:0
+1613035808917,2601,selenium_edit_page:open_create_page_editor,Success,True
+1613035809723,784,selenium_edit_page:save_edited_page,Success,True
+1613035809723,3406,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:49 Passed:49 Failed:0
+1613035810749,681,selenium_create_comment:write_comment,Success,True
+1613035811375,626,selenium_create_comment:save_comment,Success,True
+1613035811375,1650,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:50 Passed:50 Failed:0
+1613035812015,638,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:51 Passed:51 Failed:0
+1613035813700,1683,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:52 Passed:52 Failed:0
+1613035816129,2427,selenium_app_custom_action:view_page,Success,True
+1613035816129,2427,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:53 Passed:53 Failed:0
+1613035816324,194,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:54 Passed:54 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.58s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035816503,126,selenium_login:open_login_page,Success,True
+1613035817391,805,selenium_login:login_and_view_dashboard,Success,True
+1613035817391,1014,selenium_login,Success,True
+.test_0_selenium_a_login,Total:55 Passed:55 Failed:0
+1613035818272,854,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:56 Passed:56 Failed:0
+1613035819050,775,selenium_create_page:open_create_page_editor,Success,True
+1613035820301,615,selenium_create_page:save_created_page,Success,True
+1613035820301,2027,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:57 Passed:57 Failed:0
+1613035821378,1075,selenium_edit_page:open_create_page_editor,Success,True
+1613035822573,1173,selenium_edit_page:save_edited_page,Success,True
+1613035822573,2270,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:58 Passed:58 Failed:0
+1613035824143,702,selenium_create_comment:write_comment,Success,True
+1613035824766,622,selenium_create_comment:save_comment,Success,True
+1613035824766,2192,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:59 Passed:59 Failed:0
+1613035825323,555,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:60 Passed:60 Failed:0
+1613035827029,1704,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:61 Passed:61 Failed:0
+1613035830002,2971,selenium_app_custom_action:view_page,Success,True
+1613035830002,2971,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:62 Passed:62 Failed:0
+1613035830195,191,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:63 Passed:63 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.83s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035830377,123,selenium_login:open_login_page,Success,True
+1613035831222,762,selenium_login:login_and_view_dashboard,Success,True
+1613035831222,968,selenium_login,Success,True
+.test_0_selenium_a_login,Total:64 Passed:64 Failed:0
+1613035831681,396,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:65 Passed:65 Failed:0
+1613035832404,721,selenium_create_page:open_create_page_editor,Success,True
+1613035833703,664,selenium_create_page:save_created_page,Success,True
+1613035833703,2020,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:66 Passed:66 Failed:0
+1613035834802,1097,selenium_edit_page:open_create_page_editor,Success,True
+1613035835532,705,selenium_edit_page:save_edited_page,Success,True
+1613035835532,1827,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:67 Passed:67 Failed:0
+1613035836615,701,selenium_create_comment:write_comment,Success,True
+1613035837240,624,selenium_create_comment:save_comment,Success,True
+1613035837240,1706,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:68 Passed:68 Failed:0
+1613035837949,708,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:69 Passed:69 Failed:0
+1613035839617,1666,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:70 Passed:70 Failed:0
+1613035842660,3042,selenium_app_custom_action:view_page,Success,True
+1613035842660,3042,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:71 Passed:71 Failed:0
+1613035842858,196,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:72 Passed:72 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.61s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035843033,123,selenium_login:open_login_page,Success,True
+1613035843874,758,selenium_login:login_and_view_dashboard,Success,True
+1613035843874,964,selenium_login,Success,True
+.test_0_selenium_a_login,Total:73 Passed:73 Failed:0
+1613035844375,446,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:74 Passed:74 Failed:0
+1613035845235,858,selenium_create_page:open_create_page_editor,Success,True
+1613035846568,676,selenium_create_page:save_created_page,Success,True
+1613035846568,2191,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:75 Passed:75 Failed:0
+1613035849260,2690,selenium_edit_page:open_create_page_editor,Success,True
+1613035850107,824,selenium_edit_page:save_edited_page,Success,True
+1613035850107,3537,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:76 Passed:76 Failed:0
+1613035851255,680,selenium_create_comment:write_comment,Success,True
+1613035851895,639,selenium_create_comment:save_comment,Success,True
+1613035851895,1786,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:77 Passed:77 Failed:0
+1613035853335,1438,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:78 Passed:78 Failed:0
+1613035855038,1701,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:79 Passed:79 Failed:0
+1613035858099,3060,selenium_app_custom_action:view_page,Success,True
+1613035858099,3060,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:80 Passed:80 Failed:0
+1613035858294,193,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:81 Passed:81 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 15.39s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035858466,121,selenium_login:open_login_page,Success,True
+1613035859377,828,selenium_login:login_and_view_dashboard,Success,True
+1613035859377,1032,selenium_login,Success,True
+.test_0_selenium_a_login,Total:82 Passed:82 Failed:0
+1613035859881,449,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:83 Passed:83 Failed:0
+1613035860641,758,selenium_create_page:open_create_page_editor,Success,True
+1613035861896,622,selenium_create_page:save_created_page,Success,True
+1613035861896,2013,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:84 Passed:84 Failed:0
+1613035864589,2691,selenium_edit_page:open_create_page_editor,Success,True
+1613035865306,697,selenium_edit_page:save_edited_page,Success,True
+1613035865306,3409,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:85 Passed:85 Failed:0
+1613035866304,590,selenium_create_comment:write_comment,Success,True
+1613035866926,621,selenium_create_comment:save_comment,Success,True
+1613035866926,1618,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:86 Passed:86 Failed:0
+1613035867546,618,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:87 Passed:87 Failed:0
+1613035869222,1674,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:88 Passed:88 Failed:0
+1613035872242,3018,selenium_app_custom_action:view_page,Success,True
+1613035872242,3018,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:89 Passed:89 Failed:0
+1613035872434,191,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:90 Passed:90 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.10s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035872609,122,selenium_login:open_login_page,Success,True
+1613035873599,907,selenium_login:login_and_view_dashboard,Success,True
+1613035873600,1113,selenium_login,Success,True
+.test_0_selenium_a_login,Total:91 Passed:91 Failed:0
+1613035874025,366,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:92 Passed:92 Failed:0
+1613035874747,721,selenium_create_page:open_create_page_editor,Success,True
+1613035876039,621,selenium_create_page:save_created_page,Success,True
+1613035876040,2013,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:93 Passed:93 Failed:0
+1613035877078,1037,selenium_edit_page:open_create_page_editor,Success,True
+1613035877941,840,selenium_edit_page:save_edited_page,Success,True
+1613035877941,1900,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:94 Passed:94 Failed:0
+1613035878966,661,selenium_create_comment:write_comment,Success,True
+1613035879583,617,selenium_create_comment:save_comment,Success,True
+1613035879583,1641,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:95 Passed:95 Failed:0
+1613035881055,1470,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:96 Passed:96 Failed:0
+1613035882724,1666,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:97 Passed:97 Failed:0
+1613035885775,3049,selenium_app_custom_action:view_page,Success,True
+1613035885775,3049,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:98 Passed:98 Failed:0
+1613035885972,196,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:99 Passed:99 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.50s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035886156,124,selenium_login:open_login_page,Success,True
+1613035887085,844,selenium_login:login_and_view_dashboard,Success,True
+1613035887085,1053,selenium_login,Success,True
+.test_0_selenium_a_login,Total:100 Passed:100 Failed:0
+1613035888092,946,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:101 Passed:101 Failed:0
+1613035888771,677,selenium_create_page:open_create_page_editor,Success,True
+1613035890024,622,selenium_create_page:save_created_page,Success,True
+1613035890024,1931,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:102 Passed:102 Failed:0
+1613035892670,2644,selenium_edit_page:open_create_page_editor,Success,True
+1613035893778,1086,selenium_edit_page:save_edited_page,Success,True
+1613035893778,3752,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:103 Passed:103 Failed:0
+1613035895385,656,selenium_create_comment:write_comment,Success,True
+1613035896024,638,selenium_create_comment:save_comment,Success,True
+1613035896024,2244,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:104 Passed:104 Failed:0
+1613035896728,702,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:105 Passed:105 Failed:0
+1613035898435,1705,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:106 Passed:106 Failed:0
+1613035901656,3220,selenium_app_custom_action:view_page,Success,True
+1613035901656,3220,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:107 Passed:107 Failed:0
+1613035901857,199,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:108 Passed:108 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 15.83s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035902057,125,selenium_login:open_login_page,Success,True
+1613035902893,754,selenium_login:login_and_view_dashboard,Success,True
+1613035902893,962,selenium_login,Success,True
+.test_0_selenium_a_login,Total:109 Passed:109 Failed:0
+1613035903406,454,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:110 Passed:110 Failed:0
+1613035904158,749,selenium_create_page:open_create_page_editor,Success,True
+1613035905505,715,selenium_create_page:save_created_page,Success,True
+1613035905505,2096,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:111 Passed:111 Failed:0
+1613035906575,1068,selenium_edit_page:open_create_page_editor,Success,True
+1613035907343,745,selenium_edit_page:save_edited_page,Success,True
+1613035907343,1836,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:112 Passed:112 Failed:0
+1613035908452,674,selenium_create_comment:write_comment,Success,True
+1613035909089,637,selenium_create_comment:save_comment,Success,True
+1613035909089,1744,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:113 Passed:113 Failed:0
+1613035909727,636,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:114 Passed:114 Failed:0
+1613035911410,1681,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:115 Passed:115 Failed:0
+1613035914488,3076,selenium_app_custom_action:view_page,Success,True
+1613035914489,3077,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:116 Passed:116 Failed:0
+1613035914686,195,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:117 Passed:117 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.76s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035914861,124,selenium_login:open_login_page,Success,True
+1613035915771,827,selenium_login:login_and_view_dashboard,Success,True
+1613035915771,1034,selenium_login,Success,True
+.test_0_selenium_a_login,Total:118 Passed:118 Failed:0
+1613035916183,357,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:119 Passed:119 Failed:0
+1613035916909,724,selenium_create_page:open_create_page_editor,Success,True
+1613035918204,642,selenium_create_page:save_created_page,Success,True
+1613035918204,2019,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:120 Passed:120 Failed:0
+1613035919780,1574,selenium_edit_page:open_create_page_editor,Success,True
+1613035920476,674,selenium_edit_page:save_edited_page,Success,True
+1613035920476,2270,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:121 Passed:121 Failed:0
+1613035921481,634,selenium_create_comment:write_comment,Success,True
+1613035922103,621,selenium_create_comment:save_comment,Success,True
+1613035922103,1624,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:122 Passed:122 Failed:0
+1613035922764,659,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:123 Passed:123 Failed:0
+1613035924459,1693,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:124 Passed:124 Failed:0
+1613035927494,3034,selenium_app_custom_action:view_page,Success,True
+1613035927494,3034,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:125 Passed:125 Failed:0
+1613035927688,192,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:126 Passed:126 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.96s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035927864,125,selenium_login:open_login_page,Success,True
+1613035928701,756,selenium_login:login_and_view_dashboard,Success,True
+1613035928701,962,selenium_login,Success,True
+.test_0_selenium_a_login,Total:127 Passed:127 Failed:0
+1613035929196,437,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:128 Passed:128 Failed:0
+1613035930060,861,selenium_create_page:open_create_page_editor,Success,True
+1613035931359,636,selenium_create_page:save_created_page,Success,True
+1613035931359,2161,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:129 Passed:129 Failed:0
+1613035933041,1680,selenium_edit_page:open_create_page_editor,Success,True
+1613035933983,920,selenium_edit_page:save_edited_page,Success,True
+1613035933984,2623,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:130 Passed:130 Failed:0
+1613035935108,656,selenium_create_comment:write_comment,Success,True
+1613035935744,635,selenium_create_comment:save_comment,Success,True
+1613035935744,1759,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:131 Passed:131 Failed:0
+1613035936389,644,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:132 Passed:132 Failed:0
+1613035938152,1760,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:133 Passed:133 Failed:0
+1613035941516,3362,selenium_app_custom_action:view_page,Success,True
+1613035941516,3363,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:134 Passed:134 Failed:0
+1613035941723,205,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:135 Passed:135 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.99s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035941900,126,selenium_login:open_login_page,Success,True
+1613035942763,781,selenium_login:login_and_view_dashboard,Success,True
+1613035942763,989,selenium_login,Success,True
+.test_0_selenium_a_login,Total:136 Passed:136 Failed:0
+1613035943223,401,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:137 Passed:137 Failed:0
+1613035943997,771,selenium_create_page:open_create_page_editor,Success,True
+1613035945310,672,selenium_create_page:save_created_page,Success,True
+1613035945310,2084,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:138 Passed:138 Failed:0
+1613035946911,1600,selenium_edit_page:open_create_page_editor,Success,True
+1613035947670,737,selenium_edit_page:save_edited_page,Success,True
+1613035947670,2359,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:139 Passed:139 Failed:0
+1613035948463,327,selenium_create_comment:write_comment,Success,True
+1613035949079,615,selenium_create_comment:save_comment,Success,True
+1613035949079,1407,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:140 Passed:140 Failed:0
+1613035949766,685,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:141 Passed:141 Failed:0
+1613035951453,1685,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:142 Passed:142 Failed:0
+1613035954146,2691,selenium_app_custom_action:view_page,Success,True
+1613035954146,2691,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:143 Passed:143 Failed:0
+1613035954344,197,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:144 Passed:144 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.58s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035954528,125,selenium_login:open_login_page,Success,True
+1613035955466,857,selenium_login:login_and_view_dashboard,Success,True
+1613035955466,1063,selenium_login,Success,True
+.test_0_selenium_a_login,Total:145 Passed:145 Failed:0
+1613035956122,597,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:146 Passed:146 Failed:0
+1613035956742,618,selenium_create_page:open_create_page_editor,Success,True
+1613035958054,685,selenium_create_page:save_created_page,Success,True
+1613035958054,1930,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:147 Passed:147 Failed:0
+1613035961227,3172,selenium_edit_page:open_create_page_editor,Success,True
+1613035962221,970,selenium_edit_page:save_edited_page,Success,True
+1613035962221,4166,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:148 Passed:148 Failed:0
+1613035963553,828,selenium_create_comment:write_comment,Success,True
+1613035964180,627,selenium_create_comment:save_comment,Success,True
+1613035964180,1957,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:149 Passed:149 Failed:0
+1613035964759,577,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:150 Passed:150 Failed:0
+1613035966569,1808,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:151 Passed:151 Failed:0
+1613035969856,3285,selenium_app_custom_action:view_page,Success,True
+1613035969856,3286,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:152 Passed:152 Failed:0
+1613035970063,205,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:153 Passed:153 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 15.67s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035970239,124,selenium_login:open_login_page,Success,True
+1613035971126,804,selenium_login:login_and_view_dashboard,Success,True
+1613035971126,1011,selenium_login,Success,True
+.test_0_selenium_a_login,Total:154 Passed:154 Failed:0
+1613035971521,370,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:155 Passed:155 Failed:0
+1613035972218,695,selenium_create_page:open_create_page_editor,Success,True
+1613035973478,622,selenium_create_page:save_created_page,Success,True
+1613035973478,1955,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:156 Passed:156 Failed:0
+1613035975727,2248,selenium_edit_page:open_create_page_editor,Success,True
+1613035976423,674,selenium_edit_page:save_edited_page,Success,True
+1613035976424,2944,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:157 Passed:157 Failed:0
+1613035977467,672,selenium_create_comment:write_comment,Success,True
+1613035978104,636,selenium_create_comment:save_comment,Success,True
+1613035978104,1678,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:158 Passed:158 Failed:0
+1613035978927,821,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:159 Passed:159 Failed:0
+1613035980733,1805,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:160 Passed:160 Failed:0
+1613035984086,3351,selenium_app_custom_action:view_page,Success,True
+1613035984086,3351,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:161 Passed:161 Failed:0
+1613035984297,209,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:162 Passed:162 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.19s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613035984476,127,selenium_login:open_login_page,Success,True
+1613035985403,843,selenium_login:login_and_view_dashboard,Success,True
+1613035985403,1054,selenium_login,Success,True
+.test_0_selenium_a_login,Total:163 Passed:163 Failed:0
+1613035985939,477,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:164 Passed:164 Failed:0
+1613035986687,746,selenium_create_page:open_create_page_editor,Success,True
+1613035988042,720,selenium_create_page:save_created_page,Success,True
+1613035988042,2101,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:165 Passed:165 Failed:0
+1613035991231,3188,selenium_edit_page:open_create_page_editor,Success,True
+1613035992248,995,selenium_edit_page:save_edited_page,Success,True
+1613035992249,4205,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:166 Passed:166 Failed:0
+1613035993331,633,selenium_create_comment:write_comment,Success,True
+1613035993953,622,selenium_create_comment:save_comment,Success,True
+1613035993954,1703,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:167 Passed:167 Failed:0
+1613035994818,863,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:168 Passed:168 Failed:0
+1613035996553,1733,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:169 Passed:169 Failed:0
+1613035999908,3354,selenium_app_custom_action:view_page,Success,True
+1613035999908,3354,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:170 Passed:170 Failed:0
+1613036000112,202,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:171 Passed:171 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 15.77s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036000294,123,selenium_login:open_login_page,Success,True
+1613036001220,841,selenium_login:login_and_view_dashboard,Success,True
+1613036001220,1049,selenium_login,Success,True
+.test_0_selenium_a_login,Total:172 Passed:172 Failed:0
+1613036002276,996,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:173 Passed:173 Failed:0
+1613036002975,697,selenium_create_page:open_create_page_editor,Success,True
+1613036004262,657,selenium_create_page:save_created_page,Success,True
+1613036004262,1984,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:174 Passed:174 Failed:0
+1613036005270,1006,selenium_edit_page:open_create_page_editor,Success,True
+1613036006455,1162,selenium_edit_page:save_edited_page,Success,True
+1613036006455,2191,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:175 Passed:175 Failed:0
+1613036008070,682,selenium_create_comment:write_comment,Success,True
+1613036008709,639,selenium_create_comment:save_comment,Success,True
+1613036008709,2252,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:176 Passed:176 Failed:0
+1613036009302,591,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:177 Passed:177 Failed:0
+1613036011106,1802,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:178 Passed:178 Failed:0
+1613036014470,3362,selenium_app_custom_action:view_page,Success,True
+1613036014470,3363,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:179 Passed:179 Failed:0
+1613036014667,196,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:180 Passed:180 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.51s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036014843,122,selenium_login:open_login_page,Success,True
+1613036015906,976,selenium_login:login_and_view_dashboard,Success,True
+1613036015906,1186,selenium_login,Success,True
+.test_0_selenium_a_login,Total:181 Passed:181 Failed:0
+1613036016358,395,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:182 Passed:182 Failed:0
+1613036017130,770,selenium_create_page:open_create_page_editor,Success,True
+1613036018411,640,selenium_create_page:save_created_page,Success,True
+1613036018411,2051,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:183 Passed:183 Failed:0
+1613036019960,1547,selenium_edit_page:open_create_page_editor,Success,True
+1613036020688,707,selenium_edit_page:save_edited_page,Success,True
+1613036020688,2276,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:184 Passed:184 Failed:0
+1613036021734,662,selenium_create_comment:write_comment,Success,True
+1613036022379,644,selenium_create_comment:save_comment,Success,True
+1613036022379,1688,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:185 Passed:185 Failed:0
+1613036023040,659,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:186 Passed:186 Failed:0
+1613036024949,1907,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:187 Passed:187 Failed:0
+1613036027977,3026,selenium_app_custom_action:view_page,Success,True
+1613036027977,3026,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:188 Passed:188 Failed:0
+1613036028205,226,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:189 Passed:189 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.49s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036028387,129,selenium_login:open_login_page,Success,True
+1613036029494,1024,selenium_login:login_and_view_dashboard,Success,True
+1613036029495,1237,selenium_login,Success,True
+.test_0_selenium_a_login,Total:190 Passed:190 Failed:0
+1613036030529,979,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:191 Passed:191 Failed:0
+1613036031257,726,selenium_create_page:open_create_page_editor,Success,True
+1613036032534,644,selenium_create_page:save_created_page,Success,True
+1613036032534,2003,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:192 Passed:192 Failed:0
+1613036034065,1529,selenium_edit_page:open_create_page_editor,Success,True
+1613036035661,1576,selenium_edit_page:save_edited_page,Success,True
+1613036035661,3125,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:193 Passed:193 Failed:0
+1613036037375,721,selenium_create_comment:write_comment,Success,True
+1613036038002,627,selenium_create_comment:save_comment,Success,True
+1613036038002,2339,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:194 Passed:194 Failed:0
+1613036039517,1513,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:195 Passed:195 Failed:0
+1613036041247,1728,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:196 Passed:196 Failed:0
+1613036044434,3185,selenium_app_custom_action:view_page,Success,True
+1613036044434,3185,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:197 Passed:197 Failed:0
+1613036044634,198,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:198 Passed:198 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 16.39s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036044809,124,selenium_login:open_login_page,Success,True
+1613036045682,790,selenium_login:login_and_view_dashboard,Success,True
+1613036045682,997,selenium_login,Success,True
+.test_0_selenium_a_login,Total:199 Passed:199 Failed:0
+1613036046118,380,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:200 Passed:200 Failed:0
+1613036046794,675,selenium_create_page:open_create_page_editor,Success,True
+1613036048101,673,selenium_create_page:save_created_page,Success,True
+1613036048101,1981,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:201 Passed:201 Failed:0
+1613036049745,1643,selenium_edit_page:open_create_page_editor,Success,True
+1613036050561,794,selenium_edit_page:save_edited_page,Success,True
+1613036050561,2459,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:202 Passed:202 Failed:0
+1613036051627,693,selenium_create_comment:write_comment,Success,True
+1613036052272,644,selenium_create_comment:save_comment,Success,True
+1613036052272,1709,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:203 Passed:203 Failed:0
+1613036052907,633,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:204 Passed:204 Failed:0
+1613036054643,1734,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:205 Passed:205 Failed:0
+1613036057320,2675,selenium_app_custom_action:view_page,Success,True
+1613036057320,2675,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:206 Passed:206 Failed:0
+1613036057518,197,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:207 Passed:207 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.84s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036057696,125,selenium_login:open_login_page,Success,True
+1613036058552,772,selenium_login:login_and_view_dashboard,Success,True
+1613036058552,982,selenium_login,Success,True
+.test_0_selenium_a_login,Total:208 Passed:208 Failed:0
+1613036059582,973,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:209 Passed:209 Failed:0
+1613036060370,786,selenium_create_page:open_create_page_editor,Success,True
+1613036061647,644,selenium_create_page:save_created_page,Success,True
+1613036061647,2063,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:210 Passed:210 Failed:0
+1613036063301,1652,selenium_edit_page:open_create_page_editor,Success,True
+1613036064617,1283,selenium_edit_page:save_edited_page,Success,True
+1613036064617,2968,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:211 Passed:211 Failed:0
+1613036066217,722,selenium_create_comment:write_comment,Success,True
+1613036066855,637,selenium_create_comment:save_comment,Success,True
+1613036066855,2236,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:212 Passed:212 Failed:0
+1613036067420,563,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:213 Passed:213 Failed:0
+1613036069143,1721,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:214 Passed:214 Failed:0
+1613036072256,3111,selenium_app_custom_action:view_page,Success,True
+1613036072256,3111,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:215 Passed:215 Failed:0
+1613036072455,197,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:216 Passed:216 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.89s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036072638,124,selenium_login:open_login_page,Success,True
+1613036073552,833,selenium_login:login_and_view_dashboard,Success,True
+1613036073553,1039,selenium_login,Success,True
+.test_0_selenium_a_login,Total:217 Passed:217 Failed:0
+1613036073970,382,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:218 Passed:218 Failed:0
+1613036074672,700,selenium_create_page:open_create_page_editor,Success,True
+1613036075971,671,selenium_create_page:save_created_page,Success,True
+1613036075971,2000,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:219 Passed:219 Failed:0
+1613036077072,1099,selenium_edit_page:open_create_page_editor,Success,True
+1613036077896,787,selenium_edit_page:save_edited_page,Success,True
+1613036077896,1924,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:220 Passed:220 Failed:0
+1613036078942,699,selenium_create_comment:write_comment,Success,True
+1613036079561,618,selenium_create_comment:save_comment,Success,True
+1613036079562,1663,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:221 Passed:221 Failed:0
+1613036085536,5972,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:222 Passed:222 Failed:0
+1613036087388,1851,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:223 Passed:223 Failed:0
+1613036090640,3250,selenium_app_custom_action:view_page,Success,True
+1613036090640,3250,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:224 Passed:224 Failed:0
+1613036090842,200,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:225 Passed:225 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 18.34s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036091027,126,selenium_login:open_login_page,Success,True
+1613036091945,830,selenium_login:login_and_view_dashboard,Success,True
+1613036091945,1044,selenium_login,Success,True
+.test_0_selenium_a_login,Total:226 Passed:226 Failed:0
+1613036097395,5394,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:227 Passed:227 Failed:0
+1613036098066,669,selenium_create_page:open_create_page_editor,Success,True
+1613036099385,651,selenium_create_page:save_created_page,Success,True
+1613036099385,1988,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:228 Passed:228 Failed:0
+1613036121206,21819,selenium_edit_page:open_create_page_editor,Success,True
+1613036123667,2434,selenium_edit_page:save_edited_page,Success,True
+1613036123667,24280,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:229 Passed:229 Failed:0
+1613036125429,580,selenium_create_comment:write_comment,Success,True
+1613036126048,618,selenium_create_comment:save_comment,Success,True
+1613036126048,2379,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:230 Passed:230 Failed:0
+1613036127551,1501,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:231 Passed:231 Failed:0
+1613036129365,1812,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:232 Passed:232 Failed:0
+1613036132455,3088,selenium_app_custom_action:view_page,Success,True
+1613036132455,3088,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:233 Passed:233 Failed:0
+1613036132650,193,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:234 Passed:234 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 41.76s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036132861,126,selenium_login:open_login_page,Success,True
+1613036133718,776,selenium_login:login_and_view_dashboard,Success,True
+1613036133718,983,selenium_login,Success,True
+.test_0_selenium_a_login,Total:235 Passed:235 Failed:0
+1613036134249,470,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:236 Passed:236 Failed:0
+1613036135018,767,selenium_create_page:open_create_page_editor,Success,True
+1613036136363,717,selenium_create_page:save_created_page,Success,True
+1613036136363,2112,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:237 Passed:237 Failed:0
+1613036137432,1067,selenium_edit_page:open_create_page_editor,Success,True
+1613036138164,709,selenium_edit_page:save_edited_page,Success,True
+1613036138164,1799,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:238 Passed:238 Failed:0
+1613036139242,703,selenium_create_comment:write_comment,Success,True
+1613036139865,622,selenium_create_comment:save_comment,Success,True
+1613036139865,1699,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:239 Passed:239 Failed:0
+1613036147135,7268,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:240 Passed:240 Failed:0
+1613036148915,1778,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:241 Passed:241 Failed:0
+1613036152093,3176,selenium_app_custom_action:view_page,Success,True
+1613036152093,3176,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:242 Passed:242 Failed:0
+1613036152289,194,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:243 Passed:243 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 19.56s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036152473,133,selenium_login:open_login_page,Success,True
+1613036153450,893,selenium_login:login_and_view_dashboard,Success,True
+1613036153450,1110,selenium_login,Success,True
+.test_0_selenium_a_login,Total:244 Passed:244 Failed:0
+1613036153911,403,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:245 Passed:245 Failed:0
+1613036154582,669,selenium_create_page:open_create_page_editor,Success,True
+1613036155885,670,selenium_create_page:save_created_page,Success,True
+1613036155885,1971,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:246 Passed:246 Failed:0
+1613036158598,2712,selenium_edit_page:open_create_page_editor,Success,True
+1613036159239,619,selenium_edit_page:save_edited_page,Success,True
+1613036159239,3352,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:247 Passed:247 Failed:0
+1613036160230,588,selenium_create_comment:write_comment,Success,True
+1613036160874,643,selenium_create_comment:save_comment,Success,True
+1613036160874,1633,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:248 Passed:248 Failed:0
+1613036161432,556,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:249 Passed:249 Failed:0
+1613036163129,1694,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:250 Passed:250 Failed:0
+1613036165661,2531,selenium_app_custom_action:view_page,Success,True
+1613036165661,2531,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:251 Passed:251 Failed:0
+1613036165857,194,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:252 Passed:252 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.53s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036166034,123,selenium_login:open_login_page,Success,True
+1613036166887,771,selenium_login:login_and_view_dashboard,Success,True
+1613036166887,976,selenium_login,Success,True
+.test_0_selenium_a_login,Total:253 Passed:253 Failed:0
+1613036167526,581,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:254 Passed:254 Failed:0
+1613036168256,728,selenium_create_page:open_create_page_editor,Success,True
+1613036169627,725,selenium_create_page:save_created_page,Success,True
+1613036169627,2099,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:255 Passed:255 Failed:0
+1613036171783,2154,selenium_edit_page:open_create_page_editor,Success,True
+1613036172500,696,selenium_edit_page:save_edited_page,Success,True
+1613036172500,2871,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:256 Passed:256 Failed:0
+1613036173739,736,selenium_create_comment:write_comment,Success,True
+1613036174378,638,selenium_create_comment:save_comment,Success,True
+1613036174378,1876,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:257 Passed:257 Failed:0
+1613036174999,619,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:258 Passed:258 Failed:0
+1613036176722,1721,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:259 Passed:259 Failed:0
+1613036179167,2443,selenium_app_custom_action:view_page,Success,True
+1613036179167,2443,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:260 Passed:260 Failed:0
+1613036179365,196,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:261 Passed:261 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.46s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036179541,123,selenium_login:open_login_page,Success,True
+1613036180430,798,selenium_login:login_and_view_dashboard,Success,True
+1613036180430,1012,selenium_login,Success,True
+.test_0_selenium_a_login,Total:262 Passed:262 Failed:0
+1613036180879,391,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:263 Passed:263 Failed:0
+1613036181595,715,selenium_create_page:open_create_page_editor,Success,True
+1613036182866,638,selenium_create_page:save_created_page,Success,True
+1613036182866,1985,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:264 Passed:264 Failed:0
+1613036183908,1041,selenium_edit_page:open_create_page_editor,Success,True
+1613036184688,752,selenium_edit_page:save_edited_page,Success,True
+1613036184689,1821,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:265 Passed:265 Failed:0
+1613036185748,641,selenium_create_comment:write_comment,Success,True
+1613036186377,628,selenium_create_comment:save_comment,Success,True
+1613036186377,1687,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:266 Passed:266 Failed:0
+1613036186974,595,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:267 Passed:267 Failed:0
+1613036188700,1724,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:268 Passed:268 Failed:0
+1613036191895,3193,selenium_app_custom_action:view_page,Success,True
+1613036191895,3193,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:269 Passed:269 Failed:0
+1613036192107,210,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:270 Passed:270 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 12.70s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036192279,122,selenium_login:open_login_page,Success,True
+1613036193269,910,selenium_login:login_and_view_dashboard,Success,True
+1613036193269,1112,selenium_login,Success,True
+.test_0_selenium_a_login,Total:271 Passed:271 Failed:0
+1613036193707,409,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:272 Passed:272 Failed:0
+1613036194444,735,selenium_create_page:open_create_page_editor,Success,True
+1613036195710,631,selenium_create_page:save_created_page,Success,True
+1613036195710,2001,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:273 Passed:273 Failed:0
+1613036198372,2660,selenium_edit_page:open_create_page_editor,Success,True
+1613036199123,730,selenium_edit_page:save_edited_page,Success,True
+1613036199123,3411,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:274 Passed:274 Failed:0
+1613036200456,849,selenium_create_comment:write_comment,Success,True
+1613036201078,621,selenium_create_comment:save_comment,Success,True
+1613036201078,1952,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:275 Passed:275 Failed:0
+1613036201688,609,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:276 Passed:276 Failed:0
+1613036203463,1773,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:277 Passed:277 Failed:0
+1613036206676,3212,selenium_app_custom_action:view_page,Success,True
+1613036206677,3212,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:278 Passed:278 Failed:0
+1613036206886,208,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:279 Passed:279 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.74s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036207080,127,selenium_login:open_login_page,Success,True
+1613036208008,845,selenium_login:login_and_view_dashboard,Success,True
+1613036208008,1056,selenium_login,Success,True
+.test_0_selenium_a_login,Total:280 Passed:280 Failed:0
+1613036208403,367,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:281 Passed:281 Failed:0
+1613036209068,663,selenium_create_page:open_create_page_editor,Success,True
+1613036210360,666,selenium_create_page:save_created_page,Success,True
+1613036210360,1956,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:282 Passed:282 Failed:0
+1613036212980,2617,selenium_edit_page:open_create_page_editor,Success,True
+1613036213712,709,selenium_edit_page:save_edited_page,Success,True
+1613036213712,3350,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:283 Passed:283 Failed:0
+1613036214817,719,selenium_create_comment:write_comment,Success,True
+1613036215454,636,selenium_create_comment:save_comment,Success,True
+1613036215454,1740,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:284 Passed:284 Failed:0
+1613036216231,775,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:285 Passed:285 Failed:0
+1613036217922,1689,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:286 Passed:286 Failed:0
+1613036221451,3527,selenium_app_custom_action:view_page,Success,True
+1613036221451,3527,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:287 Passed:287 Failed:0
+1613036221650,197,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:288 Passed:288 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 14.71s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036221831,129,selenium_login:open_login_page,Success,True
+1613036222743,819,selenium_login:login_and_view_dashboard,Success,True
+1613036222744,1042,selenium_login,Success,True
+.test_0_selenium_a_login,Total:289 Passed:289 Failed:0
+1613036223193,422,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:290 Passed:290 Failed:0
+1613036223906,712,selenium_create_page:open_create_page_editor,Success,True
+1613036225239,667,selenium_create_page:save_created_page,Success,True
+1613036225239,2044,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:291 Passed:291 Failed:0
+1613036226777,1537,selenium_edit_page:open_create_page_editor,Success,True
+1613036227515,713,selenium_edit_page:save_edited_page,Success,True
+1613036227515,2274,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:292 Passed:292 Failed:0
+1613036228445,554,selenium_create_comment:write_comment,Success,True
+1613036229068,623,selenium_create_comment:save_comment,Success,True
+1613036229069,1552,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:293 Passed:293 Failed:0
+1613036229721,651,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:294 Passed:294 Failed:0
+1613036231401,1678,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:295 Passed:295 Failed:0
+1613036234536,3133,selenium_app_custom_action:view_page,Success,True
+1613036234536,3133,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:296 Passed:296 Failed:0
+1613036234732,194,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:297 Passed:297 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.04s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036234905,122,selenium_login:open_login_page,Success,True
+1613036235772,785,selenium_login:login_and_view_dashboard,Success,True
+1613036235772,989,selenium_login,Success,True
+.test_0_selenium_a_login,Total:298 Passed:298 Failed:0
+1613036236225,426,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:299 Passed:299 Failed:0
+1613036237014,787,selenium_create_page:open_create_page_editor,Success,True
+1613036238314,660,selenium_create_page:save_created_page,Success,True
+1613036238314,2088,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:300 Passed:300 Failed:0
+1613036239887,1571,selenium_edit_page:open_create_page_editor,Success,True
+1613036240638,729,selenium_edit_page:save_edited_page,Success,True
+1613036240638,2322,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:301 Passed:301 Failed:0
+1613036241729,665,selenium_create_comment:write_comment,Success,True
+1613036242352,623,selenium_create_comment:save_comment,Success,True
+1613036242352,1712,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:302 Passed:302 Failed:0
+1613036243043,689,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:303 Passed:303 Failed:0
+1613036244749,1704,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:304 Passed:304 Failed:0
+1613036247829,3078,selenium_app_custom_action:view_page,Success,True
+1613036247829,3078,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:305 Passed:305 Failed:0
+1613036248025,194,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:306 Passed:306 Failed:0
+
+
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================== 9 passed, 1 warning in 13.25s =========================
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613036248201,124,selenium_login:open_login_page,Success,True
+1613036249184,901,selenium_login:login_and_view_dashboard,Success,True
+1613036249184,1108,selenium_login,Success,True
+.test_0_selenium_a_login,Total:307 Passed:307 Failed:0
+1613036249621,378,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:308 Passed:308 Failed:0
+1613036250378,755,selenium_create_page:open_create_page_editor,Success,True
+1613036251718,698,selenium_create_page:save_created_page,Success,True
+1613036251718,2095,selenium_create_page,Success,True
+.test_1_selenium_create_page,Total:309 Passed:309 Failed:0
+1613036253271,1551,selenium_edit_page:open_create_page_editor,Success,True
+1613036254067,775,selenium_edit_page:save_edited_page,Success,True
+1613036254067,2347,selenium_edit_page,Success,True
+.test_1_selenium_edit_page,Total:310 Passed:310 Failed:0
+1613036255099,695,selenium_create_comment:write_comment,Success,True
+1613036255742,642,selenium_create_comment:save_comment,Success,True
+1613036255742,1673,selenium_create_comment,Success,True
+.test_1_selenium_create_comment,Total:311 Passed:311 Failed:0
+1613036257067,1324,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:312 Passed:312 Failed:0
