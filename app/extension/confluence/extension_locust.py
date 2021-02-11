@@ -18,7 +18,7 @@ def app_specific_action(locust):
 
     body = {"reverse": "false", "spaceCategoryNames": "", "includeArchivedSpaces": "false", "currentPageId": page_id, "currentSpaceKey": space_key, "currentSpaceTitle": ""}  # include parsed variables to POST request body
     headers = {'content-type': 'application/json'}
-    r = locust.post(f'rest/spacetree/1.0/spaces', body, headers, catch_response=True)  # call app-specific POST endpoint
+    r = locust.post(f'/rest/spacetree/1.0/spaces', body, headers, catch_response=True)  # call app-specific POST endpoint
     content = r.content.decode('utf-8')
     if 'assertion string after successful POST request' not in content:
         logger.error(f"'assertion string after successful POST request' was not found in {content}")
