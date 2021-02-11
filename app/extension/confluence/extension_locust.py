@@ -1,18 +1,25 @@
 import re
-from locustio.common_utils import init_logger, confluence_measure
+import random
 
+from locustio.common_utils import init_logger, confluence_measure
+from locustio.confluence.requests_params import confluence_datasets
+
+confluence_dataset = confluence_datasets()
 logger = init_logger(app_type='confluence')
+confluence_dataset = confluence_datasets()
+
 
 
 @confluence_measure("locust_app_specific_action")
 def app_specific_action(locust):
-    r = locust.get(f'/rest/newsteaser/1.0/news/search?cql=(type%20IN%20(blogpost))&expand=body.view,body.view.webresource.uris.all,children.attachment,children.comment,space,version,metadata.likes,history', catch_response=True)  # call app-specific GET endpoint
-    content = r.content.decode('utf-8')   # decode response content
+    page = random.choice(confluence_dataset["pages"])
+    page_id = page[0]
+    space_key = page[1]
 
-    id_pattern_example = '"id":"(.+?)"'
-    id = re.findall(id_pattern_example, content)    # get ID from response using regexp
-
-    logger.locust_info(f'id: {id}')  # log information for debug when verbose is true in jira.yml file
-    if 'results' not in content:
-        logger.error(f"'results' was not found in {content}")
-    assert 'results' in content
+    body = {"reverse": "false", "spaceCategoryNames": "", "includeArchivedSpaces": "false", "currentPageId": page_id, "currentSpaceKey": space_key, "currentSpaceTitle": ""}  # include parsed variables to POST request body
+    headers = {'content-type': 'application/json'}
+    r = locust.post(f'rest/spacetree/1.0/spaces', body, headers, catch_response=True)  # call app-specific POST endpoint
+    content = r.content.decode('utf-8')
+    if 'assertion string after successful POST request' not in content:
+        logger.error(f"'assertion string after successful POST request' was not found in {content}")
+    assert 'assertion string after successful POST request' in content  # assertion after POST request
