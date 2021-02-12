@@ -1,0 +1,1405 @@
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py first driver inits
+1613136710921,1885,selenium_login:open_login_page,Success,True
+1613136711720,711,selenium_login:login_and_view_dashboard,Success,True
+1613136711720,2684,selenium_login,Success,True
+.test_0_selenium_a_login,Total:1 Passed:1 Failed:0
+1613136713467,1732,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:2 Passed:2 Failed:0
+1613136733831,20362,selenium_create_page:open_create_page_editor,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,False
+1613136733831,20362,selenium_create_page,Failed measure: selenium_create_page - Exception,False
+FAction: test_1_selenium_create_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f41b4100>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_page,Total:3 Passed:2 Failed:1
+1613136755010,20664,selenium_edit_page:open_create_page_editor,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,False
+1613136755010,20664,selenium_edit_page,Failed measure: selenium_edit_page - Exception,False
+FAction: test_1_selenium_edit_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fd30> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fa90> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_edit_page,Total:4 Passed:2 Failed:2
+1613136776238,20308,selenium_create_comment:write_comment,Failed measure: selenium_create_comment:write_comment - TimeoutException,False
+1613136776238,20844,selenium_create_comment,Failed measure: selenium_create_comment - Exception,False
+FAction: test_1_selenium_create_comment, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f4155e20>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_comment,Total:5 Passed:2 Failed:3
+1613136778664,1944,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:6 Passed:3 Failed:3
+1613136779883,1217,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:7 Passed:4 Failed:3
+1613136797862,17978,selenium_app_custom_action:view_page,Success,True
+1613136797862,17978,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:8 Passed:5 Failed:3
+1613136798123,258,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:9 Passed:6 Failed:3
+
+
+=================================== FAILURES ===================================
+_________________________ test_1_selenium_create_page __________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f41b4100>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+__________________________ test_1_selenium_edit_page ___________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fd30> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fa90> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+________________________ test_1_selenium_create_comment ________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7722746', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f4155e20>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_page - Exception:...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_edit_page - Exception: (...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_comment - Excepti...
+============== 3 failed, 6 passed, 1 warning in 90.22s (0:01:30) ===============
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613136798363,184,selenium_login:open_login_page,Success,True
+1613136798841,393,selenium_login:login_and_view_dashboard,Success,True
+1613136798841,662,selenium_login,Success,True
+.test_0_selenium_a_login,Total:10 Passed:7 Failed:3
+1613136799650,794,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:11 Passed:8 Failed:3
+1613136819931,20279,selenium_create_page:open_create_page_editor,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,False
+1613136819931,20279,selenium_create_page,Failed measure: selenium_create_page - Exception,False
+FAction: test_1_selenium_create_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f40bcc10>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_page,Total:12 Passed:8 Failed:4
+1613136840447,20116,selenium_edit_page:open_create_page_editor,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,False
+1613136840448,20117,selenium_edit_page,Failed measure: selenium_edit_page - Exception,False
+FAction: test_1_selenium_edit_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40991f0> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40993a0> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_edit_page,Total:13 Passed:8 Failed:5
+1613136861692,20301,selenium_create_comment:write_comment,Failed measure: selenium_create_comment:write_comment - TimeoutException,False
+1613136861692,20840,selenium_create_comment,Failed measure: selenium_create_comment - Exception,False
+FAction: test_1_selenium_create_comment, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f40cf8e0>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_comment,Total:14 Passed:8 Failed:6
+1613136863325,1188,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:15 Passed:9 Failed:6
+1613136864535,1207,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:16 Passed:10 Failed:6
+1613136876602,12066,selenium_app_custom_action:view_page,Success,True
+1613136876602,12066,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:17 Passed:11 Failed:6
+1613136876842,237,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:18 Passed:12 Failed:6
+
+
+=================================== FAILURES ===================================
+_________________________ test_1_selenium_create_page __________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f40bcc10>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+__________________________ test_1_selenium_edit_page ___________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40991f0> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40993a0> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+________________________ test_1_selenium_create_comment ________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7980381', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f40cf8e0>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_page - Exception:...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_edit_page - Exception: (...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_comment - Excepti...
+============== 3 failed, 6 passed, 1 warning in 78.67s (0:01:18) ===============
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613136877047,145,selenium_login:open_login_page,Success,True
+1613136877558,398,selenium_login:login_and_view_dashboard,Success,True
+1613136877558,656,selenium_login,Success,True
+.test_0_selenium_a_login,Total:19 Passed:13 Failed:6
+1613136878161,588,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:20 Passed:14 Failed:6
+1613136898462,20299,selenium_create_page:open_create_page_editor,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,False
+1613136898462,20299,selenium_create_page,Failed measure: selenium_create_page - Exception,False
+FAction: test_1_selenium_create_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f410a1f0>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_page,Total:21 Passed:14 Failed:7
+1613136919105,20138,selenium_edit_page:open_create_page_editor,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,False
+1613136919105,20138,selenium_edit_page,Failed measure: selenium_edit_page - Exception,False
+FAction: test_1_selenium_edit_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40f5280> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40f51f0> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_edit_page,Total:22 Passed:14 Failed:8
+1613136940273,20317,selenium_create_comment:write_comment,Failed measure: selenium_create_comment:write_comment - TimeoutException,False
+1613136940273,20791,selenium_create_comment,Failed measure: selenium_create_comment - Exception,False
+FAction: test_1_selenium_create_comment, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f3ff1a60>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_comment,Total:23 Passed:14 Failed:9
+1613136941985,1187,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:24 Passed:15 Failed:9
+1613136943207,1219,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:25 Passed:16 Failed:9
+1613136952907,9699,selenium_app_custom_action:view_page,Success,True
+1613136952907,9699,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:26 Passed:17 Failed:9
+1613136953146,237,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:27 Passed:18 Failed:9
+
+
+=================================== FAILURES ===================================
+_________________________ test_1_selenium_create_page __________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f410a1f0>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+__________________________ test_1_selenium_edit_page ___________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40f5280> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40f51f0> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+________________________ test_1_selenium_create_comment ________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '7465722', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f3ff1a60>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_page - Exception:...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_edit_page - Exception: (...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_comment - Excepti...
+============== 3 failed, 6 passed, 1 warning in 76.26s (0:01:16) ===============
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613136953340,138,selenium_login:open_login_page,Success,True
+1613136953869,440,selenium_login:login_and_view_dashboard,Success,True
+1613136953869,667,selenium_login,Success,True
+.test_0_selenium_a_login,Total:28 Passed:19 Failed:9
+1613136955545,1660,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:29 Passed:20 Failed:9
+1613136975851,20305,selenium_create_page:open_create_page_editor,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,False
+1613136975851,20305,selenium_create_page,Failed measure: selenium_create_page - Exception,False
+FAction: test_1_selenium_create_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f3ff1730>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_page,Total:30 Passed:20 Failed:10
+1613136996924,20650,selenium_edit_page:open_create_page_editor,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,False
+1613136996924,20651,selenium_edit_page,Failed measure: selenium_edit_page - Exception,False
+FAction: test_1_selenium_edit_page, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f4069a90> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f4069a30> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_edit_page,Total:31 Passed:20 Failed:11
+1613137018235,20323,selenium_create_comment:write_comment,Failed measure: selenium_create_comment:write_comment - TimeoutException,False
+1613137018235,20898,selenium_create_comment,Failed measure: selenium_create_comment - Exception,False
+FAction: test_1_selenium_create_comment, Error: confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f404c3a0>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+
+test_1_selenium_create_comment,Total:32 Passed:20 Failed:12
+1613137019878,1193,selenium_view_blog,Success,True
+.test_1_selenium_view_blog,Total:33 Passed:21 Failed:12
+1613137021101,1221,selenium_view_dashboard,Success,True
+.test_1_selenium_view_dashboard,Total:34 Passed:22 Failed:12
+1613137032889,11787,selenium_app_custom_action:view_page,Success,True
+1613137032889,11787,selenium_app_custom_action,Success,True
+.test_1_selenium_custom_action,Total:35 Passed:23 Failed:12
+1613137033119,227,selenium_log_out,Success,True
+.test_2_selenium_z_log_out,Total:36 Passed:24 Failed:12
+
+
+=================================== FAILURES ===================================
+_________________________ test_1_selenium_create_page __________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:109: in create_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f3ff1730>. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+__________________________ test_1_selenium_edit_page ___________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_edit_page(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.edit_confluence_page(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:130: in edit_confluence_page
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f4069a90> Locator: ('class name', 'status-indicator-message')\n Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f4069a30> Locator: ('class name', 'status-indicator-message')\n", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+________________________ test_1_selenium_create_comment ________________________
+
+confluence_webdriver = <selenium.webdriver.chrome.webdriver.WebDriver (session="b7c96308766cc172831a26909f1de904")>
+confluence_datasets = {'blog_id': '8648357', 'blogs': [['3570228', 'PSDC'], ['3703353', 'MIF'], ['3570200', 'SSA'], ['3570165', 'DTMDH'], ['3570212', 'EMAC'], ['3570366', 'EFM'], ...], 'custom_page_id': '38207491', 'custom_pages': [['38207491', 'TEST']], ...}
+confluence_screen_shots = None
+
+    def test_1_selenium_create_comment(confluence_webdriver, confluence_datasets, confluence_screen_shots):
+>       modules.create_comment(confluence_webdriver, confluence_datasets)
+
+selenium_ui/confluence_ui.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+selenium_ui/confluence/modules.py:153: in create_comment
+    measure()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    @functools.wraps(func)
+    def wrapper():
+        if LOGIN_ACTION_NAME in interaction:
+            globals.login_failed = False
+        if globals.login_failed:
+            pytest.skip(f"login is failed")
+        start = time.time()
+        error_msg = 'Success'
+        full_exception = ''
+        try:
+            func()
+            success = True
+        except Exception:
+            success = False
+            # https://docs.python.org/2/library/sys.html#sys.exc_info
+            exc_type, full_exception = sys.exc_info()[:2]
+            error_msg = f"Failed measure: {interaction} - {exc_type.__name__}"
+        end = time.time()
+        timing = str(int((end - start) * 1000))
+    
+        lockfile = f'{selenium_results_file}.lock'
+    
+        with filelock.SoftFileLock(lockfile):
+            with open(selenium_results_file, "a+") as jtl_file:
+                timestamp = round(time.time() * 1000)
+                jtl_file.write(f"{timestamp},{timing},{interaction},,{error_msg},,{success},0,0,0,0,,0\n")
+    
+        print(f"{timestamp},{timing},{interaction},{error_msg},{success}")
+    
+        if not success:
+            if LOGIN_ACTION_NAME in interaction:
+                globals.login_failed = True
+>           raise Exception(error_msg, full_exception)
+E           Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f404c3a0>. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+
+selenium_ui/conftest.py:137: Exception
+=============================== warnings summary ===============================
+../../usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114
+  /usr/local/lib/python3.8/dist-packages/_pytest/config/__init__.py:1114: PytestAssertRewriteWarning: Module already imported so cannot be rewritten: apiritif
+    self._mark_plugins_for_rewrite(hook)
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+=========================== short test summary info ============================
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_page - Exception:...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_edit_page - Exception: (...
+FAILED selenium_ui/confluence_ui.py::test_1_selenium_create_comment - Excepti...
+============== 3 failed, 6 passed, 1 warning in 79.93s (0:01:19) ===============
+============================= test session starts ==============================
+platform linux -- Python 3.8.0, pytest-6.2.2, py-1.10.0, pluggy-0.13.1
+rootdir: /dc-app-performance-toolkit/app
+plugins: apiritif-0.9.6
+collected 9 items
+
+selenium_ui/confluence_ui.py get driver from global
+1613137033312,138,selenium_login:open_login_page,Success,True
+1613137033788,359,selenium_login:login_and_view_dashboard,Success,True
+1613137033788,614,selenium_login,Success,True
+.test_0_selenium_a_login,Total:37 Passed:25 Failed:12
+1613137034337,532,selenium_view_page,Success,True
+.test_1_selenium_view_page,Total:38 Passed:26 Failed:12
