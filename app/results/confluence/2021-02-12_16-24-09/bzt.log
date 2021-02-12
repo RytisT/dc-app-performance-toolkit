@@ -1,0 +1,475 @@
+[2021-02-12 16:24:09,370 INFO root] Taurus CLI Tool v1.15.1
+[2021-02-12 16:24:09,370 DEBUG root] Build: 13973 Fri Oct 30 09:16:46 UTC 2020
+[2021-02-12 16:24:09,371 DEBUG root] Extended git info:  3fecb4b9 Release 1.15.1 (#1420)
+[2021-02-12 16:24:09,371 DEBUG root] Command-line options: {'log': '/tmp/bzt_q3z16kq7.log', 'option': ['modules.console.disable=true'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2021-02-12 16:24:09,371 DEBUG root] Python: CPython 3.8.0
+[2021-02-12 16:24:09,371 DEBUG root] OS: uname_result(system='Linux', node='44d712bbeec9', release='5.4.0-1037-aws', version='#39~18.04.1-Ubuntu SMP Fri Jan 15 02:48:42 UTC 2021', machine='x86_64', processor='x86_64')
+[2021-02-12 16:24:09,371 INFO root] Starting with configs: ['confluence.yml']
+[2021-02-12 16:24:09,371 DEBUG root] Using personal config: /root/.bzt-rc
+[2021-02-12 16:24:09,371 INFO Engine] Configuring...
+[2021-02-12 16:24:09,371 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2021-02-12 16:24:09,379 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-02-12 16:24:09,379 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-02-12 16:24:09,379 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2021-02-12 16:24:09,395 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2021-02-12 16:24:09,395 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2021-02-12 16:24:09,396 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2021-02-12 16:24:09,396 DEBUG Engine] User configs list: ['/root/.bzt-rc', 'confluence.yml']
+[2021-02-12 16:24:09,396 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-02-12 16:24:09,396 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-02-12 16:24:09,399 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-02-12 16:24:09,408 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-02-12 16:24:09,409 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-02-12 16:24:09,411 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-02-12 16:24:09,426 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-02-12 16:24:09,426 DEBUG ConfigOverrider] Applying modules.console.disable=true
+[2021-02-12 16:24:09,427 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-02-12 16:24:09,427 DEBUG ConfigOverrider] Applying: [disable]=true
+[2021-02-12 16:24:09,427 DEBUG ConfigOverrider] Parsed override value: 'true' -> True (<class 'bool'>)
+[2021-02-12 16:24:09,428 INFO Engine] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09
+[2021-02-12 16:24:09,428 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective
+[2021-02-12 16:24:09,430 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2021-02-12 16:24:09,430 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.yml
+[2021-02-12 16:24:09,445 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.json
+[2021-02-12 16:24:09,446 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/merged.yml
+[2021-02-12 16:24:09,446 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/merged.yml
+[2021-02-12 16:24:09,452 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/merged.json
+[2021-02-12 16:24:09,452 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/merged.json
+[2021-02-12 16:24:09,452 DEBUG Engine] Add existing artifact (move=False): confluence.yml
+[2021-02-12 16:24:09,452 DEBUG Engine] Copying confluence.yml to /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/confluence.yml
+[2021-02-12 16:24:09,453 DEBUG Engine] Set PYTHONPATH to '/root/.bzt/python-packages/3.8.0' + '/dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/python-packages/3.8.0' + 
+[2021-02-12 16:24:09,453 DEBUG Engine] Content of user packages dir: %s
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: application_hostname=confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: application_protocol=http
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: application_port=80
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: secure=True
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: admin_login=admin
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: admin_password=admin
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: load_executor=locust
+[2021-02-12 16:24:09,453 DEBUG Engine] OS env: concurrency=200
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: test_duration=45m
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: ramp-up=5m
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: total_actions_per_hour=20000
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: WEBDRIVER_VISIBLE=False
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: JMETER_VERSION=5.2.1
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: LANGUAGE=en_US.utf8
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: allow_analytics=True
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: view_page=54
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: view_dashboard=6
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: view_blog=8
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: search_cql=7
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: create_blog=3
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: create_and_edit_page=6
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: comment_page=5
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: view_attachment=3
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: upload_attachment=5
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: like_page=3
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: standalone_extension=6
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: custom_dataset_query=title ~ 'Spacetree*'
+[2021-02-12 16:24:09,454 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09
+[2021-02-12 16:24:09,454 DEBUG root] Closing log handler: /tmp/bzt_q3z16kq7.log
+[2021-02-12 16:24:09,454 DEBUG root] Switched writing logs to /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/bzt.log
+[2021-02-12 16:24:09,454 DEBUG root] Linting config
+[2021-02-12 16:24:09,457 INFO Engine] Preparing...
+[2021-02-12 16:24:09,457 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator', 'rtimes-len': 0, 'percentiles': []}
+[2021-02-12 16:24:09,457 DEBUG root] Importing module: bzt.modules.aggregator
+[2021-02-12 16:24:09,553 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2021-02-12 16:24:09,554 DEBUG Engine.consolidator] Buffer scaling setup: percentile None from [] selected
+[2021-02-12 16:24:09,554 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2021-02-12 16:24:09,554 DEBUG root] Importing module: bzt.modules.monitoring
+[2021-02-12 16:24:09,555 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2021-02-12 16:24:09,556 DEBUG Engine] Module config: shellexec {'class': 'bzt.modules.shellexec.ShellExecutor'}
+[2021-02-12 16:24:09,556 DEBUG root] Importing module: bzt.modules.shellexec
+[2021-02-12 16:24:09,563 DEBUG easyprocess] version=0.3
+[2021-02-12 16:24:09,564 DEBUG pyvirtualdisplay] version=2.0
+[2021-02-12 16:24:09,571 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py'>
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/pre_run/environment_checker.py'}
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/data_preparation/confluence_prepare_data.py'}
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/post_run/jmeter_post_check.py'}
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl'}
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/analytics/analytics.py confluence'}
+[2021-02-12 16:24:09,572 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/post_run/cleanup_results_dir.py'}
+[2021-02-12 16:24:09,572 INFO Engine.shellexec.Task] Starting shell command: python util/pre_run/environment_checker.py
+[2021-02-12 16:24:09,572 DEBUG root] Executing shell: python util/pre_run/environment_checker.py at /dc-app-performance-toolkit/app
+[2021-02-12 16:24:09,655 DEBUG Engine.shellexec.Task] Output for python util/pre_run/environment_checker.py:
+Python version: 3.8.0
+Data Center App Performance Toolkit version: 4.0.0
+
+[2021-02-12 16:24:09,655 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/pre_run/environment_checker.py
+[2021-02-12 16:24:09,655 INFO Engine.shellexec.Task] Starting shell command: python util/data_preparation/confluence_prepare_data.py
+[2021-02-12 16:24:09,656 DEBUG root] Executing shell: python util/data_preparation/confluence_prepare_data.py at /dc-app-performance-toolkit/app
+[2021-02-12 16:24:10,036 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.1&installID=Docker HTTP/1.1" 200 39
+[2021-02-12 16:24:10,037 DEBUG Engine] Taurus updates info: {'latest': '1.15.2', 'needsUpgrade': True}
+[2021-02-12 16:24:10,037 WARNING Engine] There is newer version of Taurus 1.15.2 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2021-02-12 16:25:27,210 DEBUG Engine.shellexec.Task] Output for python util/data_preparation/confluence_prepare_data.py:
+Started preparing data
+Server url:  http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80
+Users count: 200
+Pages count: 5000
+Blogs count: 5000
+------------------------
+Custom pages count: 1
+Finished preparing data
+
+[2021-02-12 16:25:27,210 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/data_preparation/confluence_prepare_data.py
+[2021-02-12 16:25:27,211 DEBUG Engine] Module config: local {'class': 'bzt.modules.provisioning.Local'}
+[2021-02-12 16:25:27,211 DEBUG root] Importing module: bzt.modules.provisioning
+[2021-02-12 16:25:27,211 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/provisioning.py'>
+[2021-02-12 16:25:27,211 DEBUG Engine] Module config: locust {'class': 'bzt.modules.locustio.LocustIOExecutor'}
+[2021-02-12 16:25:27,211 DEBUG root] Importing module: bzt.modules.locustio
+[2021-02-12 16:25:27,220 DEBUG root] Loading class: 'LocustIOExecutor' from <module 'bzt.modules.locustio' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/locustio.py'>
+[2021-02-12 16:25:27,220 DEBUG Engine] Module config: selenium {'class': 'bzt.modules.selenium.SeleniumExecutor', 'chromedriver': {'version': '88.0.4324.27'}}
+[2021-02-12 16:25:27,220 DEBUG root] Importing module: bzt.modules.selenium
+[2021-02-12 16:25:27,220 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/selenium.py'>
+[2021-02-12 16:25:27,220 DEBUG Engine.local] Preparing executor: locust/140221038516256
+[2021-02-12 16:25:27,220 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/locust.out
+[2021-02-12 16:25:27,220 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/locust.err
+[2021-02-12 16:25:27,220 DEBUG Engine.locust.LocustIO] Trying LocustIO: locust
+[2021-02-12 16:25:27,220 DEBUG root] Executing shell: ['/usr/bin/python', '-m', 'locust', '--version'] at .
+[2021-02-12 16:25:27,601 DEBUG Engine.locust.LocustIO] LocustIO output: __main__.py 1.3.1
+
+[2021-02-12 16:25:27,601 DEBUG Engine] Add existing artifact (move=False): /dc-app-performance-toolkit/app/locustio/confluence/locustfile.py
+[2021-02-12 16:25:27,601 DEBUG Engine] Copying /dc-app-performance-toolkit/app/locustio/confluence/locustfile.py to /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/locustfile.py
+[2021-02-12 16:25:27,601 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl
+[2021-02-12 16:25:27,602 DEBUG Engine.local] Preparing executor: selenium/140221038548640
+[2021-02-12 16:25:27,602 INFO Engine.selenium] Installing ChromeDriver...
+[2021-02-12 16:25:27,602 INFO Engine.selenium.ChromeDriver] Will install ChromeDriver into /root/.bzt/selenium-taurus/tools/chromedriver/88.0.4324.27
+[2021-02-12 16:25:27,602 INFO Engine.selenium.ChromeDriver] Downloading: https://chromedriver.storage.googleapis.com/88.0.4324.27/chromedriver_linux64.zip
+[2021-02-12 16:25:27,603 DEBUG root] No progressbar for non-tty output: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+[2021-02-12 16:25:27,604 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): chromedriver.storage.googleapis.com:443
+[2021-02-12 16:25:27,621 DEBUG urllib3.connectionpool] https://chromedriver.storage.googleapis.com:443 "GET /88.0.4324.27/chromedriver_linux64.zip HTTP/1.1" 200 5695004
+[2021-02-12 16:25:27,797 INFO Engine.selenium.ChromeDriver] Unzipping /tmp/tmprg02_wvv.zip to /root/.bzt/selenium-taurus/tools/chromedriver/88.0.4324.27
+[2021-02-12 16:25:27,797 DEBUG root] Extracting /tmp/tmprg02_wvv.zip to /root/.bzt/selenium-taurus/tools/chromedriver/88.0.4324.27
+[2021-02-12 16:25:27,797 DEBUG root] Writing /root/.bzt/selenium-taurus/tools/chromedriver/88.0.4324.27/chromedriver
+[2021-02-12 16:25:27,875 DEBUG Engine.selenium] Using script type: pytest
+[2021-02-12 16:25:27,875 DEBUG Engine] Module config: pytest {'class': 'bzt.modules.pytest.PyTestExecutor'}
+[2021-02-12 16:25:27,875 DEBUG root] Importing module: bzt.modules.pytest
+[2021-02-12 16:25:27,876 DEBUG root] Loading class: 'PyTestExecutor' from <module 'bzt.modules.pytest' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/pytest.py'>
+[2021-02-12 16:25:27,876 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/pytest.out
+[2021-02-12 16:25:27,876 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/pytest.err
+[2021-02-12 16:25:27,876 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/PyTestExecutor.ldjson
+[2021-02-12 16:25:27,876 DEBUG Engine] Module config: final-stats {'class': 'bzt.modules.reporting.FinalStatus'}
+[2021-02-12 16:25:27,876 DEBUG root] Importing module: bzt.modules.reporting
+[2021-02-12 16:25:27,877 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/reporting.py'>
+[2021-02-12 16:25:27,877 DEBUG Engine] Module config: console {'class': 'bzt.modules.console.ConsoleStatusReporter', 'disable': True}
+[2021-02-12 16:25:27,877 DEBUG root] Importing module: bzt.modules.console
+[2021-02-12 16:25:27,877 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/console.py'>
+[2021-02-12 16:25:27,877 DEBUG Engine] Module config: junit-xml {'class': 'bzt.modules.reporting.JUnitXMLReporter'}
+[2021-02-12 16:25:27,877 DEBUG root] Importing module: bzt.modules.reporting
+[2021-02-12 16:25:27,877 DEBUG root] Loading class: 'JUnitXMLReporter' from <module 'bzt.modules.reporting' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/reporting.py'>
+[2021-02-12 16:25:27,878 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.yml
+[2021-02-12 16:25:27,893 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.json
+[2021-02-12 16:25:27,893 INFO Engine] Starting...
+[2021-02-12 16:25:27,893 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x7f87c12df910>
+[2021-02-12 16:25:27,893 DEBUG Engine] Startup <bzt.modules.shellexec.ShellExecutor object at 0x7f87c11bf6d0>
+[2021-02-12 16:25:27,894 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x7f87c11bf730>
+[2021-02-12 16:25:27,894 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x7f87b7768100>
+[2021-02-12 16:25:27,894 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x7f87b77683d0>
+[2021-02-12 16:25:27,894 INFO Engine.console] Waiting for results...
+[2021-02-12 16:25:27,894 DEBUG Engine] Startup <bzt.modules.reporting.JUnitXMLReporter object at 0x7f87b76f6310>
+[2021-02-12 16:25:27,894 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x7f87794473a0>
+[2021-02-12 16:25:27,894 DEBUG Engine.local] Delay setup for locust/locust: 0(start-at) + 0(delay) = 0
+[2021-02-12 16:25:27,894 DEBUG Engine.local] Delay setup for selenium/140221038548640: 0(start-at) + 0(delay) = 0
+[2021-02-12 16:25:27,895 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.yml
+[2021-02-12 16:25:27,908 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.json
+[2021-02-12 16:25:27,909 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2021-02-12 16:25:27,909 DEBUG root] Leveled up log file verbosity
+[2021-02-12 16:25:27,909 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/locust.log
+[2021-02-12 16:25:27,909 DEBUG root] Executing shell: ['/usr/bin/python', '/usr/local/lib/python3.8/dist-packages/bzt/resources/locustio-taurus-wrapper.py', '-f', '/dc-app-performance-toolkit/app/locustio/confluence/locustfile.py', '--logfile=/dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/locust.log', '--headless', '--only-summary', '--users=200', '--hatch-rate=0.666667', '--run-time=3000', '--stop-timeout=10'] at /dc-app-performance-toolkit/app
+[2021-02-12 16:25:27,913 DEBUG Engine.local] Starting execution: locust/locust, rest of available slots: 9223372036854775806
+[2021-02-12 16:25:27,913 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2021-02-12 16:25:27,913 DEBUG root] Leveled up log file verbosity
+[2021-02-12 16:25:27,913 DEBUG root] Executing shell: ['/usr/bin/python', '/usr/local/lib/python3.8/dist-packages/bzt/resources/pytest_runner.py', '--report-file', '/dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/PyTestExecutor.ldjson', '-d', '2700.0', '/dc-app-performance-toolkit/app/selenium_ui/confluence_ui.py'] at /dc-app-performance-toolkit/app
+[2021-02-12 16:25:27,916 DEBUG Engine.local] Starting execution: selenium/140221038548640, rest of available slots: 9223372036854775805
+[2021-02-12 16:25:27,916 DEBUG root] Leveling down log file verbosity to INFO, use -v option to have DEBUG messages enabled
+[2021-02-12 16:25:34,924 INFO Engine.console] Current: 2 vu	1 succ	0 fail	1.578 avg rt	/	Cumulative: 1.578 avg rt, 0% failures
+[2021-02-12 16:25:37,927 INFO Engine.console] Current: 3 vu	1 succ	0 fail	1.370 avg rt	/	Cumulative: 1.465 avg rt, 0% failures
+[2021-02-12 16:25:40,931 INFO Engine.console] Current: 5 vu	1 succ	0 fail	1.398 avg rt	/	Cumulative: 1.431 avg rt, 0% failures
+[2021-02-12 16:25:43,934 INFO Engine.console] Current: 7 vu	1 succ	0 fail	1.356 avg rt	/	Cumulative: 1.409 avg rt, 0% failures
+[2021-02-12 16:25:46,937 INFO Engine.console] Current: 9 vu	1 succ	0 fail	1.399 avg rt	/	Cumulative: 1.406 avg rt, 0% failures
+[2021-02-12 16:25:49,940 INFO Engine.console] Current: 11 vu	1 succ	0 fail	1.368 avg rt	/	Cumulative: 1.400 avg rt, 0% failures
+[2021-02-12 16:25:52,943 INFO Engine.console] Current: 13 vu	1 succ	0 fail	1.310 avg rt	/	Cumulative: 1.391 avg rt, 0% failures
+[2021-02-12 16:25:55,946 INFO Engine.console] Current: 15 vu	1 succ	0 fail	1.393 avg rt	/	Cumulative: 1.387 avg rt, 0% failures
+[2021-02-12 16:25:58,949 INFO Engine.console] Current: 17 vu	1 succ	0 fail	1.356 avg rt	/	Cumulative: 1.387 avg rt, 0% failures
+[2021-02-12 16:26:01,953 INFO Engine.console] Current: 19 vu	1 succ	0 fail	1.445 avg rt	/	Cumulative: 1.391 avg rt, 0% failures
+[2021-02-12 16:26:04,956 INFO Engine.console] Current: 21 vu	1 succ	0 fail	1.360 avg rt	/	Cumulative: 1.389 avg rt, 0% failures
+[2021-02-12 16:26:06,958 INFO Engine.console] Current: 23 vu	1 succ	0 fail	1.398 avg rt	/	Cumulative: 1.390 avg rt, 0% failures
+[2021-02-12 16:26:08,959 INFO Engine.console] Current: 25 vu	2 succ	0 fail	0.951 avg rt	/	Cumulative: 1.355 avg rt, 0% failures
+[2021-02-12 16:26:10,963 INFO Engine.console] Current: 26 vu	1 succ	0 fail	0.546 avg rt	/	Cumulative: 1.327 avg rt, 0% failures
+[2021-02-12 16:26:13,977 INFO Engine.console] Current: 28 vu	1 succ	0 fail	1.391 avg rt	/	Cumulative: 1.851 avg rt, 3% failures
+[2021-02-12 16:26:15,973 INFO Engine.console] Current: 31 vu	2 succ	1 fail	0.944 avg rt	/	Cumulative: 1.751 avg rt, 5% failures
+[2021-02-12 16:26:17,986 INFO Engine.console] Current: 32 vu	2 succ	0 fail	0.868 avg rt	/	Cumulative: 1.707 avg rt, 5% failures
+[2021-02-12 16:26:18,967 INFO Engine.console] Current: 32 vu	1 succ	0 fail	1.335 avg rt	/	Cumulative: 1.698 avg rt, 4% failures
+[2021-02-12 16:26:19,973 INFO Engine.console] Current: 33 vu	1 succ	0 fail	0.520 avg rt	/	Cumulative: 1.670 avg rt, 4% failures
+[2021-02-12 16:26:20,975 INFO Engine.console] Current: 34 vu	2 succ	0 fail	0.723 avg rt	/	Cumulative: 1.627 avg rt, 4% failures
+[2021-02-12 16:26:21,976 INFO Engine.console] Current: 34 vu	1 succ	0 fail	1.318 avg rt	/	Cumulative: 1.620 avg rt, 4% failures
+[2021-02-12 16:26:22,977 INFO Engine.console] Current: 35 vu	1 succ	0 fail	0.514 avg rt	/	Cumulative: 1.596 avg rt, 4% failures
+[2021-02-12 16:26:23,978 INFO Engine.console] Current: 35 vu	1 succ	0 fail	1.349 avg rt	/	Cumulative: 1.590 avg rt, 4% failures
+[2021-02-12 16:26:25,984 INFO Engine.console] Current: 37 vu	1 succ	0 fail	0.509 avg rt	/	Cumulative: 1.552 avg rt, 4% failures
+[2021-02-12 16:26:27,985 INFO Engine.console] Current: 39 vu	2 succ	0 fail	0.694 avg rt	/	Cumulative: 1.499 avg rt, 3% failures
+[2021-02-12 16:26:29,984 INFO Engine.console] Current: 39 vu	1 succ	0 fail	1.377 avg rt	/	Cumulative: 1.497 avg rt, 3% failures
+[2021-02-12 16:26:31,991 INFO Engine.console] Current: 41 vu	1 succ	0 fail	0.189 avg rt	/	Cumulative: 1.457 avg rt, 3% failures
+[2021-02-12 16:26:33,999 INFO Engine.console] Current: 42 vu	1 succ	0 fail	1.407 avg rt	/	Cumulative: 1.749 avg rt, 4% failures
+[2021-02-12 16:26:35,996 INFO Engine.console] Current: 44 vu	3 succ	1 fail	5.862 avg rt	/	Cumulative: 1.998 avg rt, 6% failures
+[2021-02-12 16:26:37,005 INFO Engine.console] Current: 44 vu	1 succ	0 fail	1.434 avg rt	/	Cumulative: 1.990 avg rt, 5% failures
+[2021-02-12 16:26:37,992 INFO Engine.console] Current: 45 vu	2 succ	0 fail	0.588 avg rt	/	Cumulative: 1.949 avg rt, 5% failures
+[2021-02-12 16:26:41,006 INFO Engine.console] Current: 46 vu	1 succ	1 fail	0.672 avg rt	/	Cumulative: 1.878 avg rt, 6% failures
+[2021-02-12 16:26:44,005 INFO Engine.console] Current: 49 vu	2 succ	0 fail	0.710 avg rt	/	Cumulative: 1.819 avg rt, 6% failures
+[2021-02-12 16:26:46,006 INFO Engine.console] Current: 51 vu	3 succ	0 fail	0.480 avg rt	/	Cumulative: 1.730 avg rt, 5% failures
+[2021-02-12 16:26:48,004 INFO Engine.console] Current: 52 vu	2 succ	1 fail	0.649 avg rt	/	Cumulative: 1.693 avg rt, 6% failures
+[2021-02-12 16:26:49,007 INFO Engine.console] Current: 53 vu	2 succ	0 fail	0.743 avg rt	/	Cumulative: 1.672 avg rt, 6% failures
+[2021-02-12 16:26:50,001 INFO Engine.console] Current: 53 vu	0 succ	1 fail	0.576 avg rt	/	Cumulative: 1.660 avg rt, 7% failures
+[2021-02-12 16:26:51,007 INFO Engine.console] Current: 54 vu	2 succ	0 fail	0.950 avg rt	/	Cumulative: 1.644 avg rt, 7% failures
+[2021-02-12 16:26:53,016 INFO Engine.console] Current: 55 vu	0 succ	1 fail	0.519 avg rt	/	Cumulative: 1.605 avg rt, 9% failures
+[2021-02-12 16:26:56,020 INFO Engine.console] Current: 57 vu	3 succ	0 fail	0.485 avg rt	/	Cumulative: 1.549 avg rt, 8% failures
+[2021-02-12 16:26:59,028 INFO Engine.console] Current: 59 vu	3 succ	0 fail	0.502 avg rt	/	Cumulative: 1.488 avg rt, 8% failures
+[2021-02-12 16:27:01,023 INFO Engine.console] Current: 61 vu	3 succ	1 fail	0.601 avg rt	/	Cumulative: 1.445 avg rt, 8% failures
+[2021-02-12 16:27:03,020 INFO Engine.console] Current: 62 vu	2 succ	0 fail	0.719 avg rt	/	Cumulative: 1.432 avg rt, 8% failures
+[2021-02-12 16:27:04,023 INFO Engine.console] Current: 63 vu	2 succ	1 fail	0.698 avg rt	/	Cumulative: 1.414 avg rt, 9% failures
+[2021-02-12 16:27:05,023 INFO Engine.console] Current: 63 vu	1 succ	0 fail	0.281 avg rt	/	Cumulative: 1.405 avg rt, 9% failures
+[2021-02-12 16:27:06,025 INFO Engine.console] Current: 64 vu	3 succ	0 fail	0.662 avg rt	/	Cumulative: 1.387 avg rt, 8% failures
+[2021-02-12 16:27:08,033 INFO Engine.console] Current: 65 vu	1 succ	0 fail	1.051 avg rt	/	Cumulative: 1.373 avg rt, 8% failures
+[2021-02-12 16:27:10,033 INFO Engine.console] Current: 66 vu	1 succ	1 fail	0.655 avg rt	/	Cumulative: 1.347 avg rt, 9% failures
+[2021-02-12 16:27:12,033 INFO Engine.console] Current: 68 vu	3 succ	0 fail	0.997 avg rt	/	Cumulative: 1.339 avg rt, 8% failures
+[2021-02-12 16:27:13,025 INFO Engine.console] Current: 69 vu	3 succ	0 fail	0.858 avg rt	/	Cumulative: 1.329 avg rt, 8% failures
+[2021-02-12 16:27:14,032 INFO Engine.console] Current: 69 vu	1 succ	0 fail	0.197 avg rt	/	Cumulative: 1.320 avg rt, 8% failures
+[2021-02-12 16:27:15,034 INFO Engine.console] Current: 70 vu	3 succ	0 fail	0.639 avg rt	/	Cumulative: 1.306 avg rt, 8% failures
+[2021-02-12 16:27:16,036 INFO Engine.console] Current: 70 vu	1 succ	0 fail	1.352 avg rt	/	Cumulative: 1.306 avg rt, 8% failures
+[2021-02-12 16:27:17,036 INFO Engine.console] Current: 71 vu	2 succ	0 fail	0.342 avg rt	/	Cumulative: 1.293 avg rt, 8% failures
+[2021-02-12 16:27:18,037 INFO Engine.console] Current: 72 vu	3 succ	0 fail	0.798 avg rt	/	Cumulative: 1.283 avg rt, 8% failures
+[2021-02-12 16:27:19,054 INFO Engine.console] Current: 72 vu	4 succ	1 fail	4.551 avg rt	/	Cumulative: 1.390 avg rt, 8% failures
+[2021-02-12 16:27:20,033 INFO Engine.console] Current: 73 vu	2 succ	0 fail	0.466 avg rt	/	Cumulative: 1.378 avg rt, 8% failures
+[2021-02-12 16:27:21,040 INFO Engine.console] Current: 74 vu	4 succ	0 fail	0.615 avg rt	/	Cumulative: 1.359 avg rt, 8% failures
+[2021-02-12 16:27:22,042 INFO Engine.console] Current: 74 vu	1 succ	0 fail	1.309 avg rt	/	Cumulative: 1.358 avg rt, 8% failures
+[2021-02-12 16:27:23,042 INFO Engine.console] Current: 75 vu	3 succ	0 fail	0.581 avg rt	/	Cumulative: 1.344 avg rt, 7% failures
+[2021-02-12 16:27:24,044 INFO Engine.console] Current: 76 vu	4 succ	0 fail	0.654 avg rt	/	Cumulative: 1.328 avg rt, 7% failures
+[2021-02-12 16:27:25,045 INFO Engine.console] Current: 76 vu	1 succ	0 fail	1.363 avg rt	/	Cumulative: 1.328 avg rt, 7% failures
+[2021-02-12 16:27:26,046 INFO Engine.console] Current: 77 vu	2 succ	1 fail	0.547 avg rt	/	Cumulative: 1.314 avg rt, 8% failures
+[2021-02-12 16:27:27,047 INFO Engine.console] Current: 78 vu	3 succ	1 fail	0.402 avg rt	/	Cumulative: 1.293 avg rt, 8% failures
+[2021-02-12 16:27:28,049 INFO Engine.console] Current: 79 vu	2 succ	1 fail	0.485 avg rt	/	Cumulative: 1.280 avg rt, 8% failures
+[2021-02-12 16:27:29,050 INFO Engine.console] Current: 79 vu	1 succ	0 fail	0.523 avg rt	/	Cumulative: 1.275 avg rt, 8% failures
+[2021-02-12 16:27:30,050 INFO Engine.console] Current: 80 vu	3 succ	1 fail	0.364 avg rt	/	Cumulative: 1.255 avg rt, 9% failures
+[2021-02-12 16:27:31,051 INFO Engine.console] Current: 80 vu	1 succ	0 fail	1.414 avg rt	/	Cumulative: 1.256 avg rt, 9% failures
+[2021-02-12 16:27:32,052 INFO Engine.console] Current: 81 vu	2 succ	0 fail	0.516 avg rt	/	Cumulative: 1.248 avg rt, 9% failures
+[2021-02-12 16:27:33,056 INFO Engine.console] Current: 82 vu	3 succ	1 fail	0.949 avg rt	/	Cumulative: 1.242 avg rt, 9% failures
+[2021-02-12 16:27:34,046 INFO Engine.console] Current: 82 vu	2 succ	0 fail	1.049 avg rt	/	Cumulative: 1.240 avg rt, 9% failures
+[2021-02-12 16:27:34,860 WARNING Engine] Please wait for graceful shutdown...
+[2021-02-12 16:27:34,860 DEBUG root] Leveled up log file verbosity
+[2021-02-12 16:27:34,860 INFO Engine] Shutting down...
+[2021-02-12 16:27:34,860 DEBUG Engine] Current stop reason: 
+[2021-02-12 16:27:34,861 DEBUG Engine.local] Shutdown locust/locust
+[2021-02-12 16:27:35,862 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (59 tries left)
+[2021-02-12 16:27:36,863 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (58 tries left)
+[2021-02-12 16:27:37,864 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (57 tries left)
+[2021-02-12 16:27:38,866 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (56 tries left)
+[2021-02-12 16:27:39,867 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (55 tries left)
+[2021-02-12 16:27:40,868 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (54 tries left)
+[2021-02-12 16:27:41,869 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (53 tries left)
+[2021-02-12 16:27:42,870 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (52 tries left)
+[2021-02-12 16:27:43,872 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (51 tries left)
+[2021-02-12 16:27:44,873 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (50 tries left)
+[2021-02-12 16:27:45,874 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (49 tries left)
+[2021-02-12 16:27:46,875 INFO Engine.locust] Terminating process PID 23 with signal Signals.SIGTERM (48 tries left)
+[2021-02-12 16:27:46,876 DEBUG Engine.local] Shutdown selenium/140221038548640
+[2021-02-12 16:27:47,877 INFO Engine.pytest] Terminating process PID 24 with signal Signals.SIGTERM (59 tries left)
+[2021-02-12 16:27:48,878 INFO Engine.pytest] Terminating process PID 24 with signal Signals.SIGTERM (58 tries left)
+[2021-02-12 16:27:48,878 DEBUG Engine.selenium] Selenium tests ran for 140.96536254882812 seconds
+[2021-02-12 16:27:48,879 INFO Engine.shellexec.Task] Starting shell command: python util/post_run/jmeter_post_check.py
+[2021-02-12 16:27:48,879 DEBUG root] Executing shell: python util/post_run/jmeter_post_check.py at /dc-app-performance-toolkit/app
+[2021-02-12 16:27:48,911 DEBUG Engine.shellexec.Task] Output for python util/post_run/jmeter_post_check.py:
+jmeter_post_check: PASS
+
+[2021-02-12 16:27:48,911 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/post_run/jmeter_post_check.py
+[2021-02-12 16:27:48,911 INFO Engine.shellexec.Task] Starting shell command: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl
+[2021-02-12 16:27:48,912 DEBUG root] Executing shell: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl at /dc-app-performance-toolkit/app
+[2021-02-12 16:27:49,264 DEBUG Engine.shellexec.Task] Output for python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl:
+Started validating jtl file: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl
+File: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl validated in 0.001382589340209961 seconds
+Created file /tmp/tmpn93zgog_/kpi.csv. Converted from jtl to csv in 0.024475812911987305 
+Started validating jtl file: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/selenium.jtl
+File: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/selenium.jtl validated in 0.0003426074981689453 seconds
+Created file /tmp/tmpn93zgog_/selenium.csv. Converted from jtl to csv in 0.02121448516845703 
+File /tmp/tmpn93zgog_/kpi.csv successfully read
+File /tmp/tmpn93zgog_/selenium.csv successfully read
+Created file /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/results.csv
+Done in 0.04828906059265137 seconds
+
+[2021-02-12 16:27:49,265 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl
+[2021-02-12 16:27:49,266 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.yml
+[2021-02-12 16:27:49,280 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.json
+[2021-02-12 16:27:49,281 WARNING root] Keyboard interrupt
+[2021-02-12 16:27:49,282 DEBUG root] KeyboardInterrupt: 
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 262, in perform
+    self.engine.run()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 269, in run
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 103, in reraise
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 248, in run
+    self._wait()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 297, in _wait
+    time.sleep(delay)
+[2021-02-12 16:27:49,282 INFO Engine] Post-processing...
+[2021-02-12 16:27:49,282 DEBUG Engine.local] Post-process locust/locust
+[2021-02-12 16:27:49,282 DEBUG Engine.local] Post-process selenium/140221038548640
+[2021-02-12 16:27:49,282 DEBUG Engine.locust.JTLReader.IncrementalCSVReader] Read: 12 lines / 915 bytes (at speed 1048576)
+[2021-02-12 16:27:49,283 DEBUG Engine.locust.JTLReader] Buffer len: 9; Known errors count: 13
+[2021-02-12 16:27:49,283 DEBUG Engine.locust.JTLReader] Aggregating: 1613147252, 9 in buffer
+[2021-02-12 16:27:49,285 DEBUG Engine.locust.JTLReader] Aggregating: 1613147253, 8 in buffer
+[2021-02-12 16:27:49,287 DEBUG Engine.locust.JTLReader] Aggregating: 1613147254, 7 in buffer
+[2021-02-12 16:27:49,289 DEBUG Engine.locust.JTLReader] Aggregating: 1613147255, 6 in buffer
+[2021-02-12 16:27:49,291 DEBUG Engine.locust.JTLReader] Aggregating: 1613147256, 5 in buffer
+[2021-02-12 16:27:49,293 DEBUG Engine.locust.JTLReader] Aggregating: 1613147257, 4 in buffer
+[2021-02-12 16:27:49,295 DEBUG Engine.locust.JTLReader] Aggregating: 1613147258, 3 in buffer
+[2021-02-12 16:27:49,297 DEBUG Engine.locust.JTLReader] Aggregating: 1613147259, 2 in buffer
+[2021-02-12 16:27:49,299 DEBUG Engine.locust.JTLReader] Aggregating: 1613147260, 1 in buffer
+[2021-02-12 16:27:49,301 DEBUG LoadSamplesReader] Buffer len: 6; Known errors count: 14
+[2021-02-12 16:27:49,301 DEBUG LoadSamplesReader] Aggregating: 1613147217, 6 in buffer
+[2021-02-12 16:27:49,303 DEBUG Engine.consolidator] Putting datapoint 1613147217 into 1613147250
+[2021-02-12 16:27:49,303 DEBUG LoadSamplesReader] Aggregating: 1613147238, 5 in buffer
+[2021-02-12 16:27:49,304 DEBUG Engine.consolidator] Putting datapoint 1613147238 into 1613147250
+[2021-02-12 16:27:49,304 DEBUG LoadSamplesReader] Aggregating: 1613147260, 4 in buffer
+[2021-02-12 16:27:49,309 DEBUG LoadSamplesReader] Aggregating: 1613147261, 3 in buffer
+[2021-02-12 16:27:49,312 DEBUG LoadSamplesReader] Aggregating: 1613147262, 2 in buffer
+[2021-02-12 16:27:49,317 DEBUG LoadSamplesReader] Aggregating: 1613147263, 1 in buffer
+[2021-02-12 16:27:49,320 DEBUG Engine.locust.JTLReader] Buffer len: 0; Known errors count: 14
+[2021-02-12 16:27:49,320 DEBUG LoadSamplesReader] Buffer len: 0; Known errors count: 14
+[2021-02-12 16:27:49,320 DEBUG Engine.consolidator] Consolidator buffer[14]: dict_keys([1613147250, 1613147251, 1613147252, 1613147253, 1613147254, 1613147255, 1613147256, 1613147257, 1613147258, 1613147259, 1613147260, 1613147261, 1613147262, 1613147263])
+[2021-02-12 16:27:49,320 DEBUG Engine.consolidator] Merging into 1613147250
+[2021-02-12 16:27:49,320 DEBUG Engine.consolidator] Merging 1613147250
+[2021-02-12 16:27:49,322 DEBUG Engine.consolidator] Merging 1613147250
+[2021-02-12 16:27:49,322 DEBUG aggregator] Growing HDR from 5000.0 to 21000.0
+[2021-02-12 16:27:49,324 DEBUG aggregator] Growing HDR from 5000.0 to 21000.0
+[2021-02-12 16:27:49,327 DEBUG Engine.consolidator] Merging 1613147250
+[2021-02-12 16:27:49,331 DEBUG Engine.consolidator] Processed datapoint: 1613147250/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,331 DEBUG Engine.consolidator] Merging into 1613147251
+[2021-02-12 16:27:49,331 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,331 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,335 DEBUG Engine.consolidator] Processed datapoint: 1613147251/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,335 DEBUG Engine.consolidator] Merging into 1613147252
+[2021-02-12 16:27:49,335 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,335 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,339 DEBUG Engine.consolidator] Processed datapoint: 1613147252/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,339 DEBUG Engine.consolidator] Merging into 1613147253
+[2021-02-12 16:27:49,339 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,339 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,343 DEBUG Engine.consolidator] Processed datapoint: 1613147253/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,343 DEBUG Engine.consolidator] Merging into 1613147254
+[2021-02-12 16:27:49,343 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,343 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,348 DEBUG Engine.consolidator] Processed datapoint: 1613147254/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,348 DEBUG Engine.consolidator] Merging into 1613147255
+[2021-02-12 16:27:49,348 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,348 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,352 DEBUG Engine.consolidator] Processed datapoint: 1613147255/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,352 DEBUG Engine.consolidator] Merging into 1613147256
+[2021-02-12 16:27:49,352 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,352 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,356 DEBUG Engine.consolidator] Processed datapoint: 1613147256/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,356 DEBUG Engine.consolidator] Merging into 1613147257
+[2021-02-12 16:27:49,356 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,356 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,360 DEBUG Engine.consolidator] Processed datapoint: 1613147257/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,360 DEBUG Engine.consolidator] Merging into 1613147258
+[2021-02-12 16:27:49,360 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,360 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,364 DEBUG Engine.consolidator] Processed datapoint: 1613147258/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,364 DEBUG Engine.consolidator] Merging into 1613147259
+[2021-02-12 16:27:49,364 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,364 DEBUG Engine.consolidator] Adding sticky concurrency for 140220875309264
+[2021-02-12 16:27:49,369 DEBUG Engine.consolidator] Processed datapoint: 1613147259/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,369 DEBUG Engine.consolidator] Merging into 1613147260
+[2021-02-12 16:27:49,369 DEBUG Engine.consolidator] Merging 1613147260
+[2021-02-12 16:27:49,370 DEBUG Engine.consolidator] Merging 1613147260
+[2021-02-12 16:27:49,371 DEBUG aggregator] Growing HDR from 5000.0 to 21000.0
+[2021-02-12 16:27:49,372 DEBUG aggregator] Growing HDR from 5000.0 to 21000.0
+[2021-02-12 16:27:49,378 DEBUG Engine.consolidator] Processed datapoint: 1613147260/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,378 DEBUG Engine.consolidator] Merging into 1613147261
+[2021-02-12 16:27:49,378 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,378 DEBUG Engine.consolidator] Adding sticky concurrency for /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl@140220875215392
+[2021-02-12 16:27:49,381 DEBUG Engine.consolidator] Processed datapoint: 1613147261/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,381 DEBUG Engine.consolidator] Merging into 1613147262
+[2021-02-12 16:27:49,381 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,381 DEBUG Engine.consolidator] Adding sticky concurrency for /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl@140220875215392
+[2021-02-12 16:27:49,383 DEBUG Engine.consolidator] Processed datapoint: 1613147262/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,383 DEBUG Engine.consolidator] Merging into 1613147263
+[2021-02-12 16:27:49,383 DEBUG Engine.consolidator] Bypassing consolidation because of single result
+[2021-02-12 16:27:49,383 DEBUG Engine.consolidator] Adding sticky concurrency for /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/kpi.jtl@140220875215392
+[2021-02-12 16:27:49,385 DEBUG Engine.consolidator] Processed datapoint: 1613147263/ConsolidatingAggregator@140221037147952
+[2021-02-12 16:27:49,385 INFO Engine.final-stats] Test duration: 0:02:21
+[2021-02-12 16:27:49,386 INFO Engine.final-stats] Samples count: 223, 9.87% failures
+[2021-02-12 16:27:49,386 INFO Engine.final-stats] Average times: total 1.318, latency 0.000, connect 0.000
+[2021-02-12 16:27:49,410 INFO Engine.final-stats] Percentiles:
++---------------+---------------+
+| Percentile, % | Resp. Time, s |
++---------------+---------------+
+[2021-02-12 16:27:49,413 INFO Engine.final-stats] Request label stats:
++------------------------------------------------+--------+---------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| label                                          | status |    succ | avg_rt | error                                                                                                                                                                                                                                                                                                                                                 |
++------------------------------------------------+--------+---------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| locust_app_specific_action                     |   OK   | 100.00% |  0.307 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_comment_page                            |  FAIL  |   0.00% |  0.016 |  for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2558204/comment?actions=true&html=%3Cp%3Edazsalfejlrpioe%3C%2Fp%3E&watch=True&uuid=ba67cdc4-d055-4a07-a0b0-c8520034c492                                                                                                                     |
+|                                                |        |         |        |  for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2719559/comment?actions=true&html=%3Cp%3Erjwdrcokwhtsmlj%3C%2Fp%3E&watch=True&uuid=d590c381-d4bf-490d-bc95-63865d4c5ae2                                                                                                                     |
+|                                                |        |         |        |  for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592616/comment?actions=true&html=%3Cp%3Emjovyqref++nsx+%3C%2Fp%3E&watch=True&uuid=b3c48b30-e0b0-4867-b8f5-6e2b6753d465                                                                                                                     |
+|                                                |        |         |        |  for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2456900/comment?actions=true&html=%3Cp%3Ebpisboezvkcvytg%3C%2Fp%3E&watch=True&uuid=8746d85f-5687-4bc6-a94d-8d03bcda710b                                                                                                                     |
+| locust_create_and_edit_page:create_page        |  FAIL  |   0.00% |  0.000 | 'content_id'                                                                                                                                                                                                                                                                                                                                          |
+| locust_create_and_edit_page:create_page_editor |  FAIL  |   0.00% |  0.053 | Could not open page editor.                                                                                                                                                                                                                                                                                                                           |
+| locust_create_blog:blog_editor                 |  FAIL  |   0.00% |  0.053 | Could not open editor for blog.                                                                                                                                                                                                                                                                                                                       |
+| locust_create_blog:feel_and_publish            |  FAIL  |   0.00% |  0.000 | 'draft_name'                                                                                                                                                                                                                                                                                                                                          |
+| locust_like_page                               |   OK   | 100.00% |  0.069 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_login_and_view_dashboard                |   OK   | 100.00% |  1.375 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_search_cql:recently_viewed              |   OK   | 100.00% |  0.038 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_search_cql:search_results               |   OK   | 100.00% |  0.387 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_upload_attachment                       |   OK   | 100.00% |  0.529 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_view_attachment                         |   OK   | 100.00% |  0.158 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_view_blog                               |  FAIL  |   0.00% |  0.545 | Could not open editor for blog.                                                                                                                                                                                                                                                                                                                       |
+| locust_view_dashboard                          |   OK   | 100.00% |  1.255 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_view_page:open_page                     |   OK   | 100.00% |  0.599 |                                                                                                                                                                                                                                                                                                                                                       |
+| locust_view_page:view_page_tree                |   OK   | 100.00% |  0.063 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_a_login                               |   OK   | 100.00% |  0.635 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_create_comment                        |  FAIL  |   0.00% | 20.784 | Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b55b9a0>.  |
+|                                                |        |         |        | Locator: ('id', 'wysiwygTextarea_ifr')", None, None)))                                                                                                                                                                                                                                                                                                |
+|                                                |        |         |        | Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b646d30>.  |
+|                                                |        |         |        | Locator: ('id', 'wysiwygTextarea_ifr')", None, None)))                                                                                                                                                                                                                                                                                                |
+| selenium_create_page                           |  FAIL  |   0.00% | 20.308 | Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b50a880>.             |
+|                                                |        |         |        | Locator: ('id', 'quick-create-page-button')", None, None)))                                                                                                                                                                                                                                                                                           |
+|                                                |        |         |        | Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for <selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b646160>.             |
+|                                                |        |         |        | Locator: ('id', 'quick-create-page-button')", None, None)))                                                                                                                                                                                                                                                                                           |
+| selenium_custom_action                         |   OK   | 100.00% |  0.307 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_edit_page                             |  FAIL  |   0.00% | 20.626 | Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions:                                                                                             |
+|                                                |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9340> Locator: ('class name', 'status-indicator-message')                                                                                                                                                                               |
+|                                                |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9160> Locator: ('class name', 'status-indicator-message')                                                                                                                                                                               |
+|                                                |        |         |        | ", None, None)))                                                                                                                                                                                                                                                                                                                                      |
+|                                                |        |         |        | Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions:                                                                                             |
+|                                                |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627d60> Locator: ('class name', 'status-indicator-message')                                                                                                                                                                               |
+|                                                |        |         |        |  Condition: <selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627ac0> Locator: ('class name', 'status-indicator-message')                                                                                                                                                                               |
+|                                                |        |         |        | ", None, None)))                                                                                                                                                                                                                                                                                                                                      |
+| selenium_view_blog                             |   OK   | 100.00% |  0.606 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_view_dashboard                        |   OK   | 100.00% |  1.217 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_view_page                             |   OK   | 100.00% |  0.475 |                                                                                                                                                                                                                                                                                                                                                       |
+| selenium_z_log_out                             |   OK   | 100.00% |  0.196 |                                                                                                                                                                                                                                                                                                                                                       |
++------------------------------------------------+--------+---------+--------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+[2021-02-12 16:27:49,413 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2021-02-12 16:27:49,413 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/xunit.xml
+[2021-02-12 16:27:49,414 INFO Engine.XUnitFileWriter] Writing JUnit XML report into: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/xunit.xml
+[2021-02-12 16:27:49,414 INFO Engine.shellexec.Task] Starting shell command: python util/analytics/analytics.py confluence
+[2021-02-12 16:27:49,415 DEBUG root] Executing shell: python util/analytics/analytics.py confluence at /dc-app-performance-toolkit/app
+[2021-02-12 16:27:54,715 DEBUG Engine.shellexec.Task] Output for python util/analytics/analytics.py confluence:
+None
+
+[2021-02-12 16:27:54,715 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/analytics/analytics.py confluence
+[2021-02-12 16:27:54,716 INFO Engine.shellexec.Task] Starting shell command: python util/post_run/cleanup_results_dir.py
+[2021-02-12 16:27:54,716 DEBUG root] Executing shell: python util/post_run/cleanup_results_dir.py at /dc-app-performance-toolkit/app
+[2021-02-12 16:27:54,745 DEBUG Engine.shellexec.Task] Output for python util/post_run/cleanup_results_dir.py:
+The merged.json was removed successfully
+The merged.yml was removed successfully
+The PyTestExecutor.ldjson was removed successfully
+The locust.out was removed successfully
+
+[2021-02-12 16:27:54,745 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/post_run/cleanup_results_dir.py
+[2021-02-12 16:27:54,746 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.yml
+[2021-02-12 16:27:54,763 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/effective.json
+[2021-02-12 16:27:54,764 INFO root] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09
+[2021-02-12 16:27:54,764 WARNING root] Done performing with code: 1
+[2021-02-12 16:27:54,764 DEBUG root] Closing log handler: /dc-app-performance-toolkit/app/results/confluence/2021-02-12_16-24-09/bzt.log

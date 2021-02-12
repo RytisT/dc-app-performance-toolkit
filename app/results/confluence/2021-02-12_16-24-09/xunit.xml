@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8763804586825" name="locust_app_specific_action"/>
+    <testcase classname="bzt-8763804586825" name="locust_comment_page">
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2456900/comment?actions=true&amp;html=%3Cp%3Ebpisboezvkcvytg%3C%2Fp%3E&amp;watch=True&amp;uuid=8746d85f-5687-4bc6-a94d-8d03bcda710b" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2456900/comment?actions=true&amp;html=%3Cp%3Ebpisboezvkcvytg%3C%2Fp%3E&amp;watch=True&amp;uuid=8746d85f-5687-4bc6-a94d-8d03bcda710b
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592616/comment?actions=true&amp;html=%3Cp%3Emjovyqref++nsx+%3C%2Fp%3E&amp;watch=True&amp;uuid=b3c48b30-e0b0-4867-b8f5-6e2b6753d465" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592616/comment?actions=true&amp;html=%3Cp%3Emjovyqref++nsx+%3C%2Fp%3E&amp;watch=True&amp;uuid=b3c48b30-e0b0-4867-b8f5-6e2b6753d465
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2719559/comment?actions=true&amp;html=%3Cp%3Erjwdrcokwhtsmlj%3C%2Fp%3E&amp;watch=True&amp;uuid=d590c381-d4bf-490d-bc95-63865d4c5ae2" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2719559/comment?actions=true&amp;html=%3Cp%3Erjwdrcokwhtsmlj%3C%2Fp%3E&amp;watch=True&amp;uuid=d590c381-d4bf-490d-bc95-63865d4c5ae2
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2558204/comment?actions=true&amp;html=%3Cp%3Edazsalfejlrpioe%3C%2Fp%3E&amp;watch=True&amp;uuid=ba67cdc4-d055-4a07-a0b0-c8520034c492" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2558204/comment?actions=true&amp;html=%3Cp%3Edazsalfejlrpioe%3C%2Fp%3E&amp;watch=True&amp;uuid=ba67cdc4-d055-4a07-a0b0-c8520034c492
+(status code is 403)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_create_and_edit_page:create_page">
+      <error message="'content_id'" type="Error">'content_id'
+(status code is 500)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_create_and_edit_page:create_page_editor">
+      <error message="Could not open page editor." type="Error">Could not open page editor.
+(status code is 500)
+(total errors of this type: 2)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_create_blog:blog_editor">
+      <error message="Could not open editor for blog." type="Error">Could not open editor for blog.
+(status code is 500)
+(total errors of this type: 2)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_create_blog:feel_and_publish">
+      <error message="'draft_name'" type="Error">'draft_name'
+(status code is 500)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_like_page"/>
+    <testcase classname="bzt-8763804586825" name="locust_login_and_view_dashboard"/>
+    <testcase classname="bzt-8763804586825" name="locust_search_cql:recently_viewed"/>
+    <testcase classname="bzt-8763804586825" name="locust_search_cql:search_results"/>
+    <testcase classname="bzt-8763804586825" name="locust_upload_attachment"/>
+    <testcase classname="bzt-8763804586825" name="locust_view_attachment"/>
+    <testcase classname="bzt-8763804586825" name="locust_view_blog">
+      <error message="Could not open editor for blog." type="Error">Could not open editor for blog.
+(status code is 500)
+(total errors of this type: 6)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="locust_view_dashboard"/>
+    <testcase classname="bzt-8763804586825" name="locust_view_page:open_page"/>
+    <testcase classname="bzt-8763804586825" name="locust_view_page:view_page_tree"/>
+    <testcase classname="bzt-8763804586825" name="selenium_a_login"/>
+    <testcase classname="bzt-8763804586825" name="selenium_create_comment">
+      <error message="Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b646d30&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b646d30&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+      <error message="Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b55b9a0&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f761b55b9a0&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="selenium_create_page">
+      <error message="Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b646160&gt;. \nLocator: ('id', 'quick-create-page-button')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b646160&gt;. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+      <error message="Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b50a880&gt;. \nLocator: ('id', 'quick-create-page-button')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f761b50a880&gt;. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="selenium_custom_action"/>
+    <testcase classname="bzt-8763804586825" name="selenium_edit_page">
+      <error message="Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627d60&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627ac0&gt; Locator: ('class name', 'status-indicator-message')\n&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627d60&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b627ac0&gt; Locator: ('class name', 'status-indicator-message')\n", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+      <error message="Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9340&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9160&gt; Locator: ('class name', 'status-indicator-message')\n&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9340&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f761b5a9160&gt; Locator: ('class name', 'status-indicator-message')\n", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8763804586825" name="selenium_view_blog"/>
+    <testcase classname="bzt-8763804586825" name="selenium_view_dashboard"/>
+    <testcase classname="bzt-8763804586825" name="selenium_view_page"/>
+    <testcase classname="bzt-8763804586825" name="selenium_z_log_out"/>
+  </testsuite>
+</testsuites>
