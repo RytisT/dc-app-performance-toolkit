@@ -1,0 +1,146 @@
+Scenario status: OK
+========================================================================================================================
+Run name: Node 1
+
+Summary run status                                 OK
+                 
+Artifacts dir                                      2021-02-12_16-36-15 
+OS                                                 Linux               
+DC Apps Performance Toolkit version                4.0.0               
+Application                                        confluence          
+Dataset info                                       904242 pages        
+Application nodes count                            1                   
+Concurrency                                        200                 
+Expected test run duration from yml file           2700 sec            
+Actual test run duration                           3011 sec            
+Finished                                           (True, 'OK')        
+Compliant                                          (True, 'OK')        
+Success                                            (True, 'OK')        
+Has app-specific actions                           True                
+
+Action                                            Success Rate        Avg time            Status              
+locust_comment_page                                100.0               0.145               OK                  
+locust_create_and_edit_page:create_page            100.0               0.657               OK                  
+locust_create_and_edit_page:create_page_editor     100.0               0.394               OK                  
+locust_create_and_edit_page:edit_page              100.0               0.686               OK                  
+locust_create_and_edit_page:open_editor            100.0               0.245               OK                  
+locust_create_blog:blog_editor                     100.0               0.443               OK                  
+locust_create_blog:feel_and_publish                99.57               0.657               OK                  
+locust_like_page                                   100.0               0.062               OK                  
+locust_login_and_view_dashboard                    100.0               2.302               OK                  
+locust_search_cql:recently_viewed                  100.0               0.038               OK                  
+locust_search_cql:search_results                   100.0               0.439               OK                  
+locust_upload_attachment                           100.0               0.548               OK                  
+locust_view_attachment                             100.0               0.126               OK                  
+locust_view_blog                                   100.0               1.306               OK                  
+locust_view_dashboard                              100.0               1.717               OK                  
+locust_view_page:open_page                         100.0               0.611               OK                  
+locust_view_page:view_page_tree                    100.0               0.067               OK                  
+selenium_a_login                                   100.0               1.03                OK                  
+selenium_create_comment                            100.0               1.765               OK                  
+selenium_create_page                               100.0               2.058               OK                  
+selenium_edit_page                                 100.0               2.9                 OK                  
+selenium_view_blog                                 100.0               0.705               OK                  
+selenium_view_dashboard                            100.0               1.632               OK                  
+selenium_view_page                                 100.0               0.51                OK                  
+selenium_z_log_out                                 100.0               0.164               OK                  
+locust_app_specific_action                         100.0               0.275               OK                  APP-SPECIFIC        
+selenium_custom_action                             100.0               0.324               OK                  APP-SPECIFIC        
+
+========================================================================================================================
+Run name: Node 2
+
+Summary run status                                 OK
+                 
+Artifacts dir                                      2021-02-12_17-48-27 
+OS                                                 Linux               
+DC Apps Performance Toolkit version                4.0.0               
+Application                                        confluence          
+Dataset info                                       904957 pages        
+Application nodes count                            2                   
+Concurrency                                        200                 
+Expected test run duration from yml file           2700 sec            
+Actual test run duration                           3011 sec            
+Finished                                           (True, 'OK')        
+Compliant                                          (True, 'OK')        
+Success                                            (True, 'OK')        
+Has app-specific actions                           True                
+
+Action                                            Success Rate        Avg time            Status              
+locust_comment_page                                100.0               0.178               OK                  
+locust_create_and_edit_page:create_page            100.0               0.663               OK                  
+locust_create_and_edit_page:create_page_editor     100.0               0.371               OK                  
+locust_create_and_edit_page:edit_page              100.0               0.702               OK                  
+locust_create_and_edit_page:open_editor            100.0               0.244               OK                  
+locust_create_blog:blog_editor                     100.0               0.438               OK                  
+locust_create_blog:feel_and_publish                100.0               0.682               OK                  
+locust_like_page                                   100.0               0.065               OK                  
+locust_login_and_view_dashboard                    100.0               1.991               OK                  
+locust_search_cql:recently_viewed                  100.0               0.037               OK                  
+locust_search_cql:search_results                   100.0               0.392               OK                  
+locust_upload_attachment                           100.0               0.678               OK                  
+locust_view_attachment                             100.0               0.17                OK                  
+locust_view_blog                                   100.0               1.413               OK                  
+locust_view_dashboard                              100.0               1.388               OK                  
+locust_view_page:open_page                         100.0               0.632               OK                  
+locust_view_page:view_page_tree                    100.0               0.167               OK                  
+selenium_a_login                                   100.0               1.091               OK                  
+selenium_create_comment                            100.0               1.793               OK                  
+selenium_create_page                               100.0               2.059               OK                  
+selenium_edit_page                                 100.0               2.993               OK                  
+selenium_view_blog                                 100.0               1.098               OK                  
+selenium_view_dashboard                            100.0               1.644               OK                  
+selenium_view_page                                 100.0               0.609               OK                  
+selenium_z_log_out                                 100.0               0.169               OK                  
+locust_app_specific_action                         100.0               0.341               OK                  APP-SPECIFIC        
+selenium_custom_action                             100.0               0.348               OK                  APP-SPECIFIC        
+
+========================================================================================================================
+Run name: Node 4
+
+Summary run status                                 OK
+                 
+Artifacts dir                                      2021-02-12_20-09-26 
+OS                                                 Linux               
+DC Apps Performance Toolkit version                4.0.0               
+Application                                        confluence          
+Dataset info                                       906252 pages        
+Application nodes count                            4                   
+Concurrency                                        200                 
+Expected test run duration from yml file           2700 sec            
+Actual test run duration                           3011 sec            
+Finished                                           (True, 'OK')        
+Compliant                                          (True, 'OK')        
+Success                                            (True, 'OK')        
+Has app-specific actions                           True                
+
+Action                                            Success Rate        Avg time            Status              
+locust_comment_page                                100.0               0.179               OK                  
+locust_create_and_edit_page:create_page            100.0               0.672               OK                  
+locust_create_and_edit_page:create_page_editor     100.0               0.377               OK                  
+locust_create_and_edit_page:edit_page              100.0               0.72                OK                  
+locust_create_and_edit_page:open_editor            100.0               0.249               OK                  
+locust_create_blog:blog_editor                     100.0               0.448               OK                  
+locust_create_blog:feel_and_publish                100.0               0.699               OK                  
+locust_like_page                                   100.0               0.066               OK                  
+locust_login_and_view_dashboard                    100.0               1.972               OK                  
+locust_search_cql:recently_viewed                  100.0               0.037               OK                  
+locust_search_cql:search_results                   100.0               0.435               OK                  
+locust_upload_attachment                           100.0               0.673               OK                  
+locust_view_attachment                             100.0               0.176               OK                  
+locust_view_blog                                   100.0               1.296               OK                  
+locust_view_dashboard                              100.0               1.469               OK                  
+locust_view_page:open_page                         100.0               0.615               OK                  
+locust_view_page:view_page_tree                    100.0               0.134               OK                  
+selenium_a_login                                   100.0               1.09                OK                  
+selenium_create_comment                            100.0               1.791               OK                  
+selenium_create_page                               100.0               2.09                OK                  
+selenium_edit_page                                 100.0               3.149               OK                  
+selenium_view_blog                                 100.0               1.0                 OK                  
+selenium_view_dashboard                            100.0               1.654               OK                  
+selenium_view_page                                 100.0               0.575               OK                  
+selenium_z_log_out                                 100.0               0.174               OK                  
+locust_app_specific_action                         100.0               0.312               OK                  APP-SPECIFIC        
+selenium_custom_action                             100.0               0.366               OK                  APP-SPECIFIC        
+
+========================================================================================================================
