@@ -1,0 +1,24 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,Hostname,Connect
+1613151869830,3938,selenium_login:open_login_page,,Success,,True,0,0,0,0,,0
+1613151870782,868,selenium_login:login_and_view_dashboard,,Success,,True,0,0,0,0,,0
+1613151870782,4890,selenium_login,,Success,,True,0,0,0,0,,0
+1613151873064,2267,selenium_view_page,,Success,,True,0,0,0,0,,0
+1613151893479,20413,selenium_create_page:open_create_page_editor,,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,,False,0,0,0,0,,0
+1613151893479,20413,selenium_create_page,,Failed measure: selenium_create_page - Exception,,False,0,0,0,0,,0
+1613151914640,20678,selenium_edit_page:open_create_page_editor,,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,,False,0,0,0,0,,0
+1613151914640,20679,selenium_edit_page,,Failed measure: selenium_edit_page - Exception,,False,0,0,0,0,,0
+1613151935830,20296,selenium_create_comment:write_comment,,Failed measure: selenium_create_comment:write_comment - TimeoutException,,False,0,0,0,0,,0
+1613151935830,20801,selenium_create_comment,,Failed measure: selenium_create_comment - Exception,,False,0,0,0,0,,0
+1613151937611,1336,selenium_view_blog,,Success,,True,0,0,0,0,,0
+1613151938315,702,selenium_view_dashboard,,Success,,True,0,0,0,0,,0
+1613151938714,397,selenium_app_custom_action:view_page,,Success,,True,0,0,0,0,,0
+1613151938714,397,selenium_app_custom_action,,Success,,True,0,0,0,0,,0
+1613151938903,187,selenium_log_out,,Success,,True,0,0,0,0,,0
+1613151939066,107,selenium_login:open_login_page,,Success,,True,0,0,0,0,,0
+1613151939472,322,selenium_login:login_and_view_dashboard,,Success,,True,0,0,0,0,,0
+1613151939473,513,selenium_login,,Success,,True,0,0,0,0,,0
+1613151940061,572,selenium_view_page,,Success,,True,0,0,0,0,,0
+1613151960336,20274,selenium_create_page:open_create_page_editor,,Failed measure: selenium_create_page:open_create_page_editor - TimeoutException,,False,0,0,0,0,,0
+1613151960336,20274,selenium_create_page,,Failed measure: selenium_create_page - Exception,,False,0,0,0,0,,0
+1613151981420,20624,selenium_edit_page:open_create_page_editor,,Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException,,False,0,0,0,0,,0
+1613151981420,20624,selenium_edit_page,,Failed measure: selenium_edit_page - Exception,,False,0,0,0,0,,0
