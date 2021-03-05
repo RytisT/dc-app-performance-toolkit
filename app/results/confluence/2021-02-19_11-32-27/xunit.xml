@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8733761879763" name="locust_comment_page"/>
+    <testcase classname="bzt-8733761879763" name="locust_create_and_edit_page:create_page">
+      <error message="Could not create PAGE draft." type="Error">Could not create PAGE draft.
+(status code is 500)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8733761879763" name="locust_create_and_edit_page:create_page_editor">
+      <error message="Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/createpage.action?spaceKey=RNL&amp;fromPageId=2310317&amp;src=quick-create" type="Error">Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/createpage.action?spaceKey=RNL&amp;fromPageId=2310317&amp;src=quick-create
+(status code is 502)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8733761879763" name="locust_create_and_edit_page:edit_page">
+      <error message="User could not edit page." type="Error">User could not edit page.
+(status code is 500)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8733761879763" name="locust_create_and_edit_page:open_editor"/>
+    <testcase classname="bzt-8733761879763" name="locust_create_blog:blog_editor"/>
+    <testcase classname="bzt-8733761879763" name="locust_create_blog:feel_and_publish"/>
+    <testcase classname="bzt-8733761879763" name="locust_like_page"/>
+    <testcase classname="bzt-8733761879763" name="locust_login_and_view_dashboard"/>
+    <testcase classname="bzt-8733761879763" name="locust_search_cql:recently_viewed"/>
+    <testcase classname="bzt-8733761879763" name="locust_search_cql:search_results"/>
+    <testcase classname="bzt-8733761879763" name="locust_upload_attachment"/>
+    <testcase classname="bzt-8733761879763" name="locust_view_attachment"/>
+    <testcase classname="bzt-8733761879763" name="locust_view_blog"/>
+    <testcase classname="bzt-8733761879763" name="locust_view_dashboard"/>
+    <testcase classname="bzt-8733761879763" name="locust_view_page:open_page">
+      <error message="Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=4518258" type="Error">Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=4518258
+(status code is 502)
+(total errors of this type: 1)</error>
+      <error message="Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=4519847" type="Error">Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/pages/viewpage.action?pageId=4519847
+(status code is 502)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8733761879763" name="locust_view_page:view_page_tree">
+      <error message="Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;hasRoot=false&amp;spaceKey=MICD&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=2456683&amp;2449483&amp;treePageId=2556450&amp;_=1613737377" type="Error">Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/plugins/pagetree/naturalchildren.action?decorator=none&amp;excerpt=false&amp;sort=position&amp;reverse=false&amp;disableLinks=false&amp;expandCurrent=true&amp;hasRoot=false&amp;spaceKey=MICD&amp;treeId=0&amp;startDepth=0&amp;mobile=false&amp;ancestors=2456683&amp;2449483&amp;treePageId=2556450&amp;_=1613737377
+(status code is 502)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8733761879763" name="selenium_a_login"/>
+    <testcase classname="bzt-8733761879763" name="selenium_create_comment"/>
+    <testcase classname="bzt-8733761879763" name="selenium_create_page"/>
+    <testcase classname="bzt-8733761879763" name="selenium_edit_page"/>
+    <testcase classname="bzt-8733761879763" name="selenium_view_blog"/>
+    <testcase classname="bzt-8733761879763" name="selenium_view_dashboard"/>
+    <testcase classname="bzt-8733761879763" name="selenium_view_page"/>
+    <testcase classname="bzt-8733761879763" name="selenium_z_log_out"/>
+  </testsuite>
+</testsuites>

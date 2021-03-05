@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="sample_labels" package_name="bzt">
+    <testcase classname="bzt-8753601274772" name="locust_app_specific_action"/>
+    <testcase classname="bzt-8753601274772" name="locust_comment_page">
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2306140/comment?actions=true&amp;html=%3Cp%3Esxscfrlzktdocsp%3C%2Fp%3E&amp;watch=True&amp;uuid=e4cab19a-3e2a-4bac-995e-474a214912fe" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2306140/comment?actions=true&amp;html=%3Cp%3Esxscfrlzktdocsp%3C%2Fp%3E&amp;watch=True&amp;uuid=e4cab19a-3e2a-4bac-995e-474a214912fe
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2716541/comment?actions=true&amp;html=%3Cp%3Efkqocywjbkkdiuj%3C%2Fp%3E&amp;watch=True&amp;uuid=4e4bfc34-0926-4ca8-93d8-0affa2861a37" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2716541/comment?actions=true&amp;html=%3Cp%3Efkqocywjbkkdiuj%3C%2Fp%3E&amp;watch=True&amp;uuid=4e4bfc34-0926-4ca8-93d8-0affa2861a37
+(status code is 403)
+(total errors of this type: 4)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2298106/comment?actions=true&amp;html=%3Cp%3Eusvlltxcuadzaig%3C%2Fp%3E&amp;watch=True&amp;uuid=b06aeecf-8e34-4c92-ab78-fe30d27d07c3" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2298106/comment?actions=true&amp;html=%3Cp%3Eusvlltxcuadzaig%3C%2Fp%3E&amp;watch=True&amp;uuid=b06aeecf-8e34-4c92-ab78-fe30d27d07c3
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2311589/comment?actions=true&amp;html=%3Cp%3Erywkjginwnbxxni%3C%2Fp%3E&amp;watch=True&amp;uuid=33f1c4f2-3450-4a08-9cc4-b8af8c684f15" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2311589/comment?actions=true&amp;html=%3Cp%3Erywkjginwnbxxni%3C%2Fp%3E&amp;watch=True&amp;uuid=33f1c4f2-3450-4a08-9cc4-b8af8c684f15
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4863818/comment?actions=true&amp;html=%3Cp%3Eiucikvxnzxn+mlt%3C%2Fp%3E&amp;watch=True&amp;uuid=6b7f7692-c345-462a-b53a-adc2d506ad64" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4863818/comment?actions=true&amp;html=%3Cp%3Eiucikvxnzxn+mlt%3C%2Fp%3E&amp;watch=True&amp;uuid=6b7f7692-c345-462a-b53a-adc2d506ad64
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4505059/comment?actions=true&amp;html=%3Cp%3Edpujftyabepajfp%3C%2Fp%3E&amp;watch=True&amp;uuid=e7df3983-90ae-4dbd-bf16-f5084b5d4c35" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4505059/comment?actions=true&amp;html=%3Cp%3Edpujftyabepajfp%3C%2Fp%3E&amp;watch=True&amp;uuid=e7df3983-90ae-4dbd-bf16-f5084b5d4c35
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3707595/comment?actions=true&amp;html=%3Cp%3Epxhfex+gfdepzgv%3C%2Fp%3E&amp;watch=True&amp;uuid=4fe243b1-bb7f-48c0-b9b2-e0373a26eaaa" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3707595/comment?actions=true&amp;html=%3Cp%3Epxhfex+gfdepzgv%3C%2Fp%3E&amp;watch=True&amp;uuid=4fe243b1-bb7f-48c0-b9b2-e0373a26eaaa
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4598969/comment?actions=true&amp;html=%3Cp%3Ebiawlmrigonzxpp%3C%2Fp%3E&amp;watch=True&amp;uuid=a213b9f5-92eb-48ec-adeb-e8e25d78f1fa" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4598969/comment?actions=true&amp;html=%3Cp%3Ebiawlmrigonzxpp%3C%2Fp%3E&amp;watch=True&amp;uuid=a213b9f5-92eb-48ec-adeb-e8e25d78f1fa
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3093569/comment?actions=true&amp;html=%3Cp%3Ecnygf+hpqnxlb+l%3C%2Fp%3E&amp;watch=True&amp;uuid=1204ac8b-9e9f-42d3-8e97-da5c8f4c4a8f" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3093569/comment?actions=true&amp;html=%3Cp%3Ecnygf+hpqnxlb+l%3C%2Fp%3E&amp;watch=True&amp;uuid=1204ac8b-9e9f-42d3-8e97-da5c8f4c4a8f
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2314656/comment?actions=true&amp;html=%3Cp%3Eqflhaayszvojpft%3C%2Fp%3E&amp;watch=True&amp;uuid=339cf8d0-0c4e-4938-aed3-4997f05452e1" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2314656/comment?actions=true&amp;html=%3Cp%3Eqflhaayszvojpft%3C%2Fp%3E&amp;watch=True&amp;uuid=339cf8d0-0c4e-4938-aed3-4997f05452e1
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4509317/comment?actions=true&amp;html=%3Cp%3Eqnvyhwowvqdkiyn%3C%2Fp%3E&amp;watch=True&amp;uuid=ad0bd01d-bdd3-4a5e-b4b3-e70626496349" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4509317/comment?actions=true&amp;html=%3Cp%3Eqnvyhwowvqdkiyn%3C%2Fp%3E&amp;watch=True&amp;uuid=ad0bd01d-bdd3-4a5e-b4b3-e70626496349
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4866801/comment?actions=true&amp;html=%3Cp%3Eaw+u+s+toemhkbi%3C%2Fp%3E&amp;watch=True&amp;uuid=dd1ffca7-af7e-43d0-8f5b-379ea00c3339" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4866801/comment?actions=true&amp;html=%3Cp%3Eaw+u+s+toemhkbi%3C%2Fp%3E&amp;watch=True&amp;uuid=dd1ffca7-af7e-43d0-8f5b-379ea00c3339
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4863090/comment?actions=true&amp;html=%3Cp%3E+xwlwrhwuavguq+%3C%2Fp%3E&amp;watch=True&amp;uuid=7923b8c1-b15e-4bf1-8b44-497efa4823e1" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4863090/comment?actions=true&amp;html=%3Cp%3E+xwlwrhwuavguq+%3C%2Fp%3E&amp;watch=True&amp;uuid=7923b8c1-b15e-4bf1-8b44-497efa4823e1
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4503716/comment?actions=true&amp;html=%3Cp%3E+tjuojuuaeimfjc%3C%2Fp%3E&amp;watch=True&amp;uuid=f263e7a0-c280-48f4-b137-85951bda18c6" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4503716/comment?actions=true&amp;html=%3Cp%3E+tjuojuuaeimfjc%3C%2Fp%3E&amp;watch=True&amp;uuid=f263e7a0-c280-48f4-b137-85951bda18c6
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2946359/comment?actions=true&amp;html=%3Cp%3Euhanlmuydkqnlgc%3C%2Fp%3E&amp;watch=True&amp;uuid=229276fb-a084-468b-af10-7d52e0816238" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2946359/comment?actions=true&amp;html=%3Cp%3Euhanlmuydkqnlgc%3C%2Fp%3E&amp;watch=True&amp;uuid=229276fb-a084-468b-af10-7d52e0816238
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2306925/comment?actions=true&amp;html=%3Cp%3Ebunqltcfgzpaqfb%3C%2Fp%3E&amp;watch=True&amp;uuid=7b3fd709-29ac-4709-ab6c-81ac1b485457" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2306925/comment?actions=true&amp;html=%3Cp%3Ebunqltcfgzpaqfb%3C%2Fp%3E&amp;watch=True&amp;uuid=7b3fd709-29ac-4709-ab6c-81ac1b485457
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2941550/comment?actions=true&amp;html=%3Cp%3Ensbeuyvlbclekrp%3C%2Fp%3E&amp;watch=True&amp;uuid=f12a7fca-6b19-4f21-be0e-3897b8493ced" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2941550/comment?actions=true&amp;html=%3Cp%3Ensbeuyvlbclekrp%3C%2Fp%3E&amp;watch=True&amp;uuid=f12a7fca-6b19-4f21-be0e-3897b8493ced
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2795881/comment?actions=true&amp;html=%3Cp%3Eumap++lkwbnrebp%3C%2Fp%3E&amp;watch=True&amp;uuid=72d5da13-0c6c-4881-9f8f-75fee81eec8a" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2795881/comment?actions=true&amp;html=%3Cp%3Eumap++lkwbnrebp%3C%2Fp%3E&amp;watch=True&amp;uuid=72d5da13-0c6c-4881-9f8f-75fee81eec8a
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4521546/comment?actions=true&amp;html=%3Cp%3Etrlaigmofzzfehw%3C%2Fp%3E&amp;watch=True&amp;uuid=9af806e3-1305-4165-bdb0-dcbb5d66669f" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4521546/comment?actions=true&amp;html=%3Cp%3Etrlaigmofzzfehw%3C%2Fp%3E&amp;watch=True&amp;uuid=9af806e3-1305-4165-bdb0-dcbb5d66669f
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2314483/comment?actions=true&amp;html=%3Cp%3Ehfgfzbrcrhkrzgg%3C%2Fp%3E&amp;watch=True&amp;uuid=7f960c87-1ea9-455b-9f26-4143de9df2be" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2314483/comment?actions=true&amp;html=%3Cp%3Ehfgfzbrcrhkrzgg%3C%2Fp%3E&amp;watch=True&amp;uuid=7f960c87-1ea9-455b-9f26-4143de9df2be
+(status code is 403)
+(total errors of this type: 4)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4867571/comment?actions=true&amp;html=%3Cp%3Evdslarpwiq+sjkm%3C%2Fp%3E&amp;watch=True&amp;uuid=d9923755-2211-44c0-be0d-6362583e9cb9" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4867571/comment?actions=true&amp;html=%3Cp%3Evdslarpwiq+sjkm%3C%2Fp%3E&amp;watch=True&amp;uuid=d9923755-2211-44c0-be0d-6362583e9cb9
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2318933/comment?actions=true&amp;html=%3Cp%3Egtyptoqcpypxzty%3C%2Fp%3E&amp;watch=True&amp;uuid=012ce883-6cf8-467e-89d4-3fab518958d5" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2318933/comment?actions=true&amp;html=%3Cp%3Egtyptoqcpypxzty%3C%2Fp%3E&amp;watch=True&amp;uuid=012ce883-6cf8-467e-89d4-3fab518958d5
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4521645/comment?actions=true&amp;html=%3Cp%3Efoautgrrbmrtquf%3C%2Fp%3E&amp;watch=True&amp;uuid=037a8ef8-2c34-4ec4-ac2e-dc88f95d267b" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4521645/comment?actions=true&amp;html=%3Cp%3Efoautgrrbmrtquf%3C%2Fp%3E&amp;watch=True&amp;uuid=037a8ef8-2c34-4ec4-ac2e-dc88f95d267b
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4520686/comment?actions=true&amp;html=%3Cp%3Encudfzupjwpq+vj%3C%2Fp%3E&amp;watch=True&amp;uuid=04e4ff91-a404-4e6b-a16d-34f5fc3356de" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4520686/comment?actions=true&amp;html=%3Cp%3Encudfzupjwpq+vj%3C%2Fp%3E&amp;watch=True&amp;uuid=04e4ff91-a404-4e6b-a16d-34f5fc3356de
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4503671/comment?actions=true&amp;html=%3Cp%3Erkqpdhzkhkexytq%3C%2Fp%3E&amp;watch=True&amp;uuid=6e265b9e-6978-41a3-827e-ec5f70b86012" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4503671/comment?actions=true&amp;html=%3Cp%3Erkqpdhzkhkexytq%3C%2Fp%3E&amp;watch=True&amp;uuid=6e265b9e-6978-41a3-827e-ec5f70b86012
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4865277/comment?actions=true&amp;html=%3Cp%3Ejreavbxwhyjfbdw%3C%2Fp%3E&amp;watch=True&amp;uuid=22de4bf3-417a-4294-92f2-7ef16652171c" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4865277/comment?actions=true&amp;html=%3Cp%3Ejreavbxwhyjfbdw%3C%2Fp%3E&amp;watch=True&amp;uuid=22de4bf3-417a-4294-92f2-7ef16652171c
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592511/comment?actions=true&amp;html=%3Cp%3Esgolcrhovwntafe%3C%2Fp%3E&amp;watch=True&amp;uuid=dad31dcb-0795-4049-a924-2635e3c97f81" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592511/comment?actions=true&amp;html=%3Cp%3Esgolcrhovwntafe%3C%2Fp%3E&amp;watch=True&amp;uuid=dad31dcb-0795-4049-a924-2635e3c97f81
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4867209/comment?actions=true&amp;html=%3Cp%3Ewwqhjy+rngzpwzp%3C%2Fp%3E&amp;watch=True&amp;uuid=403d795a-5019-45c8-ba65-bda16b8dbc8a" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4867209/comment?actions=true&amp;html=%3Cp%3Ewwqhjy+rngzpwzp%3C%2Fp%3E&amp;watch=True&amp;uuid=403d795a-5019-45c8-ba65-bda16b8dbc8a
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3089420/comment?actions=true&amp;html=%3Cp%3Ewqfcjmcefhpliuj%3C%2Fp%3E&amp;watch=True&amp;uuid=3a046f7e-4769-4f20-81a2-05f710314445" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3089420/comment?actions=true&amp;html=%3Cp%3Ewqfcjmcefhpliuj%3C%2Fp%3E&amp;watch=True&amp;uuid=3a046f7e-4769-4f20-81a2-05f710314445
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2946592/comment?actions=true&amp;html=%3Cp%3Etoh+ralkcgkk+jh%3C%2Fp%3E&amp;watch=True&amp;uuid=8d4dfd22-56c9-4282-bd64-09361b148887" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/2946592/comment?actions=true&amp;html=%3Cp%3Etoh+ralkcgkk+jh%3C%2Fp%3E&amp;watch=True&amp;uuid=8d4dfd22-56c9-4282-bd64-09361b148887
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4509423/comment?actions=true&amp;html=%3Cp%3Eknlpiyilktfuzgn%3C%2Fp%3E&amp;watch=True&amp;uuid=618c3991-0d96-4afb-8bd8-62282dc31de1" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4509423/comment?actions=true&amp;html=%3Cp%3Eknlpiyilktfuzgn%3C%2Fp%3E&amp;watch=True&amp;uuid=618c3991-0d96-4afb-8bd8-62282dc31de1
+(status code is 403)
+(total errors of this type: 3)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4517026/comment?actions=true&amp;html=%3Cp%3Exeetdovhbbbfdwv%3C%2Fp%3E&amp;watch=True&amp;uuid=e8c38b7f-4dcb-4972-8eba-e963fbfbb05f" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4517026/comment?actions=true&amp;html=%3Cp%3Exeetdovhbbbfdwv%3C%2Fp%3E&amp;watch=True&amp;uuid=e8c38b7f-4dcb-4972-8eba-e963fbfbb05f
+(status code is 403)
+(total errors of this type: 2)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592181/comment?actions=true&amp;html=%3Cp%3Ecvfklrodfcaanhc%3C%2Fp%3E&amp;watch=True&amp;uuid=43c646a0-743a-47b2-a83b-49e6de0dc5b7" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/4592181/comment?actions=true&amp;html=%3Cp%3Ecvfklrodfcaanhc%3C%2Fp%3E&amp;watch=True&amp;uuid=43c646a0-743a-47b2-a83b-49e6de0dc5b7
+(status code is 403)
+(total errors of this type: 1)</error>
+      <error message=" for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3711688/comment?actions=true&amp;html=%3Cp%3Exndwystbjxxjyll%3C%2Fp%3E&amp;watch=True&amp;uuid=a3abcfc3-da9c-404d-b104-fd536f79e6aa" type="Error"> for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/tinymce/1/content/3711688/comment?actions=true&amp;html=%3Cp%3Exndwystbjxxjyll%3C%2Fp%3E&amp;watch=True&amp;uuid=a3abcfc3-da9c-404d-b104-fd536f79e6aa
+(status code is 403)
+(total errors of this type: 3)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_and_edit_page:create_page">
+      <error message="'content_id'" type="Error">'content_id'
+(status code is 500)
+(total errors of this type: 80)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_and_edit_page:create_page_editor">
+      <error message="Could not open page editor." type="Error">Could not open page editor.
+(status code is 500)
+(total errors of this type: 81)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_and_edit_page:edit_page">
+      <error message="'edit_parent_page_id'" type="Error">'edit_parent_page_id'
+(status code is 500)
+(total errors of this type: 57)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_and_edit_page:open_editor">
+      <error message="'create_page_id'" type="Error">'create_page_id'
+(status code is 500)
+(total errors of this type: 69)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_blog:blog_editor">
+      <error message="Could not open editor for blog." type="Error">Could not open editor for blog.
+(status code is 500)
+(total errors of this type: 41)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_create_blog:feel_and_publish">
+      <error message="'draft_name'" type="Error">'draft_name'
+(status code is 500)
+(total errors of this type: 35)</error>
+      <error message="'parsed_space_key'" type="Error">'parsed_space_key'
+(status code is 500)
+(total errors of this type: 6)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_like_page"/>
+    <testcase classname="bzt-8753601274772" name="locust_login_and_view_dashboard"/>
+    <testcase classname="bzt-8753601274772" name="locust_search_cql:recently_viewed"/>
+    <testcase classname="bzt-8753601274772" name="locust_search_cql:search_results"/>
+    <testcase classname="bzt-8753601274772" name="locust_upload_attachment"/>
+    <testcase classname="bzt-8753601274772" name="locust_view_attachment"/>
+    <testcase classname="bzt-8753601274772" name="locust_view_blog">
+      <error message="Could not open editor for blog." type="Error">Could not open editor for blog.
+(status code is 500)
+(total errors of this type: 139)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="locust_view_dashboard"/>
+    <testcase classname="bzt-8753601274772" name="locust_view_page:open_page"/>
+    <testcase classname="bzt-8753601274772" name="locust_view_page:view_page_tree"/>
+    <testcase classname="bzt-8753601274772" name="selenium_a_login"/>
+    <testcase classname="bzt-8753601274772" name="selenium_create_comment">
+      <error message="Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f4155e20&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_comment - Exception', Exception('Failed measure: selenium_create_comment:write_comment - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.frame_to_be_available_and_switch_to_it object at 0x7f92f4155e20&gt;. \nLocator: ('id', 'wysiwygTextarea_ifr')", None, None)))
+(status code is 400)
+(total errors of this type: 4)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="selenium_create_page">
+      <error message="Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f41b4100&gt;. \nLocator: ('id', 'quick-create-page-button')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f41b4100&gt;. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+(status code is 400)
+(total errors of this type: 3)</error>
+      <error message="Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f40bcc10&gt;. \nLocator: ('id', 'quick-create-page-button')&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_create_page - Exception', Exception('Failed measure: selenium_create_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for &lt;selenium.webdriver.support.expected_conditions.element_to_be_clickable object at 0x7f92f40bcc10&gt;. \nLocator: ('id', 'quick-create-page-button')", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="selenium_custom_action"/>
+    <testcase classname="bzt-8753601274772" name="selenium_edit_page">
+      <error message="Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fd30&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fa90&gt; Locator: ('class name', 'status-indicator-message')\n&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fd30&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f418fa90&gt; Locator: ('class name', 'status-indicator-message')\n", None, None)))
+(status code is 400)
+(total errors of this type: 1)</error>
+      <error message="Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException(&quot;Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40991f0&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40993a0&gt; Locator: ('class name', 'status-indicator-message')\n&quot;, None, None)))" type="Error">Exception: ('Failed measure: selenium_edit_page - Exception', Exception('Failed measure: selenium_edit_page:open_create_page_editor - TimeoutException', TimeoutException("Error in wait_until: Timed out after 20 sec waiting for one of the conditions: \n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40991f0&gt; Locator: ('class name', 'status-indicator-message')\n Condition: &lt;selenium.webdriver.support.expected_conditions.text_to_be_present_in_element object at 0x7f92f40993a0&gt; Locator: ('class name', 'status-indicator-message')\n", None, None)))
+(status code is 400)
+(total errors of this type: 3)</error>
+    </testcase>
+    <testcase classname="bzt-8753601274772" name="selenium_view_blog"/>
+    <testcase classname="bzt-8753601274772" name="selenium_view_dashboard"/>
+    <testcase classname="bzt-8753601274772" name="selenium_view_page"/>
+    <testcase classname="bzt-8753601274772" name="selenium_z_log_out"/>
+  </testsuite>
+</testsuites>

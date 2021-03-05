@@ -1,0 +1,52 @@
+[DEPRECATED] The --hatch-rate parameter has been renamed --spawn-rate
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Action locust_comment_page                                       424     0(0.00%)  |      66      52     127      64  |    0.14    0.00
+ Action locust_create_and_edit_page:create_page                   505     0(0.00%)  |     343     295     478     340  |    0.17    0.00
+ Action locust_create_and_edit_page:create_page_editor            510     0(0.00%)  |     199     163     314     200  |    0.17    0.00
+ Action locust_create_and_edit_page:edit_page                     491     0(0.00%)  |     359     315     485     360  |    0.16    0.00
+ Action locust_create_and_edit_page:open_editor                   495     0(0.00%)  |     147     122     230     140  |    0.16    0.00
+ Action locust_create_blog:blog_editor                            271     0(0.00%)  |     221     191     304     220  |    0.09    0.00
+ Action locust_create_blog:feel_and_publish                       267     0(0.00%)  |     349     306     438     350  |    0.09    0.00
+ Action locust_like_page                                          309     0(0.00%)  |      27      16      83      29  |    0.10    0.00
+ Action locust_login_and_view_dashboard                           200     0(0.00%)  |    1562    1473    1769    1600  |    0.07    0.00
+ Action locust_search_cql:recently_viewed                         618     0(0.00%)  |      16      12      73      16  |    0.21    0.00
+ Action locust_search_cql:search_results                          611     1(0.16%)  |     426       3    2267     440  |    0.20    0.00
+ Action locust_upload_attachment                                  451     0(0.00%)  |     418     245     844     370  |    0.15    0.00
+ Action locust_view_attachment                                    258     0(0.00%)  |      96      67     190      85  |    0.09    0.00
+ Action locust_view_blog                                          705     0(0.00%)  |     620     285    1268     570  |    0.23    0.00
+ Action locust_view_dashboard                                     499     0(0.00%)  |    1164    1078    1317    1200  |    0.17    0.00
+ Action locust_view_page:open_page                               4693     0(0.00%)  |     356     250     804     320  |    1.56    0.00
+ Action locust_view_page:view_page_tree                          4631     0(0.00%)  |      38      11     150      37  |    1.54    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     15938     1(0.01%)  |     274       3    2267     280  |    5.31    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ Action   locust_comment_page                                                65     67     69     71     76     81     90     94    130    130    130    424
+ Action   locust_create_and_edit_page:create_page                           340    350    350    360    370    390    420    440    480    480    480    505
+ Action   locust_create_and_edit_page:create_page_editor                    200    200    200    210    220    230    260    280    310    310    310    510
+ Action   locust_create_and_edit_page:edit_page                             360    360    370    370    390    410    430    460    480    480    480    491
+ Action   locust_create_and_edit_page:open_editor                           140    150    150    160    170    180    210    220    230    230    230    495
+ Action   locust_create_blog:blog_editor                                    220    220    230    230    240    260    280    290    300    300    300    271
+ Action   locust_create_blog:feel_and_publish                               350    360    360    370    380    390    420    430    440    440    440    267
+ Action   locust_like_page                                                   29     31     31     32     34     35     38     41     83     83     83    309
+ Action   locust_login_and_view_dashboard                                  1600   1600   1600   1600   1600   1600   1700   1700   1800   1800   1800    200
+ Action   locust_search_cql:recently_viewed                                  16     17     17     17     18     19     21     22     73     73     73    618
+ Action   locust_search_cql:search_results                                  440    450    460    470    500    530    660    830   2300   2300   2300    611
+ Action   locust_upload_attachment                                          370    420    500    530    620    660    700    790    840    840    840    451
+ Action   locust_view_attachment                                             85     95    110    130    140    150    160    170    190    190    190    258
+ Action   locust_view_blog                                                  570    590    610    630   1000   1100   1100   1200   1300   1300   1300    705
+ Action   locust_view_dashboard                                            1200   1200   1200   1200   1200   1300   1300   1300   1300   1300   1300    499
+ Action   locust_view_page:open_page                                        320    340    360    370    560    620    670    690    760    800    800   4693
+ Action   locust_view_page:view_page_tree                                    37     41     45     47     54     61     72     81    140    150    150   4631
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        280    320    350    370    570    740   1200   1500   1600   1800   2300  15938
+
+Error report
+ # occurrences      Error                                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 1                  Action locust_search_cql:search_results: 'HTTPError("502 Server Error: Bad Gateway for url: http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80/rest/api/search?cql=siteSearch~\'eiu\'&start=0&limit=20")'
+--------------------------------------------------------------------------------------------------------------------------------------------
+
