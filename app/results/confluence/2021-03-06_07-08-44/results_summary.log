@@ -1,0 +1,43 @@
+Summary run status                                 OK
+                 
+Artifacts dir                                      2021-03-06_07-08-44 
+OS                                                 Linux               
+DC Apps Performance Toolkit version                4.0.0               
+Application                                        confluence          
+Dataset info                                       914681 pages        
+Application nodes count                            4                   
+Concurrency                                        200                 
+Expected test run duration from yml file           2700 sec            
+Actual test run duration                           3011 sec            
+Finished                                           (True, 'OK')        
+Compliant                                          (True, 'OK')        
+Success                                            (True, 'OK')        
+Has app-specific actions                           True                
+
+Action                                            Success Rate        Avg time            Status              
+locust_comment_page                                100.0               0.21                OK                  
+locust_create_and_edit_page:create_page            100.0               0.697               OK                  
+locust_create_and_edit_page:create_page_editor     100.0               0.384               OK                  
+locust_create_and_edit_page:edit_page              100.0               0.743               OK                  
+locust_create_and_edit_page:open_editor            100.0               0.257               OK                  
+locust_create_blog:blog_editor                     100.0               0.45                OK                  
+locust_create_blog:feel_and_publish                100.0               0.71                OK                  
+locust_like_page                                   100.0               0.063               OK                  
+locust_login_and_view_dashboard                    100.0               2.104               OK                  
+locust_search_cql:recently_viewed                  100.0               0.038               OK                  
+locust_search_cql:search_results                   100.0               0.45                OK                  
+locust_upload_attachment                           100.0               0.731               OK                  
+locust_view_attachment                             100.0               0.182               OK                  
+locust_view_blog                                   100.0               1.398               OK                  
+locust_view_dashboard                              100.0               1.518               OK                  
+locust_view_page:open_page                         100.0               0.657               OK                  
+locust_view_page:view_page_tree                    100.0               0.123               OK                  
+selenium_a_login                                   100.0               0.898               OK                  
+selenium_create_comment                            100.0               1.726               OK                  
+selenium_create_page                               100.0               1.814               OK                  
+selenium_edit_page                                 98.79               2.818               OK                  
+selenium_view_blog                                 100.0               1.042               OK                  
+selenium_view_dashboard                            100.0               1.486               OK                  
+selenium_view_page                                 100.0               0.583               OK                  
+selenium_z_log_out                                 100.0               0.157               OK                  
+selenium_custom_action                             100.0               0.357               OK                  APP-SPECIFIC        
