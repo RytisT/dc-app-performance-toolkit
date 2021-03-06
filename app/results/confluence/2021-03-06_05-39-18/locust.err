@@ -1,0 +1,46 @@
+[DEPRECATED] The --hatch-rate parameter has been renamed --spawn-rate
+ Name                                                          # reqs      # fails  |     Avg     Min     Max  Median  |   req/s failures/s
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Action locust_comment_page                                       422     0(0.00%)  |     196     120     449     190  |    0.14    0.00
+ Action locust_create_and_edit_page:create_page                   535     0(0.00%)  |     660     486    1198     640  |    0.18    0.00
+ Action locust_create_and_edit_page:create_page_editor            538     0(0.00%)  |     369     261    1032     360  |    0.18    0.00
+ Action locust_create_and_edit_page:edit_page                     524     0(0.00%)  |     699     513     911     660  |    0.17    0.00
+ Action locust_create_and_edit_page:open_editor                   530     0(0.00%)  |     244     177     470     250  |    0.18    0.00
+ Action locust_create_blog:blog_editor                            239     0(0.00%)  |     426     307     630     400  |    0.08    0.00
+ Action locust_create_blog:feel_and_publish                       237     0(0.00%)  |     668     516     879     640  |    0.08    0.00
+ Action locust_like_page                                          258     0(0.00%)  |      57      25     106      55  |    0.09    0.00
+ Action locust_login_and_view_dashboard                           200     0(0.00%)  |    2174    1878    4044    2200  |    0.07    0.00
+ Action locust_search_cql:recently_viewed                         564     0(0.00%)  |      35      17     176      38  |    0.19    0.00
+ Action locust_search_cql:search_results                          554     0(0.00%)  |     415     234    2279     420  |    0.18    0.00
+ Action locust_upload_attachment                                  463     0(0.00%)  |     698     435    1315     650  |    0.15    0.00
+ Action locust_view_attachment                                    265     0(0.00%)  |     162      98     344     140  |    0.09    0.00
+ Action locust_view_blog                                          735     0(0.00%)  |    1394     684    2465    1400  |    0.24    0.00
+ Action locust_view_dashboard                                     528     0(0.00%)  |    1551    1245    1942    1700  |    0.18    0.00
+ Action locust_view_page:open_page                               4703     0(0.00%)  |     642     346    2754     620  |    1.57    0.00
+ Action locust_view_page:view_page_tree                          4647     0(0.00%)  |     128      17     519     110  |    1.55    0.00
+--------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregated                                                     15942     0(0.00%)  |     496      17    4044     440  |    5.31    0.00
+
+Response time percentiles (approximated)
+ Type     Name                                                              50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ Action   locust_comment_page                                               190    210    220    230    260    270    310    330    450    450    450    422
+ Action   locust_create_and_edit_page:create_page                           640    750    760    770    780    800    830    840   1200   1200   1200    535
+ Action   locust_create_and_edit_page:create_page_editor                    360    430    440    440    450    460    500    510   1000   1000   1000    538
+ Action   locust_create_and_edit_page:edit_page                             660    800    810    810    830    840    860    870    910    910    910    524
+ Action   locust_create_and_edit_page:open_editor                           250    270    270    280    280    290    310    330    470    470    470    530
+ Action   locust_create_blog:blog_editor                                    400    490    500    510    520    530    560    570    630    630    630    239
+ Action   locust_create_blog:feel_and_publish                               640    740    760    760    780    790    810    820    880    880    880    237
+ Action   locust_like_page                                                   55     68     73     74     78     80     81     83    110    110    110    258
+ Action   locust_login_and_view_dashboard                                  2200   2300   2300   2300   2400   2400   2400   2600   4000   4000   4000    200
+ Action   locust_search_cql:recently_viewed                                  39     42     44     45     47     49     51     52    180    180    180    564
+ Action   locust_search_cql:search_results                                  420    440    450    450    470    500    790   1000   2300   2300   2300    554
+ Action   locust_upload_attachment                                          650    760    830    870    960   1000   1100   1200   1300   1300   1300    463
+ Action   locust_view_attachment                                            140    160    170    190    270    290    320    330    340    340    340    265
+ Action   locust_view_blog                                                 1400   1600   1700   1700   1900   2100   2200   2300   2500   2500   2500    735
+ Action   locust_view_dashboard                                            1700   1700   1700   1700   1800   1800   1800   1800   1900   1900   1900    528
+ Action   locust_view_page:open_page                                        620    670    730    780    920   1000   1100   1100   1200   2800   2800   4703
+ Action   locust_view_page:view_page_tree                                   110    140    160    170    220    260    320    360    480    520    520   4647
+--------|------------------------------------------------------------|---------|------|------|------|------|------|------|------|------|------|------|------|
+ None     Aggregated                                                        440    590    670    750   1000   1500   1800   2100   2400   2800   4000  15942
+
