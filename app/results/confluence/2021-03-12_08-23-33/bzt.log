@@ -1,0 +1,178 @@
+[2021-03-12 08:23:33,676 INFO root] Taurus CLI Tool v1.15.1
+[2021-03-12 08:23:33,676 DEBUG root] Build: 13973 Fri Oct 30 09:16:46 UTC 2020
+[2021-03-12 08:23:33,676 DEBUG root] Extended git info:  3fecb4b9 Release 1.15.1 (#1420)
+[2021-03-12 08:23:33,677 DEBUG root] Command-line options: {'log': '/tmp/bzt_2jfm_ay8.log', 'option': ['modules.console.disable=true'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2021-03-12 08:23:33,677 DEBUG root] Python: CPython 3.8.0
+[2021-03-12 08:23:33,677 DEBUG root] OS: uname_result(system='Linux', node='ed04094183ef', release='5.4.0-1037-aws', version='#39~18.04.1-Ubuntu SMP Fri Jan 15 02:48:42 UTC 2021', machine='x86_64', processor='x86_64')
+[2021-03-12 08:23:33,677 INFO root] Starting with configs: ['confluence.yml']
+[2021-03-12 08:23:33,677 DEBUG root] Using personal config: /root/.bzt-rc
+[2021-03-12 08:23:33,677 INFO Engine] Configuring...
+[2021-03-12 08:23:33,677 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2021-03-12 08:23:33,685 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-03-12 08:23:33,685 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-03-12 08:23:33,685 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2021-03-12 08:23:33,699 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2021-03-12 08:23:33,700 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2021-03-12 08:23:33,700 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2021-03-12 08:23:33,700 DEBUG Engine] User configs list: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-12 08:23:33,700 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-12 08:23:33,701 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-03-12 08:23:33,703 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-03-12 08:23:33,712 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-12 08:23:33,712 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-03-12 08:23:33,715 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-03-12 08:23:33,728 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-03-12 08:23:33,729 DEBUG ConfigOverrider] Applying modules.console.disable=true
+[2021-03-12 08:23:33,729 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-03-12 08:23:33,729 DEBUG ConfigOverrider] Applying: [disable]=true
+[2021-03-12 08:23:33,729 DEBUG ConfigOverrider] Parsed override value: 'true' -> True (<class 'bool'>)
+[2021-03-12 08:23:33,730 INFO Engine] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33
+[2021-03-12 08:23:33,730 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/effective
+[2021-03-12 08:23:33,732 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2021-03-12 08:23:33,732 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/effective.yml
+[2021-03-12 08:23:33,745 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/effective.json
+[2021-03-12 08:23:33,746 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/merged.yml
+[2021-03-12 08:23:33,746 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/merged.yml
+[2021-03-12 08:23:33,751 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/merged.json
+[2021-03-12 08:23:33,751 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/merged.json
+[2021-03-12 08:23:33,752 DEBUG Engine] Add existing artifact (move=False): confluence.yml
+[2021-03-12 08:23:33,752 DEBUG Engine] Copying confluence.yml to /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/confluence.yml
+[2021-03-12 08:23:33,752 DEBUG Engine] Set PYTHONPATH to '/root/.bzt/python-packages/3.8.0' + '/dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/python-packages/3.8.0' + 
+[2021-03-12 08:23:33,752 DEBUG Engine] Content of user packages dir: %s
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: application_hostname=confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: application_protocol=http
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: application_port=80
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: secure=True
+[2021-03-12 08:23:33,752 DEBUG Engine] OS env: admin_login=admin
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: admin_password=admin
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: load_executor=locust
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: concurrency=200
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: test_duration=45m
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: ramp-up=5m
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: total_actions_per_hour=20000
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: WEBDRIVER_VISIBLE=False
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: JMETER_VERSION=5.2.1
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: LANGUAGE=en_US.utf8
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: allow_analytics=True
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: view_page=54
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: view_dashboard=6
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: view_blog=8
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: search_cql=7
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: create_blog=3
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: create_and_edit_page=6
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: comment_page=5
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: view_attachment=3
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: upload_attachment=5
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: like_page=3
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: standalone_extension=0
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: custom_dataset_query=title ~ 'github*'
+[2021-03-12 08:23:33,753 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33
+[2021-03-12 08:23:33,753 DEBUG root] Closing log handler: /tmp/bzt_2jfm_ay8.log
+[2021-03-12 08:23:33,753 DEBUG root] Switched writing logs to /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/bzt.log
+[2021-03-12 08:23:33,753 DEBUG root] Linting config
+[2021-03-12 08:23:33,755 INFO Engine] Preparing...
+[2021-03-12 08:23:33,756 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator', 'rtimes-len': 0, 'percentiles': []}
+[2021-03-12 08:23:33,756 DEBUG root] Importing module: bzt.modules.aggregator
+[2021-03-12 08:23:33,848 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2021-03-12 08:23:33,848 DEBUG Engine.consolidator] Buffer scaling setup: percentile None from [] selected
+[2021-03-12 08:23:33,848 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2021-03-12 08:23:33,848 DEBUG root] Importing module: bzt.modules.monitoring
+[2021-03-12 08:23:33,849 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2021-03-12 08:23:33,849 DEBUG Engine] Module config: shellexec {'class': 'bzt.modules.shellexec.ShellExecutor'}
+[2021-03-12 08:23:33,850 DEBUG root] Importing module: bzt.modules.shellexec
+[2021-03-12 08:23:33,855 DEBUG easyprocess] version=0.3
+[2021-03-12 08:23:33,855 DEBUG pyvirtualdisplay] version=2.0
+[2021-03-12 08:23:33,862 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py'>
+[2021-03-12 08:23:33,862 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/pre_run/environment_checker.py'}
+[2021-03-12 08:23:33,863 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/data_preparation/confluence_prepare_data.py'}
+[2021-03-12 08:23:33,863 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/post_run/jmeter_post_check.py'}
+[2021-03-12 08:23:33,863 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl'}
+[2021-03-12 08:23:33,863 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/analytics/analytics.py confluence'}
+[2021-03-12 08:23:33,863 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/post_run/cleanup_results_dir.py'}
+[2021-03-12 08:23:33,863 INFO Engine.shellexec.Task] Starting shell command: python util/pre_run/environment_checker.py
+[2021-03-12 08:23:33,863 DEBUG root] Executing shell: python util/pre_run/environment_checker.py at /dc-app-performance-toolkit/app
+[2021-03-12 08:23:33,939 DEBUG Engine.shellexec.Task] Output for python util/pre_run/environment_checker.py:
+Python version: 3.8.0
+Data Center App Performance Toolkit version: 4.0.0
+
+[2021-03-12 08:23:33,940 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/pre_run/environment_checker.py
+[2021-03-12 08:23:33,940 INFO Engine.shellexec.Task] Starting shell command: python util/data_preparation/confluence_prepare_data.py
+[2021-03-12 08:23:33,940 DEBUG root] Executing shell: python util/data_preparation/confluence_prepare_data.py at /dc-app-performance-toolkit/app
+[2021-03-12 08:23:34,361 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.1&installID=Docker HTTP/1.1" 200 39
+[2021-03-12 08:23:34,362 DEBUG Engine] Taurus updates info: {'latest': '1.15.2', 'needsUpgrade': True}
+[2021-03-12 08:23:34,362 WARNING Engine] There is newer version of Taurus 1.15.2 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2021-03-12 08:23:39,180 DEBUG Engine.shellexec.Task] Output for python util/data_preparation/confluence_prepare_data.py:
+Started preparing data
+Server url:  http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80
+
+[2021-03-12 08:23:39,180 WARNING Engine.shellexec.Task] Errors for python util/data_preparation/confluence_prepare_data.py:
+There are no Pages in Confluence accessible by a random performance user: performance_g98
+
+[2021-03-12 08:23:39,180 DEBUG Engine.shellexec.Task] Task was finished with exit code 1: python util/data_preparation/confluence_prepare_data.py
+[2021-03-12 08:23:39,181 ERROR root] CalledProcessError: Command 'python util/data_preparation/confluence_prepare_data.py' returned non-zero exit status 1.
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 261, in perform
+    self.engine.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 215, in prepare
+    self.__prepare_services()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 668, in __prepare_services
+    module.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 130, in prepare
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+[2021-03-12 08:23:39,181 INFO Engine] Post-processing...
+[2021-03-12 08:23:39,181 DEBUG Engine.consolidator] Consolidator buffer[0]: dict_keys([])
+[2021-03-12 08:23:39,181 INFO Engine.shellexec.Task] Starting shell command: python util/analytics/analytics.py confluence
+[2021-03-12 08:23:39,181 DEBUG root] Executing shell: python util/analytics/analytics.py confluence at /dc-app-performance-toolkit/app
+[2021-03-12 08:23:39,345 WARNING Engine.shellexec.Task] Errors for python util/analytics/analytics.py confluence:
+Traceback (most recent call last):
+  File "util/analytics/analytics.py", line 162, in <module>
+    main()
+  File "util/analytics/analytics.py", line 155, in main
+    collector = AnalyticsCollector(application)
+  File "util/analytics/analytics.py", line 35, in __init__
+    self.results_log = ResultsFileReader()
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 125, in __init__
+    self.results_log = self.get_results_log()
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 129, in get_results_log
+    self.validate_file_exists(results_log_path)
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 16, in validate_file_exists
+    raise Exception(f'{path} does not exist')
+Exception: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/results.csv does not exist
+
+[2021-03-12 08:23:39,345 DEBUG Engine.shellexec.Task] Task was finished with exit code 1: python util/analytics/analytics.py confluence
+[2021-03-12 08:23:39,345 DEBUG Engine] post_process: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 340, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 159, in post_process
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+subprocess.CalledProcessError: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+
+[2021-03-12 08:23:39,346 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/effective.yml
+[2021-03-12 08:23:39,361 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/effective.json
+[2021-03-12 08:23:39,362 DEBUG root] CalledProcessError: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 269, in perform
+    self.engine.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 354, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 103, in reraise
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 340, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 159, in post_process
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+[2021-03-12 08:23:39,362 INFO root] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33
+[2021-03-12 08:23:39,362 WARNING root] Done performing with code: 1
+[2021-03-12 08:23:39,362 DEBUG root] Closing log handler: /dc-app-performance-toolkit/app/results/confluence/2021-03-12_08-23-33/bzt.log

@@ -1,0 +1,379 @@
+[2021-03-11 20:08:38,227 INFO root] Taurus CLI Tool v1.15.1
+[2021-03-11 20:08:38,227 DEBUG root] Build: 13973 Fri Oct 30 09:16:46 UTC 2020
+[2021-03-11 20:08:38,227 DEBUG root] Extended git info:  3fecb4b9 Release 1.15.1 (#1420)
+[2021-03-11 20:08:38,227 DEBUG root] Command-line options: {'log': '/tmp/bzt_wkh8fl2_.log', 'option': ['modules.console.disable=true'], 'quiet': None, 'verbose': None, 'no_system_configs': None, 'aliases': []}
+[2021-03-11 20:08:38,227 DEBUG root] Python: CPython 3.8.0
+[2021-03-11 20:08:38,227 DEBUG root] OS: uname_result(system='Linux', node='e29b9c4cd21a', release='5.4.0-1037-aws', version='#39~18.04.1-Ubuntu SMP Fri Jan 15 02:48:42 UTC 2021', machine='x86_64', processor='x86_64')
+[2021-03-11 20:08:38,227 INFO root] Starting with configs: ['confluence.yml']
+[2021-03-11 20:08:38,227 DEBUG root] Using personal config: /root/.bzt-rc
+[2021-03-11 20:08:38,227 INFO Engine] Configuring...
+[2021-03-11 20:08:38,227 DEBUG Engine] Reading system configs from: /etc/bzt.d
+[2021-03-11 20:08:38,235 DEBUG Engine] Base configs list: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-03-11 20:08:38,236 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml', '/etc/bzt.d/50-pbench-enhanced.json', '/etc/bzt.d/90-artifacts-dir.json', '/etc/bzt.d/99-zinstallID.json']
+[2021-03-11 20:08:38,236 DEBUG Engine.Configuration] Reading /usr/local/lib/python3.8/dist-packages/bzt/resources/10-base-config.yml as YAML
+[2021-03-11 20:08:38,250 DEBUG Engine.Configuration] Reading /etc/bzt.d/50-pbench-enhanced.json as YAML
+[2021-03-11 20:08:38,251 DEBUG Engine.Configuration] Reading /etc/bzt.d/90-artifacts-dir.json as YAML
+[2021-03-11 20:08:38,251 DEBUG Engine.Configuration] Reading /etc/bzt.d/99-zinstallID.json as YAML
+[2021-03-11 20:08:38,251 DEBUG Engine] User configs list: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-11 20:08:38,251 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-11 20:08:38,251 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-03-11 20:08:38,254 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-03-11 20:08:38,263 DEBUG Engine.Configuration] Configs: ['/root/.bzt-rc', 'confluence.yml']
+[2021-03-11 20:08:38,263 DEBUG Engine.Configuration] Reading /root/.bzt-rc as YAML
+[2021-03-11 20:08:38,265 DEBUG Engine.Configuration] Reading confluence.yml as YAML
+[2021-03-11 20:08:38,280 DEBUG Engine] Requesting updates info: https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-03-11 20:08:38,280 DEBUG ConfigOverrider] Applying modules.console.disable=true
+[2021-03-11 20:08:38,280 DEBUG HTTPClient] Making HTTP request GET https://gettaurus.org/updates/?version=1.15.1&installID=Docker
+[2021-03-11 20:08:38,280 DEBUG ConfigOverrider] Applying: [disable]=true
+[2021-03-11 20:08:38,280 DEBUG ConfigOverrider] Parsed override value: 'true' -> True (<class 'bool'>)
+[2021-03-11 20:08:38,281 INFO Engine] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38
+[2021-03-11 20:08:38,282 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/effective
+[2021-03-11 20:08:38,283 DEBUG urllib3.connectionpool] Starting new HTTPS connection (1): gettaurus.org:443
+[2021-03-11 20:08:38,283 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/effective.yml
+[2021-03-11 20:08:38,297 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/effective.json
+[2021-03-11 20:08:38,297 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/merged.yml
+[2021-03-11 20:08:38,298 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/merged.yml
+[2021-03-11 20:08:38,303 DEBUG Engine] New artifact filename: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/merged.json
+[2021-03-11 20:08:38,303 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/merged.json
+[2021-03-11 20:08:38,303 DEBUG Engine] Add existing artifact (move=False): confluence.yml
+[2021-03-11 20:08:38,303 DEBUG Engine] Copying confluence.yml to /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/confluence.yml
+[2021-03-11 20:08:38,304 DEBUG Engine] Set PYTHONPATH to '/root/.bzt/python-packages/3.8.0' + '/dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/python-packages/3.8.0' + 
+[2021-03-11 20:08:38,304 DEBUG Engine] Content of user packages dir: %s
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: application_hostname=confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: application_protocol=http
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: application_port=80
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: secure=True
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: admin_login=admin
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: admin_password=admin
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: load_executor=locust
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: concurrency=200
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: test_duration=45m
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: ramp-up=5m
+[2021-03-11 20:08:38,304 DEBUG Engine] OS env: total_actions_per_hour=20000
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: WEBDRIVER_VISIBLE=False
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: JMETER_VERSION=5.2.1
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: LANGUAGE=en_US.utf8
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: allow_analytics=True
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: view_page=54
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: view_dashboard=6
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: view_blog=8
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: search_cql=7
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: create_blog=3
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: create_and_edit_page=6
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: comment_page=5
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: view_attachment=3
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: upload_attachment=5
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: like_page=3
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: standalone_extension=0
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: custom_dataset_query=title ~ 'github*'
+[2021-03-11 20:08:38,305 DEBUG Engine] OS env: TAURUS_ARTIFACTS_DIR=/dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38
+[2021-03-11 20:08:38,305 DEBUG root] Closing log handler: /tmp/bzt_wkh8fl2_.log
+[2021-03-11 20:08:38,305 DEBUG root] Switched writing logs to /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/bzt.log
+[2021-03-11 20:08:38,305 DEBUG root] Linting config
+[2021-03-11 20:08:38,307 INFO Engine] Preparing...
+[2021-03-11 20:08:38,308 DEBUG Engine] Module config: consolidator {'class': 'bzt.modules.aggregator.ConsolidatingAggregator', 'rtimes-len': 0, 'percentiles': []}
+[2021-03-11 20:08:38,308 DEBUG root] Importing module: bzt.modules.aggregator
+[2021-03-11 20:08:38,402 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/aggregator.py'>
+[2021-03-11 20:08:38,403 DEBUG Engine.consolidator] Buffer scaling setup: percentile None from [] selected
+[2021-03-11 20:08:38,403 DEBUG Engine] Module config: monitoring {'class': 'bzt.modules.monitoring.Monitoring'}
+[2021-03-11 20:08:38,403 DEBUG root] Importing module: bzt.modules.monitoring
+[2021-03-11 20:08:38,404 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/monitoring.py'>
+[2021-03-11 20:08:38,405 DEBUG Engine] Module config: shellexec {'class': 'bzt.modules.shellexec.ShellExecutor'}
+[2021-03-11 20:08:38,405 DEBUG root] Importing module: bzt.modules.shellexec
+[2021-03-11 20:08:38,412 DEBUG easyprocess] version=0.3
+[2021-03-11 20:08:38,412 DEBUG pyvirtualdisplay] version=2.0
+[2021-03-11 20:08:38,420 DEBUG root] Loading class: 'ShellExecutor' from <module 'bzt.modules.shellexec' from '/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py'>
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/pre_run/environment_checker.py'}
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added prepare task: {'command': 'python util/data_preparation/confluence_prepare_data.py'}
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/post_run/jmeter_post_check.py'}
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added shutdown task: {'command': 'python util/jtl_convertor/jtls-to-csv.py kpi.jtl selenium.jtl'}
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/analytics/analytics.py confluence'}
+[2021-03-11 20:08:38,420 DEBUG Engine.shellexec] Added post-process task: {'command': 'python util/post_run/cleanup_results_dir.py'}
+[2021-03-11 20:08:38,420 INFO Engine.shellexec.Task] Starting shell command: python util/pre_run/environment_checker.py
+[2021-03-11 20:08:38,421 DEBUG root] Executing shell: python util/pre_run/environment_checker.py at /dc-app-performance-toolkit/app
+[2021-03-11 20:08:38,501 DEBUG Engine.shellexec.Task] Output for python util/pre_run/environment_checker.py:
+Python version: 3.8.0
+Data Center App Performance Toolkit version: 4.0.0
+
+[2021-03-11 20:08:38,501 DEBUG Engine.shellexec.Task] Task was finished with exit code 0: python util/pre_run/environment_checker.py
+[2021-03-11 20:08:38,501 INFO Engine.shellexec.Task] Starting shell command: python util/data_preparation/confluence_prepare_data.py
+[2021-03-11 20:08:38,501 DEBUG root] Executing shell: python util/data_preparation/confluence_prepare_data.py at /dc-app-performance-toolkit/app
+[2021-03-11 20:08:39,013 DEBUG urllib3.connectionpool] https://gettaurus.org:443 "GET /updates/?version=1.15.1&installID=Docker HTTP/1.1" 200 39
+[2021-03-11 20:08:39,013 DEBUG Engine] Taurus updates info: {'latest': '1.15.2', 'needsUpgrade': True}
+[2021-03-11 20:08:39,014 WARNING Engine] There is newer version of Taurus 1.15.2 available, consider upgrading. What's new: http://gettaurus.org/docs/Changelog/
+[2021-03-11 20:09:08,283 DEBUG Engine.shellexec.Task] Output for python util/data_preparation/confluence_prepare_data.py:
+Started preparing data
+Server url:  http://confl-loadb-n2u031dw0abo-199959073.us-east-1.elb.amazonaws.com:80
+User performance_yovibkdbck is created, number of users to create is 200
+User performance_rbdtgghzxm is created, number of users to create is 199
+User performance_nfjpztxeyc is created, number of users to create is 198
+User performance_lejcagunhq is created, number of users to create is 197
+User performance_slhbkfyszu is created, number of users to create is 196
+User performance_orftkcknld is created, number of users to create is 195
+User performance_becesmihll is created, number of users to create is 194
+User performance_cjtayqmsji is created, number of users to create is 193
+User performance_ujedgphrfs is created, number of users to create is 192
+User performance_dgppkoarfo is created, number of users to create is 191
+User performance_izrvpqcycd is created, number of users to create is 190
+User performance_kpxhiplhgv is created, number of users to create is 189
+User performance_lqvrbaxbaq is created, number of users to create is 188
+User performance_hoxywxszvw is created, number of users to create is 187
+User performance_ucvdnmjkbo is created, number of users to create is 186
+User performance_iayujjijnn is created, number of users to create is 185
+User performance_lrptqfvhno is created, number of users to create is 184
+User performance_nwuzvdhwcp is created, number of users to create is 183
+User performance_zptgxamywj is created, number of users to create is 182
+User performance_zeaxwspyrl is created, number of users to create is 181
+User performance_emndcapgcv is created, number of users to create is 180
+User performance_mrmqaefyls is created, number of users to create is 179
+User performance_pxjjqlnxfk is created, number of users to create is 178
+User performance_gohbkbkiqw is created, number of users to create is 177
+User performance_qnnmisjkth is created, number of users to create is 176
+User performance_cdlebwjwbm is created, number of users to create is 175
+User performance_drnqavregm is created, number of users to create is 174
+User performance_qdgnswxyqh is created, number of users to create is 173
+User performance_hecbkfemdd is created, number of users to create is 172
+User performance_uxfcqjophf is created, number of users to create is 171
+User performance_nqithdcmoe is created, number of users to create is 170
+User performance_iiclshamay is created, number of users to create is 169
+User performance_rechukpmrg is created, number of users to create is 168
+User performance_lcomylkvba is created, number of users to create is 167
+User performance_wrtkzahwra is created, number of users to create is 166
+User performance_asgexqtjku is created, number of users to create is 165
+User performance_pchyjlwylr is created, number of users to create is 164
+User performance_cxtxmnueto is created, number of users to create is 163
+User performance_czxdmtfshs is created, number of users to create is 162
+User performance_ldzccyqapc is created, number of users to create is 161
+User performance_bchlrrvhim is created, number of users to create is 160
+User performance_zxzxjuawbs is created, number of users to create is 159
+User performance_qtdexjtkhh is created, number of users to create is 158
+User performance_avcyfuqcfi is created, number of users to create is 157
+User performance_dcxiatjvqb is created, number of users to create is 156
+User performance_rcumjassca is created, number of users to create is 155
+User performance_svjjdyoupw is created, number of users to create is 154
+User performance_grieujxoqu is created, number of users to create is 153
+User performance_kctgscdiys is created, number of users to create is 152
+User performance_zofslbrkxm is created, number of users to create is 151
+User performance_aobskcskfr is created, number of users to create is 150
+User performance_freafulyaq is created, number of users to create is 149
+User performance_uazgtxcxnn is created, number of users to create is 148
+User performance_hyshffxsfn is created, number of users to create is 147
+User performance_ouwatghvad is created, number of users to create is 146
+User performance_mfuivzsgtw is created, number of users to create is 145
+User performance_ltolggcbwc is created, number of users to create is 144
+User performance_fgfwjyfykn is created, number of users to create is 143
+User performance_svscidjyvj is created, number of users to create is 142
+User performance_aqzncxzcxq is created, number of users to create is 141
+User performance_sokbpthnkg is created, number of users to create is 140
+User performance_nhhfqkopwz is created, number of users to create is 139
+User performance_yngtjylpzb is created, number of users to create is 138
+User performance_cpznffqsmt is created, number of users to create is 137
+User performance_mwjfnmehqz is created, number of users to create is 136
+User performance_cphoudbxro is created, number of users to create is 135
+User performance_kcamvpwfdb is created, number of users to create is 134
+User performance_odlytyxafd is created, number of users to create is 133
+User performance_fgckurfpgq is created, number of users to create is 132
+User performance_svzeqaiyec is created, number of users to create is 131
+User performance_kednylwarz is created, number of users to create is 130
+User performance_gsucxlehxp is created, number of users to create is 129
+User performance_muneezliip is created, number of users to create is 128
+User performance_okndwjyuao is created, number of users to create is 127
+User performance_golzpsjrtc is created, number of users to create is 126
+User performance_cdkdmhmrwr is created, number of users to create is 125
+User performance_llzofulybr is created, number of users to create is 124
+User performance_nwgqnrqcof is created, number of users to create is 123
+User performance_okajuxhnym is created, number of users to create is 122
+User performance_bynmdzekoe is created, number of users to create is 121
+User performance_nelekbeknr is created, number of users to create is 120
+User performance_erqwwbvalb is created, number of users to create is 119
+User performance_xqainpynbq is created, number of users to create is 118
+User performance_kowxdilzqi is created, number of users to create is 117
+User performance_wmkaabjzjr is created, number of users to create is 116
+User performance_bdjvrerbas is created, number of users to create is 115
+User performance_bvpgpeorwv is created, number of users to create is 114
+User performance_qydpszwoia is created, number of users to create is 113
+User performance_jncetjkurr is created, number of users to create is 112
+User performance_pglwsjznic is created, number of users to create is 111
+User performance_ymunjprhiq is created, number of users to create is 110
+User performance_kyuakxicoo is created, number of users to create is 109
+User performance_isxozypyre is created, number of users to create is 108
+User performance_mzzvuxgmbh is created, number of users to create is 107
+User performance_pexasksybx is created, number of users to create is 106
+User performance_yeuvbzpgut is created, number of users to create is 105
+User performance_maskagednf is created, number of users to create is 104
+User performance_pqxqqfaqve is created, number of users to create is 103
+User performance_tdqlahgwmo is created, number of users to create is 102
+User performance_reopcxegiz is created, number of users to create is 101
+User performance_ossscxxdor is created, number of users to create is 100
+User performance_hveuijfkau is created, number of users to create is 99
+User performance_ssrxavyuea is created, number of users to create is 98
+User performance_bpcdubeent is created, number of users to create is 97
+User performance_ohjzaqvdws is created, number of users to create is 96
+User performance_qakjtgyljj is created, number of users to create is 95
+User performance_myyzlwpfhd is created, number of users to create is 94
+User performance_ncjwbpaawf is created, number of users to create is 93
+User performance_lbaispqdzr is created, number of users to create is 92
+User performance_zjkandldcq is created, number of users to create is 91
+User performance_kakmzzgade is created, number of users to create is 90
+User performance_omuctudxya is created, number of users to create is 89
+User performance_mhgmotmrzh is created, number of users to create is 88
+User performance_pnladusnau is created, number of users to create is 87
+User performance_vlrtbupsih is created, number of users to create is 86
+User performance_qeenvxetsa is created, number of users to create is 85
+User performance_srdmopwswq is created, number of users to create is 84
+User performance_pkcwvzveee is created, number of users to create is 83
+User performance_wwwaetjpnr is created, number of users to create is 82
+User performance_rsmedefaop is created, number of users to create is 81
+User performance_ygtwttbtor is created, number of users to create is 80
+User performance_racbsqxgzn is created, number of users to create is 79
+User performance_hkepprwipp is created, number of users to create is 78
+User performance_gfmoekeqkr is created, number of users to create is 77
+User performance_pvjptdqjvb is created, number of users to create is 76
+User performance_whmevqmaqp is created, number of users to create is 75
+User performance_vkrpdwffla is created, number of users to create is 74
+User performance_kkzhezviqg is created, number of users to create is 73
+User performance_khrhoixcke is created, number of users to create is 72
+User performance_lgnwcorgsh is created, number of users to create is 71
+User performance_stfnkvnhoh is created, number of users to create is 70
+User performance_ybtwwbeokx is created, number of users to create is 69
+User performance_riwwegmozb is created, number of users to create is 68
+User performance_zynaurrlpg is created, number of users to create is 67
+User performance_ddslufuxav is created, number of users to create is 66
+User performance_yxhpiyyuoe is created, number of users to create is 65
+User performance_hetpzelfnh is created, number of users to create is 64
+User performance_mvilcejpcd is created, number of users to create is 63
+User performance_exjhwobjkw is created, number of users to create is 62
+User performance_wdotpzkvny is created, number of users to create is 61
+User performance_nncxygfppa is created, number of users to create is 60
+User performance_ttngmzirgi is created, number of users to create is 59
+User performance_djkdnsoayo is created, number of users to create is 58
+User performance_mumrmgfjpf is created, number of users to create is 57
+User performance_khgekotqld is created, number of users to create is 56
+User performance_fnprqicddd is created, number of users to create is 55
+User performance_bmcdinutxc is created, number of users to create is 54
+User performance_tkqebgnnxl is created, number of users to create is 53
+User performance_ghnmeqhtoo is created, number of users to create is 52
+User performance_qlowbinlzw is created, number of users to create is 51
+User performance_qmhchaausx is created, number of users to create is 50
+User performance_fmlfihphzi is created, number of users to create is 49
+User performance_zfanqfmzvj is created, number of users to create is 48
+User performance_ysixlvqosx is created, number of users to create is 47
+User performance_ydahiwxlms is created, number of users to create is 46
+User performance_gorfesvwil is created, number of users to create is 45
+User performance_cunwgmwlza is created, number of users to create is 44
+User performance_kamyqvsqcg is created, number of users to create is 43
+User performance_pxsjnijfsp is created, number of users to create is 42
+User performance_khsoosziye is created, number of users to create is 41
+User performance_ikzgugxekh is created, number of users to create is 40
+User performance_zldpuxavyv is created, number of users to create is 39
+User performance_wgsahzvdhl is created, number of users to create is 38
+User performance_alpxtahxjh is created, number of users to create is 37
+User performance_hrskqlozgk is created, number of users to create is 36
+User performance_kgyibufeiq is created, number of users to create is 35
+User performance_fcdhxheiqy is created, number of users to create is 34
+User performance_jmeasqalke is created, number of users to create is 33
+User performance_ixnnlfkfjb is created, number of users to create is 32
+User performance_jdhdfhizuz is created, number of users to create is 31
+User performance_ybcgmojiob is created, number of users to create is 30
+User performance_rmwiobdcbi is created, number of users to create is 29
+User performance_ntpfeakzpg is created, number of users to create is 28
+User performance_pqcvucmset is created, number of users to create is 27
+User performance_ezuavwjmek is created, number of users to create is 26
+User performance_ursfchefhv is created, number of users to create is 25
+User performance_myarkyqkeb is created, number of users to create is 24
+User performance_kvzdaeypfa is created, number of users to create is 23
+User performance_evssbtlnbu is created, number of users to create is 22
+User performance_biobjdtugs is created, number of users to create is 21
+User performance_xyivviuwll is created, number of users to create is 20
+User performance_vrtlhjxlou is created, number of users to create is 19
+User performance_gltfzvygnr is created, number of users to create is 18
+User performance_reivsmufjn is created, number of users to create is 17
+User performance_geudfytoui is created, number of users to create is 16
+User performance_lvablufxkf is created, number of users to create is 15
+User performance_sdazuamfvc is created, number of users to create is 14
+User performance_cgzgljvbfm is created, number of users to create is 13
+User performance_zvzavjtuop is created, number of users to create is 12
+User performance_dwwdrgmgkw is created, number of users to create is 11
+User performance_dagmjttatg is created, number of users to create is 10
+User performance_nwqnxhrrdj is created, number of users to create is 9
+User performance_mgpenujvgz is created, number of users to create is 8
+User performance_fzxyacdohe is created, number of users to create is 7
+User performance_mizmryncgk is created, number of users to create is 6
+User performance_ipipnvhwqz is created, number of users to create is 5
+User performance_fsgmhirymd is created, number of users to create is 4
+User performance_kglnoqgzii is created, number of users to create is 3
+User performance_idhnklgqcz is created, number of users to create is 2
+User performance_lrqarpvylz is created, number of users to create is 1
+All performance test users were successfully created
+
+[2021-03-11 20:09:08,283 WARNING Engine.shellexec.Task] Errors for python util/data_preparation/confluence_prepare_data.py:
+There are no Pages in Confluence accessible by a random performance user: performance_fnprqicddd
+
+[2021-03-11 20:09:08,284 DEBUG Engine.shellexec.Task] Task was finished with exit code 1: python util/data_preparation/confluence_prepare_data.py
+[2021-03-11 20:09:08,284 ERROR root] CalledProcessError: Command 'python util/data_preparation/confluence_prepare_data.py' returned non-zero exit status 1.
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 261, in perform
+    self.engine.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 215, in prepare
+    self.__prepare_services()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 668, in __prepare_services
+    module.prepare()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 130, in prepare
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+[2021-03-11 20:09:08,284 INFO Engine] Post-processing...
+[2021-03-11 20:09:08,284 DEBUG Engine.consolidator] Consolidator buffer[0]: dict_keys([])
+[2021-03-11 20:09:08,284 INFO Engine.shellexec.Task] Starting shell command: python util/analytics/analytics.py confluence
+[2021-03-11 20:09:08,285 DEBUG root] Executing shell: python util/analytics/analytics.py confluence at /dc-app-performance-toolkit/app
+[2021-03-11 20:09:08,457 WARNING Engine.shellexec.Task] Errors for python util/analytics/analytics.py confluence:
+Traceback (most recent call last):
+  File "util/analytics/analytics.py", line 162, in <module>
+    main()
+  File "util/analytics/analytics.py", line 155, in main
+    collector = AnalyticsCollector(application)
+  File "util/analytics/analytics.py", line 35, in __init__
+    self.results_log = ResultsFileReader()
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 125, in __init__
+    self.results_log = self.get_results_log()
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 129, in get_results_log
+    self.validate_file_exists(results_log_path)
+  File "/dc-app-performance-toolkit/app/util/analytics/log_reader.py", line 16, in validate_file_exists
+    raise Exception(f'{path} does not exist')
+Exception: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/results.csv does not exist
+
+[2021-03-11 20:09:08,457 DEBUG Engine.shellexec.Task] Task was finished with exit code 1: python util/analytics/analytics.py confluence
+[2021-03-11 20:09:08,457 DEBUG Engine] post_process: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 340, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 159, in post_process
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+subprocess.CalledProcessError: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+
+[2021-03-11 20:09:08,458 DEBUG Engine.Configuration] Dumping YAML config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/effective.yml
+[2021-03-11 20:09:08,473 DEBUG Engine.Configuration] Dumping JSON config into /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/effective.json
+[2021-03-11 20:09:08,474 DEBUG root] CalledProcessError: Command 'python util/analytics/analytics.py confluence' returned non-zero exit status 1.
+  File "/usr/local/lib/python3.8/dist-packages/bzt/cli.py", line 269, in perform
+    self.engine.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 354, in post_process
+    reraise(exc_info, exc_value)
+  File "/usr/local/lib/python3.8/dist-packages/bzt/utils.py", line 103, in reraise
+    raise exc
+  File "/usr/local/lib/python3.8/dist-packages/bzt/engine/engine.py", line 340, in post_process
+    module.post_process()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 159, in post_process
+    task.start()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 217, in start
+    self._get_results()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/modules/shellexec.py", line 244, in _get_results
+    raise CalledProcessError(self.process.returncode, self)
+[2021-03-11 20:09:08,474 INFO root] Artifacts dir: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38
+[2021-03-11 20:09:08,474 WARNING root] Done performing with code: 1
+[2021-03-11 20:09:08,475 DEBUG root] Closing log handler: /dc-app-performance-toolkit/app/results/confluence/2021-03-11_20-08-38/bzt.log

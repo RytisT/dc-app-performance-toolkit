@@ -1,0 +1,51 @@
+[DEPRECATED] The --hatch-rate parameter has been renamed --spawn-rate
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/gevent/hub.py", line 300, in handle
+    self.handler(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/locust/main.py", line 381, in sig_term_handler
+    shutdown()
+  File "/usr/local/lib/python3.8/dist-packages/locust/main.py", line 369, in shutdown
+    runner.quit()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 357, in quit
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 408, in stop
+    super().stop()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 349, in stop
+    self.stop_users(self.user_count)
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 221, in stop_users
+    user = g.args[0]
+IndexError: tuple index out of range
+2021-03-12T08:44:29Z
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/bzt/resources/locustio-taurus-wrapper.py", line 137, in <module>
+    locust_starter.execute()
+  File "/usr/local/lib/python3.8/dist-packages/bzt/resources/locustio-taurus-wrapper.py", line 131, in execute
+    main.main()
+  File "/usr/local/lib/python3.8/dist-packages/locust/main.py", line 387, in main
+    main_greenlet.join()
+  File "/usr/local/lib/python3.8/dist-packages/gevent/pool.py", line 430, in join
+    result = self._empty_event.wait(timeout=timeout)
+  File "src/gevent/event.py", line 163, in gevent._gevent_cevent.Event.wait
+  File "src/gevent/_abstract_linkable.py", line 521, in gevent._gevent_c_abstract_linkable.AbstractLinkable._wait
+  File "src/gevent/_abstract_linkable.py", line 487, in gevent._gevent_c_abstract_linkable.AbstractLinkable._wait_core
+  File "src/gevent/_abstract_linkable.py", line 490, in gevent._gevent_c_abstract_linkable.AbstractLinkable._wait_core
+  File "src/gevent/_abstract_linkable.py", line 442, in gevent._gevent_c_abstract_linkable.AbstractLinkable._AbstractLinkable__wait_to_be_notified
+  File "src/gevent/_abstract_linkable.py", line 451, in gevent._gevent_c_abstract_linkable.AbstractLinkable._switch_to_hub
+  File "src/gevent/_greenlet_primitives.py", line 61, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+  File "/usr/local/lib/python3.8/dist-packages/gevent/hub.py", line 300, in handle
+    self.handler(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/locust/main.py", line 381, in sig_term_handler
+    shutdown()
+  File "/usr/local/lib/python3.8/dist-packages/locust/main.py", line 369, in shutdown
+    runner.quit()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 357, in quit
+    self.stop()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 408, in stop
+    super().stop()
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 349, in stop
+    self.stop_users(self.user_count)
+  File "/usr/local/lib/python3.8/dist-packages/locust/runners.py", line 221, in stop_users
+    user = g.args[0]
+IndexError: tuple index out of range
