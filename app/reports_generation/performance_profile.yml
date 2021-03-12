@@ -5,7 +5,7 @@ runs:
   - runName: "without app"
     fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-05_07-27-30"
   - runName: "with app"
-    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-05_08-31-35"
+    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-05_09-43-09"
 
 # Chart generation config
 index_col: "Action"

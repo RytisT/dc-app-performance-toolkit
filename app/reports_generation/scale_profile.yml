@@ -3,11 +3,11 @@ column_name: "90% Line"
 runs:
   # fullPath should contain a full path to the directory with run results. E.g. /home/$USER/dc-app-performance-toolkit/jira/results/2019-08-06_18-41-08
   - runName: "Node 1"
-    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-05_11-11-24"
+    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-12_13-28-41"
   - runName: "Node 2"
-    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-06_05-39-18"
+    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-12_09-53-10"
   - runName: "Node 4"
-    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-06_07-08-44"
+    fullPath: "/home/ubuntu/dc-app-performance-toolkit/app/results/confluence/2021-03-12_11-49-51"
 
 # Chart generation configs
 index_col: "Action"
